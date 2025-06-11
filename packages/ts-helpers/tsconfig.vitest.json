@@ -1,0 +1,7 @@
+{
+  "extends": "@repo/configs/tsconfig.neutral.tpl.json",
+  "include": ["src/**/*", "@types", "**/__mocks__/**/*"],
+  "compilerOptions": {
+    "types": ["vitest/globals", "@repo/configs/vitest-shims.d.ts"]
+  }
+}

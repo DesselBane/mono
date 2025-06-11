@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.neutral.tpl.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext"],
+    "types": ["node"]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "include": ["src/**/*.ts", "@types"],
+  "exclude": ["src/**/*.spec.ts", "**/__mocks__/**/*"],
+  "extends": "./tsconfig.bundler-node.tpl.json",
+  "compilerOptions": {
+    "types": ["vitest/globals", "./vitest-shims.d.ts"]
+  }
+}

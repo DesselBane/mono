@@ -1,0 +1,73 @@
+{
+  // See https://www.typescriptlang.org/tsconfig/ for detailed description of settings
+  // See https://github.com/vuejs/tsconfig/blob/main/tsconfig.json for some defaults
+  "compilerOptions": {
+    // Type Checking
+    "strict": true,
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+    // Handled via eslint
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    // Breaking Changes but think about it in the future
+    "exactOptionalPropertyTypes": false,
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Modules
+    "allowArbitraryExtensions": false,
+    "allowImportingTsExtensions": false,
+    "allowUmdGlobalAccess": false,
+    "noResolve": false,
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    // <https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#verbatimmodulesyntax>
+    "verbatimModuleSyntax": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": [],
+
+    // Emit
+    "declaration": true,
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "emitBOM": false,
+    "newLine": "lf",
+    "removeComments": false,
+    "stripInternal": true,
+    "noEmit": true,
+
+    // JS Support
+    "allowJs": false,
+
+    // Interop Constraints
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language
+    "useDefineForClassFields": true,
+
+    // Projects
+    "composite": false,
+    "incremental": false,
+
+    // Output Formatting
+    "noErrorTruncation": true,
+
+    // Skip Lib Check
+    // See <https://github.com/vuejs/vue-cli/pull/5688>
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  }
+}

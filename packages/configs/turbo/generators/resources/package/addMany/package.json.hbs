@@ -1,0 +1,56 @@
+{
+"name": "{{ npmScope }}/{{ packageName }}",
+  "version": "0.0.0",
+  "type": "module",
+{{#isPrivate}}
+  "private": true,
+{{/isPrivate}}
+{{#if packageDescription}}
+  "description": "{{ packageDescription }}",
+{{/if}}
+  "scripts": {
+{{#runtimeIsWeb}}
+    "dev":"vite {{viteDevScript}}",
+    "build": "vite build",
+{{else runtimeIsNodeBundled}}
+    "dev":"tsup-node --watch",
+    "build": "tsup-node",
+{{else runtimeIsNeutral}}
+    "dev":"tsup --watch",
+    "build": "tsup",
+{{else}}
+  "build": "tsc",
+{{/runtimeIsWeb}}
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck:{{packageType}}": "{{#runtimeIsWeb}}vue-tsc{{else}}tsc{{/runtimeIsWeb}} --noEmit -p tsconfig.{{packageType}}.json",
+    "typecheck:vitest": "{{#runtimeIsWeb}}vue-tsc{{else}}tsc{{/runtimeIsWeb}} --noEmit -p tsconfig.vitest.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DesselBane/mono",
+    "directory": "{{packageDir}}"
+  },
+{{#isLib}}
+  "exports": {
+    "types": "./dist/main.d.ts",
+    "import": "./dist/main.js"
+  },
+  "files": [
+    "dist/**",
+    "package.json",
+    "CHANGELOG.md"
+  ],
+{{/isLib}}
+  "volta": {
+    "extends": "{{ voltaPath }}"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "devDependencies": {
+    "@repo/configs": "workspace:*"
+  }
+}

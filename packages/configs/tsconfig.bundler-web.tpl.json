@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.neutral.tpl.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"]
+  }
+}

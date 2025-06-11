@@ -1,0 +1,7 @@
+{
+  "extends": "@repo/configs/tsconfig.node.tpl.json",
+  "include": [ "*.config.ts" ],
+  "compilerOptions": {
+    "declaration": false
+  }
+}

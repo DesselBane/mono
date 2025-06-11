@@ -1,0 +1,19 @@
+import { defineConfig } from 'vite'
+{{#isLib}}{{else}}
+import vue from '@vitejs/plugin-vue'
+import vueDevTools from 'vite-plugin-vue-devTools'
+{{/isLib}}
+
+export default defineConfig({ {{#isLib}}
+  build: {
+    lib: {
+      entry: 'src/main.ts',
+      formats: ['es', 'cjs'],
+    },
+  },{{else}}
+  plugins: [
+    vue(),
+    vueDevTools(),
+  ],
+  {{/isLib}}
+})

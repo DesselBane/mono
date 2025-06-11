@@ -1,0 +1,64 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "stream",
+  "globalEnv": ["DEBUG", "NO_COLOR", "DO_NOT_TRACK"],
+  "globalPassThroughEnv": ["PLAYWRIGHT_BROWSERS_PATH"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "generate": {
+      "dependsOn": ["^build", "^generate"],
+      "outputs": ["generated/**"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["playwright-report/**", "test-results/**"]
+    },
+    "dev": {
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "cache": false,
+      "interruptible": true
+    },
+    "dev:transpile": {
+      "persistent": true,
+      "cache": false,
+      "interruptible": true
+    },
+    "dev:node": {
+      "persistent": true,
+      "cache": false,
+      "interruptible": true
+    },
+    "preview": {
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "cache": true
+    },
+    "lint:fix": {
+      "dependsOn": ["^build"],
+      "cache": true
+    },
+    "typecheck:app": {
+      "dependsOn": ["^build"]
+    },
+    "typecheck:lib": {
+      "dependsOn": ["^build"]
+    },
+    "typecheck:vitest": {
+      "dependsOn": ["^build"]
+    },
+    "docs:dev": {
+      "cache": false
+    },
+    "docs:build": {
+      "outputs": [".vitepress/dist/**"]
+    }
+  }
+}

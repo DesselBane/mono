@@ -1,0 +1,8 @@
+packages:
+  - .
+  - packages/**
+  - '!packages/**/turbo/**'
+onlyBuiltDependencies:
+  - core-js-pure
+  - esbuild
+  - unrs-resolver

@@ -1,0 +1,48 @@
+{
+  "name": "@repo/root",
+  "private": true,
+  "type": "module",
+  "author": "Dessel Bane",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DesselBane/mono"
+  },
+  "scripts": {
+    "dd": "turbo docs:dev",
+    "db": "turbo docs:build --log-order=grouped",
+    "tb": "turbo build --log-order=grouped",
+    "tg": "turbo run generate --log-order=grouped",
+    "td": "turbo dev --concurrency=100%",
+    "tt": "turbo test --log-order=grouped",
+    "tl": "turbo lint --log-order=grouped",
+    "tlf": "turbo lint:fix --log-order=grouped",
+    "ttc": "turbo typecheck:app typecheck:lib typecheck:vitest --log-order=grouped",
+    "check-all": "turbo lint test typecheck:app typecheck:lib typecheck:vitest --log-order=grouped",
+    "ca": "changeset add",
+    "new:package": "turbo gen package",
+    "new:adr": "turbo gen adr",
+    "new:rfc": "turbo gen rfc",
+    "prepare": "node .husky/install.js",
+    "postinstall": "turbo @repo/configs#build"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.29.4",
+    "@turbo/gen": "2.5.4",
+    "@types/node": "22.15.30",
+    "@repo/configs": "workspace:*",
+    "eslint": "9.28.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.0",
+    "prettier": "3.5.3",
+    "semver": "7.7.2",
+    "turbo": "2.5.4"
+  },
+  "packageManager": "pnpm@10.11.1",
+  "engines": {
+    "node": "22.16.0"
+  },
+  "volta": {
+    "node": "22.16.0",
+    "pnpm": "10.11.1"
+  }
+}

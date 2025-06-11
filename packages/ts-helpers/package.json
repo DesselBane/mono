@@ -1,0 +1,46 @@
+{
+  "name": "@repo/ts-helpers",
+  "version": "2.0.0",
+  "type": "module",
+  "private": false,
+  "description": "Helper package which includes typescript assertions and type guards",
+  "scripts": {
+    "dev": "tsup-node --watch --no-clean",
+    "build": "tsup-node",
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
+    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json"
+  },
+  "files": [
+    "dist/**",
+    "package.json",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    "types": "./dist/main.d.ts",
+    "import": "./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DesselBane/mono",
+    "directory": "packages/ts-helpers"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "@vitest/coverage-v8": "3.2.2",
+    "@repo/configs": "workspace:*",
+    "tsup": "8.5.0",
+    "type-fest": "4.41.0",
+    "typescript": "5.8.3",
+    "vitest": "3.2.2"
+  }
+}

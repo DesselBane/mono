@@ -1,0 +1,11 @@
+{
+  "extends": "@repo/configs/tsconfig.bundler-web.tpl.json",
+  "include": [
+    "src/**/*",
+    "@types",
+    "**/__mocks__/**/*"
+  ],
+  "compilerOptions": {
+    "types": [ "vitest/globals", "@repo/configs/vitest-shims.d.ts" ]
+  }
+}
