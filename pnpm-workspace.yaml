@@ -1,4 +1,5 @@
 packages:
+  - changelog
   - packages/**
   - '!packages/**/turbo/**'
 onlyBuiltDependencies:
