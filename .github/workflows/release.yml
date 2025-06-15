@@ -29,4 +29,3 @@ jobs:
           publish: 'pnpm changeset publish'
           version: 'pnpm changeset version'
           commit: '🦋 Version Packages'
-          commitMode: github-api
