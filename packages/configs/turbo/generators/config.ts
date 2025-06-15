@@ -1,132 +1,11 @@
+/* eslint-disable unicorn/prefer-module */
 import { execSync } from 'node:child_process'
+import { readFileSync, writeFileSync } from 'node:fs'
 import type { PlopTypes } from '@turbo/gen'
-import type { SimplifyDeep, UnknownRecord } from 'type-fest'
-import { z } from 'zod/v4'
-import type { ZodLiteral, ZodString } from 'zod/v4'
 import type { HelperOptions } from 'handlebars'
-
-/**
- * Prompts
- */
-
-type Prompt = {
-  name: string
-  message: string
-  prefix?: string
-  suffix?: string
-}
-
-type InputPrompt = Prompt & {
-  type: 'input'
-}
-
-type ListPrompt = Prompt & {
-  type: 'list'
-  choices: readonly { name: string; value: string }[]
-}
-
-type AllowedPrompt = InputPrompt | ListPrompt
-
-type AllowedPrompQuestions = readonly AllowedPrompt[]
-
-type ValueForPrompt<TPrompt extends AllowedPrompt> = TPrompt extends InputPrompt
-  ? string
-  : TPrompt extends ListPrompt
-    ? TPrompt['choices'][number]['value']
-    : never
-
-type AnswersForPrompQuestions<TPrompts extends AllowedPrompQuestions> =
-  SimplifyDeep<{
-    [Entry in TPrompts[number]['name']]: ValueForPrompt<
-      Extract<TPrompts[number], { name: Entry }>
-    >
-  }>
-
-/**
- * Zod
- */
-
-type SchemaForPrompt<TPrompt extends AllowedPrompt> =
-  TPrompt extends InputPrompt
-    ? ZodString
-    : TPrompt extends ListPrompt
-      ? ZodLiteral<TPrompt['choices'][number]['value']>
-      : never
-
-type AnswerSchemaForPrompQuestions<TPrompts extends AllowedPrompQuestions> =
-  SimplifyDeep<{
-    [Entry in TPrompts[number]['name']]: SchemaForPrompt<
-      Extract<TPrompts[number], { name: Entry }>
-    >
-  }>
-
-function createPrompts<const TPrompt extends AllowedPrompQuestions>(
-  prompts: TPrompt,
-) {
-  const unfinishedAnswers: UnknownRecord = {}
-
-  for (const singlePrompt of prompts) {
-    switch (singlePrompt.type) {
-      case 'input': {
-        unfinishedAnswers[singlePrompt.name] = z.string()
-        break
-      }
-      case 'list': {
-        unfinishedAnswers[singlePrompt.name] = z.literal(
-          singlePrompt.choices.map((choice) => choice.value),
-        )
-      }
-    }
-  }
-
-  const answers = unfinishedAnswers as AnswerSchemaForPrompQuestions<TPrompt>
-
-  const answerSchema = z.looseObject(answers)
-
-  const turboOptionsSchema = z.object({
-    turbo: z.object({
-      paths: z.object({
-        root: z.string(),
-        cwd: z.string(),
-        workspace: z.string(),
-      }),
-      configs: z.array(
-        z.object({
-          turboConfigPath: z.string(),
-          workspacePath: z.string(),
-          isRootConfig: z.boolean(),
-          config: z.object({
-            ui: z.string().optional(),
-            globalEnv: z.array(z.string()).optional(),
-            globalPassThroughEnv: z.array(z.string()).optional(),
-            tasks: z.record(
-              z.string(),
-              z
-                .object({
-                  dependsOn: z.array(z.string()).optional(),
-                  outputs: z.array(z.string()).optional(),
-                  persitent: z.boolean().optional(),
-                  cache: z.boolean().optional(),
-                  interruptible: z.boolean().optional(),
-                })
-                .optional(),
-            ),
-          }),
-        }),
-      ),
-    }),
-  })
-
-  const setHelperOptionsSchema = z.looseObject({
-    root: turboOptionsSchema.extend(answerSchema.shape),
-  })
-
-  return {
-    answerSchema,
-    setHelperOptionsSchema,
-    prompts,
-  }
-}
+import { format, resolveConfig } from 'prettier'
+import { createPrompts } from './helpers'
+import type { AnswersForPrompQuestions } from './helpers'
 
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   const { prompts, answerSchema, setHelperOptionsSchema } = createPrompts([
@@ -149,6 +28,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
           name: 'Private | @repo',
           value: '@repo',
         },
+        // Insert npmScope marker
       ],
     },
     {
@@ -423,6 +303,62 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
           },
         )
         return 'Linted package'
+      },
+    ],
+  })
+
+  const addScopePrompts = createPrompts([
+    {
+      type: 'input',
+      name: 'scopeName',
+      message: 'What is the name of the scope?',
+    },
+    {
+      type: 'input',
+      name: 'scopeValue',
+      message: 'What is the value of the scope?',
+    },
+  ])
+
+  plop.setGenerator('addScope', {
+    description:
+      'Add an npm scope to the list of available scopes for the next generated package.',
+    prompts: [...addScopePrompts.prompts],
+    actions: [
+      async function modifyFile(rawAnswers) {
+        const answers = addScopePrompts.answerSchema.parse(rawAnswers)
+
+        const value = answers.scopeValue.startsWith('@')
+          ? answers.scopeValue
+          : `@${answers.scopeValue}`
+
+        const name = `${answers.scopeName} | ${value}`
+
+        const configTs = readFileSync(__filename).toString()
+
+        const modified = configTs.replace(
+          '// Insert npmScope marker',
+          JSON.stringify({
+            name,
+            value,
+          }) + '\n// Insert npmScope marker',
+        )
+
+        const prettierConfig = await resolveConfig(__filename)
+        console.log(prettierConfig)
+
+        if (prettierConfig == undefined) {
+          throw new Error('Unable to resolve prettier config')
+        }
+
+        const formatted = await format(modified, {
+          ...prettierConfig,
+          parser: 'typescript',
+        })
+
+        writeFileSync(__filename, formatted)
+
+        return `Updated ${__filename}`
       },
     ],
   })

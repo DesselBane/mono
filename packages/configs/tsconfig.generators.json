@@ -1,6 +1,6 @@
 {
   "extends": ["./tsconfig.node.tpl.json"],
-  "include": ["./turbo/generators/config.ts"],
+  "include": ["./turbo/generators/*.ts"],
   "compilerOptions": {
     "declaration": false,
     "module": "commonjs",
