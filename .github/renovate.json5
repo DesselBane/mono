@@ -1,0 +1,75 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  labels: ['♻renovate'],
+  // Team member names
+  assignees: ['DesselBane'],
+  enabledManagers: ['npm', 'github-actions'],
+  assigneesSampleSize: 1,
+  commitBodyTable: true,
+  configMigration: true,
+  dependencyDashboard: true,
+  platformAutomerge: true,
+  automergeType: 'pr',
+  rangeStrategy: 'pin',
+  rebaseWhen: 'behind-base-branch',
+  osvVulnerabilityAlerts: true,
+  skipInstalls: false,
+  stopUpdatingLabel: '❄️ On Hold',
+  postUpdateOptions: ['pnpmDedupe'],
+  prConcurrentLimit: 0,
+  postUpgradeTasks: {
+    commands: ['pnpm -w tlf'],
+    fileFilters: ['**/*.ts'],
+    executionMode: 'update',
+  },
+  lockFileMaintenance: {
+    enabled: true,
+    recreateWhen: 'always',
+    rebaseStalePrs: true,
+    branchTopic: 'lock-file-maintenance',
+    commitMessageAction: 'Lock file maintenance',
+    schedule: ['before 4am on monday'],
+    groupName: null,
+    prBodyDefinitions: { Change: 'All locks refreshed' },
+  },
+  major: {
+    automerge: false,
+  },
+  minor: {
+    automerge: true,
+    addLabels: ['automerge'],
+  },
+  patch: {
+    automerge: true,
+    addLabels: ['automerge'],
+  },
+  packageRules: [
+    {
+      groupName: 'Patch Updates',
+      matchUpdateTypes: ['patch'],
+    },
+    {
+      groupName: 'Peer Dependencies',
+      rangeStrategy: 'widen',
+      matchDepTypes: ['peerDependencies'],
+      automerge: false,
+    },
+    {
+      groupName: 'Vite',
+      matchPackageNames: ['/.*vite.*/', 'vue3-snapshot-serializer'],
+    },
+    {
+      groupName: '⚡Engines',
+      rangeStrategy: 'widen',
+      matchPackageNames: ['/.*node.*/', '/.*pnpm.*/'],
+    },
+    {
+      groupName: 'Lodash',
+      matchPackageNames: ['/.*lodash.*/'],
+    },
+    {
+      groupName: 'ESlint',
+      matchPackageNames: ['/.*eslint.*/'],
+    },
+  ],
+}
