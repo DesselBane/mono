@@ -26,13 +26,13 @@
     "postinstall": "turbo @repo/configs#build"
   },
   "devDependencies": {
-    "@changesets/cli": "2.29.4",
+    "@changesets/cli": "2.29.5",
     "@turbo/gen": "2.5.4",
     "@types/node": "22.15.32",
     "@repo/configs": "workspace:*",
     "eslint": "9.28.0",
     "husky": "9.1.7",
-    "lint-staged": "16.1.0",
+    "lint-staged": "16.1.2",
     "prettier": "3.5.3",
     "semver": "7.7.2",
     "turbo": "2.5.4"
