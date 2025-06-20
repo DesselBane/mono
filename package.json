@@ -28,7 +28,7 @@
   "devDependencies": {
     "@changesets/cli": "2.29.4",
     "@turbo/gen": "2.5.4",
-    "@types/node": "22.15.30",
+    "@types/node": "22.15.32",
     "@repo/configs": "workspace:*",
     "eslint": "9.28.0",
     "husky": "9.1.7",
@@ -37,12 +37,12 @@
     "semver": "7.7.2",
     "turbo": "2.5.4"
   },
-  "packageManager": "pnpm@10.11.1",
+  "packageManager": "pnpm@10.12.1",
   "engines": {
     "node": "22.16.0"
   },
   "volta": {
     "node": "22.16.0",
-    "pnpm": "10.11.1"
+    "pnpm": "10.12.1"
   }
 }
