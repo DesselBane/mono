@@ -39,11 +39,6 @@
       automerge: true,
       addLabels: ['automerge'],
     },
-    postUpgradeTasks: {
-      commands: ['pnpm i','pnpm -w tlf'],
-      fileFilters: ['**/*.ts'],
-      executionMode: 'update',
-    },
   },
   packageRules: [
     {
