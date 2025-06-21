@@ -11,6 +11,9 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+env:
+  DO_NOT_TRACK: 1
+
 jobs:
   release:
     name: Release
