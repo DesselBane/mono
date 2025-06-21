@@ -31,7 +31,7 @@
     "@turbo/gen": "2.5.4",
     "@types/node": "22.15.32",
     "@repo/configs": "workspace:*",
-    "eslint": "9.28.0",
+    "eslint": "9.29.0",
     "husky": "9.1.7",
     "lint-staged": "16.1.2",
     "prettier": "3.5.3",
