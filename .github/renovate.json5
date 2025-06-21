@@ -17,11 +17,6 @@
   stopUpdatingLabel: '❄️ On Hold',
   postUpdateOptions: ['pnpmDedupe'],
   prConcurrentLimit: 0,
-  postUpgradeTasks: {
-    commands: ['pnpm -w tlf'],
-    fileFilters: ['**/*.ts'],
-    executionMode: 'update',
-  },
   lockFileMaintenance: {
     enabled: true,
     recreateWhen: 'always',
@@ -34,16 +29,21 @@
       Change: 'All locks refreshed',
     },
   },
-  major: {
-    automerge: false,
-  },
-  minor: {
-    automerge: true,
-    addLabels: ['automerge'],
-  },
-  patch: {
-    automerge: true,
-    addLabels: ['automerge'],
+  automerge: false,
+  npm: {
+    minor: {
+      automerge: true,
+      addLabels: ['automerge'],
+    },
+    patch: {
+      automerge: true,
+      addLabels: ['automerge'],
+    },
+    postUpgradeTasks: {
+      commands: ['pnpm -w tlf'],
+      fileFilters: ['**/*.ts'],
+      executionMode: 'update',
+    },
   },
   packageRules: [
     {
