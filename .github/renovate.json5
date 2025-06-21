@@ -1,21 +1,30 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
-  labels: ['♻renovate'],
-  assignees: ['DesselBane'],
-  enabledManagers: ['npm', 'github-actions'],
+  labels: [
+    '♻renovate',
+  ],
+  assignees: [
+    'DesselBane',
+  ],
+  enabledManagers: [
+    'npm',
+    'github-actions',
+  ],
   assigneesSampleSize: 1,
   commitBodyTable: true,
   configMigration: true,
   dependencyDashboard: true,
   platformAutomerge: true,
-  platformCommit: true,
+  platformCommit: 'enabled',
   automergeType: 'pr',
   rangeStrategy: 'pin',
   rebaseWhen: 'behind-base-branch',
   osvVulnerabilityAlerts: true,
   skipInstalls: false,
   stopUpdatingLabel: '❄️ On Hold',
-  postUpdateOptions: ['pnpmDedupe'],
+  postUpdateOptions: [
+    'pnpmDedupe',
+  ],
   prConcurrentLimit: 0,
   lockFileMaintenance: {
     enabled: true,
@@ -23,7 +32,9 @@
     rebaseWhen: 'behind-base-branch',
     branchTopic: 'lock-file-maintenance',
     commitMessageAction: 'Lock file maintenance',
-    schedule: ['before 4am on monday'],
+    schedule: [
+      'before 4am on monday',
+    ],
     groupName: null,
     prBodyDefinitions: {
       Change: 'All locks refreshed',
@@ -33,40 +44,58 @@
   npm: {
     minor: {
       automerge: true,
-      addLabels: ['automerge'],
+      addLabels: [
+        'automerge',
+      ],
     },
     patch: {
       automerge: true,
-      addLabels: ['automerge'],
+      addLabels: [
+        'automerge',
+      ],
     },
   },
   packageRules: [
     {
       groupName: 'Patch Updates',
-      matchUpdateTypes: ['patch'],
+      matchUpdateTypes: [
+        'patch',
+      ],
     },
     {
       groupName: 'Peer Dependencies',
       rangeStrategy: 'widen',
-      matchDepTypes: ['peerDependencies'],
+      matchDepTypes: [
+        'peerDependencies',
+      ],
       automerge: false,
     },
     {
       groupName: 'Vite',
-      matchPackageNames: ['/.*vite.*/', 'vue3-snapshot-serializer'],
+      matchPackageNames: [
+        '/.*vite.*/',
+        'vue3-snapshot-serializer',
+      ],
     },
     {
       groupName: '⚡Engines',
       rangeStrategy: 'widen',
-      matchPackageNames: ['/.*node.*/', '/.*pnpm.*/'],
+      matchPackageNames: [
+        '/.*node.*/',
+        '/.*pnpm.*/',
+      ],
     },
     {
       groupName: 'Lodash',
-      matchPackageNames: ['/.*lodash.*/'],
+      matchPackageNames: [
+        '/.*lodash.*/',
+      ],
     },
     {
       groupName: 'ESlint',
-      matchPackageNames: ['/.*eslint.*/'],
+      matchPackageNames: [
+        '/.*eslint.*/',
+      ],
     },
   ],
 }
