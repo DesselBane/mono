@@ -1,5 +1,18 @@
 # @repo/ts-helpers
 
+## 2.1.0
+
+### Minor Changes
+
+- 22b1bd4: Add kebabCase helper function
+
+### Patch Changes
+
+- 12cc633: deps(patch): Update package @types/node from 22.15.30 to 22.15.30
+- 12cc633: deps(patch): Update package vitest from 3.2.0 to 3.2.2
+- 12cc633: deps(patch): Update package @vitest/coverage-v8 from 3.2.0 to 3.2.2
+- 12cc633: deps: Updated lockfile
+
 ## 2.0.0
 
 ### Major Changes

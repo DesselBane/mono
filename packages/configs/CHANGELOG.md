@@ -1,5 +1,19 @@
 # @repo/configs
 
+## 12.0.1
+
+### Patch Changes
+
+- 12cc633: deps(patch): Update package eslint-import-resolver-typescript from 4.4.3 to 4.4.3
+- 12cc633: deps(patch): Update package eslint-plugin-import-x from 4.15.1 to 4.15.1
+- 12cc633: deps(minor): Update package eslint-plugin-vue from 10.2.0 to 10.2.0
+- 12cc633: deps(patch): Update package @types/node from 22.15.30 to 22.15.30
+- 12cc633: deps(patch): Update package typescript-eslint from 8.33.1 to 8.33.1
+- 12cc633: deps(patch): Update package vitest from 3.2.0 to 3.2.2
+- 12cc633: deps(minor): Update package vue3-snapshot-serializer from 2.11.0 to 2.11.0
+- 12cc633: deps(patch): Update package zod from 3.25.43 to 3.25.56
+- 12cc633: deps: Updated lockfile
+
 ## 12.0.0
 
 ### Major Changes

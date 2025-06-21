@@ -1,5 +1,20 @@
 # @repo/composables
 
+## 1.0.5
+
+### Patch Changes
+
+- 12cc633: deps(patch): Update package @types/node from 22.15.30 to 22.15.30
+- 12cc633: deps(patch): Update package vitest from 3.2.0 to 3.2.2
+- 12cc633: deps(patch): Update package @vitest/coverage-v8 from 3.2.0 to 3.2.2
+- 12cc633: deps: Updated lockfile
+- Updated dependencies [12cc633]
+- Updated dependencies [12cc633]
+- Updated dependencies [12cc633]
+- Updated dependencies [12cc633]
+- Updated dependencies [22b1bd4]
+  - @repo/ts-helpers@2.1.0
+
 ## 1.0.4
 
 ### Patch Changes
