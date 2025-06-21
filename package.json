@@ -29,7 +29,7 @@
   "devDependencies": {
     "@changesets/cli": "2.29.5",
     "@turbo/gen": "2.5.4",
-    "@types/node": "22.15.32",
+    "@types/node": "24.0.3",
     "@repo/configs": "workspace:*",
     "eslint": "9.28.0",
     "husky": "9.1.7",
