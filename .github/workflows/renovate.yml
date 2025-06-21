@@ -8,6 +8,9 @@ on:
 permissions:
   contents: read
 
+env:
+  DO_NOT_TRACK: 1
+
 jobs:
   renovate:
     runs-on: ubuntu-latest

@@ -40,7 +40,7 @@
       addLabels: ['automerge'],
     },
     postUpgradeTasks: {
-      commands: ['pnpm -w tlf'],
+      commands: ['pnpm i','pnpm -w tlf'],
       fileFilters: ['**/*.ts'],
       executionMode: 'update',
     },
