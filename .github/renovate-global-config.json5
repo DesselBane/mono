@@ -1,4 +1,4 @@
 {
-  allowedCommands: ['pnpm -w tlf'],
+  allowedCommands: ['pnpm -w tlf', 'pnpm i'],
   repositories: ['DesselBane/mono'],
 }
