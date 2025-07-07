@@ -31,7 +31,7 @@
   },
   postUpgradeTasks: {
     commands: [
-      "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --isLockfileUpdate '{{isLockfileUpdate}}' --packageFile '{{packageFile}}' --logJSON '{{logJSON}}' --updateType '{{updateType}}'",
+      "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --isLockfileUpdate '{{isLockfileUpdate}}' --packageFile '{{packageFile}}' --manager '{{manager}}' --updateType '{{updateType}}'",
     ],
     fileFilters: ['.changeset/*.md'],
     executionMode: 'update',
