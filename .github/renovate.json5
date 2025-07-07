@@ -29,14 +29,19 @@
       Change: 'All locks refreshed',
     },
   },
+  postUpgradeTasks: {
+    commands: ['pnpm -w renovate-add-changeset --currentVersion {{currentVersion}} --newVersion {{newVersion}} --depName {{depName}} --depType {{depType}} --displayFrom {{displayFrom}} --isLockfileUpdate {{isLockfileUpdate}} --packageFile {{packageFile}} --packageFileDir {{packageFileDir}} --packageName {{packageName}} --prettyDepType {{prettyDepType}} --project {{project}} --references {{references}} --releases {{releases}} --releaseNotes {{releaseNotes}} --url {{url}} --version {{version}} --versioning {{versioning}}'],
+    fileFilters: ['.changeset/*.md'],
+    executionMode: 'update',
+  },
   automerge: false,
   npm: {
     minor: {
-      automerge: true,
+      automerge: false,
       addLabels: ['automerge'],
     },
     patch: {
-      automerge: true,
+      automerge: false,
       addLabels: ['automerge'],
     },
   },

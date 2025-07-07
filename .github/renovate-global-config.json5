@@ -1,4 +1,4 @@
 {
-  allowedCommands: ['pnpm -w tlf', 'pnpm i'],
-  repositories: ['DesselBane/mono'],
+  allowedCommands: ['^pnpm -w renovate-add-changeset.*'],
+  repositories: ['DesselBane/mono']
 }
