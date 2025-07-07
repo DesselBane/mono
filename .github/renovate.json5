@@ -17,6 +17,7 @@
   stopUpdatingLabel: '❄️ On Hold',
   postUpdateOptions: ['pnpmDedupe'],
   prConcurrentLimit: 0,
+  prHourlyLimit: 1,
   lockFileMaintenance: {
     enabled: true,
     recreateWhen: 'always',
@@ -39,11 +40,11 @@
   automerge: false,
   npm: {
     minor: {
-      automerge: false,
+      automerge: true,
       addLabels: ['automerge'],
     },
     patch: {
-      automerge: false,
+      automerge: true,
       addLabels: ['automerge'],
     },
   },
