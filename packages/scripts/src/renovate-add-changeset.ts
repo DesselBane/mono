@@ -38,7 +38,7 @@ const { values } = parseArgs({
     packageFile: {
       type: 'string',
     },
-    logJSON: {
+    manager: {
       type: 'string',
     },
     updateType: {
@@ -54,7 +54,7 @@ const {
   depType,
   isLockfileUpdate,
   packageFile,
-  logJSON,
+  manager,
   updateType,
 } = values
 
@@ -64,19 +64,26 @@ assertNotNil(depName)
 assertNotNil(depType)
 assertNotNil(isLockfileUpdate)
 assertNotNil(newVersion)
+assertNotNil(manager)
 
-const packageJson = JSON.parse(
-  readFileSync(path.join(workspaceRoot, packageFile)).toString(),
-) as PackageJson
+function getPackageName(packageFile: string) {
+  if (manager === 'github-actions') {
+    return '@repo/changelog'
+  }
 
-const temporaryPackageName = packageJson.name
-assertNotNil(temporaryPackageName)
+  const packageJson = JSON.parse(
+    readFileSync(path.join(workspaceRoot, packageFile)).toString(),
+  ) as PackageJson
 
-const packageName =
-  temporaryPackageName === '@repo/root'
+  const temporaryPackageName = packageJson.name
+  assertNotNil(temporaryPackageName)
+
+  return temporaryPackageName === '@repo/root'
     ? '@repo/changelog'
     : temporaryPackageName
+}
 
+const packageName = getPackageName(packageFile)
 const packageNameSafe = makeStringSafe(packageName)
 
 if (isLockfileUpdate != '') {
@@ -103,8 +110,6 @@ const content = `---
 ---
 
 deps: [${updateType}|${depType}] Update package ${depName} from ${currentVersion} to ${newVersion}
-
-${logJSON}
 `
 
 writeFileSync(
