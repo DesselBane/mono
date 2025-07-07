@@ -1,3 +1,8 @@
+import path from 'node:path'
+
+export const workspaceRoot = path.join(import.meta.dirname, '..', '..', '..')
+export const changesetFolder = path.join(workspaceRoot, '.changeset')
+
 export function assertNotNil<TValue>(
   data: TValue,
   message = `Data was nil`,

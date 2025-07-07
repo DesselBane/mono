@@ -1,19 +1,17 @@
-#!/usr/bin/env node
-
 import { globSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
-import { assertNotNil } from './helper.ts'
+import { assertNotNil, workspaceRoot } from '../helper.ts'
 
-const workspaceRoot = path.join(import.meta.dirname, '..', '..', '..')
 type LineTypes =
   | 'package name'
   | 'version number'
   | 'major changes section'
   | 'minor changes section'
   | 'patch changes section'
+  | 'dependency changes section'
   | 'changeset start'
-  | 'unknown'
   | 'dependency update'
+  | 'unknown'
 
 function determineLineType(line: string): LineTypes {
   if (
@@ -40,6 +38,14 @@ function determineLineType(line: string): LineTypes {
   }
   if (line.startsWith('### Patch Changes')) {
     return 'patch changes section'
+  }
+  if (
+    line.startsWith('### Dependency Changes') ||
+    line.includes('<details>') ||
+    line.includes('</details>') ||
+    line.includes('<summary> Click to expand </summary>')
+  ) {
+    return 'dependency changes section'
   }
   if (line.startsWith('- ')) {
     return 'changeset start'
@@ -143,6 +149,24 @@ function parseVersion(lines: string[]): VersionContent | undefined {
     if (currentLine == undefined) {
       return
     }
+
+    const type = determineLineType(currentLine)
+    if (type === 'version number') {
+      version.version = currentLine
+      currentLine = lines.shift()
+      break
+    }
+
+    if (type !== 'unknown') {
+      throw new Error('Unexpected line type')
+    }
+    currentLine = lines.shift()
+  }
+
+  while (true) {
+    if (currentLine == undefined) {
+      return version
+    }
     const type = determineLineType(currentLine)
 
     switch (type) {
@@ -150,19 +174,18 @@ function parseVersion(lines: string[]): VersionContent | undefined {
         throw new Error('There should not be another package name')
       }
       case 'version number': {
-        if (version.version != '') {
-          lines.unshift(currentLine)
-          return version
-        }
-
-        version.version = currentLine
-        break
+        lines.unshift(currentLine)
+        return version
       }
       case 'major changes section':
       case 'minor changes section':
       case 'patch changes section': {
         currentChangeActive = false
         currentSection = type
+        break
+      }
+      case 'dependency changes section': {
+        currentChangeActive = false
         break
       }
       case 'dependency update': {
@@ -188,6 +211,7 @@ function parseVersion(lines: string[]): VersionContent | undefined {
 
 function formatChangelog(pathToChangelog: string) {
   const fileContents = readFileSync(pathToChangelog).toString().split('\n')
+
   const formattedFile: string[] = []
 
   const changelogContents = parseFile(fileContents)
@@ -231,11 +255,13 @@ function formatChangelog(pathToChangelog: string) {
   writeFileSync(pathToChangelog, formattedFile.join('\n'))
 }
 
-const changelogFiles = globSync('**/CHANGELOG.md', {
-  cwd: workspaceRoot,
-  exclude: ['**/node_modules', '**/dist', '**/.turbo'],
-})
+export function run() {
+  const changelogFiles = globSync('**/CHANGELOG.md', {
+    cwd: workspaceRoot,
+    exclude: ['**/node_modules', '**/dist', '**/.turbo'],
+  })
 
-for (const changelog of changelogFiles) {
-  formatChangelog(path.join(workspaceRoot, changelog))
+  for (const changelog of changelogFiles) {
+    formatChangelog(path.join(workspaceRoot, changelog))
+  }
 }
