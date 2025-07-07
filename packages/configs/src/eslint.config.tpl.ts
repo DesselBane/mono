@@ -280,6 +280,7 @@ function configureUnicornPlugin(options: SafeOptions): Config {
             multipleFileExtensions: false,
           },
         ],
+        'unicorn/no-keyword-prefix': 'off',
       },
     },
     {
