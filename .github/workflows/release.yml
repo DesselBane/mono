@@ -19,6 +19,14 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - name: Get token
+        id: get_token
+        uses: actions/create-github-app-token@v2
+        with:
+          private-key: ${{ secrets.CHANGESETS_PRIVATE_KEY }}
+          app-id: ${{ secrets.CHANGESETS_APP_ID }}
+          owner: ${{ github.repository_owner }}
+          repositories: 'mono'
       - uses: actions/checkout@v4
       - name: Setup
         uses: ./.github/actions/setup
@@ -27,8 +35,9 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: '${{ steps.get_token.outputs.token }}'
         with:
+          commitMode: 'github-api'
           publish: 'pnpm changeset publish'
-          version: 'pnpm changeset version'
+          version: 'pnpm changeset version && pnpm -w reformat-changelogs'
           commit: '🦋 Version Packages'
