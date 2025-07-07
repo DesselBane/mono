@@ -1,0 +1,35 @@
+{
+  "name": "@repo/scripts",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Scripts which are used thorughout the mono repo.",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
+    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DesselBane/mono",
+    "directory": "packages/scripts"
+  },
+  "bin": {
+    "reformat-changelog": "src/reformat-changelog.ts"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "devDependencies": {
+    "@repo/configs": "workspace:*",
+    "@types/node": "24.0.3",
+    "@vitest/coverage-v8": "3.2.2",
+    "type-fest": "4.41.0",
+    "typescript": "5.8.3",
+    "vitest": "3.2.2"
+  }
+}
