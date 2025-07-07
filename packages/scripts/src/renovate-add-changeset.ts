@@ -115,7 +115,7 @@ deps: [${updateType}|${depType}] Update package ${depName} from ${currentVersion
 writeFileSync(
   path.join(
     changesetFolder,
-    `|deps-${packageNameSafe}-${makeStringSafe(depName)}-${makeStringSafe(currentVersion)}-${makeStringSafe(newVersion)}.md`,
+    `zz-deps-${packageNameSafe}-${makeStringSafe(depName)}-${makeStringSafe(currentVersion)}-${makeStringSafe(newVersion)}.md`,
   ),
   content,
 )
