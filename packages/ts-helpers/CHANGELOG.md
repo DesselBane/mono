@@ -81,6 +81,13 @@
 
 ### Patch Changes
 
+- 8b575a9: Fix package url. This should display changelogs in renovate.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 3d997d6: deps(minor): Update package tsup from 8.5.0 to 8.5.0
 - e2c91ef: deps(minor): Update package type-fest from 4.39.1 to 4.41.0
 - df36dd6: deps(minor): Update package @types/node from 22.7.8 to 22.15.29
@@ -95,7 +102,9 @@
 - ea663cf: deps: Updated lockfile
 - eddbb5d: deps: Updated lockfile
 - 1b989b0: deps: Updated lockfile
-- 8b575a9: Fix package url. This should display changelogs in renovate.
+
+
+</details>
 
 ## 2.0.0-next.7
 
@@ -106,37 +115,67 @@
 
 ## 1.0.2-next.6
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 5fa9cc9: deps(minor): Update package @types/node from 22.7.8 to 22.15.3
 
+
+</details>
+
 ## 1.0.2-next.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 5ec777b: deps(patch): Update package type-fest from 4.40.0 to 4.40.1
 - 6b26c2e: deps: Updated lockfile
 - ab59d2c: deps: Updated lockfile
 
+
+</details>
+
 ## 1.0.2-next.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 518362b: deps(patch): Update package vitest from 3.1.1 to 3.1.2
 - 5c6a504: deps(patch): Update package @vitest/coverage-v8 from 3.1.1 to 3.1.2
 
+
+</details>
+
 ## 1.0.2-next.3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 9061150: deps(minor): Update package type-fest from 4.39.1 to 4.40.0
 - 512461e: deps: Updated lockfile
 
+
+</details>
+
 ## 1.0.2-next.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 776bdc5: deps: Updated lockfile
+
+
+</details>
 
 ## 1.0.2-next.1
 
@@ -146,17 +185,29 @@
 
 ## 1.0.2-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 291257a: deps(patch): Update package typescript from 5.8.2 to 5.8.3
 
+
+</details>
+
 ## 1.0.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - af84e3a: deps(minor): Update package type-fest from 4.38.0 to 4.39.0
 - 5114615: deps(patch): Update package type-fest from 4.39.0 to 4.39.1
 - e3f3a2e: deps: Updated lockfile
+
+
+</details>
 
 ## 1.0.0
 
@@ -166,10 +217,19 @@
 
 ### Patch Changes
 
-- ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
-- f3fc4dc: deps(minor): Update package @vitest/coverage-v8 from 3.0.9 to 3.1.1
 - f36576c: Fix publish config.
 - 7bb96f8: Rename from "@repo/ts-helpers" to "@repo/ts-helpers"
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
+- f3fc4dc: deps(minor): Update package @vitest/coverage-v8 from 3.0.9 to 3.1.1
+
+
+</details>
 
 ## 1.0.0-next.0
 
@@ -179,36 +239,66 @@
 
 ### Patch Changes
 
-- ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
-- f3fc4dc: deps(minor): Update package @vitest/coverage-v8 from 3.0.9 to 3.1.1
 - f36576c: Fix publish config.
 - 7bb96f8: Rename from "@repo/ts-helpers" to "@repo/ts-helpers"
 
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
+- f3fc4dc: deps(minor): Update package @vitest/coverage-v8 from 3.0.9 to 3.1.1
+
+
+</details>
+
 ## 0.6.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - db04546: deps(minor): Update package type-fest from 4.37.0 to 4.38.0
 - 501554c: deps: Updated lockfile
+
+
+</details>
 
 ## 0.6.5-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - db04546: deps(minor): Update package type-fest from 4.37.0 to 4.38.0
 - 501554c: deps: Updated lockfile
 
+
+</details>
+
 ## 0.6.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 392f722: deps(patch): Update package vitest from 3.0.8 to 3.0.9
 - d9f3b4e: deps(patch): Update package @vitest/coverage-v8 from 3.0.8 to 3.0.9
 - 3c7503e: deps: Updated lockfile
 
+
+</details>
+
 ## 0.6.3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ce3cdd3: deps(minor): Update package type-fest from 4.36.0 to 4.37.0
 - 01847dc: deps(patch): Update package vitest from 3.0.6 to 3.0.8
@@ -216,18 +306,30 @@
 - 0073852: deps: Updated lockfile
 - 3b1f91c: deps: Updated lockfile
 
+
+</details>
+
 ## 0.6.3-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ce3cdd3: deps(minor): Update package type-fest from 4.36.0 to 4.37.0
 - 959b360: deps(patch): Update package @vitest/coverage-v8 from 3.0.7 to 3.0.8
 - 0073852: deps: Updated lockfile
 - 3b1f91c: deps: Updated lockfile
 
+
+</details>
+
 ## 0.6.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - d24e347: deps(minor): Update package tsup from 8.3.6 to 8.4.0
 - bc18d41: deps(minor): Update package type-fest from 4.34.1 to 4.35.0
@@ -239,16 +341,28 @@
 - 107fd8f: deps: Updated lockfile
 - 026188c: deps: Updated lockfile
 - 09c7357: deps: Updated lockfile
+
+
+</details>
 
 ## 0.6.2-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - dde854c: deps(minor): Update package type-fest from 4.35.0 to 4.36.0
 
+
+</details>
+
 ## 0.6.2-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - d24e347: deps(minor): Update package tsup from 8.3.6 to 8.4.0
 - bc18d41: deps(minor): Update package type-fest from 4.34.1 to 4.35.0
@@ -260,27 +374,48 @@
 - 026188c: deps: Updated lockfile
 - 09c7357: deps: Updated lockfile
 
+
+</details>
+
 ## 0.6.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 11b5840: deps(minor): Update package type-fest from 4.33.0 to 4.34.1
 - 73a50c0: deps(patch): Update package vitest from 3.0.4 to 3.0.5
 - 9f7e4cd: deps(patch): Update package @vitest/coverage-v8 from 3.0.4 to 3.0.5
 - 0906d09: deps: Updated lockfile
 
+
+</details>
+
 ## 0.6.1-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 11b5840: deps(minor): Update package type-fest from 4.33.0 to 4.34.1
 
+
+</details>
+
 ## 0.6.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 9f7e4cd: deps(patch): Update package @vitest/coverage-v8 from 3.0.4 to 3.0.5
 - 0906d09: deps: Updated lockfile
+
+
+</details>
 
 ## 0.6.0
 
@@ -304,13 +439,22 @@
 
 ### Patch Changes
 
+- 39230a1: Fix repository field in package.json
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 46254c4: deps(patch): Update package tsup from 8.3.5 to 8.3.6
 - 6877cf1: deps(minor): Update package type-fest from 4.32.0 to 4.33.0
 - bf07edf: deps(patch): Update package vitest from 3.0.2 to 3.0.3
 - 88994d8: deps(patch): Update package vitest from 3.0.3 to 3.0.4
 - e07c00b: deps: Updated lockfile
 - eca6687: deps: Updated lockfile
-- 39230a1: Fix repository field in package.json
+
+
+</details>
 
 ## 0.6.0-next.5
 
@@ -336,49 +480,94 @@
 
 ### Patch Changes
 
-- eca6687: deps: Updated lockfile
 - 39230a1: Fix repository field in package.json
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- eca6687: deps: Updated lockfile
+
+
+</details>
 
 ## 0.5.2-next.3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 46254c4: deps(patch): Update package tsup from 8.3.5 to 8.3.6
 
+
+</details>
+
 ## 0.5.2-next.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 88994d8: deps(patch): Update package vitest from 3.0.3 to 3.0.4
 - e07c00b: deps: Updated lockfile
 
+
+</details>
+
 ## 0.5.2-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - bf07edf: deps(patch): Update package vitest from 3.0.2 to 3.0.3
 
+
+</details>
+
 ## 0.5.2-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6877cf1: deps(minor): Update package type-fest from 4.32.0 to 4.33.0
 
+
+</details>
+
 ## 0.5.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 32294d3: deps(major): Update package vitest from 2.1.8 to 3.0.1
 - 9e47a6b: deps(patch): Update package vitest from 3.0.1 to 3.0.2
 - 68ff813: deps: Updated lockfile
+
+
+</details>
 
 ## 0.5.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 32294d3: deps(major): Update package vitest from 2.1.8 to 3.0.1
 - 9e47a6b: deps(patch): Update package vitest from 3.0.1 to 3.0.2
 - 68ff813: deps: Updated lockfile
+
+
+</details>
 
 ## 0.5.0
 
@@ -386,12 +575,18 @@
 
 - 859a666: Add lazy helper
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 637da6f: deps(minor): Update package type-fest from 4.30.1 to 4.31.0
 - e2a30d1: deps(minor): Update package type-fest from 4.31.0 to 4.32.0
 - 1391225: deps(patch): Update package typescript from 5.7.2 to 5.7.3
 - 93dafe5: deps: Updated lockfile
+
+
+</details>
 
 ## 0.5.0-next.1
 
@@ -401,40 +596,70 @@
 
 ## 0.4.3-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 637da6f: deps(minor): Update package type-fest from 4.30.1 to 4.31.0
 - e2a30d1: deps(minor): Update package type-fest from 4.31.0 to 4.32.0
 - 1391225: deps(patch): Update package typescript from 5.7.2 to 5.7.3
 - 93dafe5: deps: Updated lockfile
 
+
+</details>
+
 ## 0.4.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 33e64af: deps: Updated lockfile
 - 03831e1: deps: Updated lockfile
 - 1f29167: deps: Updated lockfile
+
+
+</details>
 
 ## 0.4.2-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 33e64af: deps: Updated lockfile
 - 03831e1: deps: Updated lockfile
 - 1f29167: deps: Updated lockfile
 
+
+</details>
+
 ## 0.4.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 7d51325: deps(minor): Update package typescript from 5.6.3 to 5.7.2
+
+
+</details>
 
 ## 0.4.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 7d51325: deps(minor): Update package typescript from 5.6.3 to 5.7.2
+
+
+</details>
 
 ## 0.4.0
 
@@ -442,7 +667,10 @@
 
 - a69a587: Allow assertNotNil to have a custom message
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 2421633: deps(minor): Update package type-fest from 4.27.1 to 4.28.0
 - de21179: deps(patch): Update package type-fest from 4.28.0 to 4.28.1
@@ -456,14 +684,23 @@
 - 84b60a3: deps: Updated lockfile
 - bb04fab: deps: Updated lockfile
 
+
+</details>
+
 ## 0.4.0-next.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 3e06182: deps(patch): Update package type-fest from 4.29.0 to 4.29.1
 - 9f4b2c0: deps(minor): Update package type-fest from 4.29.1 to 4.30.0
 - d0a04e1: deps(patch): Update package vitest from 2.1.6 to 2.1.8
 - 84b60a3: deps: Updated lockfile
+
+
+</details>
 
 ## 0.4.0-next.1
 
@@ -473,7 +710,10 @@
 
 ## 0.3.2-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 2421633: deps(minor): Update package type-fest from 4.27.1 to 4.28.0
 - de21179: deps(patch): Update package type-fest from 4.28.0 to 4.28.1
@@ -481,17 +721,32 @@
 - adbc395: deps(patch): Update package vitest from 2.1.5 to 2.1.6
 - 4050981: deps: Updated lockfile
 
+
+</details>
+
 ## 0.3.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ac51137: deps(patch): Update package type-fest from 4.27.0 to 4.27.1
+
+
+</details>
 
 ## 0.3.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ac51137: deps(patch): Update package type-fest from 4.27.0 to 4.27.1
+
+
+</details>
 
 ## 0.3.0
 
@@ -546,6 +801,13 @@
 
 ### Patch Changes
 
+- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 7f31da5: deps(patch): Update package tsup from 8.3.0 to 8.3.5
 - c5c38cc: deps(minor): Update package type-fest from 4.26.1 to 4.27.0
 - af7a371: deps(patch): Update package vitest from 2.1.3 to 2.1.4
@@ -553,13 +815,21 @@
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
 - cdf2c06: deps: Updated lockfile
-- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+
+</details>
 
 ## 0.3.0-next.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - cdf2c06: deps: Updated lockfile
+
+
+</details>
 
 ## 0.3.0-next.4
 
@@ -568,9 +838,15 @@
 - ac94448: Include `CHANGELOG.md` in npm tarball
 - ac94448: Explicitly export types
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - c5c38cc: deps(minor): Update package type-fest from 4.26.1 to 4.27.0
+
+
+</details>
 
 ## 0.3.0-next.3
 
@@ -621,23 +897,41 @@
 
 - 4365475: Add assertions `isNilOrWhitespace`.
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - a5d0eda: deps(patch): Update package vitest from 2.1.4 to 2.1.5
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
 
+
+</details>
+
 ## 0.2.2-next.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 7f31da5: deps(patch): Update package tsup from 8.3.0 to 8.3.5
 
+
+</details>
+
 ## 0.2.2-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - af7a371: deps(patch): Update package vitest from 2.1.3 to 2.1.4
+
+
+</details>
 
 ## 0.2.2-next.0
 
@@ -658,30 +952,6 @@
 - 0ec887f: Pipeline: Git Tags now reference the correct commit instead of the one before.
 
 ## 0.2.0
-
-### Minor Changes
-
-- 13ca7c7: Add isIncluded helper.
-
-  Check if a value is part of an array of type TValue[]. If so inform typescript that value must be of type TValue.
-
-  ```ts
-  const SUPPORTED_LOCALES = ['en-US', 'en-PT'] as const
-  const maybeLocale: string = 'en-US'
-  // This will error since string can not be part of a ('en-US' | 'en-PT')[] array.
-  if (!SUPPORTED_LOCALES.includes(maybeLocale)) {
-    // Do some default handling
-  }
-  if (isIncluded(SUPPORTED_LOCALES, maybeLocale)) {
-    // TS now understands that maybeLocale is of type 'en-US' | 'en-PT'
-  } else {
-    // Do some default handling
-  }
-  ```
-
-- 13ca7c7: Initial Release
-
-## 0.2.0-next.0
 
 ### Minor Changes
 

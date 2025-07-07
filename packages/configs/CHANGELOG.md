@@ -4,7 +4,6 @@
 
 ### Major Changes
 
-- 4242703: deps(peer): Update peerDependency vite from `^5.4.17 || ^6.2.5` to `^5.4.19 || ^6.3.4` in response to [CVE-2025-46565](https://nvd.nist.gov/vuln/detail/CVE-2025-46565) / [GHSA-859w-5945-r5v3](https://github.com/advisories/GHSA-859w-5945-r5v3)
 - dd598fa: Add support for [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn/tree/main) and include its `configs.all` config by default. This will most likely break the linting in your project. You should fix the linting errors but if that is not an option you can either deactivate single rules like so
 
   ```typescript
@@ -59,6 +58,16 @@
 
 ### Patch Changes
 
+- 8b575a9: Fix package url. This should display changelogs in renovate.
+- 21758a1: Always set publishConfig
+- 67cda95: Fix install dependency steps, include npmScope with packageName
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 4242703: deps(peer): Update peerDependency vite from `^5.4.17 || ^6.2.5` to `^5.4.19 || ^6.3.4` in response to [CVE-2025-46565](https://nvd.nist.gov/vuln/detail/CVE-2025-46565) / [GHSA-859w-5945-r5v3](https://github.com/advisories/GHSA-859w-5945-r5v3)
 - 6e64f58: deps(patch): Update package eslint-config-prettier from 10.1.1 to 10.1.5
 - df36dd6: deps(minor): Update package eslint-import-resolver-typescript from 4.3.1 to 4.4.2
 - 085f1cc: deps(minor): Update package eslint-plugin-import-x from 4.10.0 to 4.15.0
@@ -85,9 +94,9 @@
 - ea663cf: deps: Updated lockfile
 - eddbb5d: deps: Updated lockfile
 - 1b989b0: deps: Updated lockfile
-- 8b575a9: Fix package url. This should display changelogs in renovate.
-- 21758a1: Always set publishConfig
-- 67cda95: Fix install dependency steps, include npmScope with packageName
+
+
+</details>
 
 ## 12.0.0-next.8
 
@@ -127,10 +136,16 @@
   })
   ```
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 10f3938: deps(minor): Update package eslint-plugin-prettier from 5.2.6 to 5.3.1
 - 7983b6e: deps(patch): Update package zod from 3.24.3 to 3.24.4
+
+
+</details>
 
 ## 12.0.0-next.7
 
@@ -150,20 +165,26 @@
   export default createVitestConfig({ useVue3SnapshotSerializer: false })
   ```
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - efbaff2: deps(minor): Update package eslint from 9.25.1 to 9.26.0
 - efbaff2: deps(minor): Update package @eslint/js from 9.25.1 to 9.26.0
 - 5fa9cc9: deps(minor): Update package @types/node from 22.7.8 to 22.15.3
 
+
+</details>
+
 ## 12.0.0-next.6
 
-### Major Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 4242703: deps(peer): Update peerDependency vite from `^5.4.17 || ^6.2.5` to `^5.4.19 || ^6.3.4` in response to [CVE-2025-46565](https://nvd.nist.gov/vuln/detail/CVE-2025-46565) / [GHSA-859w-5945-r5v3](https://github.com/advisories/GHSA-859w-5945-r5v3)
-
-### Patch Changes
-
 - b4137d8: deps(minor): Update package eslint-plugin-import-x from 4.10.6 to 4.11.0
 - 23344e3: deps(patch): Update package eslint-plugin-vue from 10.0.0 to 10.0.1
 - 9b6bd48: deps(minor): Update package eslint-plugin-vue from 10.0.1 to 10.1.0
@@ -174,9 +195,15 @@
 - 6b26c2e: deps: Updated lockfile
 - ab59d2c: deps: Updated lockfile
 
+
+</details>
+
 ## 11.1.0-next.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 5c6a504: deps(patch): Update package eslint-import-resolver-typescript from 4.3.3 to 4.3.4
 - 67d2613: deps(patch): Update package eslint from 9.25.0 to 9.25.1
@@ -184,12 +211,21 @@
 - 67d2613: deps(minor): Update package typescript-eslint from 8.30.1 to 8.31.0
 - 518362b: deps(patch): Update package vitest from 3.1.1 to 3.1.2
 
+
+</details>
+
 ## 11.1.0-next.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 611668f: deps(patch): Update package eslint-import-resolver-typescript from 4.3.2 to 4.3.3
 - 8199ba4: deps(patch): Update package eslint-plugin-import-x from 4.10.5 to 4.10.6
+
+
+</details>
 
 ## 11.1.0-next.3
 
@@ -197,7 +233,10 @@
 
 - 65fdb1f: Vitest setup: mock @vueuse/core `createSharedComposable` to be isolated for each test instance
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 9706256: deps(patch): Update package eslint-plugin-import-x from 4.10.2 to 4.10.3
 - 700ff2c: deps(patch): Update package eslint-plugin-import-x from 4.10.3 to 4.10.5
@@ -210,9 +249,15 @@
 - 35589ce: deps(patch): Update package zod from 3.24.2 to 3.24.3
 - 512461e: deps: Updated lockfile
 
+
+</details>
+
 ## 11.0.1-next.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ff128fe: deps(patch): Update package eslint-config-prettier from 10.1.1 to 10.1.2
 - 5220f40: deps(patch): Update package eslint-import-resolver-typescript from 4.3.1 to 4.3.2
@@ -220,6 +265,9 @@
 - 95b4a47: deps(patch): Update package typescript-eslint from 8.29.0 to 8.29.1
 - d8f4ae6: deps(patch): Update package vite from 6.2.5 to 6.2.6
 - 776bdc5: deps: Updated lockfile
+
+
+</details>
 
 ## 11.0.1-next.1
 
@@ -229,7 +277,10 @@
 
 ## 11.0.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 036e104: deps(patch): Update package eslint-plugin-import-x from 4.10.0 to 4.10.1
 - eaaebc0: deps(minor): Update package eslint from 9.23.0 to 9.24.0
@@ -237,81 +288,126 @@
 - 291257a: deps(patch): Update package typescript from 5.8.2 to 5.8.3
 - 0b6fdcd: deps(patch): Update package vue-eslint-parser from 10.1.2 to 10.1.3
 
+
+</details>
+
 ## 11.0.0
 
-### Major Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - a658053: deps(peer): Update peerDependency vite from "^5.4.16 || ^6.2.4" to "^5.4.17 || ^6.2.5" in response to CVE-2025-31486 / GHSA-xcj6-pq6g-qj4x
 
+
+</details>
+
 ## 10.0.3
 
-### BREAKING CHANGES (these were incorrectly published as minor)
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - cef14a7: deps(peer): Update peerDependency vite from `"^5.4.16 || ^6.2.4"` to `"^5.4.17 || ^6.2.5"` in response to [CVE-2025-31486](https://nvd.nist.gov/vuln/detail/CVE-2025-31486) / [GHSA-xcj6-pq6g-qj4x](https://github.com/advisories/GHSA-xcj6-pq6g-qj4x)
-
-### Patch Changes
-
 - 9ad1eb5: deps(patch): Update package eslint-plugin-prettier from 5.2.5 to 5.2.6
 - e98131a: deps(patch): Update package @eslint/compat from 1.2.7 to 1.2.8
 - cef14a7: deps(patch): Update package vite from 6.2.4 to 6.2.5
 - d164823: deps(patch): Update package vue-eslint-parser from 10.1.1 to 10.1.2
 - e3f3a2e: deps: Updated lockfile
 
+
+</details>
+
 ## 10.0.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - abc8c38: deps(minor): Update package eslint-plugin-import-x from 4.9.4 to 4.10.0
 - 1ff86b9: deps(minor): Update package typescript-eslint from 8.28.0 to 8.29.0
 - ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
+
+
+</details>
 
 ## 10.0.2-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - abc8c38: deps(minor): Update package eslint-plugin-import-x from 4.9.4 to 4.10.0
 - 1ff86b9: deps(minor): Update package typescript-eslint from 8.28.0 to 8.29.0
 - ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
 
+
+</details>
+
 ## 10.0.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6bae1d8: deps(minor): Update package eslint-import-resolver-typescript from 4.2.7 to 4.3.1
 - c31da06: deps(patch): Update package eslint-plugin-import-x from 4.9.3 to 4.9.4
+
+
+</details>
 
 ## 10.0.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6bae1d8: deps(minor): Update package eslint-import-resolver-typescript from 4.2.7 to 4.3.1
 - c31da06: deps(patch): Update package eslint-plugin-import-x from 4.9.3 to 4.9.4
 
+
+</details>
+
 ## 10.0.0
 
-### Major Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ec687ca: deps(peer): Update peerDependency vite from `"^5.4.15 || ^6.2.3"` to `"^5.4.16 || ^6.2.4"` in response to [CVE-2025-31125](https://nvd.nist.gov/vuln/detail/CVE-2025-31125) / [GHSA-4r4m-qw57-chr8](https://github.com/advisories/GHSA-4r4m-qw57-chr8)
-
-### Patch Changes
-
 - c1c1e84: deps(patch): Update package eslint-import-resolver-typescript from 4.2.5 to 4.2.7
 - ec687ca: deps(patch): Update package vite from 6.2.3 to 6.2.4
+
+
+</details>
 
 ## 10.0.0-next.0
 
-### Major Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ec687ca: deps(peer): Update peerDependency vite from `"^5.4.15 || ^6.2.3"` to `"^5.4.16 || ^6.2.4"` in response to [CVE-2025-31125](https://nvd.nist.gov/vuln/detail/CVE-2025-31125) / [GHSA-4r4m-qw57-chr8](https://github.com/advisories/GHSA-4r4m-qw57-chr8)
-
-### Patch Changes
-
 - c1c1e84: deps(patch): Update package eslint-import-resolver-typescript from 4.2.5 to 4.2.7
 - ec687ca: deps(patch): Update package vite from 6.2.3 to 6.2.4
 
+
+</details>
+
 ## 9.0.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6c39ebf: deps(major): Update package eslint-import-resolver-typescript from 3.9.1 to 4.2.2
 - b2350b9: deps(patch): Update package eslint-import-resolver-typescript from 4.2.2 to 4.2.3
@@ -322,10 +418,16 @@
 - 6ee4c0f: deps(patch): Update package eslint-plugin-prettier from 5.2.4 to 5.2.5
 - efa0823: deps(minor): Update package typescript-eslint from 8.27.0 to 8.28.0
 - 501554c: deps: Updated lockfile
+
+
+</details>
 
 ## 9.0.1-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6c39ebf: deps(major): Update package eslint-import-resolver-typescript from 3.9.1 to 4.2.2
 - b2350b9: deps(patch): Update package eslint-import-resolver-typescript from 4.2.2 to 4.2.3
@@ -336,11 +438,20 @@
 - efa0823: deps(minor): Update package typescript-eslint from 8.27.0 to 8.28.0
 - 501554c: deps: Updated lockfile
 
+
+</details>
+
 ## 9.0.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - f9cbc51: deps(patch): Update package eslint-plugin-prettier from 5.2.3 to 5.2.4
+
+
+</details>
 
 ## 9.0.0
 
@@ -380,11 +491,17 @@
 
 - e55c85b: SECURITY, deps(peerDependency): Update package peerDependency vite from `"^5.4.12 || ^6.0.9"` to `"^5.4.15 || ^6.2.3"` in response to [CVE-2025-30208](https://nvd.nist.gov/vuln/detail/CVE-2025-30208) / [GHSA-x574-m823-4x7w](https://github.com/advisories/GHSA-x574-m823-4x7w)
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 0f997cc: deps(minor): Update package eslint from 9.22.0 to 9.23.0
 - 0f997cc: deps(minor): Update package @eslint/js from 9.22.0 to 9.23.0
 - e55c85b: deps(patch): Update package vite from 6.2.2 to 6.2.3
+
+
+</details>
 
 ## 8.0.0-next.0
 
@@ -392,15 +509,24 @@
 
 - e55c85b: SECURITY, deps(peerDependency): Update package peerDependency vite from `"^5.4.12 || ^6.0.9"` to `"^5.4.15 || ^6.2.3"` in response to [CVE-2025-30208](https://nvd.nist.gov/vuln/detail/CVE-2025-30208) / [GHSA-x574-m823-4x7w](https://github.com/advisories/GHSA-x574-m823-4x7w)
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 0f997cc: deps(minor): Update package eslint from 9.22.0 to 9.23.0
 - 0f997cc: deps(minor): Update package @eslint/js from 9.22.0 to 9.23.0
 - e55c85b: deps(patch): Update package vite from 6.2.2 to 6.2.3
 
+
+</details>
+
 ## 7.3.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 624fbb6: deps(minor): Update package eslint-import-resolver-typescript from 3.8.7 to 3.9.0
 - 1767760: deps(patch): Update package eslint-import-resolver-typescript from 3.9.0 to 3.9.1
@@ -414,9 +540,15 @@
 - 392f722: deps(patch): Update package vitest from 3.0.8 to 3.0.9
 - 3c7503e: deps: Updated lockfile
 
+
+</details>
+
 ## 7.3.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 178a15c: deps(minor): Update package eslint-config-prettier from 10.0.2 to 10.1.1
 - 37ec7e7: deps(patch): Update package eslint-import-resolver-typescript from 3.8.3 to 3.8.4
@@ -435,9 +567,15 @@
 - 0073852: deps: Updated lockfile
 - 3b1f91c: deps: Updated lockfile
 
+
+</details>
+
 ## 7.3.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 178a15c: deps(minor): Update package eslint-config-prettier from 10.0.2 to 10.1.1
 - 37ec7e7: deps(patch): Update package eslint-import-resolver-typescript from 3.8.3 to 3.8.4
@@ -454,6 +592,9 @@
 - 03cceef: deps(minor): Update package @vue/eslint-config-typescript from 14.4.0 to 14.5.0
 - 0073852: deps: Updated lockfile
 - 3b1f91c: deps: Updated lockfile
+
+
+</details>
 
 ## 7.3.0
 
@@ -487,7 +628,10 @@
   })
   ```
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 56f063b: deps(patch): Update package eslint-config-prettier from 10.0.1 to 10.0.2
 - 60a92ca: deps(minor): Update package eslint-import-resolver-typescript from 3.7.0 to 3.8.0
@@ -512,6 +656,9 @@
 - 107fd8f: deps: Updated lockfile
 - 026188c: deps: Updated lockfile
 - 09c7357: deps: Updated lockfile
+
+
+</details>
 
 ## 7.3.0-next.1
 
@@ -545,14 +692,23 @@
   })
   ```
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 98f13e1: deps(patch): Update package prettier from 3.5.2 to 3.5.3
 - 3f084e4: deps(minor): Update package typescript-eslint from 8.25.0 to 8.26.0
 
+
+</details>
+
 ## 7.2.3-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 56f063b: deps(patch): Update package eslint-config-prettier from 10.0.1 to 10.0.2
 - 60a92ca: deps(minor): Update package eslint-import-resolver-typescript from 3.7.0 to 3.8.0
@@ -576,18 +732,33 @@
 - 026188c: deps: Updated lockfile
 - 09c7357: deps: Updated lockfile
 
+
+</details>
+
 ## 7.2.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - b9ad6a3: deps(patch): Update package eslint from 9.20.0 to 9.20.1
 - 1c28daa: deps(patch): Update package zod from 3.24.1 to 3.24.2
 
+
+</details>
+
 ## 7.2.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 3821144: deps(minor): Update package typescript-eslint from 8.23.0 to 8.24.0
+
+
+</details>
 
 ## 7.2.0
 
@@ -595,7 +766,10 @@
 
 - 04c3cc8: Add `noExternal` option to `createTsupConfig`
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - b163e88: deps(minor): Update package eslint from 9.19.0 to 9.20.0
 - b163e88: deps(minor): Update package @eslint/js from 9.19.0 to 9.20.0
@@ -604,6 +778,9 @@
 - 8d8279b: deps(minor): Update package vite from 6.0.11 to 6.1.0
 - 93c2a8c: deps(minor): Update package @vue/eslint-config-typescript from 14.3.0 to 14.4.0
 - 0906d09: deps: Updated lockfile
+
+
+</details>
 
 ## 7.2.0-next.1
 
@@ -611,14 +788,23 @@
 
 - 04c3cc8: Add `noExternal` option to `createTsupConfig`
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 8612ea2: deps(minor): Update package prettier from 3.4.2 to 3.5.0
 - 93c2a8c: deps(minor): Update package @vue/eslint-config-typescript from 14.3.0 to 14.4.0
 
+
+</details>
+
 ## 7.1.2-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - b163e88: deps(minor): Update package eslint from 9.19.0 to 9.20.0
 - b163e88: deps(minor): Update package @eslint/js from 9.19.0 to 9.20.0
@@ -626,12 +812,24 @@
 - 8d8279b: deps(minor): Update package vite from 6.0.11 to 6.1.0
 - 0906d09: deps: Updated lockfile
 
+
+</details>
+
 ## 7.1.1
 
 ### Patch Changes
 
-- 73a50c0: deps(patch): Update package vitest from 3.0.4 to 3.0.5
 - 73a50c0: Update peerDependency `vitest` to version `^2.1.9 || ^3.0.5` in response to [CVE-2025-24964](https://nvd.nist.gov/vuln/detail/CVE-2025-24964) / [GHSA-9crc-q9x8-hgqq](https://github.com/advisories/GHSA-9crc-q9x8-hgqq)
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 73a50c0: deps(patch): Update package vitest from 3.0.4 to 3.0.5
+
+
+</details>
 
 ## 7.1.0
 
@@ -642,11 +840,20 @@
 
 ### Patch Changes
 
+- 39230a1: Fix repository field in package.json
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 45bb74c: deps(patch): Update package @eslint/compat from 1.2.5 to 1.2.6
 - 46254c4: deps(patch): Update package tsup from 8.3.5 to 8.3.6
 - e456726: deps(minor): Update package typescript-eslint from 8.21.0 to 8.22.0
 - eca6687: deps: Updated lockfile
-- 39230a1: Fix repository field in package.json
+
+
+</details>
 
 ## 7.1.0-next.3
 
@@ -655,28 +862,55 @@
 - 63d6012: Add `dts` option to `createTsupConfig` options. With this you can turn off dts generation if its not needed for your project. As its generally helpfull the default value will generate declaration files.
 - 63d6012: Add support for coverage. When using the `--coverage` option each project still needs to install the `@vitest/coverage-v8` package.
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 45bb74c: deps(patch): Update package @eslint/compat from 1.2.5 to 1.2.6
+
+
+</details>
 
 ## 7.0.1-next.2
 
 ### Patch Changes
 
-- eca6687: deps: Updated lockfile
 - 39230a1: Fix repository field in package.json
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- eca6687: deps: Updated lockfile
+
+
+</details>
 
 ## 7.0.1-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - e456726: deps(minor): Update package typescript-eslint from 8.21.0 to 8.22.0
 
+
+</details>
+
 ## 7.0.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 46254c4: deps(patch): Update package tsup from 8.3.5 to 8.3.6
+
+
+</details>
 
 ## 7.0.0
 
@@ -698,6 +932,13 @@
 
 ### Patch Changes
 
+- 77e37c9: Correctly export cjs types
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - f5a7b1b: deps(minor): Update package eslint-plugin-playwright from 2.1.0 to 2.2.0
 - 99cf555: deps(minor): Update package eslint from 9.18.0 to 9.19.0
 - 99cf555: deps(minor): Update package @eslint/js from 9.18.0 to 9.19.0
@@ -707,14 +948,22 @@
 - bf07edf: deps(patch): Update package vitest from 3.0.2 to 3.0.3
 - 88994d8: deps(patch): Update package vitest from 3.0.3 to 3.0.4
 - e07c00b: deps: Updated lockfile
-- 77e37c9: Correctly export cjs types
+
+
+</details>
 
 ## 7.0.0-next.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 88994d8: deps(patch): Update package vitest from 3.0.3 to 3.0.4
 - e07c00b: deps: Updated lockfile
+
+
+</details>
 
 ## 7.0.0-next.3
 
@@ -739,11 +988,17 @@
 
 ## 6.1.0-next.2
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - f5a7b1b: deps(minor): Update package eslint-plugin-playwright from 2.1.0 to 2.2.0
 - 61a82e9: deps(patch): Update package vite from 6.0.10 to 6.0.11
 - bf07edf: deps(patch): Update package vitest from 3.0.2 to 3.0.3
+
+
+</details>
 
 ## 6.1.0-next.1
 
@@ -753,10 +1008,16 @@
 
 ## 6.0.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 8da7ea7: deps(minor): Update package typescript-eslint from 8.20.0 to 8.21.0
 - 343d506: deps(patch): Update package vite from 6.0.9 to 6.0.10
+
+
+</details>
 
 ## 6.0.0
 
@@ -772,7 +1033,10 @@
 
   For more info see [GHSA-vg6x-rcgg-rjx6](https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6)
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 1096e33: deps(patch): Update package eslint-plugin-prettier from 5.2.1 to 5.2.2
 - c5a0c87: deps(patch): Update package eslint-plugin-prettier from 5.2.2 to 5.2.3
@@ -781,6 +1045,9 @@
 - 1096e33: deps(minor): Update package @vue/eslint-config-typescript from 14.2.0 to 14.3.0
 - 68ff813: deps: Updated lockfile
 
+
+</details>
+
 ## 6.0.0-next.0
 
 ### Major Changes
@@ -788,13 +1055,19 @@
 - 98fa1f3: Turn on splitting by default. This may break your build (even though the chances are low). If it does you can set `splitting: false` in the options for `createTsupConfig()`.
 - 1096e33: Eslint potential breaking change. The `@vue/eslint-config-typescript` was misconfigured in the previous verison leading to some vue rules not triggering. This is fixed now but it might lead to linting errors. You can always turn off the rules but it is recommended to fix the linting errors.
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 1096e33: deps(patch): Update package eslint-plugin-prettier from 5.2.1 to 5.2.2
 - c5a0c87: deps(patch): Update package eslint-plugin-prettier from 5.2.2 to 5.2.3
 - 9e47a6b: deps(patch): Update package vitest from 3.0.1 to 3.0.2
 - 1096e33: deps(minor): Update package @vue/eslint-config-typescript from 14.2.0 to 14.3.0
 - 68ff813: deps: Updated lockfile
+
+
+</details>
 
 ## 5.0.0
 
@@ -841,7 +1114,10 @@
 - 859a666: Turn off [@typescript-eslint/no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return/) for test files.
 - 859a666: Turn off [@typescript-eslint/only-throw-error](https://typescript-eslint.io/rules/only-throw-error/) for test files.
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - da1e9a8: deps(major): Update package eslint-config-prettier from 9.1.0 to 10.0.1
 - 699f103: deps(minor): Update package eslint from 9.17.0 to 9.18.0
@@ -852,16 +1128,25 @@
 - 1391225: deps(patch): Update package typescript from 5.7.2 to 5.7.3
 - 93dafe5: deps: Updated lockfile
 
+
+</details>
+
 ## 5.0.0-next.2
 
 ### Minor Changes
 
 - f36997a: Support vitest v3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - da1e9a8: deps(major): Update package eslint-config-prettier from 9.1.0 to 10.0.1
 - 9ad7b67: deps(minor): Update package typescript-eslint from 8.19.1 to 8.20.0
+
+
+</details>
 
 ## 5.0.0-next.1
 
@@ -906,11 +1191,17 @@
 - 859a666: Turn off [@typescript-eslint/no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return/) for test files.
 - 859a666: Turn off [@typescript-eslint/only-throw-error](https://typescript-eslint.io/rules/only-throw-error/) for test files.
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 699f103: deps(minor): Update package eslint from 9.17.0 to 9.18.0
 - 699f103: deps(patch): Update package @eslint/compat from 1.2.4 to 1.2.5
 - 699f103: deps(minor): Update package @eslint/js from 9.17.0 to 9.18.0
+
+
+</details>
 
 ## 4.1.0-next.0
 
@@ -918,15 +1209,24 @@
 
 - 2f6cbba: Enable eslint [curly](https://eslint.org/docs/latest/rules/curly) rule
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 4f7ebd9: deps(patch): Update package typescript-eslint from 8.19.0 to 8.19.1
 - 1391225: deps(patch): Update package typescript from 5.7.2 to 5.7.3
 - 93dafe5: deps: Updated lockfile
 
+
+</details>
+
 ## 4.0.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - b9a2344: deps(minor): Update package eslint-plugin-import-x from 4.5.1 to 4.6.1
 - 62e0036: deps(patch): Update package typescript-eslint from 8.18.0 to 8.18.1
@@ -936,10 +1236,16 @@
 - 33e64af: deps: Updated lockfile
 - 03831e1: deps: Updated lockfile
 - 1f29167: deps: Updated lockfile
+
+
+</details>
 
 ## 4.0.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - b9a2344: deps(minor): Update package eslint-plugin-import-x from 4.5.1 to 4.6.1
 - 62e0036: deps(patch): Update package typescript-eslint from 8.18.0 to 8.18.1
@@ -949,6 +1255,9 @@
 - 33e64af: deps: Updated lockfile
 - 03831e1: deps: Updated lockfile
 - 1f29167: deps: Updated lockfile
+
+
+</details>
 
 ## 4.0.0
 
@@ -1146,6 +1455,14 @@
 
 ### Patch Changes
 
+- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
+- 1c3d3d2: Include vite ^6 into peerDependency range
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
@@ -1155,8 +1472,9 @@
 - dc8e743: deps(minor): Update package typescript-eslint from 8.17.0 to 8.18.0
 - 84b60a3: deps: Updated lockfile
 - bb04fab: deps: Updated lockfile
-- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
-- 1c3d3d2: Include vite ^6 into peerDependency range
+
+
+</details>
 
 ## 2.2.0-next.3
 
@@ -1211,20 +1529,32 @@
 
 ## 2.1.1-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
 - 0e68083: deps(patch): Update package prettier from 3.4.1 to 3.4.2
 - e26badb: deps(minor): Update package typescript-eslint from 8.16.0 to 8.17.0
 - 84b60a3: deps: Updated lockfile
 
+
+</details>
+
 ## 2.1.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 5c77468: deps(minor): Update package @eslint/js from 9.15.0 to 9.16.0
+
+
+</details>
 
 ## 2.1.0
 
@@ -1251,14 +1581,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.1.0-next.0
 
@@ -1285,14 +1624,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.0.0
 
@@ -1362,6 +1710,17 @@
 
 ### Patch Changes
 
+- bff6357: Include node types for `tsconfig.node.json` by default.
+- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
+- 8456d39: Test release
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
@@ -1381,17 +1740,21 @@
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
 - cdf2c06: deps: Updated lockfile
-- bff6357: Include node types for `tsconfig.node.json` by default.
-- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
-- 8456d39: Test release
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
-- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+
+</details>
 
 ## 1.0.0-next.9
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - cdf2c06: deps: Updated lockfile
+
+
+</details>
 
 ## 1.0.0-next.8
 
@@ -1418,10 +1781,16 @@
 - 1fa9d1b: Always bundle imports starting with `#`
 - ac94448: Update package.json.hbs to include `CHANGELOG.md` and export types explicitly
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - e795938: deps(minor): Update package eslint from 9.14.0 to 9.15.0
 - e795938: deps(minor): Update package @eslint/js from 9.14.0 to 9.15.0
+
+
+</details>
 
 ## 0.3.0-next.7
 
@@ -1431,6 +1800,13 @@
 
 ### Patch Changes
 
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - 6a30cf2: deps(patch): Update package @eslint/compat from 1.2.2 to 1.2.3
 - 142b736: deps(minor): Update package typescript-eslint from 8.12.2 to 8.13.0
@@ -1439,7 +1815,9 @@
 - a5d0eda: deps(patch): Update package vitest from 2.1.4 to 2.1.5
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+
+</details>
 
 ## 0.3.0-next.6
 
@@ -1449,14 +1827,23 @@
 
 ## 0.3.0-next.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
 - ee840a8: deps(minor): Update package @eslint/js from 9.13.0 to 9.14.0
 
+
+</details>
+
 ## 0.3.0-next.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 578a48a: deps(patch): Update package @eslint/compat from 1.2.1 to 1.2.2
@@ -1464,11 +1851,20 @@
 - cbe8fe5: deps(patch): Update package vite from 5.4.9 to 5.4.10
 - 578a48a: deps(patch): Update package @vue/eslint-config-typescript from 14.1.2 to 14.1.3
 
+
+</details>
+
 ## 0.3.0-next.3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - af7a371: deps(patch): Update package vitest from 2.1.3 to 2.1.4
+
+
+</details>
 
 ## 0.3.0-next.2
 
@@ -1560,11 +1956,17 @@
   })
   ```
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 235a3c7: deps(minor): Update package eslint from 9.16.0 to 9.17.0
 - 235a3c7: deps(minor): Update package @eslint/js from 9.16.0 to 9.17.0
 - 7d51325: deps(minor): Update package typescript from 5.6.3 to 5.7.2
+
+
+</details>
 
 ## 2.2.0
 
@@ -1610,6 +2012,14 @@
 
 ### Patch Changes
 
+- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
+- 1c3d3d2: Include vite ^6 into peerDependency range
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
@@ -1619,8 +2029,9 @@
 - dc8e743: deps(minor): Update package typescript-eslint from 8.17.0 to 8.18.0
 - 84b60a3: deps: Updated lockfile
 - bb04fab: deps: Updated lockfile
-- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
-- 1c3d3d2: Include vite ^6 into peerDependency range
+
+
+</details>
 
 ## 2.2.0-next.3
 
@@ -1675,20 +2086,32 @@
 
 ## 2.1.1-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
 - 0e68083: deps(patch): Update package prettier from 3.4.1 to 3.4.2
 - e26badb: deps(minor): Update package typescript-eslint from 8.16.0 to 8.17.0
 - 84b60a3: deps: Updated lockfile
 
+
+</details>
+
 ## 2.1.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 5c77468: deps(minor): Update package @eslint/js from 9.15.0 to 9.16.0
+
+
+</details>
 
 ## 2.1.0
 
@@ -1715,14 +2138,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.1.0-next.0
 
@@ -1749,14 +2181,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.0.0
 
@@ -1826,6 +2267,17 @@
 
 ### Patch Changes
 
+- bff6357: Include node types for `tsconfig.node.json` by default.
+- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
+- 8456d39: Test release
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
@@ -1845,17 +2297,21 @@
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
 - cdf2c06: deps: Updated lockfile
-- bff6357: Include node types for `tsconfig.node.json` by default.
-- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
-- 8456d39: Test release
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
-- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+
+</details>
 
 ## 1.0.0-next.9
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - cdf2c06: deps: Updated lockfile
+
+
+</details>
 
 ## 1.0.0-next.8
 
@@ -1882,10 +2338,16 @@
 - 1fa9d1b: Always bundle imports starting with `#`
 - ac94448: Update package.json.hbs to include `CHANGELOG.md` and export types explicitly
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - e795938: deps(minor): Update package eslint from 9.14.0 to 9.15.0
 - e795938: deps(minor): Update package @eslint/js from 9.14.0 to 9.15.0
+
+
+</details>
 
 ## 0.3.0-next.7
 
@@ -1895,6 +2357,13 @@
 
 ### Patch Changes
 
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - 6a30cf2: deps(patch): Update package @eslint/compat from 1.2.2 to 1.2.3
 - 142b736: deps(minor): Update package typescript-eslint from 8.12.2 to 8.13.0
@@ -1903,7 +2372,9 @@
 - a5d0eda: deps(patch): Update package vitest from 2.1.4 to 2.1.5
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+
+</details>
 
 ## 0.3.0-next.6
 
@@ -1913,14 +2384,23 @@
 
 ## 0.3.0-next.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
 - ee840a8: deps(minor): Update package @eslint/js from 9.13.0 to 9.14.0
 
+
+</details>
+
 ## 0.3.0-next.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 578a48a: deps(patch): Update package @eslint/compat from 1.2.1 to 1.2.2
@@ -1928,11 +2408,20 @@
 - cbe8fe5: deps(patch): Update package vite from 5.4.9 to 5.4.10
 - 578a48a: deps(patch): Update package @vue/eslint-config-typescript from 14.1.2 to 14.1.3
 
+
+</details>
+
 ## 0.3.0-next.3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - af7a371: deps(patch): Update package vitest from 2.1.3 to 2.1.4
+
+
+</details>
 
 ## 0.3.0-next.2
 
@@ -2024,11 +2513,17 @@
   })
   ```
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 235a3c7: deps(minor): Update package eslint from 9.16.0 to 9.17.0
 - 235a3c7: deps(minor): Update package @eslint/js from 9.16.0 to 9.17.0
 - 7d51325: deps(minor): Update package typescript from 5.6.3 to 5.7.2
+
+
+</details>
 
 ## 3.0.0-next.0
 
@@ -2100,6 +2595,14 @@
 
 ### Patch Changes
 
+- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
+- 1c3d3d2: Include vite ^6 into peerDependency range
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
@@ -2109,8 +2612,9 @@
 - dc8e743: deps(minor): Update package typescript-eslint from 8.17.0 to 8.18.0
 - 84b60a3: deps: Updated lockfile
 - bb04fab: deps: Updated lockfile
-- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
-- 1c3d3d2: Include vite ^6 into peerDependency range
+
+
+</details>
 
 ## 2.2.0-next.3
 
@@ -2165,20 +2669,32 @@
 
 ## 2.1.1-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
 - 0e68083: deps(patch): Update package prettier from 3.4.1 to 3.4.2
 - e26badb: deps(minor): Update package typescript-eslint from 8.16.0 to 8.17.0
 - 84b60a3: deps: Updated lockfile
 
+
+</details>
+
 ## 2.1.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 5c77468: deps(minor): Update package @eslint/js from 9.15.0 to 9.16.0
+
+
+</details>
 
 ## 2.1.0
 
@@ -2205,14 +2721,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.1.0-next.0
 
@@ -2239,14 +2764,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.0.0
 
@@ -2316,6 +2850,17 @@
 
 ### Patch Changes
 
+- bff6357: Include node types for `tsconfig.node.json` by default.
+- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
+- 8456d39: Test release
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
@@ -2335,17 +2880,21 @@
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
 - cdf2c06: deps: Updated lockfile
-- bff6357: Include node types for `tsconfig.node.json` by default.
-- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
-- 8456d39: Test release
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
-- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+
+</details>
 
 ## 1.0.0-next.9
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - cdf2c06: deps: Updated lockfile
+
+
+</details>
 
 ## 1.0.0-next.8
 
@@ -2372,10 +2921,16 @@
 - 1fa9d1b: Always bundle imports starting with `#`
 - ac94448: Update package.json.hbs to include `CHANGELOG.md` and export types explicitly
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - e795938: deps(minor): Update package eslint from 9.14.0 to 9.15.0
 - e795938: deps(minor): Update package @eslint/js from 9.14.0 to 9.15.0
+
+
+</details>
 
 ## 0.3.0-next.7
 
@@ -2385,6 +2940,13 @@
 
 ### Patch Changes
 
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - 6a30cf2: deps(patch): Update package @eslint/compat from 1.2.2 to 1.2.3
 - 142b736: deps(minor): Update package typescript-eslint from 8.12.2 to 8.13.0
@@ -2393,7 +2955,9 @@
 - a5d0eda: deps(patch): Update package vitest from 2.1.4 to 2.1.5
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+
+</details>
 
 ## 0.3.0-next.6
 
@@ -2403,14 +2967,23 @@
 
 ## 0.3.0-next.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
 - ee840a8: deps(minor): Update package @eslint/js from 9.13.0 to 9.14.0
 
+
+</details>
+
 ## 0.3.0-next.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 578a48a: deps(patch): Update package @eslint/compat from 1.2.1 to 1.2.2
@@ -2418,11 +2991,20 @@
 - cbe8fe5: deps(patch): Update package vite from 5.4.9 to 5.4.10
 - 578a48a: deps(patch): Update package @vue/eslint-config-typescript from 14.1.2 to 14.1.3
 
+
+</details>
+
 ## 0.3.0-next.3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - af7a371: deps(patch): Update package vitest from 2.1.3 to 2.1.4
+
+
+</details>
 
 ## 0.3.0-next.2
 
@@ -2514,11 +3096,17 @@
   })
   ```
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 235a3c7: deps(minor): Update package eslint from 9.16.0 to 9.17.0
 - 235a3c7: deps(minor): Update package @eslint/js from 9.16.0 to 9.17.0
 - 7d51325: deps(minor): Update package typescript from 5.6.3 to 5.7.2
+
+
+</details>
 
 ## 2.2.0
 
@@ -2564,6 +3152,14 @@
 
 ### Patch Changes
 
+- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
+- 1c3d3d2: Include vite ^6 into peerDependency range
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
@@ -2573,8 +3169,9 @@
 - dc8e743: deps(minor): Update package typescript-eslint from 8.17.0 to 8.18.0
 - 84b60a3: deps: Updated lockfile
 - bb04fab: deps: Updated lockfile
-- 1c3d3d2: Apply @typescript-eslint/restrict-template-expressions for vue file as well
-- 1c3d3d2: Include vite ^6 into peerDependency range
+
+
+</details>
 
 ## 2.2.0-next.3
 
@@ -2629,20 +3226,32 @@
 
 ## 2.1.1-next.1
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 8cc1fd3: deps(patch): Update package @eslint/compat from 1.2.3 to 1.2.4
 - 0e68083: deps(patch): Update package prettier from 3.4.1 to 3.4.2
 - e26badb: deps(minor): Update package typescript-eslint from 8.16.0 to 8.17.0
 - 84b60a3: deps: Updated lockfile
 
+
+</details>
+
 ## 2.1.1-next.0
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 6405d58: deps(minor): Update package eslint-plugin-vue from 9.31.0 to 9.32.0
 - 5c77468: deps(minor): Update package eslint from 9.15.0 to 9.16.0
 - 5c77468: deps(minor): Update package @eslint/js from 9.15.0 to 9.16.0
+
+
+</details>
 
 ## 2.1.0
 
@@ -2669,14 +3278,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.1.0-next.0
 
@@ -2703,14 +3321,23 @@
 
 ### Patch Changes
 
-- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
-- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
-- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
-- 4050981: deps: Updated lockfile
 - 238b98e: Disable @typescript-eslint/no-invalid-void-type until https://github.com/typescript-eslint/typescript-eslint/issues/10418 is resolved
 - 238b98e: Update `README.md` about `tsconfig.configs.json` to prevent `TS2742`
 
   Config files should not generate declaration files so their `compilerOptions.declaration` should be set to `false`. If the tsconfig has `compilerOptions.declaration` set to `true` the typescript checker will complain that the return type of some config functions (e.g. `createTsupConfig()`) is not portable, which is correct but for config files irrelevant. The error looks something like: `TS2742: The inferred type of default cannot be named without a reference to ../configs/node_modules/tsup/dist/index. js. This is likely not portable. A type annotation is necessary.`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f920884: deps(minor): Update package prettier from 3.3.3 to 3.4.1
+- 5ab3076: deps(minor): Update package typescript-eslint from 8.15.0 to 8.16.0
+- 5ab3076: deps(patch): Update package @vue/eslint-config-typescript from 14.1.3 to 14.1.4
+- 4050981: deps: Updated lockfile
+
+
+</details>
 
 ## 2.0.0
 
@@ -2780,6 +3407,17 @@
 
 ### Patch Changes
 
+- bff6357: Include node types for `tsconfig.node.json` by default.
+- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
+- 8456d39: Test release
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
@@ -2799,17 +3437,21 @@
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
 - cdf2c06: deps: Updated lockfile
-- bff6357: Include node types for `tsconfig.node.json` by default.
-- bff6357: Ignore all `*.d.ts` files instead of files in the `@types` folder.
-- 8456d39: Test release
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
-- 4365475: Pipeline: Do not trigger multiple pipelines on pre release
+
+
+</details>
 
 ## 1.0.0-next.9
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - cdf2c06: deps: Updated lockfile
+
+
+</details>
 
 ## 1.0.0-next.8
 
@@ -2836,10 +3478,16 @@
 - 1fa9d1b: Always bundle imports starting with `#`
 - ac94448: Update package.json.hbs to include `CHANGELOG.md` and export types explicitly
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - e795938: deps(minor): Update package eslint from 9.14.0 to 9.15.0
 - e795938: deps(minor): Update package @eslint/js from 9.14.0 to 9.15.0
+
+
+</details>
 
 ## 0.3.0-next.7
 
@@ -2849,6 +3497,13 @@
 
 ### Patch Changes
 
+- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - 47ed44e: deps(minor): Update package eslint-plugin-vue from 9.30.0 to 9.31.0
 - 6a30cf2: deps(patch): Update package @eslint/compat from 1.2.2 to 1.2.3
 - 142b736: deps(minor): Update package typescript-eslint from 8.12.2 to 8.13.0
@@ -2857,7 +3512,9 @@
 - a5d0eda: deps(patch): Update package vitest from 2.1.4 to 2.1.5
 - 216a002: deps: Updated lockfile
 - e552c31: deps: Updated lockfile
-- 4365475: Turn off concurrent tests as they mess with spys declared on describe level.
+
+
+</details>
 
 ## 0.3.0-next.6
 
@@ -2867,14 +3524,23 @@
 
 ## 0.3.0-next.5
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - ee840a8: deps(minor): Update package eslint from 9.13.0 to 9.14.0
 - ee840a8: deps(minor): Update package @eslint/js from 9.13.0 to 9.14.0
 
+
+</details>
+
 ## 0.3.0-next.4
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - 578a48a: deps(minor): Update package eslint-plugin-vue from 9.29.1 to 9.30.0
 - 578a48a: deps(patch): Update package @eslint/compat from 1.2.1 to 1.2.2
@@ -2882,11 +3548,20 @@
 - cbe8fe5: deps(patch): Update package vite from 5.4.9 to 5.4.10
 - 578a48a: deps(patch): Update package @vue/eslint-config-typescript from 14.1.2 to 14.1.3
 
+
+</details>
+
 ## 0.3.0-next.3
 
-### Patch Changes
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
 
 - af7a371: deps(patch): Update package vitest from 2.1.3 to 2.1.4
+
+
+</details>
 
 ## 0.3.0-next.2
 
@@ -2926,12 +3601,6 @@
 - 0ec887f: Pipeline: Git Tags now reference the correct commit instead of the one before.
 
 ## 0.2.0
-
-### Minor Changes
-
-- 13ca7c7: Initial Release
-
-## 0.2.0-next.0
 
 ### Minor Changes
 
