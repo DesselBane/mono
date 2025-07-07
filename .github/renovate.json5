@@ -8,7 +8,7 @@
   configMigration: true,
   dependencyDashboard: true,
   platformAutomerge: true,
-  platformCommit: true,
+  platformCommit: 'enabled',
   automergeType: 'pr',
   rangeStrategy: 'pin',
   rebaseWhen: 'behind-base-branch',
