@@ -1,15 +1,10 @@
 #!/usr/bin/env node
 
-/* eslint-disable unicorn/no-keyword-prefix */
-
 import { readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { parseArgs } from 'node:util'
 import type { PackageJson } from 'type-fest'
-import { assertNotNil } from './helper.ts'
-
-const workspaceRoot = path.join(import.meta.dirname, '..', '..', '..')
-const changesetFolder = path.join(workspaceRoot, '.changeset')
+import { assertNotNil, changesetFolder, workspaceRoot } from './helper.ts'
 
 function makeStringSafe(value: string): string {
   return value.replaceAll('/', '_').replaceAll('@', '_').replaceAll('.', '_')

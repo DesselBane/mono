@@ -5,6 +5,8 @@
   "private": true,
   "description": "Scripts which are used thorughout the mono repo.",
   "scripts": {
+    "test": "vitest run",
+    "test:dev": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
@@ -16,7 +18,7 @@
     "directory": "packages/scripts"
   },
   "bin": {
-    "reformat-changelogs": "src/reformat-changelogs.ts",
+    "reformat-changelogs": "src/refactor-changelogs-cli.ts",
     "renovate-add-changeset": "src/renovate-add-changeset.ts"
   },
   "volta": {
