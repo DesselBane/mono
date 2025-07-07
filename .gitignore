@@ -31,3 +31,4 @@ coverage
 **/_screenshots_/**/*.png
 !**/_screenshots_/**/*.CI.png
 /.idea/gbrowser_project.xml
+**/*.bundled_*
