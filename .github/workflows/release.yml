@@ -39,5 +39,5 @@ jobs:
         with:
           commitMode: 'github-api'
           publish: 'pnpm changeset publish'
-          version: 'pnpm changeset version && pnpm -w reformat-changelogs'
+          version: 'pnpm -w version'
           commit: '🦋 Version Packages'
