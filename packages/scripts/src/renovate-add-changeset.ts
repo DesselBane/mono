@@ -2,6 +2,9 @@
 
 /* eslint-disable unicorn/no-keyword-prefix */
 
+import { randomUUID } from 'node:crypto'
+import { writeFileSync } from 'node:fs'
+import path from 'node:path'
 import { parseArgs } from 'node:util'
 
 const { values } = parseArgs({
@@ -63,4 +66,9 @@ const { values } = parseArgs({
   },
 })
 
-console.log(JSON.stringify(values, undefined, 2))
+const workspaceRoot = path.join(import.meta.dirname, '..', '..', '..')
+
+writeFileSync(
+  path.join(workspaceRoot, '.changeset', `${randomUUID()}.md`),
+  JSON.stringify(values, undefined, 2),
+)

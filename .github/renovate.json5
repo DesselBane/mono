@@ -37,11 +37,11 @@
   automerge: false,
   npm: {
     minor: {
-      automerge: true,
+      automerge: false,
       addLabels: ['automerge'],
     },
     patch: {
-      automerge: true,
+      automerge: false,
       addLabels: ['automerge'],
     },
   },
