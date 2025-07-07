@@ -210,6 +210,8 @@ function parseVersion(lines: string[]): VersionContent | undefined {
 }
 
 function formatChangelog(pathToChangelog: string) {
+  console.log(`Formatting Changelog at: ${pathToChangelog}`)
+
   const fileContents = readFileSync(pathToChangelog).toString().split('\n')
 
   const formattedFile: string[] = []
