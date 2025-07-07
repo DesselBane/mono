@@ -38,16 +38,24 @@ const { values } = parseArgs({
     packageFile: {
       type: 'string',
     },
+    logJSON: {
+      type: 'string',
+    },
+    updateType: {
+      type: 'string',
+    },
   },
 })
 
 const {
   currentVersion,
-  depName,
-  isLockfileUpdate,
   newVersion,
-  packageFile,
+  depName,
   depType,
+  isLockfileUpdate,
+  packageFile,
+  logJSON,
+  updateType,
 } = values
 
 assertNotNil(packageFile)
@@ -94,13 +102,15 @@ const content = `---
 '${packageName}': patch
 ---
 
-deps: [${depType}] Update package ${depName} from ${currentVersion} to ${newVersion}
+deps: [${updateType}|${depType}] Update package ${depName} from ${currentVersion} to ${newVersion}
+
+${logJSON}
 `
 
 writeFileSync(
   path.join(
     changesetFolder,
-    `|deps-${packageNameSafe}-${depName}-${makeStringSafe(currentVersion)}-${makeStringSafe(newVersion)}.md`,
+    `|deps-${packageNameSafe}-${makeStringSafe(depName)}-${makeStringSafe(currentVersion)}-${makeStringSafe(newVersion)}.md`,
   ),
   content,
 )
