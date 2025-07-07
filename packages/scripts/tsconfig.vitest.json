@@ -2,6 +2,7 @@
   "extends": "@repo/configs/tsconfig.node.tpl.json",
   "include": [ "src/**/*", "@types", "__mocks__/**/*" ],
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "types": [ "vitest/globals", "@repo/configs/vitest-shims.d.ts" ]
   }
 }
