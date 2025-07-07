@@ -16,7 +16,7 @@
     "directory": "packages/scripts"
   },
   "bin": {
-    "reformat-changelog": "src/reformat-changelog.ts"
+    "reformat-changelogs": "src/reformat-changelogs.ts"
   },
   "volta": {
     "extends": "../../package.json"
