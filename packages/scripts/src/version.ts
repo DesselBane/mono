@@ -8,5 +8,7 @@ const git = simpleGit()
 execSync('pnpm -w changeset version', { stdio: 'inherit' })
 execSync('pnpm -w reformat-changelogs', { stdio: 'inherit' })
 const status = await git.status()
+const diff = await git.diff(['packages/scripts/src/renovate-add-changeset.ts'])
 
+console.log(JSON.stringify(diff, undefined, 2))
 console.log(JSON.stringify(status, undefined, 2))

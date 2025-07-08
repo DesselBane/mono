@@ -70,7 +70,9 @@ function getPackageName(packageFile: string) {
   ) as PackageJson
 
   const temporaryPackageName = packageJson.name
-  assertNotNil(temporaryPackageName)
+  if (temporaryPackageName === undefined) {
+    process.exit(0)
+  }
 
   return temporaryPackageName === '@repo/root'
     ? '@repo/changelog'
