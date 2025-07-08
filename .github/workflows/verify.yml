@@ -1,9 +1,9 @@
 name: Verify
 
 on:
-  push:
-    branches-ignore:
-      - master
+  pull_request:
+  merge_group:
+
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
