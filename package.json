@@ -27,7 +27,7 @@
     "renovate:validate": "npx --yes --package renovate -- renovate-config-validator",
     "version": "pnpm changeset version && pnpm reformat-changelogs",
     "reformat-changelogs": "pnpm -F @repo/scripts reformat-changelogs",
-    "renovate-add-changese": "pnpm -F @repo/scripts renovate-add-changese"
+    "renovate-add-changeset": "pnpm -F @repo/scripts renovate-add-changeset"
   },
   "devDependencies": {
     "@changesets/cli": "2.29.5",
