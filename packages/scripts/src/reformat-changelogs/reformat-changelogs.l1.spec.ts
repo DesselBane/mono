@@ -38,6 +38,12 @@ const removeEmptyChangelog = actualReadFileSync(
 const noDuplicateChangelog = actualReadFileSync(
   path.join(snapshotFolder, 'no-duplicate.example.md'),
 )
+const generatedChangelog = actualReadFileSync(
+  path.join(snapshotFolder, 'generated.example.md'),
+)
+const generatedDuplicatesChangelog = actualReadFileSync(
+  path.join(snapshotFolder, 'generated-duplicates.example.md'),
+)
 
 const changelogPath = path.join('changelog', 'CHANGELOG.md')
 const changelogFullPath = path.join(workspaceRoot, changelogPath)
@@ -169,5 +175,31 @@ describe('reformat-changelogs', () => {
     assertNotNil(secondContent)
 
     expect(secondContent).toBe(newContent)
+  })
+
+  it('should add generated dependency updates from changesets', async () => {
+    readFileSync.mockReturnValue(generatedChangelog)
+
+    run()
+
+    const newContent = writeFileSync.mock.lastCall?.[1]
+
+    assertNotNil(newContent)
+    await expect(newContent).toMatchFileSnapshot(
+      path.join(snapshotFolder, 'generated.snap.md'),
+    )
+  })
+
+  it('should deduplicate generated dependency updates from changesets', async () => {
+    readFileSync.mockReturnValue(generatedDuplicatesChangelog)
+
+    run()
+
+    const newContent = writeFileSync.mock.lastCall?.[1]
+
+    assertNotNil(newContent)
+    await expect(newContent).toMatchFileSnapshot(
+      path.join(snapshotFolder, 'generated-duplicates.snap.md'),
+    )
   })
 })
