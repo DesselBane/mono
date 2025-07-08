@@ -1,4 +1,4 @@
-# @repo/configs
+# @desselbane/configs
 
 ## 12.0.0
 
@@ -9,7 +9,7 @@
   ```typescript
   // eslint.config.ts
   import path from 'node:path'
-  import { createEslintConfig } from '@repo/configs/eslint'
+  import { createEslintConfig } from '@desselbane/configs/eslint'
 
   export default createEslintConfig({
     workspaceDir: path.join(import.meta.dirname, '..', '..', '..'),
@@ -29,7 +29,7 @@
   ```typescript
   // eslint.config.ts
   import path from 'node:path'
-  import { createEslintConfig } from '@repo/configs/eslint'
+  import { createEslintConfig } from '@desselbane/configs/eslint'
 
   export default createEslintConfig({
     workspaceDir: path.join(import.meta.dirname, '..', '..', '..'),
@@ -42,12 +42,12 @@
 
   ```typescript
   // Before
-  export { default } from '@repo/configs/vitest'
+  export { default } from '@desselbane/configs/vitest'
   ```
 
   ```typescript
   // After
-  import { createVitestConfig } from '@repo/configs/vitest'
+  import { createVitestConfig } from '@desselbane/configs/vitest'
 
   export default createVitestConfig({ useVue3SnapshotSerializer: false })
   ```
@@ -107,7 +107,7 @@
   ```typescript
   // eslint.config.ts
   import path from 'node:path'
-  import { createEslintConfig } from '@repo/configs/eslint'
+  import { createEslintConfig } from '@desselbane/configs/eslint'
 
   export default createEslintConfig({
     workspaceDir: path.join(import.meta.dirname, '..', '..', '..'),
@@ -127,7 +127,7 @@
   ```typescript
   // eslint.config.ts
   import path from 'node:path'
-  import { createEslintConfig } from '@repo/configs/eslint'
+  import { createEslintConfig } from '@desselbane/configs/eslint'
 
   export default createEslintConfig({
     workspaceDir: path.join(import.meta.dirname, '..', '..', '..'),
@@ -155,12 +155,12 @@
 
   ```typescript
   // Before
-  export { default } from '@repo/configs/vitest'
+  export { default } from '@desselbane/configs/vitest'
   ```
 
   ```typescript
   // After
-  import { createVitestConfig } from '@repo/configs/vitest'
+  import { createVitestConfig } from '@desselbane/configs/vitest'
 
   export default createVitestConfig({ useVue3SnapshotSerializer: false })
   ```
@@ -615,7 +615,7 @@
 
   // After
   import { defineConfig } from 'tsup'
-  import { createDefaultOptions } from '@repo/configs/tsup'
+  import { createDefaultOptions } from '@desselbane/configs/tsup'
 
   export default defineConfig({
     ...createDefaultOptions({
@@ -679,7 +679,7 @@
 
   // After
   import { defineConfig } from 'tsup'
-  import { createDefaultOptions } from '@repo/configs/tsup'
+  import { createDefaultOptions } from '@desselbane/configs/tsup'
 
   export default defineConfig({
     ...createDefaultOptions({
@@ -920,10 +920,10 @@
 
   The following imports have changed
 
-  - `@repo/configs/eslint.config.tpl.js` => `@repo/configs/eslint`
-  - `@repo/configs/prettier.config.tpl.js` => `@repo/configs/prettier`
-  - `@repo/configs/tsup.config.tpl.js` => `@repo/configs/tsup`
-  - `@repo/configs/vitest.config.tpl.js` => `@repo/configs/vitest`
+  - `@desselbane/configs/eslint.config.tpl.js` => `@desselbane/configs/eslint`
+  - `@desselbane/configs/prettier.config.tpl.js` => `@desselbane/configs/prettier`
+  - `@desselbane/configs/tsup.config.tpl.js` => `@desselbane/configs/tsup`
+  - `@desselbane/configs/vitest.config.tpl.js` => `@desselbane/configs/vitest`
 
 ### Minor Changes
 
@@ -973,10 +973,10 @@
 
   The following imports have changed
 
-  - `@repo/configs/eslint.config.tpl.js` => `@repo/configs/eslint`
-  - `@repo/configs/prettier.config.tpl.js` => `@repo/configs/prettier`
-  - `@repo/configs/tsup.config.tpl.js` => `@repo/configs/tsup`
-  - `@repo/configs/vitest.config.tpl.js` => `@repo/configs/vitest`
+  - `@desselbane/configs/eslint.config.tpl.js` => `@desselbane/configs/eslint`
+  - `@desselbane/configs/prettier.config.tpl.js` => `@desselbane/configs/prettier`
+  - `@desselbane/configs/tsup.config.tpl.js` => `@desselbane/configs/tsup`
+  - `@desselbane/configs/vitest.config.tpl.js` => `@desselbane/configs/vitest`
 
 ### Minor Changes
 
@@ -1567,7 +1567,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -1610,7 +1610,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -1687,7 +1687,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 
@@ -1765,7 +1765,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 
@@ -2124,7 +2124,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -2167,7 +2167,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -2244,7 +2244,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 
@@ -2322,7 +2322,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 
@@ -2707,7 +2707,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -2750,7 +2750,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -2827,7 +2827,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 
@@ -2905,7 +2905,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 
@@ -3264,7 +3264,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -3307,7 +3307,7 @@
   Place a `tsup.config.js` file next to your `package.json` with the following content:
 
   ```javascript
-  import { createTsupConfig } from '@repo/configs/tsup.config.tpl.js'
+  import { createTsupConfig } from '@desselbane/configs/tsup.config.tpl.js'
 
   export default createTsupConfig({
     tsconfig: 'tsconfig.lib.json',
@@ -3384,7 +3384,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 
@@ -3462,7 +3462,7 @@
   Default use case is to only set the `packageDir` option
 
   ```typescript
-  import { createEslintConfig } from '@repo/configs/eslint.config.tpl.js'
+  import { createEslintConfig } from '@desselbane/configs/eslint.config.tpl.js'
   export default createEslintConfig({ packageDir: import.meta.dirname })
   ```
 

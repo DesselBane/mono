@@ -1,5 +1,5 @@
 ---
-'@repo/composables': patch
+'@desselbane/composables': patch
 ---
 
 deps: [major|devDependencies] Update package @types/node from 22.15.32 to 24.0.10

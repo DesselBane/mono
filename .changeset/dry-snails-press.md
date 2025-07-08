@@ -1,5 +1,5 @@
 ---
-"@repo/ts-helpers": minor
+"@desselbane/ts-helpers": minor
 ---
 
 Add kebabCase helper function

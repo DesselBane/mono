@@ -1,5 +1,5 @@
 {
-  "name": "@repo/composables",
+  "name": "@desselbane/composables",
   "version": "1.0.4",
   "type": "module",
   "description": "Vue composables which can be reused across projects.",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/node": "24.0.10",
     "@vitest/coverage-v8": "3.2.4",
-    "@repo/configs": "workspace:*",
+    "@desselbane/configs": "workspace:*",
     "type-fest": "4.41.0",
     "typescript": "5.8.3",
     "vite": "7.0.3",
@@ -48,6 +48,6 @@
     "vue-tsc": "3.0.1"
   },
   "dependencies": {
-    "@repo/ts-helpers": "workspace:*"
+    "@desselbane/ts-helpers": "workspace:*"
   }
 }

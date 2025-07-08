@@ -4,7 +4,7 @@ import { execSync } from 'node:child_process'
 type MyAnswers = {
   packageName: string
   packageDescription: string
-  npmScope: '@repo'
+  npmScope: '@repo' | '@desselbane'
   packageType: 'app' | 'lib'
   runtime: 'node' | 'bundler-web' | 'bundler-node' | 'neutral'
   turbo: {
@@ -49,6 +49,10 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
           {
             name: 'Private | @repo',
             value: '@repo',
+          },
+          {
+            name: 'Personal | @desselbane',
+            value: '@desselbane',
           },
         ],
       },

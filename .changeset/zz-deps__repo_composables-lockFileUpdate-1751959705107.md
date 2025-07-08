@@ -1,5 +1,5 @@
 ---
-'@repo/composables': patch
+'@desselbane/composables': patch
 ---
 
 deps: Updated lockfile

@@ -1,5 +1,5 @@
 ---
-'@repo/configs': patch
+'@desselbane/configs': patch
 ---
 
 deps: Updated lockfile

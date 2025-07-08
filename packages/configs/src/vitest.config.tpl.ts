@@ -18,8 +18,8 @@ export const defaultOptions = {
     clearMocks: true,
     pool: 'threads',
     setupFiles: [
-      '@repo/configs/vitest.setup.js',
-      '@repo/configs/vitest-serializer.setup.js',
+      '@desselbane/configs/vitest.setup.js',
+      '@desselbane/configs/vitest-serializer.setup.js',
     ],
     sequence: {
       shuffle: true,
@@ -42,7 +42,7 @@ export function createVitestConfig({
 
   if (!useVue3SnapshotSerializer) {
     config.test.setupFiles = defaultOptions.test.setupFiles.filter(
-      (x) => x !== '@repo/configs/vitest-serializer.setup.js',
+      (x) => x !== '@desselbane/configs/vitest-serializer.setup.js',
     )
   }
 

@@ -1,7 +1,7 @@
 import { ref, unref } from 'vue'
 import type { MaybeRef } from 'vue'
 import { expect } from 'vitest'
-import { noop } from '@repo/ts-helpers'
+import { noop } from '@desselbane/ts-helpers'
 import {
   InvalidOperationError,
   usePagination,

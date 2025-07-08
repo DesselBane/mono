@@ -1,5 +1,5 @@
 {
-  "name": "@repo/configs",
+  "name": "@desselbane/configs",
   "version": "12.0.0",
   "description": "This package contains the opinionated configuration files of Dessel Bane.",
   "type": "module",
