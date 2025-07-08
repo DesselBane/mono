@@ -1,8 +1,5 @@
 {
   "include": ["src/**/*.ts", "@types"],
   "exclude": ["src/**/*.spec.ts", "**/__mocks__/**/*"],
-  "extends": "@desselbane/configs/tsconfig.node.tpl.json",
-  "compilerOptions": {
-    "allowImportingTsExtensions": true
-  }
+  "extends": "@desselbane/configs/tsconfig.bundler-node.tpl.json"
 }
