@@ -33,8 +33,10 @@ jobs:
 
       - name: Get Version Info
         id: changeset_version_info
-        run: pnpm -w changest status --verbose >> $GITHUB_OUTPUT
-
+        run: |
+          echo 'INFO<<EOF' >> $GITHUB_OUTPUT
+          pnpm -w changeset status --verbose >> $GITHUB_OUTPUT
+          echo 'EOF' >> $GITHUB_OUTPUT
 
       - name: Version
         run: pnpm -w changeset version
@@ -48,7 +50,7 @@ jobs:
           token: '${{ steps.get_token.outputs.token }}'
           commit-message: '🦋 Version Packages'
           title: '🚀 Next Release'
-          body: '${{ steps.changeset_version_info.outputs }}'
+          body: '${{ steps.changeset_version_info.outputs.INFO }}'
           branch: changeset-release/master
           sign-commits: true
           draft: true
