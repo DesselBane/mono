@@ -27,9 +27,6 @@ const { values } = parseArgs({
     depType: {
       type: 'string',
     },
-    isLockfileUpdate: {
-      type: 'string',
-    },
     packageFile: {
       type: 'string',
     },
@@ -47,7 +44,6 @@ const {
   newVersion,
   depName,
   depType,
-  isLockfileUpdate,
   packageFile,
   manager,
   updateType,
@@ -57,7 +53,6 @@ assertNotNil(packageFile)
 assertNotNil(currentVersion)
 assertNotNil(depName)
 assertNotNil(depType)
-assertNotNil(isLockfileUpdate)
 assertNotNil(newVersion)
 assertNotNil(manager)
 
@@ -81,7 +76,7 @@ function getPackageName(packageFile: string) {
 const packageName = getPackageName(packageFile)
 const packageNameSafe = makeStringSafe(packageName)
 
-if (isLockfileUpdate != '') {
+if (updateType === 'lockFileMaintenance') {
   const content = `---
 '${packageName}': patch
 ---
@@ -92,7 +87,7 @@ deps: Updated lockfile
   writeFileSync(
     path.join(
       changesetFolder,
-      `|deps_${packageNameSafe}-lockFileUpdate-${Date.now()}.md`,
+      `zz-deps_${packageNameSafe}-lockFileUpdate-${Date.now()}.md`,
     ),
     content,
   )
