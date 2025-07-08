@@ -1,6 +1,18 @@
 name: Renovate
 on:
   workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Which log level renovate should use see https://docs.renovatebot.com/troubleshooting/#log-debug-levels'
+        default: 'INFO'
+        required: true
+        type: choice
+        options:
+          - DEBUG
+          - INFO
+          - WARN
+          - ERROR
+          - FATAL
   schedule:
     # Run every 4h
     - cron: '0 */4 * * *'
@@ -29,6 +41,8 @@ jobs:
 
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v43.0.2
+        env:
+          LOG_LEVEL: ${{ inputs.logLevel || 'INFO' }}
         with:
           configurationFile: .github/renovate-global-config.json5
           token: '${{ steps.get_token.outputs.token }}'
