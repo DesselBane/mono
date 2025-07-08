@@ -11,7 +11,7 @@ importers:
       '@changesets/cli':
         specifier: 2.29.5
         version: 2.29.5
-      '@repo/configs':
+      '@desselbane/configs':
         specifier: workspace:*
         version: link:packages/configs
       '@repo/scripts':
@@ -53,7 +53,7 @@ importers:
         specifier: ^3.5.0
         version: 3.5.17(typescript@5.8.3)
     devDependencies:
-      '@repo/configs':
+      '@desselbane/configs':
         specifier: workspace:*
         version: link:../configs
       '@types/node':
@@ -162,7 +162,7 @@ importers:
 
   packages/scripts:
     devDependencies:
-      '@repo/configs':
+      '@desselbane/configs':
         specifier: workspace:*
         version: link:../configs
       '@types/node':
@@ -186,7 +186,7 @@ importers:
 
   packages/ts-helpers:
     devDependencies:
-      '@repo/configs':
+      '@desselbane/configs':
         specifier: workspace:*
         version: link:../configs
       '@types/node':

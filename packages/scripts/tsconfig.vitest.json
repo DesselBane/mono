@@ -1,8 +1,8 @@
 {
-  "extends": "@repo/configs/tsconfig.node.tpl.json",
+  "extends": "@desselbane/configs/tsconfig.node.tpl.json",
   "include": [ "src/**/*", "@types", "__mocks__/**/*" ],
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "types": [ "vitest/globals", "@repo/configs/vitest-shims.d.ts" ]
+    "types": [ "vitest/globals", "@desselbane/configs/vitest-shims.d.ts" ]
   }
 }

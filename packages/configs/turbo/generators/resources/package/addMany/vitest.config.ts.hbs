@@ -1,1 +1,1 @@
-export { default } from '@repo/configs/vitest'
+export { default } from '@desselbane/configs/vitest'

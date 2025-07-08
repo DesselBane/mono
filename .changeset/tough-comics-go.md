@@ -1,5 +1,5 @@
 ---
-"@repo/configs": minor
+"@desselbane/configs": minor
 ---
 
 Turn off `unicorn/no-keyword-prefix` eslint rule.

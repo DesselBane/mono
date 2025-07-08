@@ -1,1 +1,1 @@
-export { default } from '@repo/configs/prettier'
+export { default } from '@desselbane/configs/prettier'

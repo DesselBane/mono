@@ -1,5 +1,5 @@
 ---
-"@repo/configs": minor
+"@desselbane/configs": minor
 ---
 
 Add `@desselbane` as npm scope

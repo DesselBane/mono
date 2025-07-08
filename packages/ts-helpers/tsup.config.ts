@@ -1,4 +1,4 @@
-import { createDefaultOptions } from '@repo/configs/tsup'
+import { createDefaultOptions } from '@desselbane/configs/tsup'
 import { defineConfig } from 'tsup'
 
 export default defineConfig({

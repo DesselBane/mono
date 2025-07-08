@@ -1,4 +1,4 @@
-# @repo/configs
+# @desselbane/configs
 
 This package contains the opinionated configs of Dessel Bane.
 
@@ -14,7 +14,7 @@ Place an `eslint.config.ts` file next to your `package.json` with the following 
 
 ```javascript
 import path from 'node:path'
-import { createEslintConfig } from '@repo/configs/eslint'
+import { createEslintConfig } from '@desselbane/configs/eslint'
 
 export default createEslintConfig({
   packageDir: import.meta.dirname,
@@ -29,7 +29,7 @@ For more info on what you can pass as options to the `createEslintConfig` functi
 Place a `prettier.config.js` next to your `package.json` with the following content:
 
 ```javascript
-export { default } from '@repo/configs/prettier'
+export { default } from '@desselbane/configs/prettier'
 ```
 
 ## Typescript
@@ -49,7 +49,7 @@ Use a `tsconfig.app.json` for your app files:
 {
   "include": ["src/**/*.ts", "@types", "**/*.vue"],
   "exclude": ["src/**/*.spec.ts"],
-  "extends": "@repo/configs/tsconfig.bundler-web.tpl.json"
+  "extends": "@desselbane/configs/tsconfig.bundler-web.tpl.json"
 }
 ```
 
@@ -59,7 +59,7 @@ Use a `tsconfig.vitest.json` for your test files:
 
 ```json
 {
-  "extends": "@repo/configs/tsconfig.bundler-web.tpl.json",
+  "extends": "@desselbane/configs/tsconfig.bundler-web.tpl.json",
   "include": ["src/**/*", "@types"],
   "compilerOptions": {
     "types": ["vitest/globals"]
@@ -71,7 +71,7 @@ Use a `tsconfig.configs.json` for your config files:
 
 ```json
 {
-  "extends": "@repo/configs/tsconfig.node.tpl.json",
+  "extends": "@desselbane/configs/tsconfig.node.tpl.json",
   "include": ["*.config.ts"],
   "compilerOptions": {
     "declaration": false
@@ -112,7 +112,7 @@ This config includes:
 Create a `vitest.config.ts` file next to your `package.json` with the following content:
 
 ```typescript
-export { default } from '@repo/configs/vitest'
+export { default } from '@desselbane/configs/vitest'
 ```
 
 ### With a vite.config.ts
@@ -121,7 +121,7 @@ You can still create a `vitest.config.ts` or you could modify your `vite.config.
 
 ```typescript
 import vue from '@vitejs/plugin-vue'
-import { default as vitestDefaultConfig } from '@repo/configs/vitest'
+import { default as vitestDefaultConfig } from '@desselbane/configs/vitest'
 import { defineConfig, mergeConfig } from 'vite'
 
 export default mergeConfig(
@@ -135,14 +135,14 @@ export default mergeConfig(
 
 ### Get the jest-extended types
 
-In the `tsconfig.vitest.json` add `"@repo/configs/vitest-shims.d.ts"` to the `compilerOptions.types` property. It should look similar to this:
+In the `tsconfig.vitest.json` add `"@desselbane/configs/vitest-shims.d.ts"` to the `compilerOptions.types` property. It should look similar to this:
 
 ```json
 {
-  "extends": "@repo/configs/tsconfig.bundler-web.tpl.json",
+  "extends": "@desselbane/configs/tsconfig.bundler-web.tpl.json",
   "include": ["src/**/*", "@types"],
   "compilerOptions": {
-    "types": ["vitest/globals", "@repo/configs/vitest-shims.d.ts"]
+    "types": ["vitest/globals", "@desselbane/configs/vitest-shims.d.ts"]
   }
 }
 ```
@@ -150,7 +150,7 @@ In the `tsconfig.vitest.json` add `"@repo/configs/vitest-shims.d.ts"` to the `co
 ### Disable the `vue3-snapshot-serializer`
 
 ```typescript
-import { createVitestConfig } from '@repo/configs/vitest'
+import { createVitestConfig } from '@desselbane/configs/vitest'
 
 export default createVitestConfig({ useVue3SnapshotSerializer: false })
 ```
@@ -170,7 +170,7 @@ This is a basic [`tsup`](https://tsup.egoist.dev/#install) config which by defau
 Place a `tsup.config.ts` file next to your `package.json` with the following content:
 
 ```typescript
-import { createDefaultOptions } from '@repo/configs/tsup'
+import { createDefaultOptions } from '@desselbane/configs/tsup'
 import { defineConfig } from 'tsup'
 
 export default defineConfig([
