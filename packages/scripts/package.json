@@ -5,14 +5,15 @@
   "private": true,
   "description": "Scripts which are used thorughout the mono repo.",
   "scripts": {
+    "build": "tsdown",
     "test": "vitest run",
     "test:dev": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
     "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json",
-    "reformat-changelogs": "node src/reformat-changelogs-cli.ts",
-    "renovate-add-changese": "node src/renovate-add-changeset.ts"
+    "reformat-changelogs": "node dist/reformat-changelogs-cli.js",
+    "renovate-add-changese": "node dist/renovate-add-changeset.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,7 @@
     "@desselbane/configs": "workspace:*",
     "@types/node": "24.0.10",
     "@vitest/coverage-v8": "3.2.4",
-    "simple-git": "3.28.0",
+    "tsdown": "0.12.9",
     "type-fest": "4.41.0",
     "typescript": "5.8.3",
     "vitest": "3.2.4"
