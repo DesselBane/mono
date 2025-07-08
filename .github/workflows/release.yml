@@ -21,6 +21,7 @@ jobs:
     steps:
       - name: Get token
         id: get_token
+        if: ${{ !env.ACT }}
         uses: actions/create-github-app-token@v2
         with:
           private-key: ${{ secrets.CHANGESETS_PRIVATE_KEY }}
@@ -33,10 +34,7 @@ jobs:
 
       - name: Get Version Info
         id: changeset_version_info
-        run: |
-          echo 'INFO<<EOF' >> $GITHUB_OUTPUT
-          pnpm -w changeset status --verbose >> $GITHUB_OUTPUT
-          echo 'EOF' >> $GITHUB_OUTPUT
+        run: pnpm -w changeset status --verbose >> __version-info.md
 
       - name: Version
         run: pnpm -w changeset version
@@ -44,13 +42,18 @@ jobs:
       - name: Reformat Changelogs
         run: pnpm -w reformat-changelogs
 
+      - name: Debug Version Info
+        if: ${{ env.ACT }}
+        run: cat __version-info.md
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
+        if: ${{ !env.ACT }}
         with:
           token: '${{ steps.get_token.outputs.token }}'
           commit-message: '🦋 Version Packages'
           title: '🚀 Next Release'
-          body: '${{ steps.changeset_version_info.outputs.INFO }}'
+          body-path: __version-info.md
           branch: changeset-release/master
           sign-commits: true
           draft: true
