@@ -1,2 +1,1 @@
-pnpm -w turbo -F @repo/scripts build
 pnpm lint-staged
