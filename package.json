@@ -24,7 +24,9 @@
     "new:rfc": "turbo gen rfc",
     "prepare": "node .husky/install.js",
     "postinstall": "turbo @repo/configs#build",
-    "renovate:validate": "npx --yes --package renovate -- renovate-config-validator"
+    "renovate:validate": "npx --yes --package renovate -- renovate-config-validator",
+    "reformat-changelogs": "pnpm -F @repo/scripts reformat-changelogs",
+    "renovate-add-changese": "pnpm -F @repo/scripts renovate-add-changese"
   },
   "devDependencies": {
     "@changesets/cli": "2.29.5",

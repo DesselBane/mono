@@ -10,16 +10,14 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
-    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json"
+    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json",
+    "reformat-changelogs": "node src/reformat-changelogs-cli.ts",
+    "renovate-add-changese": "node src/renovate-add-changeset.ts"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/DesselBane/mono",
     "directory": "packages/scripts"
-  },
-  "bin": {
-    "reformat-changelogs": "src/reformat-changelogs-cli.ts",
-    "renovate-add-changeset": "src/renovate-add-changeset.ts"
   },
   "volta": {
     "extends": "../../package.json"
