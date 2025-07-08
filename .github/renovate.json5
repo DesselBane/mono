@@ -24,7 +24,7 @@
     rebaseWhen: 'behind-base-branch',
     branchTopic: 'lock-file-maintenance',
     commitMessageAction: 'Lock file maintenance',
-    schedule: ['at any time'],
+    schedule: ['before 4am on monday'],
     groupName: null,
     prBodyDefinitions: {
       Change: 'All locks refreshed',
@@ -32,7 +32,7 @@
   },
   postUpgradeTasks: {
     commands: [
-      "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --isLockfileUpdate '{{isLockfileUpdate}}' --packageFile '{{packageFile}}' --manager '{{manager}}' --updateType '{{updateType}}'",
+      "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --packageFile '{{packageFile}}' --manager '{{manager}}' --updateType '{{updateType}}'",
     ],
     fileFilters: ['.changeset/*.md'],
     executionMode: 'update',

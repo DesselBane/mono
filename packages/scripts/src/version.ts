@@ -4,3 +4,4 @@ import { execSync } from 'node:child_process'
 
 execSync('pnpm -w changeset version', { stdio: 'inherit' })
 execSync('pnpm -w reformat-changelogs', { stdio: 'inherit' })
+execSync('git status', { stdio: 'inherit' })
