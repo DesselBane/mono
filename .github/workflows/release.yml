@@ -31,13 +31,28 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Create Release Pull Request or Publish to npm
-        id: changesets
-        uses: changesets/action@v1
-        env:
-          GITHUB_TOKEN: '${{ steps.get_token.outputs.token }}'
+      - name: Get Version Info
+        id: changeset_version_info
+        run: pnpm -w changest status --verbose >> $GITHUB_OUTPUT
+
+
+      - name: Version
+        run: pnpm -w changeset version
+
+      - name: Reformat Changelogs
+        run: pnpm -w reformat-changelogs
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
         with:
-          commitMode: 'github-api'
-          publish: 'pnpm changeset publish'
-          version: 'pnpm -w version'
-          commit: '🦋 Version Packages'
+          token: '${{ steps.get_token.outputs.token }}'
+          commit-message: '🦋 Version Packages'
+          title: '🚀 Next Release'
+          body: '${{ steps.changeset_version_info.outputs }}'
+          branch: changeset-release/master
+          sign-commits: true
+          draft: true
+          add-paths: |
+            *.md
+            **/package.json
+            .changeset/**

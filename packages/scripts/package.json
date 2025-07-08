@@ -19,8 +19,7 @@
   },
   "bin": {
     "reformat-changelogs": "src/reformat-changelogs-cli.ts",
-    "renovate-add-changeset": "src/renovate-add-changeset.ts",
-    "version": "src/version.ts"
+    "renovate-add-changeset": "src/renovate-add-changeset.ts"
   },
   "volta": {
     "extends": "../../package.json"
