@@ -61,6 +61,10 @@ function getPackageName(packageFile: string) {
     return '@repo/changelog'
   }
 
+  if (!packageFile.endsWith('json')) {
+    return '@repo/changelog'
+  }
+
   const packageJson = JSON.parse(
     readFileSync(path.join(workspaceRoot, packageFile)).toString(),
   ) as PackageJson
