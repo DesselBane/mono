@@ -1,10 +1,48 @@
 # @desselbane/composables
 
+## 2.0.0
+
+### Major Changes
+
+- 9fc9860: Update scope from private `@repo` to public `@desselbane`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 12cc633: deps(patch): Update package @types/node from 22.15.30 to 22.15.30
+- 12cc633: deps(patch): Update package vitest from 3.2.0 to 3.2.2
+- 12cc633: deps(patch): Update package @vitest/coverage-v8 from 3.2.0 to 3.2.2
+- 12cc633: deps: Updated lockfile
+- fc0ecc1: deps: [minor|devDependencies] Update package @types/node from 22.15.32 to 22.16.0
+- d53be68: deps: [major|devDependencies] Update package @types/node from 22.15.32 to 24.0.10
+- cdcc135: deps: [major|devDependencies] Update package vite from 6.3.5 to 7.0.2
+- 9b0d4cd: deps: [patch|devDependencies] Update package vite from 7.0.2 to 7.0.3
+- 75895d7: deps: [major|devDependencies] Update package vue-tsc from 2.2.12 to 3.0.1
+- 81b22c8: deps: Updated lockfile
+- Updated dependencies [12cc633]
+- Updated dependencies [22b1bd4]
+- Updated dependencies [8987763]
+- Updated dependencies [fc0ecc1]
+- Updated dependencies [d53be68]
+- Updated dependencies [81b22c8]
+  - @desselbane/ts-helpers@3.0.0
+
+
+</details>
+
 ## 1.0.4
 
 ### Patch Changes
 
 - 8b575a9: Fix package url. This should display changelogs in renovate.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
 - Updated dependencies [3d997d6]
 - Updated dependencies [e2c91ef]
 - Updated dependencies [df36dd6]
@@ -23,20 +61,11 @@
 - Updated dependencies [8b575a9]
 - Updated dependencies [0524494]
 - Updated dependencies [dd598fa]
-- Updated dependencies [0524494]
-- Updated dependencies [ad6243a]
 - Updated dependencies [960ae56]
 - Updated dependencies [f8fd34d]
 - Updated dependencies [a8a34ba]
 - Updated dependencies [c8c542f]
-- Updated dependencies [dd598fa]
   - @desselbane/ts-helpers@2.0.0
-
-### Dependency Changes
-
-<details>
-<summary> Click to expand </summary>
-
 - e2c91ef: deps(minor): Update package type-fest from 4.39.1 to 4.41.0
 - df36dd6: deps(minor): Update package @types/node from 22.7.8 to 22.15.29
 - 291257a: deps(patch): Update package typescript from 5.8.2 to 5.8.3
@@ -60,24 +89,26 @@
 
 ## 1.0.4-next.7
 
-### Patch Changes
+### Dependency Changes
 
-- Updated dependencies [dd598fa]
+<details>
+<summary> Click to expand </summary>
+
 - Updated dependencies [dd598fa]
   - @desselbane/ts-helpers@2.0.0-next.7
 
+
+</details>
+
 ## 1.0.4-next.6
-
-### Patch Changes
-
-- Updated dependencies [5fa9cc9]
-  - @desselbane/ts-helpers@1.0.2-next.6
 
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [5fa9cc9]
+  - @desselbane/ts-helpers@1.0.2-next.6
 - 5fa9cc9: deps(minor): Update package @types/node from 22.7.8 to 22.15.3
 
 
@@ -85,18 +116,15 @@
 
 ## 1.0.4-next.5
 
-### Patch Changes
-
-- Updated dependencies [5ec777b]
-- Updated dependencies [6b26c2e]
-- Updated dependencies [ab59d2c]
-  - @desselbane/ts-helpers@1.0.2-next.5
-
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [5ec777b]
+- Updated dependencies [6b26c2e]
+- Updated dependencies [ab59d2c]
+  - @desselbane/ts-helpers@1.0.2-next.5
 - 5ec777b: deps(patch): Update package type-fest from 4.40.0 to 4.40.1
 - d9e7e7d: deps(patch): Update package vite from 6.3.2 to 6.3.3
 - 4242703: deps(patch): Update package vite from 6.3.3 to 6.3.4
@@ -109,17 +137,14 @@
 
 ## 1.0.4-next.4
 
-### Patch Changes
-
-- Updated dependencies [518362b]
-- Updated dependencies [5c6a504]
-  - @desselbane/ts-helpers@1.0.2-next.4
-
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [518362b]
+- Updated dependencies [5c6a504]
+  - @desselbane/ts-helpers@1.0.2-next.4
 - 518362b: deps(patch): Update package vitest from 3.1.1 to 3.1.2
 - 5c6a504: deps(patch): Update package @vitest/coverage-v8 from 3.1.1 to 3.1.2
 
@@ -128,17 +153,14 @@
 
 ## 1.0.4-next.3
 
-### Patch Changes
-
-- Updated dependencies [9061150]
-- Updated dependencies [512461e]
-  - @desselbane/ts-helpers@1.0.2-next.3
-
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [9061150]
+- Updated dependencies [512461e]
+  - @desselbane/ts-helpers@1.0.2-next.3
 - 9061150: deps(minor): Update package type-fest from 4.39.1 to 4.40.0
 - 48c4ad5: deps(minor): Update package vite from 6.2.6 to 6.3.0
 - 235435c: deps(patch): Update package vite from 6.3.0 to 6.3.1
@@ -150,16 +172,13 @@
 
 ## 1.0.4-next.2
 
-### Patch Changes
-
-- Updated dependencies [776bdc5]
-  - @desselbane/ts-helpers@1.0.2-next.2
-
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [776bdc5]
+  - @desselbane/ts-helpers@1.0.2-next.2
 - d8f4ae6: deps(patch): Update package vite from 6.2.5 to 6.2.6
 - 776bdc5: deps: Updated lockfile
 
@@ -171,21 +190,27 @@
 ### Patch Changes
 
 - 8b575a9: Fix package url. This should display changelogs in renovate.
-- Updated dependencies [8b575a9]
-  - @desselbane/ts-helpers@1.0.2-next.1
-
-## 1.0.4-next.0
-
-### Patch Changes
-
-- Updated dependencies [291257a]
-  - @desselbane/ts-helpers@1.0.2-next.0
 
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [8b575a9]
+  - @desselbane/ts-helpers@1.0.2-next.1
+
+
+</details>
+
+## 1.0.4-next.0
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- Updated dependencies [291257a]
+  - @desselbane/ts-helpers@1.0.2-next.0
 - 291257a: deps(patch): Update package typescript from 5.8.2 to 5.8.3
 
 
@@ -193,18 +218,15 @@
 
 ## 1.0.3
 
-### Patch Changes
-
-- Updated dependencies [af84e3a]
-- Updated dependencies [5114615]
-- Updated dependencies [e3f3a2e]
-  - @desselbane/ts-helpers@1.0.1
-
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [af84e3a]
+- Updated dependencies [5114615]
+- Updated dependencies [e3f3a2e]
+  - @desselbane/ts-helpers@1.0.1
 - af84e3a: deps(minor): Update package type-fest from 4.38.0 to 4.39.0
 - 5114615: deps(patch): Update package type-fest from 4.39.0 to 4.39.1
 - cef14a7: deps(patch): Update package vite from 6.2.4 to 6.2.5
@@ -218,18 +240,17 @@
 ### Patch Changes
 
 - e3754fb: Move `@desselbane/ts-helpers` to dependencies as package is now public.
-- Updated dependencies [ac02be0]
-- Updated dependencies [f3fc4dc]
-- Updated dependencies [f36576c]
-- Updated dependencies [7bb96f8]
-- Updated dependencies [7bb96f8]
-  - @desselbane/ts-helpers@1.0.0
 
 ### Dependency Changes
 
 <details>
 <summary> Click to expand </summary>
 
+- Updated dependencies [ac02be0]
+- Updated dependencies [f3fc4dc]
+- Updated dependencies [f36576c]
+- Updated dependencies [7bb96f8]
+  - @desselbane/ts-helpers@1.0.0
 - ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
 - f3fc4dc: deps(minor): Update package @vitest/coverage-v8 from 3.0.9 to 3.1.1
 

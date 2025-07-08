@@ -1,5 +1,53 @@
 # @desselbane/configs
 
+## 13.0.0
+
+### Major Changes
+
+- ff4bffa: Update scope from private `@repo` to public `@desselbane`
+
+### Minor Changes
+
+- 7225567: Add `@desselbane` as npm scope
+- 27860f0: Turn off `unicorn/no-keyword-prefix` eslint rule.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 12cc633: deps(patch): Update package eslint-import-resolver-typescript from 4.4.3 to 4.4.3
+- 12cc633: deps(patch): Update package eslint-plugin-import-x from 4.15.1 to 4.15.1
+- 12cc633: deps(minor): Update package eslint-plugin-vue from 10.2.0 to 10.2.0
+- 12cc633: deps(patch): Update package @types/node from 22.15.30 to 22.15.30
+- 12cc633: deps(patch): Update package typescript-eslint from 8.33.1 to 8.33.1
+- 12cc633: deps(patch): Update package vitest from 3.2.0 to 3.2.2
+- 12cc633: deps(minor): Update package vue3-snapshot-serializer from 2.11.0 to 2.11.0
+- 12cc633: deps(patch): Update package zod from 3.25.43 to 3.25.56
+- 12cc633: deps: Updated lockfile
+- 75d0a3f: deps: [patch|dependencies] Update package zod from 3.25.75 to 3.25.76
+- 133bf18: deps: [minor|dependencies] Update package @eslint/compat from 1.2.9 to 1.3.1
+- 133bf18: deps: [minor|dependencies] Update package @eslint/js from 9.28.0 to 9.30.1
+- fc0ecc1: deps: [minor|devDependencies] Update package @types/node from 22.15.32 to 22.16.0
+- d53be68: deps: [major|devDependencies] Update package @types/node from 22.15.32 to 24.0.10
+- 133bf18: deps: [minor|dependencies] Update package @vue/eslint-config-typescript from 14.5.0 to 14.6.0
+- 133bf18: deps: [minor|dependencies] Update package eslint from 9.28.0 to 9.30.1
+- 133bf18: deps: [patch|dependencies] Update package eslint-import-resolver-typescript from 4.4.3 to 4.4.4
+- 133bf18: deps: [minor|dependencies] Update package eslint-plugin-import-x from 4.15.1 to 4.16.1
+- 133bf18: deps: [minor|dependencies] Update package eslint-plugin-prettier from 5.4.1 to 5.5.1
+- 133bf18: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.2.0 to 10.3.0
+- b90c8d6: deps: [major|dependencies] Update package jest-extended from 5.0.3 to 6.0.0
+- 266c4de: deps: [minor|dependencies] Update package prettier from 3.5.3 to 3.6.2
+- 133bf18: deps: [minor|dependencies] Update package typescript-eslint from 8.33.1 to 8.35.1
+- f088b36: deps: [minor|dependencies] Update package typescript-eslint from 8.35.1 to 8.36.0
+- cdcc135: deps: [major|devDependencies] Update package vite from 6.3.5 to 7.0.2
+- 9b0d4cd: deps: [patch|devDependencies] Update package vite from 7.0.2 to 7.0.3
+- 133bf18: deps: [minor|dependencies] Update package vue-eslint-parser from 10.1.3 to 10.2.0
+- 81b22c8: deps: Updated lockfile
+
+
+</details>
+
 ## 12.0.0
 
 ### Major Changes
@@ -919,7 +967,6 @@
 - 77e37c9: Shortend imports.
 
   The following imports have changed
-
   - `@desselbane/configs/eslint.config.tpl.js` => `@desselbane/configs/eslint`
   - `@desselbane/configs/prettier.config.tpl.js` => `@desselbane/configs/prettier`
   - `@desselbane/configs/tsup.config.tpl.js` => `@desselbane/configs/tsup`
@@ -972,7 +1019,6 @@
 - 77e37c9: Shortend imports.
 
   The following imports have changed
-
   - `@desselbane/configs/eslint.config.tpl.js` => `@desselbane/configs/eslint`
   - `@desselbane/configs/prettier.config.tpl.js` => `@desselbane/configs/prettier`
   - `@desselbane/configs/tsup.config.tpl.js` => `@desselbane/configs/tsup`

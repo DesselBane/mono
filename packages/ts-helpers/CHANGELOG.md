@@ -1,5 +1,31 @@
 # @desselbane/ts-helpers
 
+## 3.0.0
+
+### Major Changes
+
+- 8987763: Update scope from private `@repo` to public `@desselbane`
+
+### Minor Changes
+
+- 22b1bd4: Add kebabCase helper function
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 12cc633: deps(patch): Update package @types/node from 22.15.30 to 22.15.30
+- 12cc633: deps(patch): Update package vitest from 3.2.0 to 3.2.2
+- 12cc633: deps(patch): Update package @vitest/coverage-v8 from 3.2.0 to 3.2.2
+- 12cc633: deps: Updated lockfile
+- fc0ecc1: deps: [minor|devDependencies] Update package @types/node from 22.15.32 to 22.16.0
+- d53be68: deps: [major|devDependencies] Update package @types/node from 22.15.32 to 24.0.10
+- 81b22c8: deps: Updated lockfile
+
+
+</details>
+
 ## 2.0.0
 
 ### Major Changes
