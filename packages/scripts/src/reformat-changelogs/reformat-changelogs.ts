@@ -11,9 +11,14 @@ type LineTypes =
   | 'dependency changes section'
   | 'changeset start'
   | 'dependency update'
+  | 'changeset generated dependency update'
   | 'unknown'
 
 function determineLineType(line: string): LineTypes {
+  if (line.startsWith('- Updated dependencies')) {
+    return 'changeset generated dependency update'
+  }
+
   if (
     line.includes('deps: ') ||
     line.includes('deps(patch): ') ||
@@ -106,6 +111,7 @@ function parseFile(lines: string[]): ChangelogContents {
 function parseVersion(lines: string[]): VersionContent | undefined {
   let currentLine = lines.shift()
   let currentChangeActive = false
+  const generatedDependencyUpdateCache = new Set<string>()
   let currentSection:
     | 'major changes section'
     | 'minor changes section'
@@ -202,6 +208,31 @@ function parseVersion(lines: string[]): VersionContent | undefined {
         if (currentChangeActive) {
           addToChange()
         }
+        break
+      }
+
+      case 'changeset generated dependency update': {
+        if (!generatedDependencyUpdateCache.has(currentLine)) {
+          version.dependencyUpdates.push(currentLine)
+          generatedDependencyUpdateCache.add(currentLine)
+        }
+
+        while (true) {
+          currentLine = lines.shift()
+
+          if (currentLine == undefined) {
+            break
+          }
+
+          if (currentLine.startsWith('  - ')) {
+            version.dependencyUpdates.push(currentLine)
+          } else {
+            lines.unshift(currentLine)
+            break
+          }
+        }
+
+        break
       }
     }
 

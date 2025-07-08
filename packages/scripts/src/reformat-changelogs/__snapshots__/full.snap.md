@@ -83,6 +83,7 @@
 
 - 8b575a9: Fix package url. This should display changelogs in renovate.
 
+
 ### Dependency Changes
 
 <details>
@@ -103,6 +104,13 @@
 - ea663cf: deps: Updated lockfile
 - eddbb5d: deps: Updated lockfile
 - 1b989b0: deps: Updated lockfile
+- Updated dependencies [12cc633]
+- Updated dependencies [22b1bd4]
+- Updated dependencies [8987763]
+- Updated dependencies [fc0ecc1]
+- Updated dependencies [d53be68]
+- Updated dependencies [81b22c8]
+  - @desselbane/ts-helpers@3.0.0
 
 
 </details>
