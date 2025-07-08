@@ -46,7 +46,7 @@ importers:
 
   packages/composables:
     dependencies:
-      '@repo/ts-helpers':
+      '@desselbane/ts-helpers':
         specifier: workspace:*
         version: link:../ts-helpers
       vue:

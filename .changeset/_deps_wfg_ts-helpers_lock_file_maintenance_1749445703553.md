@@ -1,5 +1,5 @@
 ---
-'@repo/ts-helpers': patch
+'@desselbane/ts-helpers': patch
 ---
 
 deps: Updated lockfile

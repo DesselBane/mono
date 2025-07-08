@@ -1,4 +1,4 @@
-# @repo/ts-helpers
+# @desselbane/ts-helpers
 
 ## 2.0.0
 
@@ -213,12 +213,12 @@
 
 ### Major Changes
 
-- 7bb96f8: Initial Release of the "@repo/ts-helpers" package. It contains typescript helpers which are domain agnostic.
+- 7bb96f8: Initial Release of the "@desselbane/ts-helpers" package. It contains typescript helpers which are domain agnostic.
 
 ### Patch Changes
 
 - f36576c: Fix publish config.
-- 7bb96f8: Rename from "@repo/ts-helpers" to "@repo/ts-helpers"
+- 7bb96f8: Rename from "@desselbane/ts-helpers" to "@desselbane/ts-helpers"
 
 ### Dependency Changes
 
@@ -235,12 +235,12 @@
 
 ### Major Changes
 
-- 7bb96f8: Initial Release of the "@repo/ts-helpers" package. It contains typescript helpers which are domain agnostic.
+- 7bb96f8: Initial Release of the "@desselbane/ts-helpers" package. It contains typescript helpers which are domain agnostic.
 
 ### Patch Changes
 
 - f36576c: Fix publish config.
-- 7bb96f8: Rename from "@repo/ts-helpers" to "@repo/ts-helpers"
+- 7bb96f8: Rename from "@desselbane/ts-helpers" to "@desselbane/ts-helpers"
 
 ### Dependency Changes
 

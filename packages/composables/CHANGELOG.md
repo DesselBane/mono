@@ -30,7 +30,7 @@
 - Updated dependencies [a8a34ba]
 - Updated dependencies [c8c542f]
 - Updated dependencies [dd598fa]
-  - @repo/ts-helpers@2.0.0
+  - @desselbane/ts-helpers@2.0.0
 
 ### Dependency Changes
 
@@ -64,14 +64,14 @@
 
 - Updated dependencies [dd598fa]
 - Updated dependencies [dd598fa]
-  - @repo/ts-helpers@2.0.0-next.7
+  - @desselbane/ts-helpers@2.0.0-next.7
 
 ## 1.0.4-next.6
 
 ### Patch Changes
 
 - Updated dependencies [5fa9cc9]
-  - @repo/ts-helpers@1.0.2-next.6
+  - @desselbane/ts-helpers@1.0.2-next.6
 
 ### Dependency Changes
 
@@ -90,7 +90,7 @@
 - Updated dependencies [5ec777b]
 - Updated dependencies [6b26c2e]
 - Updated dependencies [ab59d2c]
-  - @repo/ts-helpers@1.0.2-next.5
+  - @desselbane/ts-helpers@1.0.2-next.5
 
 ### Dependency Changes
 
@@ -113,7 +113,7 @@
 
 - Updated dependencies [518362b]
 - Updated dependencies [5c6a504]
-  - @repo/ts-helpers@1.0.2-next.4
+  - @desselbane/ts-helpers@1.0.2-next.4
 
 ### Dependency Changes
 
@@ -132,7 +132,7 @@
 
 - Updated dependencies [9061150]
 - Updated dependencies [512461e]
-  - @repo/ts-helpers@1.0.2-next.3
+  - @desselbane/ts-helpers@1.0.2-next.3
 
 ### Dependency Changes
 
@@ -153,7 +153,7 @@
 ### Patch Changes
 
 - Updated dependencies [776bdc5]
-  - @repo/ts-helpers@1.0.2-next.2
+  - @desselbane/ts-helpers@1.0.2-next.2
 
 ### Dependency Changes
 
@@ -172,14 +172,14 @@
 
 - 8b575a9: Fix package url. This should display changelogs in renovate.
 - Updated dependencies [8b575a9]
-  - @repo/ts-helpers@1.0.2-next.1
+  - @desselbane/ts-helpers@1.0.2-next.1
 
 ## 1.0.4-next.0
 
 ### Patch Changes
 
 - Updated dependencies [291257a]
-  - @repo/ts-helpers@1.0.2-next.0
+  - @desselbane/ts-helpers@1.0.2-next.0
 
 ### Dependency Changes
 
@@ -198,7 +198,7 @@
 - Updated dependencies [af84e3a]
 - Updated dependencies [5114615]
 - Updated dependencies [e3f3a2e]
-  - @repo/ts-helpers@1.0.1
+  - @desselbane/ts-helpers@1.0.1
 
 ### Dependency Changes
 
@@ -217,13 +217,13 @@
 
 ### Patch Changes
 
-- e3754fb: Move `@repo/ts-helpers` to dependencies as package is now public.
+- e3754fb: Move `@desselbane/ts-helpers` to dependencies as package is now public.
 - Updated dependencies [ac02be0]
 - Updated dependencies [f3fc4dc]
 - Updated dependencies [f36576c]
 - Updated dependencies [7bb96f8]
 - Updated dependencies [7bb96f8]
-  - @repo/ts-helpers@1.0.0
+  - @desselbane/ts-helpers@1.0.0
 
 ### Dependency Changes
 
@@ -240,7 +240,7 @@
 
 ### Patch Changes
 
-- e3754fb: Move `@repo/ts-helpers` to dependencies as package is now public.
+- e3754fb: Move `@desselbane/ts-helpers` to dependencies as package is now public.
 
 ## 1.0.2-next.0
 

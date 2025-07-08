@@ -1,4 +1,4 @@
-# @repo/ts-helpers
+# @desselbane/ts-helpers
 
 ## 2.0.0
 
@@ -163,27 +163,27 @@
 
 ### Major Changes
 
-- 7bb96f8: Initial Release of the "@repo/ts-helpers" package. It contains typescript helpers which are domain agnostic.
+- 7bb96f8: Initial Release of the "@desselbane/ts-helpers" package. It contains typescript helpers which are domain agnostic.
 
 ### Patch Changes
 
 - ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
 - f3fc4dc: deps(minor): Update package @vitest/coverage-v8 from 3.0.9 to 3.1.1
 - f36576c: Fix publish config.
-- 7bb96f8: Rename from "@repo/ts-helpers" to "@repo/ts-helpers"
+- 7bb96f8: Rename from "@desselbane/ts-helpers" to "@desselbane/ts-helpers"
 
 ## 1.0.0-next.0
 
 ### Major Changes
 
-- 7bb96f8: Initial Release of the "@repo/ts-helpers" package. It contains typescript helpers which are domain agnostic.
+- 7bb96f8: Initial Release of the "@desselbane/ts-helpers" package. It contains typescript helpers which are domain agnostic.
 
 ### Patch Changes
 
 - ac02be0: deps(minor): Update package vitest from 3.0.9 to 3.1.1
 - f3fc4dc: deps(minor): Update package @vitest/coverage-v8 from 3.0.9 to 3.1.1
 - f36576c: Fix publish config.
-- 7bb96f8: Rename from "@repo/ts-helpers" to "@repo/ts-helpers"
+- 7bb96f8: Rename from "@desselbane/ts-helpers" to "@desselbane/ts-helpers"
 
 ## 0.6.5
 

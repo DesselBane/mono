@@ -48,6 +48,6 @@
     "vue-tsc": "3.0.1"
   },
   "dependencies": {
-    "@repo/ts-helpers": "workspace:*"
+    "@desselbane/ts-helpers": "workspace:*"
   }
 }
