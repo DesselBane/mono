@@ -40,5 +40,5 @@ jobs:
         with:
           commitMode: 'github-api'
           publish: 'pnpm changeset publish'
-          version: 'pnpm version'
+          version: 'pnpm run version'
           commit: '🦋 Version Packages'
