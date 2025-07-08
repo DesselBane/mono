@@ -25,6 +25,7 @@
     "prepare": "node .husky/install.js",
     "postinstall": "turbo @repo/configs#build",
     "renovate:validate": "npx --yes --package renovate -- renovate-config-validator",
+    "version": "pnpm changeset version && pnpm reformat-changelogs",
     "reformat-changelogs": "pnpm -F @repo/scripts reformat-changelogs",
     "renovate-add-changese": "pnpm -F @repo/scripts renovate-add-changese"
   },
