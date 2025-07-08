@@ -1,4 +1,4 @@
-# @repo/composables
+# @desselbane/composables
 
 ## 1.0.4
 
@@ -328,7 +328,7 @@
 
 - 467c7b1: Initial Release.
 
-  The `@repo/composables` package contains Vue composables which can be reused across projects.
+  The `@desselbane/composables` package contains Vue composables which can be reused across projects.
 
 ### Minor Changes
 

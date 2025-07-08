@@ -1,5 +1,5 @@
 {
-  "name": "@repo/composables",
+  "name": "@desselbane/composables",
   "version": "1.0.4",
   "type": "module",
   "description": "Vue composables which can be reused across projects.",
