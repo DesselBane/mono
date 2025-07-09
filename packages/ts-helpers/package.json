@@ -4,8 +4,8 @@
   "type": "module",
   "description": "Helper package which includes typescript assertions and type guards",
   "scripts": {
-    "dev": "tsup-node --watch --no-clean",
-    "build": "tsup-node",
+    "dev": "tsdown --watch --no-clean",
+    "build": "tsdown",
     "test": "vitest run",
     "test:dev": "vitest",
     "lint": "eslint .",
@@ -19,8 +19,8 @@
     "CHANGELOG.md"
   ],
   "exports": {
-    "types": "./dist/main.d.ts",
-    "import": "./dist/main.js"
+    ".": "./dist/main.js",
+    "./package.json": "./package.json"
   },
   "repository": {
     "type": "git",
@@ -34,12 +34,16 @@
     "*": "eslint --fix"
   },
   "devDependencies": {
+    "@desselbane/configs": "workspace:*",
     "@types/node": "24.0.12",
     "@vitest/coverage-v8": "3.2.4",
-    "@desselbane/configs": "workspace:*",
-    "tsup": "8.5.0",
+    "tsdown": "0.12.9",
     "type-fest": "4.41.0",
     "typescript": "5.8.3",
+    "unplugin-unused": "0.5.1",
     "vitest": "3.2.4"
-  }
+  },
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts"
 }
