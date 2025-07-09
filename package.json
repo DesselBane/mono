@@ -42,12 +42,12 @@
     "semver": "7.7.2",
     "turbo": "2.5.4"
   },
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.13.1",
   "engines": {
-    "node": "24.3.0"
+    "node": "24.4.0"
   },
   "volta": {
-    "node": "24.3.0",
-    "pnpm": "10.12.4"
+    "node": "24.4.0",
+    "pnpm": "10.13.1"
   }
 }
