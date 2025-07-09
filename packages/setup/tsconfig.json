@@ -8,7 +8,7 @@
       "path": "./tsconfig.vitest.json"
     },
     {
-      "path": "./tsconfig.lib.json"
+      "path": "./tsconfig.app.json"
     }
   ]
 }

@@ -13,5 +13,5 @@ sudo winget install Volta.Volta
 volta install node@24
 volta install pnpm
 
-pnpm dlx @desselbane/setup
+pnpm dlx @desselbane/setup -y
 ```
