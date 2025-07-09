@@ -1,0 +1,227 @@
+[
+  {
+    "Name": "Windows Terminal",
+    "WingetId": "9N0DX20HK701",
+    "installDefault": false
+  },
+  {
+    "Name": "Windows Terminal Preview",
+    "WingetId": "9N8G5RFZ9XK3",
+    "installDefault": true
+  },
+  {
+    "Name": "Powershell 7",
+    "WingetId": "9MZ1SNWT0N5D",
+    "installDefault": false
+  },
+  {
+    "Name": "Starship",
+    "WingetId": "Starship.Starship",
+    "installDefault": true
+  },
+  {
+    "Name": "Visual Studio Code",
+    "WingetId": "Microsoft.VisualStudioCode",
+    "installDefault": true
+  },
+  {
+    "Name": "Volta",
+    "WingetId": "Volta.Volta",
+    "installDefault": false
+  },
+  {
+    "Name": "7-Zip",
+    "WingetId": "7zip.7zip",
+    "installDefault": true
+  },
+  {
+    "Name": "JetBrains Toolbox",
+    "WingetId": "JetBrains.Toolbox",
+    "installDefault": false
+  },
+  {
+    "Name": "Logitech Unifying Software",
+    "WingetId": "Logitech.UnifyingSoftware",
+    "installDefault": false
+  },
+  {
+    "Name": "Firefox",
+    "WingetId": "9NZVDKPMR9RD",
+    "installDefault": false
+  },
+  {
+    "Name": "Nextcloud",
+    "WingetId": "Nextcloud.NextcloudDesktop",
+    "installDefault": false
+  },
+  {
+    "Name": "Notepad++",
+    "WingetId": "Notepad++.Notepad++",
+    "installDefault": true
+  },
+  {
+    "Name": "Microsoft PowerToys",
+    "WingetId": "XP89DCGQ3K6VLD",
+    "installDefault": true
+  },
+  {
+    "Name": "Spotify",
+    "WingetId": "9NCBCSZSJRSB",
+    "installDefault": true
+  },
+  {
+    "Name": "Telegram",
+    "WingetId": "Telegram.TelegramDesktop",
+    "installDefault": true
+  },
+  {
+    "Name": "WinDirStat",
+    "WingetId": "WinDirStat.WinDirStat",
+    "installDefault": false
+  },
+  {
+    "Name": "Region to Share",
+    "WingetId": "9N4066W2R5Q4",
+    "installDefault": true
+  },
+  {
+    "Name": "Sysinternals Suite",
+    "WingetId": "9P7KNL5RWT25",
+    "installDefault": false
+  },
+  {
+    "Name": "Enpass Password Manager",
+    "WingetId": "9NJ3KMH29VGJ",
+    "installDefault": false
+  },
+  {
+    "Name": "AltDrag",
+    "WingetId": "AltDrag.AltDrag",
+    "installDefault": false
+  },
+  {
+    "Name": "Deno",
+    "WingetId": "DenoLand.Deno",
+    "installDefault": false
+  },
+  {
+    "Name": "MKCert",
+    "WingetId": "FiloSottile.mkcert",
+    "installDefault": false
+  },
+  {
+    "Name": "NVDA",
+    "WingetId": "NVAccess.NVDA",
+    "installDefault": false
+  },
+  {
+    "Name": "Postman",
+    "WingetId": "Postman.Postman",
+    "installDefault": false
+  },
+  {
+    "Name": "Rustup",
+    "WingetId": "Rustlang.Rustup",
+    "installDefault": false
+  },
+  {
+    "Name": "SteelSeries GG",
+    "WingetId": "SteelSeries.GG",
+    "installDefault": true
+  },
+  {
+    "Name": "ZOxide",
+    "WingetId": "ajeetdsouza.zoxide",
+    "installDefault": true
+  },
+  {
+    "Name": "fzf fuzzy finder",
+    "WingetId": "junegunn.fzf",
+    "installDefault": true
+  },
+  {
+    "Name": "JQ",
+    "WingetId": "jqlang.jq",
+    "installDefault": true
+  },
+  {
+    "Name": "delta",
+    "WingetId": "dandavison.delta",
+    "installDefault": true
+  },
+  {
+    "Name": "less",
+    "WingetId": "jftuga.less",
+    "installDefault": true
+  },
+  {
+    "Name": "eza",
+    "WingetId": "eza-community.eza",
+    "installDefault": true
+  },
+  {
+    "Name": "bat",
+    "WingetId": "sharkdp.bat",
+    "installDefault": true
+  },
+  {
+    "Name": "btop",
+    "WingetId": "aristocratos.btop4win",
+    "installDefault": true
+  },
+  {
+    "Name": "Lazy Git",
+    "WingetId": "JesseDuffield.lazygit",
+    "installDefault": false
+  },
+  {
+    "Name": "Lazy Docker",
+    "WingetId": "JesseDuffield.Lazydocker",
+    "installDefault": false
+  },
+  {
+    "Name": "Elgato StreamDeck",
+    "WingetId": "Elgato.StreamDeck",
+    "installDefault": true
+  },
+  {
+    "Name": "GLab Gitlab CLI",
+    "WingetId": "GLab.GLab",
+    "installDefault": false
+  },
+  {
+    "Name": "Zoom",
+    "WingetId": "Zoom.Zoom",
+    "installDefault": false
+  },
+  {
+    "Name": "Google Chrome",
+    "WingetId": "Google.Chrome",
+    "installDefault": true
+  },
+  {
+    "Name": "Zen Browser",
+    "WingetId": "Zen-Team.Zen-Browser",
+    "installDefault": true
+  },
+  {
+    "Name": "QMK Toolbox",
+    "WingetId": "QMK.QMKToolbox",
+    "installDefault": false
+  },
+  {
+    "Name": "AusweisApp",
+    "WingetId": "Governikus.AusweisApp",
+    "installDefault": false
+  },
+  {
+    "Name": "Steam",
+    "WingetId": "Valve.Steam",
+    "installDefault": false
+  },
+  {
+    "Name": "Discord",
+    "WingetId": "Discord.Discord",
+    "installDefault": false
+  }
+]

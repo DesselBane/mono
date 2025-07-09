@@ -1,16 +1,19 @@
 {
   "name": "@desselbane/setup",
-  "version": "0.0.0",
+  "version": "0.1.0-rc.4",
   "type": "module",
   "description": "Setting up a new environment with Dessel Banes most favourite settings and apps.",
   "scripts": {
-    "build": "tsc",
+    "prerun-bin": "pnpm turbo -F @desselbane/setup build",
+    "run-bin": "node dist/main.js",
+    "build": "tsdown",
     "test": "vitest run",
     "test:dev": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
-    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json"
+    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json",
+    "prepublish": "pnpm turbo -F @desselbane/setup build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
     "package.json",
     "CHANGELOG.md"
   ],
+  "bin": "dist/main.js",
   "volta": {
     "extends": "../../package.json"
   },
@@ -34,11 +38,18 @@
   },
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
+    "@desselbane/ts-helpers": "workspace:*",
     "@types/node": "24.0.12",
     "@vitest/coverage-v8": "3.2.4",
-    "tsup": "8.5.0",
+    "tsdown": "0.12.9",
     "type-fest": "4.41.0",
     "typescript": "5.8.3",
     "vitest": "3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.6.0"
   }
 }
