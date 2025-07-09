@@ -15,3 +15,4 @@ volta install pnpm
 
 pnpm dlx @desselbane/setup -y
 ```
+pnpm dlx @desselbane/setup@rc -y

@@ -4,4 +4,11 @@ import { createEslintConfig } from '@desselbane/configs/eslint'
 export default createEslintConfig({
   workspaceDir: path.join(import.meta.dirname, '..', '..'),
   packageDir: import.meta.dirname,
+  additionalConfigs: [
+    {
+      rules: {
+        'unicorn/no-process-exit': 'off',
+      },
+    },
+  ],
 })
