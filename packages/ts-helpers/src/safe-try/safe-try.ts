@@ -1,12 +1,16 @@
-type SafeReturn<TValue> =
-  | (readonly [undefined, TValue] & {
-      readonly data: TValue
-      readonly error: undefined
-    })
-  | (readonly [Error, undefined] & {
-      readonly data: undefined
-      readonly error: Error
-    })
+export type SafeTryReturnError = readonly [Error, undefined] & {
+  readonly data: undefined
+  readonly error: Error
+}
+
+export type SafeTryReturnData<TValue> = readonly [undefined, TValue] & {
+  readonly data: TValue
+  readonly error: undefined
+}
+
+export type SafeTryReturn<TValue> =
+  | SafeTryReturnData<TValue>
+  | SafeTryReturnError
 
 type IntermediateSafeReturn<TValue> =
   | (readonly [undefined, TValue] & {
@@ -27,19 +31,19 @@ function makeErrorSafe(error: unknown) {
 function createSafeReturnValue<TValue>(
   error?: Error,
   value?: TValue,
-): SafeReturn<TValue> {
+): SafeTryReturn<TValue> {
   if (error === undefined) {
     const returnValue = [undefined, value] as IntermediateSafeReturn<TValue>
     returnValue.error = undefined
     returnValue.data = value
 
-    return returnValue as SafeReturn<TValue>
+    return returnValue as SafeTryReturn<TValue>
   } else {
     const returnValue = [error, undefined] as IntermediateSafeReturn<TValue>
     returnValue.error = error
     returnValue.data = undefined
 
-    return returnValue as SafeReturn<TValue>
+    return returnValue as SafeTryReturn<TValue>
   }
 }
 
@@ -59,7 +63,7 @@ function createSafeReturnValue<TValue>(
  */
 export function safeTry<TReturn>(
   maybeThrowingFunction: () => TReturn,
-): SafeReturn<TReturn> {
+): SafeTryReturn<TReturn> {
   try {
     const result = maybeThrowingFunction()
 
@@ -85,7 +89,7 @@ export function safeTry<TReturn>(
  */
 export async function safeTryAsync<TReturn>(
   maybeThrowingPromise: (() => Promise<TReturn>) | Promise<TReturn>,
-): Promise<SafeReturn<TReturn>> {
+): Promise<SafeTryReturn<TReturn>> {
   try {
     const promise =
       typeof maybeThrowingPromise === 'function'
