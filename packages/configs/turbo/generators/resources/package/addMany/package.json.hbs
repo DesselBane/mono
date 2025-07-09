@@ -13,13 +13,11 @@
     "dev":"vite {{viteDevScript}}",
     "build": "vite build",
 {{else runtimeIsNodeBundled}}
-    "dev":"tsup-node --watch",
-    "build": "tsup-node",
+    "dev":"tsdown --watch --no-clean",
+    "build": "tsdown",
 {{else runtimeIsNeutral}}
-    "dev":"tsup --watch",
-    "build": "tsup",
-{{else}}
-  "build": "tsc",
+    "dev":"tsdown --watch --no-clean",
+    "build": "tsdown",
 {{/runtimeIsWeb}}
     "test": "vitest run",
     "test:dev": "vitest",

@@ -1,11 +1,4 @@
 import { defineConfig } from 'tsdown'
+import { libConfig } from '@desselbane/configs/tsdown'
 
-export default defineConfig({
-  entry: ['src/main.ts'],
-  tsconfig: 'tsconfig.lib.json',
-  dts: true,
-  exports: true,
-  platform: 'neutral',
-  sourcemap: true,
-  unused: true,
-})
+export default defineConfig(libConfig)

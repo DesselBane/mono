@@ -43,8 +43,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       {
         name: 'npmScope',
         type: 'list',
-        message:
-          'What is the npm scope of the package?',
+        message: 'What is the npm scope of the package?',
         choices: [
           {
             name: 'Private | @repo',
@@ -100,10 +99,14 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
     actions: [
       function addHelpers(answers: MyAnswers, config, plopfileApi) {
         plopfileApi.setHelper('isPrivate', function (options: MyOptions) {
-          return options.data.root.npmScope == '@repo' ? options.fn(this) : options.inverse(this)
+          return options.data.root.npmScope == '@repo'
+            ? options.fn(this)
+            : options.inverse(this)
         })
         plopfileApi.setHelper('shouldPublish', function (options: MyOptions) {
-          return options.data.root.npmScope != '@repo' ? options.fn(this) : options.inverse(this)
+          return options.data.root.npmScope != '@repo'
+            ? options.fn(this)
+            : options.inverse(this)
         })
 
         plopfileApi.setHelper('runtimeIsWeb', function (options: MyOptions) {
@@ -113,18 +116,28 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         })
 
         plopfileApi.setHelper('runtimeIsNode', function (options: MyOptions) {
-          return options.data.root.runtime === 'node' ? options.fn(this) : options.inverse(this)
-        })
-
-        plopfileApi.setHelper('runtimeIsNodeBundled', function (options: MyOptions) {
-          return options.data.root.runtime === 'bundler-node'
+          return options.data.root.runtime === 'node'
             ? options.fn(this)
             : options.inverse(this)
         })
 
-        plopfileApi.setHelper('runtimeIsNeutral', function (options: MyOptions) {
-          return options.data.root.runtime === 'neutral' ? options.fn(this) : options.inverse(this)
-        })
+        plopfileApi.setHelper(
+          'runtimeIsNodeBundled',
+          function (options: MyOptions) {
+            return options.data.root.runtime === 'bundler-node'
+              ? options.fn(this)
+              : options.inverse(this)
+          },
+        )
+
+        plopfileApi.setHelper(
+          'runtimeIsNeutral',
+          function (options: MyOptions) {
+            return options.data.root.runtime === 'neutral'
+              ? options.fn(this)
+              : options.inverse(this)
+          },
+        )
 
         plopfileApi.setHelper('platform', function (options: MyOptions) {
           switch (options.data.root.runtime) {
@@ -139,11 +152,15 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         })
 
         plopfileApi.setHelper('isLib', function (options: MyOptions) {
-          return options.data.root.packageType === 'lib' ? options.fn(this) : options.inverse(this)
+          return options.data.root.packageType === 'lib'
+            ? options.fn(this)
+            : options.inverse(this)
         })
 
         plopfileApi.setHelper('viteDevScript', function (options: MyOptions) {
-          return options.data.root.packageType === 'app' ? 'dev' : 'build --watch'
+          return options.data.root.packageType === 'app'
+            ? 'dev'
+            : 'build --watch'
         })
 
         function getPackageDir(options: MyOptions) {
@@ -155,10 +172,13 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 
         plopfileApi.setHelper('packageDir', getPackageDir)
 
-        plopfileApi.setHelper('packageAbsolutePath', function (options: MyOptions) {
-          const packagePath = getPackageDir(options)
-          return `${options.data.root.turbo.paths.root}/${packagePath}`
-        })
+        plopfileApi.setHelper(
+          'packageAbsolutePath',
+          function (options: MyOptions) {
+            const packagePath = getPackageDir(options)
+            return `${options.data.root.turbo.paths.root}/${packagePath}`
+          },
+        )
 
         plopfileApi.setHelper('voltaPath', function (options: MyOptions) {
           const { npmScope } = options.data.root
@@ -195,11 +215,11 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: 'add',
-        templateFile: 'resources/package/tsup.config.ts.hbs',
-        path: '{{packageAbsolutePath}}/tsup.config.ts',
+        templateFile: 'resources/package/tsdown.config.ts.hbs',
+        path: '{{packageAbsolutePath}}/tsdown.config.ts',
         skip: ({ runtime }: MyAnswers) => {
           if (!['neutral', 'bundler-node'].includes(runtime)) {
-            return 'Skipping tsup.config.ts'
+            return 'Skipping tsdown.config.ts'
           }
         },
       },
@@ -207,7 +227,6 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       function installDeps(answers: MyAnswers) {
         const devPackages = [
           'typescript',
-          '@types/node',
           'vitest',
           'type-fest',
           '@vitest/coverage-v8',
@@ -218,26 +237,33 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
           devPackages.push('vite', 'vite-plugin-dts', 'vue-tsc', 'sass')
           packages.push('@vueuse/core')
         } else if (answers.runtime !== 'node') {
-          devPackages.push('tsup')
+          devPackages.push('tsdown', 'unplugin-unused')
+        }
+
+        if (answers.runtime === 'bundler-node' || answers.runtime === 'node') {
+          devPackages.push('@types/node')
         }
 
         if (answers.packageType === 'app') {
-          devPackages.push(
-            'vite-plugin-vue-devtools',
-            '@vitejs/plugin-vue',
-          )
+          devPackages.push('vite-plugin-vue-devtools', '@vitejs/plugin-vue')
         }
 
         console.log('Installing depencies...')
 
-        execSync(`pnpm -F ${answers.npmScope}/${answers.packageName} add ${devPackages.join(' ')} -D`, {
-          stdio: 'inherit',
-        })
+        execSync(
+          `pnpm -F ${answers.npmScope}/${answers.packageName} add ${devPackages.join(' ')} -D`,
+          {
+            stdio: 'inherit',
+          },
+        )
 
         if (packages.length > 0) {
-          execSync(`pnpm -F ${answers.npmScope}/${answers.packageName} add ${packages.join(' ')}`, {
-            stdio: 'inherit',
-          })
+          execSync(
+            `pnpm -F ${answers.npmScope}/${answers.packageName} add ${packages.join(' ')}`,
+            {
+              stdio: 'inherit',
+            },
+          )
         }
         execSync(`pnpm -F ${answers.npmScope}/${answers.packageName} i`, {
           stdio: 'inherit',
@@ -247,9 +273,12 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       function lint(answers: MyAnswers) {
         console.log('Linting package')
-        execSync(`pnpm -F ${answers.npmScope}/${answers.packageName} lint:fix`, {
-          stdio: 'inherit',
-        })
+        execSync(
+          `pnpm -F ${answers.npmScope}/${answers.packageName} lint:fix`,
+          {
+            stdio: 'inherit',
+          },
+        )
         return 'Linted package'
       },
     ],

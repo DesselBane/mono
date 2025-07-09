@@ -163,22 +163,17 @@ This config automatically shuffles your tests. Most likely your tests only work 
 
 ## Vite (coming soon)
 
-## Tsup
+## Tsdown
 
-This is a basic [`tsup`](https://tsup.egoist.dev/#install) config which by default targets esm and the `neutral` platform.
+This is a basic [`tsdown`](https://tsdown.dev/) config which by default targets esm and the `neutral` platform.
 
-Place a `tsup.config.ts` file next to your `package.json` with the following content:
+Place a `tsdown.config.ts` file next to your `package.json` with the following content:
 
 ```typescript
-import { createDefaultOptions } from '@desselbane/configs/tsup'
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'tsdown'
+import { libConfig } from './src/tsdown.config.tpl.ts'
 
-export default defineConfig([
-  {
-    ...createDefaultOptions({ supportCjs: true }),
-    tsconfig: 'tsconfig.lib.json',
-  },
-])
+export default defineConfig({
+  ...libConfig,
+})
 ```
-
-For more info on what you can pass as options to the `createDefaultOptions` function consult the type docs.

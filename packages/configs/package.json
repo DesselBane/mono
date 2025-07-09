@@ -24,68 +24,44 @@
       "import": {
         "types": "./dist/eslint.config.tpl.d.ts",
         "default": "./dist/eslint.config.tpl.js"
-      },
-      "require": {
-        "types": "./dist/eslint.config.tpl.d.cts",
-        "default": "./dist/eslint.config.tpl.cjs"
       }
     },
     "./prettier": {
       "import": {
         "types": "./dist/prettier.config.tpl.d.ts",
         "default": "./dist/prettier.config.tpl.js"
-      },
-      "require": {
-        "types": "./dist/prettier.config.tpl.d.cts",
-        "default": "./dist/prettier.config.tpl.cjs"
       }
     },
-    "./tsup": {
+    "./tsdown": {
       "import": {
-        "types": "./dist/tsup.config.tpl.d.ts",
-        "default": "./dist/tsup.config.tpl.js"
-      },
-      "require": {
-        "types": "./dist/tsup.config.tpl.d.cts",
-        "default": "./dist/tsup.config.tpl.cjs"
+        "types": "./dist/tsdown.config.tpl.d.ts",
+        "default": "./dist/tsdown.config.tpl.js"
       }
     },
     "./vitest": {
       "import": {
         "types": "./dist/vitest.config.tpl.d.ts",
         "default": "./dist/vitest.config.tpl.js"
-      },
-      "require": {
-        "types": "./dist/vitest.config.tpl.d.cts",
-        "default": "./dist/vitest.config.tpl.cjs"
       }
     },
     "./vitest.setup.js": {
       "import": {
         "types": "./dist/vitest.setup.d.ts",
         "default": "./dist/vitest.setup.js"
-      },
-      "require": {
-        "types": "./dist/vitest.setup.d.cts",
-        "default": "./dist/vitest.setup.cjs"
       }
     },
     "./vitest-serializer.setup.js": {
       "import": {
         "types": "./dist/vitest-serializer.setup.d.ts",
         "default": "./dist/vitest-serializer.setup.js"
-      },
-      "require": {
-        "types": "./dist/vitest-serializer.setup.d.cts",
-        "default": "./dist/vitest-serializer.setup.cjs"
       }
     },
     "./tsconfig.*.tpl.json": "./tsconfig.*.tpl.json",
     "./vitest-shims.d.ts": "./vitest-shims.d.ts"
   },
   "scripts": {
-    "dev": "tsup --watch --no-clean",
-    "build": "tsup",
+    "dev": "tsdown --watch --no-clean",
+    "build": "tsdown",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json"
@@ -118,9 +94,10 @@
     "zod": "3.25.76"
   },
   "peerDependencies": {
-    "tsup": "^8",
+    "tsdown": "^0.12.9",
     "vite": "^5.4.19 || ^6.3.4 || ^7.0.0",
-    "vitest": "^2.1.9 || ^3.0.5"
+    "vitest": "^2.1.9 || ^3.0.5",
+    "@vue/test-utils": "^2.0.0"
   },
   "peerDependenciesMeta": {
     "vite": {
@@ -129,14 +106,17 @@
     "vitest": {
       "optional": true
     },
-    "tsup": {
+    "tsdown": {
+      "optional": true
+    },
+    "@vue/test-utils": {
       "optional": true
     }
   },
   "devDependencies": {
     "@types/node": "24.0.12",
     "@vue/test-utils": "2.4.6",
-    "tsup": "8.5.0",
+    "tsdown": "0.12.9",
     "typescript": "5.8.3",
     "vite": "7.0.3",
     "vitest": "3.2.4"
