@@ -187,6 +187,30 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(@types/node@24.0.14)(jiti@2.4.2)(yaml@2.8.0)
 
+  packages/setup:
+    devDependencies:
+      '@desselbane/configs':
+        specifier: workspace:*
+        version: link:../configs
+      '@types/node':
+        specifier: 24.0.12
+        version: 24.0.12
+      '@vitest/coverage-v8':
+        specifier: 3.2.4
+        version: 3.2.4(vitest@3.2.4(@types/node@24.0.12)(jiti@2.4.2)(yaml@2.8.0))
+      tsup:
+        specifier: 8.5.0
+        version: 8.5.0(@microsoft/api-extractor@7.52.8(@types/node@24.0.12))(jiti@2.4.2)(postcss@8.5.6)(typescript@5.8.3)(yaml@2.8.0)
+      type-fest:
+        specifier: 4.41.0
+        version: 4.41.0
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+      vitest:
+        specifier: 3.2.4
+        version: 3.2.4(@types/node@24.0.12)(jiti@2.4.2)(yaml@2.8.0)
+
   packages/ts-helpers:
     devDependencies:
       '@desselbane/configs':
