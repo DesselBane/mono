@@ -88,10 +88,14 @@ export function safeTry<TReturn>(
  * @param maybeThrowingPromise The promise which might throw an error
  */
 export async function safeTryAsync<TReturn>(
-  maybeThrowingPromise: () => Promise<TReturn>,
+  maybeThrowingPromise: (() => Promise<TReturn>) | Promise<TReturn>,
 ): Promise<SafeReturn<TReturn>> {
   try {
-    const promiseResult = await maybeThrowingPromise()
+    const promise =
+      typeof maybeThrowingPromise === 'function'
+        ? maybeThrowingPromise()
+        : maybeThrowingPromise
+    const promiseResult = await promise
 
     return createSafeReturnValue(undefined, promiseResult)
   } catch (error) {

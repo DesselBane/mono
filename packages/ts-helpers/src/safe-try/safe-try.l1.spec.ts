@@ -77,57 +77,115 @@ describe('safeTryAsync', () => {
     await expect(
       safeTryAsync(() => testFunctionBadAsync()),
     ).resolves.not.toThrow()
+
+    await expect(safeTryAsync(testFunctionBadAsync())).resolves.not.toThrow()
   })
 
-  describe('array', () => {
-    it('should catch and return a thrown error ', async () => {
-      const [error] = await safeTryAsync(testFunctionBadAsync)
+  describe('generator function', () => {
+    describe('array', () => {
+      it('should catch and return a thrown error ', async () => {
+        const [error] = await safeTryAsync(testFunctionBadAsync)
 
-      expect(error).toBeInstanceOf(Error)
-      expect(error?.message).toBe('test error')
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
+      })
+
+      it('should return the data if no error is thrown', async () => {
+        const [, data] = await safeTryAsync(testFunctionGoodAsync)
+
+        expect(data).toBe('test')
+      })
+
+      it.skip('has the correct typings', async () => {
+        const [error, data] = await safeTryAsync(testFunctionGoodAsync)
+
+        expectTypeOf(error).toBeNullable()
+        expectTypeOf(data).toBeNullable()
+
+        if (error == undefined) {
+          expectTypeOf(data).not.toBeNullable()
+        }
+      })
     })
 
-    it('should return the data if no error is thrown', async () => {
-      const [, data] = await safeTryAsync(testFunctionGoodAsync)
+    describe('object', () => {
+      it('should catch and return a thrown error ', async () => {
+        const { error } = await safeTryAsync(testFunctionBadAsync)
 
-      expect(data).toBe('test')
-    })
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
+      })
 
-    it.skip('has the correct typings', async () => {
-      const [error, data] = await safeTryAsync(testFunctionGoodAsync)
+      it('should return the data if no error is thrown', async () => {
+        const { data } = await safeTryAsync(testFunctionGoodAsync)
 
-      expectTypeOf(error).toBeNullable()
-      expectTypeOf(data).toBeNullable()
+        expect(data).toBe('test')
+      })
 
-      if (error == undefined) {
-        expectTypeOf(data).not.toBeNullable()
-      }
+      it.skip('has the correct typings', async () => {
+        const { error, data } = await safeTryAsync(testFunctionGoodAsync)
+
+        expectTypeOf(error).toBeNullable()
+        expectTypeOf(data).toBeNullable()
+
+        if (error == undefined) {
+          expectTypeOf(data).not.toBeNullable()
+        }
+      })
     })
   })
 
-  describe('object', () => {
-    it('should catch and return a thrown error ', async () => {
-      const { error } = await safeTryAsync(testFunctionBadAsync)
+  describe('plain promise', () => {
+    describe('array', () => {
+      it('should catch and return a thrown error ', async () => {
+        const [error] = await safeTryAsync(testFunctionBadAsync())
 
-      expect(error).toBeInstanceOf(Error)
-      expect(error?.message).toBe('test error')
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
+      })
+
+      it('should return the data if no error is thrown', async () => {
+        const [, data] = await safeTryAsync(testFunctionGoodAsync())
+
+        expect(data).toBe('test')
+      })
+
+      it.skip('has the correct typings', async () => {
+        const [error, data] = await safeTryAsync(testFunctionGoodAsync())
+
+        expectTypeOf(error).toBeNullable()
+        expectTypeOf(data).toBeNullable()
+
+        if (error == undefined) {
+          expectTypeOf(data).not.toBeNullable()
+        }
+      })
     })
 
-    it('should return the data if no error is thrown', async () => {
-      const { data } = await safeTryAsync(testFunctionGoodAsync)
+    describe('object', () => {
+      it('should catch and return a thrown error ', async () => {
+        const { error } = await safeTryAsync(testFunctionBadAsync())
 
-      expect(data).toBe('test')
-    })
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
+      })
 
-    it.skip('has the correct typings', async () => {
-      const { error, data } = await safeTryAsync(testFunctionGoodAsync)
+      it('should return the data if no error is thrown', async () => {
+        const { data } = await safeTryAsync(testFunctionGoodAsync())
 
-      expectTypeOf(error).toBeNullable()
-      expectTypeOf(data).toBeNullable()
+        expect(data).toBe('test')
+      })
 
-      if (error == undefined) {
-        expectTypeOf(data).not.toBeNullable()
-      }
+      it.skip('has the correct typings', async () => {
+        const { error, data } = await safeTryAsync(testFunctionGoodAsync())
+
+        expectTypeOf(error).toBeNullable()
+        expectTypeOf(data).toBeNullable()
+
+        if (error == undefined) {
+          expectTypeOf(data).not.toBeNullable()
+        }
+      })
     })
   })
 })
