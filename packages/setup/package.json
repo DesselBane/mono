@@ -1,6 +1,6 @@
 {
   "name": "@desselbane/setup",
-  "version": "0.1.0-rc.4",
+  "version": "0.1.0-rc.6",
   "type": "module",
   "description": "Setting up a new environment with Dessel Banes most favourite settings and apps.",
   "scripts": {
@@ -11,7 +11,7 @@
     "test:dev": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
+    "typecheck:app": "tsc --noEmit -p tsconfig.app.json",
     "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json",
     "prepublish": "pnpm turbo -F @desselbane/setup build"
   },
@@ -20,16 +20,12 @@
     "url": "https://github.com/DesselBane/mono",
     "directory": "packages/setup"
   },
-  "exports": {
-    "types": "./dist/main.d.ts",
-    "import": "./dist/main.js"
-  },
+  "bin": "dist/main.js",
   "files": [
     "dist/**",
     "package.json",
     "CHANGELOG.md"
   ],
-  "bin": "dist/main.js",
   "volta": {
     "extends": "../../package.json"
   },
