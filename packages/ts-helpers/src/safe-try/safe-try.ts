@@ -1,7 +1,50 @@
+import { assertNotNil } from '../assertions'
+
+type SafeReturn<TValue> =
+  | (readonly [undefined, TValue] & {
+      readonly data: TValue
+      readonly error: undefined
+    })
+  | (readonly [Error, undefined] & {
+      readonly data: undefined
+      readonly error: Error
+    })
+
+type IntermediateSafeReturn<TValue> =
+  | (readonly [undefined, TValue] & {
+      data?: TValue
+      error?: undefined
+    })
+  | (readonly [Error, undefined] & {
+      data?: undefined
+      error?: Error
+    })
+
 function makeErrorSafe(error: unknown) {
   return error instanceof Error
     ? error
     : new Error('Unknown error', { cause: error })
+}
+
+function createSafeReturnValue<TValue>(
+  error?: Error,
+  value?: TValue,
+): SafeReturn<TValue> {
+  if (error === undefined) {
+    assertNotNil(value)
+
+    const returnValue = [undefined, value] as IntermediateSafeReturn<TValue>
+    returnValue.error = undefined
+    returnValue.data = value
+
+    return returnValue as SafeReturn<TValue>
+  } else {
+    const returnValue = [error, undefined] as IntermediateSafeReturn<TValue>
+    returnValue.error = error
+    returnValue.data = undefined
+
+    return returnValue as SafeReturn<TValue>
+  }
 }
 
 /**
@@ -20,13 +63,13 @@ function makeErrorSafe(error: unknown) {
  */
 export function safeTry<TReturn>(
   maybeThrowingFunction: () => TReturn,
-): readonly [undefined, TReturn] | readonly [Error, undefined] {
+): SafeReturn<TReturn> {
   try {
     const result = maybeThrowingFunction()
 
-    return [undefined, result] as const
+    return createSafeReturnValue(undefined, result)
   } catch (error) {
-    return [makeErrorSafe(error), undefined] as const
+    return createSafeReturnValue(makeErrorSafe(error))
   }
 }
 
@@ -45,13 +88,17 @@ export function safeTry<TReturn>(
  * @param maybeThrowingPromise The promise which might throw an error
  */
 export async function safeTryAsync<TReturn>(
-  maybeThrowingPromise: () => Promise<TReturn>,
-): Promise<readonly [undefined, TReturn] | readonly [Error, undefined]> {
+  maybeThrowingPromise: (() => Promise<TReturn>) | Promise<TReturn>,
+): Promise<SafeReturn<TReturn>> {
   try {
-    const promiseResult = await maybeThrowingPromise()
+    const promise =
+      typeof maybeThrowingPromise === 'function'
+        ? maybeThrowingPromise()
+        : maybeThrowingPromise
+    const promiseResult = await promise
 
-    return [undefined, promiseResult] as const
+    return createSafeReturnValue(undefined, promiseResult)
   } catch (error) {
-    return [makeErrorSafe(error), undefined] as const
+    return createSafeReturnValue(makeErrorSafe(error))
   }
 }
