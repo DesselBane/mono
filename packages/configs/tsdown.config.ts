@@ -1,5 +1,5 @@
 import { defineConfig } from 'tsdown'
-import { libConfig  } from './src/tsdown.config.tpl.ts'
+import { libConfig } from './src/tsdown.config.tpl.ts'
 
 export default defineConfig({
   ...libConfig,

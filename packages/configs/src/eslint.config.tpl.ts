@@ -281,6 +281,7 @@ function configureUnicornPlugin(options: SafeOptions): Config {
           },
         ],
         'unicorn/no-keyword-prefix': 'off',
+        'unicorn/prevent-abbreviations': 'off',
       },
     },
     {
@@ -412,20 +413,6 @@ function configureAdditionalRules(options: SafeOptions): Config {
       rules: {
         // missing-playwright-await conflicts with unicorn/prefer-ternary and as long as @typescript-eslint/no-floating-promises is enabled its safe to disable this rule
         'playwright/missing-playwright-await': 'off',
-      },
-    })
-  }
-
-  if (options.vue && options.useUnicornPlugin) {
-    config.push({
-      rules: {
-        'unicorn/prevent-abbreviations': [
-          'error',
-          {
-            // Even though fooRef is an abbreviation for fooReference, Ref is a term coined by vue, and it would be more confusing to call variables which hold a vue ref fooReference
-            ignore: [/.*Ref(?:[A-Z].*)?/],
-          },
-        ],
       },
     })
   }
