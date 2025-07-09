@@ -1,7 +1,50 @@
+import { assertNotNil } from '../assertions'
+
+type SafeReturn<TValue> =
+  | (readonly [undefined, TValue] & {
+      readonly data: TValue
+      readonly error: undefined
+    })
+  | (readonly [Error, undefined] & {
+      readonly data: undefined
+      readonly error: Error
+    })
+
+type IntermediateSafeReturn<TValue> =
+  | (readonly [undefined, TValue] & {
+      data?: TValue
+      error?: undefined
+    })
+  | (readonly [Error, undefined] & {
+      data?: undefined
+      error?: Error
+    })
+
 function makeErrorSafe(error: unknown) {
   return error instanceof Error
     ? error
     : new Error('Unknown error', { cause: error })
+}
+
+function createSafeReturnValue<TValue>(
+  error?: Error,
+  value?: TValue,
+): SafeReturn<TValue> {
+  if (error === undefined) {
+    assertNotNil(value)
+
+    const returnValue = [undefined, value] as IntermediateSafeReturn<TValue>
+    returnValue.error = undefined
+    returnValue.data = value
+
+    return returnValue as SafeReturn<TValue>
+  } else {
+    const returnValue = [error, undefined] as IntermediateSafeReturn<TValue>
+    returnValue.error = error
+    returnValue.data = undefined
+
+    return returnValue as SafeReturn<TValue>
+  }
 }
 
 /**
@@ -20,13 +63,13 @@ function makeErrorSafe(error: unknown) {
  */
 export function safeTry<TReturn>(
   maybeThrowingFunction: () => TReturn,
-): readonly [undefined, TReturn] | readonly [Error, undefined] {
+): SafeReturn<TReturn> {
   try {
     const result = maybeThrowingFunction()
 
-    return [undefined, result] as const
+    return createSafeReturnValue(undefined, result)
   } catch (error) {
-    return [makeErrorSafe(error), undefined] as const
+    return createSafeReturnValue(makeErrorSafe(error))
   }
 }
 
@@ -46,12 +89,12 @@ export function safeTry<TReturn>(
  */
 export async function safeTryAsync<TReturn>(
   maybeThrowingPromise: () => Promise<TReturn>,
-): Promise<readonly [undefined, TReturn] | readonly [Error, undefined]> {
+): Promise<SafeReturn<TReturn>> {
   try {
     const promiseResult = await maybeThrowingPromise()
 
-    return [undefined, promiseResult] as const
+    return createSafeReturnValue(undefined, promiseResult)
   } catch (error) {
-    return [makeErrorSafe(error), undefined] as const
+    return createSafeReturnValue(makeErrorSafe(error))
   }
 }
