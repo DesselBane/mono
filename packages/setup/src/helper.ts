@@ -1,7 +1,21 @@
+import { execSync } from 'node:child_process'
+import { safeTry } from '@desselbane/ts-helpers'
 import type { SafeTryReturn, SafeTryReturnData } from '@desselbane/ts-helpers'
 import type { checkbox } from '@inquirer/prompts'
 
 export type Choice = Parameters<typeof checkbox>[0]['choices'][number]
+
+export function isAdmin() {
+  if (process.platform !== 'win32') {
+    return false
+  }
+
+  const [error] = safeTry(() =>
+    execSync(`fsutil dirty query ${process.env.systemdrive}`),
+  )
+
+  return error == undefined
+}
 
 export function cleanExit<TValue>(
   safeReturn?: SafeTryReturn<TValue>,
@@ -12,4 +26,15 @@ export function cleanExit<TValue>(
 
   console.log('Exiting... 👋')
   process.exit(0)
+}
+
+export function wingetInstall(packageName: string) {
+  safeTry(() =>
+    execSync(
+      `winget install --accept-package-agreements --accept-source-agreements ${packageName}`,
+      {
+        stdio: 'inherit',
+      },
+    ),
+  )
 }

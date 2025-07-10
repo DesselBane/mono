@@ -11,7 +11,7 @@
   },
   {
     "Name": "Powershell 7",
-    "WingetId": "9MZ1SNWT0N5D",
+    "WingetId": "Microsoft.PowerShell",
     "installDefault": false
   },
   {

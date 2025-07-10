@@ -1,7 +1,6 @@
-import { execSync } from 'node:child_process'
 import { checkbox, confirm } from '@inquirer/prompts'
 import { safeTryAsync } from '@desselbane/ts-helpers'
-import { cleanExit } from './helper'
+import { cleanExit, wingetInstall } from './helper'
 import type { Choice } from './helper'
 import config from './program.config.json'
 
@@ -44,10 +43,7 @@ export async function installPrograms() {
     cleanExit()
   }
 
-  execSync(
-    `sudo winget install --accept-package-agreements --accept-source-agreements ${installProgramsPrompt.data.map((x) => `"${x.WingetId}"`).join(' ')}`,
-    {
-      stdio: 'inherit',
-    },
+  wingetInstall(
+    installProgramsPrompt.data.map((x) => `"${x.WingetId}"`).join(' '),
   )
 }

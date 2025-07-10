@@ -17,7 +17,7 @@ export async function upgradePrograms() {
   }
 
   safeTry(() =>
-    execSync('winget update -q Microsoft.AppInstaller', {
+    execSync('winget update Microsoft.AppInstaller', {
       stdio: 'inherit',
     }),
   )
@@ -36,7 +36,7 @@ export async function upgradePrograms() {
     process.exit(0)
   }
 
-  execSync('sudo winget update -r', {
+  execSync('winget update -r', {
     stdio: 'inherit',
   })
 }
