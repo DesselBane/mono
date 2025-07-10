@@ -1,9 +1,16 @@
 import { execSync as execSyncNode } from 'node:child_process'
 import { safeTry } from '@desselbane/ts-helpers'
 import type { SafeTryReturn, SafeTryReturnData } from '@desselbane/ts-helpers'
-import type { checkbox } from '@inquirer/prompts'
 
-export type Choice = Parameters<typeof checkbox>[0]['choices'][number]
+export type Choice<Value> = {
+  value: Value
+  name?: string
+  description?: string
+  short?: string
+  disabled?: boolean | string
+  checked?: boolean
+  type?: never
+}
 
 export function isAdmin() {
   if (process.platform !== 'win32') {

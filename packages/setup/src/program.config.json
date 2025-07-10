@@ -2,306 +2,367 @@
   {
     "Name": "Windows Terminal",
     "WingetId": "9N0DX20HK701",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Core"
   },
   {
     "Name": "Windows Terminal Preview",
     "WingetId": "9N8G5RFZ9XK3",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "Powershell 7",
     "WingetId": "Microsoft.PowerShell",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Core"
   },
   {
     "Name": "Starship",
     "WingetId": "Starship.Starship",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "Visual Studio Code",
     "WingetId": "Microsoft.VisualStudioCode",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Programming"
   },
   {
     "Name": "Volta",
     "WingetId": "Volta.Volta",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "7-Zip",
     "WingetId": "7zip.7zip",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Util"
   },
   {
     "Name": "JetBrains Toolbox",
     "WingetId": "JetBrains.Toolbox",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "Logitech Unifying Software",
     "WingetId": "Logitech.UnifyingSoftware",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Peripherals"
   },
   {
     "Name": "Firefox",
     "WingetId": "9NZVDKPMR9RD",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Media"
   },
   {
     "Name": "Nextcloud",
     "WingetId": "Nextcloud.NextcloudDesktop",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Cloud"
   },
   {
     "Name": "Notepad++",
     "WingetId": "Notepad++.Notepad++",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "PowerToys",
     "WingetId": "Microsoft.PowerToys",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "Spotify",
     "WingetId": "9NCBCSZSJRSB",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Media"
   },
   {
     "Name": "Telegram",
     "WingetId": "Telegram.TelegramDesktop",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Media"
   },
   {
     "Name": "WinDirStat",
     "WingetId": "WinDirStat.WinDirStat",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Util"
   },
   {
     "Name": "Region to Share",
     "WingetId": "9N4066W2R5Q4",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Programming"
   },
   {
     "Name": "Sysinternals Suite",
     "WingetId": "9P7KNL5RWT25",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Util"
   },
   {
     "Name": "Enpass Password Manager",
     "WingetId": "9NJ3KMH29VGJ",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Util"
   },
   {
     "Name": "AltDrag",
     "WingetId": "AltDrag.AltDrag",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Util"
   },
   {
     "Name": "Deno",
     "WingetId": "DenoLand.Deno",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "MKCert",
     "WingetId": "FiloSottile.mkcert",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "NVDA",
     "WingetId": "NVAccess.NVDA",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "Postman",
     "WingetId": "Postman.Postman",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "Rustup",
     "WingetId": "Rustlang.Rustup",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "SteelSeries GG",
     "WingetId": "SteelSeries.GG",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "ZOxide",
     "WingetId": "ajeetdsouza.zoxide",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "fzf fuzzy finder",
     "WingetId": "junegunn.fzf",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "JQ",
     "WingetId": "jqlang.jq",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "delta",
     "WingetId": "dandavison.delta",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "less",
     "WingetId": "jftuga.less",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "eza",
     "WingetId": "eza-community.eza",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "bat",
     "WingetId": "sharkdp.bat",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "btop",
     "WingetId": "aristocratos.btop4win",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "Lazy Git",
     "WingetId": "JesseDuffield.lazygit",
-    "installDefault": false
+    "installDefault": false,
+    "group": "CLI"
   },
   {
     "Name": "Lazy Docker",
     "WingetId": "JesseDuffield.Lazydocker",
-    "installDefault": false
+    "installDefault": false,
+    "group": "CLI"
   },
   {
     "Name": "Elgato StreamDeck",
     "WingetId": "Elgato.StreamDeck",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Peripherals"
   },
   {
     "Name": "GLab Gitlab CLI",
     "WingetId": "GLab.GLab",
-    "installDefault": false
+    "installDefault": false,
+    "group": "CLI"
   },
   {
     "Name": "Zoom",
     "WingetId": "Zoom.Zoom",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Media"
   },
   {
     "Name": "Google Chrome",
     "WingetId": "Google.Chrome",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "Zen Browser",
     "WingetId": "Zen-Team.Zen-Browser",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "QMK Toolbox",
     "WingetId": "QMK.QMKToolbox",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Peripherals"
   },
   {
     "Name": "AusweisApp",
     "WingetId": "Governikus.AusweisApp",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Util"
   },
   {
     "Name": "Steam",
     "WingetId": "Valve.Steam",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Media"
   },
   {
     "Name": "Discord",
     "WingetId": "Discord.Discord",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Media"
   },
   {
     "Name": "WireGuard",
     "WingetId": "WireGuard.WireGuard",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Util"
   },
   {
     "Name": "Warp",
     "WingetId": "Cloudflare.Warp",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "Neovim",
     "WingetId": "Neovim.Neovim",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "Synology Drive",
     "WingetId": "Synology.DriveClient",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Media"
   },
   {
     "Name": "Git Butler",
     "WingetId": "GitButler.GitButler",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Programming"
   },
   {
     "Name": "Nushell",
     "WingetId": "Nushell.Nushell",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Core"
   },
   {
     "Name": "Podman",
     "WingetId": "RedHat.Podman",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Programming"
   },
   {
     "Name": "Podman Desktop",
     "WingetId": "RedHat.Podman-Desktop",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Programming"
   },
   {
     "Name": "Windhawk",
     "WingetId": "RamenSoftware.Windhawk",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Util"
   },
   {
     "Name": "1Password CLI",
     "WingetId": "AgileBits.1Password.CLI",
-    "installDefault": false
+    "installDefault": false,
+    "group": "CLI"
   },
    {
     "Name": "kubectl",
     "WingetId": "Kubernetes.kubectl",
-    "installDefault": false
+    "installDefault": false,
+    "group": "CLI"
   },
   {
     "Name": "jj",
     "WingetId": "jj-vcs.jj",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "ACT",
     "WingetId": "nektos.act",
-    "installDefault": false
+    "installDefault": false,
+    "group": "Programming"
   },
   {
     "Name": "Carapace",
     "WingetId": "rsteube.Carapace",
-    "installDefault": true
+    "installDefault": true,
+    "group": "CLI"
   },
   {
     "Name": "Yazi",
     "WingetId": "sxyazi.yazi",
-    "installDefault": false
+    "installDefault": false,
+    "group": "CLI"
   },
   {
     "Name": "SegoeIcons",
     "WingetId": "zadjii.SegoeIcons",
-    "installDefault": true
+    "installDefault": true,
+    "group": "Media"
   }
 ]
