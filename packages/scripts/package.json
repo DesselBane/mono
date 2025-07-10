@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
-    "@types/node": "24.0.12",
+    "@types/node": "24.0.13",
     "@vitest/coverage-v8": "3.2.4",
     "simple-git": "3.28.0",
     "type-fest": "4.41.0",
