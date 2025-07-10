@@ -1,9 +1,8 @@
-import { execSync } from 'node:child_process'
 import path from 'node:path'
 import { writeFileSync } from 'node:fs'
 import { assertNotNil, safeTryAsync } from '@desselbane/ts-helpers'
 import { confirm } from '@inquirer/prompts'
-import { cleanExit, wingetInstall } from './helper'
+import { cleanExit, execSync, wingetInstall } from './helper'
 
 assertNotNil(process.env.LOCALAPPDATA)
 const LOCALAPPDATA = process.env.LOCALAPPDATA
@@ -25,12 +24,6 @@ const gpgSshProgram = path
   .join(LOCALAPPDATA, '1Password', 'app', '8', 'op-ssh-sign.exe')
   .replaceAll('\\', '/')
 
-function exec(command: string) {
-  execSync(command, {
-    stdio: 'inherit',
-  })
-}
-
 export async function setupDotConfig() {
   const shouldPrompt = await safeTryAsync(
     confirm({
@@ -48,13 +41,15 @@ export async function setupDotConfig() {
   wingetInstall('Microsoft.PowerShell')
 
   console.log('Installing OpenSSH Client')
-  exec('pwsh -c "Add-WindowsCapability -Online -Name OpenSSH.Client*"')
+  execSync('pwsh -c "Add-WindowsCapability -Online -Name OpenSSH.Client*"')
 
   console.log('Installing OpenSSH Server')
-  exec('pwsh -c "Add-WindowsCapability -Online -Name OpenSSH.Server*"')
+  execSync('pwsh -c "Add-WindowsCapability -Online -Name OpenSSH.Server*"')
 
   console.log('Disabling SSH-Agent in preparation for 1password')
-  exec('pwsh -c "Get-Service ssh-agent | Set-Service -StartupType Disabled"')
+  execSync(
+    'pwsh -c "Get-Service ssh-agent | Set-Service -StartupType Disabled"',
+  )
 
   console.log('Installing 1password')
   wingetInstall('AgileBits.1Password')
@@ -97,19 +92,19 @@ export async function setupDotConfig() {
 
   console.log('Checking out git repo')
 
-  exec(
+  execSync(
     `git clone --bare git@github.com:DesselBane/config.git ${USERPROFILE}/.dotCfg`,
   )
 
   console.log('Done: Cloning')
 
-  exec(
+  execSync(
     `git --work-tree ${USERPROFILE} --git-dir=${USERPROFILE}/.dotCfg checkout master -f`,
   )
 
   console.log('Done: Checkout')
 
-  exec(
+  execSync(
     `git --work-tree ${USERPROFILE} --git-dir=${USERPROFILE}/.dotCfg config --local status.showUntrackedFiles no`,
   )
 
