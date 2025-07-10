@@ -5,11 +5,12 @@ sudo config --enable normal
 ```
 
 ```powershell
-sudo winget install Volta.Volta
-[Environment]::SetEnvironmentVariable("VOLTA_FEATURE_PNPM", "1", [System.EnvironmentVariableTarget]::User)
+winget update Microsoft.AppInstaller
 ```
 
 ```powershell
+sudo winget install Volta.Volta
+[Environment]::SetEnvironmentVariable("VOLTA_FEATURE_PNPM", "1", [System.EnvironmentVariableTarget]::User)
 volta install node@24
 volta install pnpm
 

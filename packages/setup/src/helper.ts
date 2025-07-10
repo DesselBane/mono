@@ -1,4 +1,4 @@
-import { execSync } from 'node:child_process'
+import { execSync as execSyncNode } from 'node:child_process'
 import { safeTry } from '@desselbane/ts-helpers'
 import type { SafeTryReturn, SafeTryReturnData } from '@desselbane/ts-helpers'
 import type { checkbox } from '@inquirer/prompts'
@@ -11,7 +11,7 @@ export function isAdmin() {
   }
 
   const [error] = safeTry(() =>
-    execSync(`fsutil dirty query ${process.env.systemdrive}`),
+    execSyncNode(`fsutil dirty query ${process.env.systemdrive}`),
   )
 
   return error == undefined
@@ -29,12 +29,14 @@ export function cleanExit<TValue>(
 }
 
 export function wingetInstall(packageName: string) {
-  safeTry(() =>
+  safeTry(() => {
     execSync(
       `winget install --accept-package-agreements --accept-source-agreements ${packageName}`,
-      {
-        stdio: 'inherit',
-      },
-    ),
-  )
+    )
+  })
+}
+export function execSync(command: string) {
+  execSyncNode(command, {
+    stdio: 'inherit',
+  })
 }

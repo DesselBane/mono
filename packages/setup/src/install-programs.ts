@@ -1,10 +1,22 @@
 import { checkbox, confirm } from '@inquirer/prompts'
 import { safeTryAsync } from '@desselbane/ts-helpers'
-import { cleanExit, wingetInstall } from './helper'
+import { cleanExit, execSync, wingetInstall } from './helper'
 import type { Choice } from './helper'
 import config from './program.config.json'
 
 export async function installPrograms() {
+  const updateInstalledProgramsPrompt = await safeTryAsync(
+    confirm({
+      message: 'Do you want to update all currently installed Programs?',
+      default: true,
+    }),
+  )
+  cleanExit(updateInstalledProgramsPrompt)
+
+  if (updateInstalledProgramsPrompt.data) {
+    execSync('winget update -r')
+  }
+
   const installProgramsPrompt = await safeTryAsync(
     checkbox({
       message: 'Which apps should be installed?',
