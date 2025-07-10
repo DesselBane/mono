@@ -1,8 +1,19 @@
-import { checkbox, confirm } from '@inquirer/prompts'
+import { checkbox, confirm, Separator } from '@inquirer/prompts'
 import { safeTryAsync } from '@desselbane/ts-helpers'
 import { cleanExit, execSync, wingetInstall } from './helper'
 import type { Choice } from './helper'
 import config from './program.config.json'
+
+const groupPrio = [
+  'Core',
+  'CLI',
+  'Programming',
+  'Media',
+  'Util',
+  'Peripherals',
+] as const
+
+export type Choices = (Choice<(typeof config)[number]> | Separator)[]
 
 export async function installPrograms() {
   const updateInstalledProgramsPrompt = await safeTryAsync(
@@ -17,17 +28,34 @@ export async function installPrograms() {
     execSync('winget update -r')
   }
 
+  const choices: Choices = []
+
+  function mapConfigItem(item: (typeof config)[number]): Choices[number] {
+    return {
+      value: item,
+      name: item.Name,
+      checked: item.installDefault,
+    } as const
+  }
+
+  for (const group of groupPrio) {
+    choices.push(new Separator(group))
+    const groupMembers = config.filter((x) => x.group === group)
+
+    choices.push(
+      ...groupMembers
+        .filter((x) => x.installDefault)
+        .map((x) => mapConfigItem(x)),
+      ...groupMembers
+        .filter((x) => !x.installDefault)
+        .map((x) => mapConfigItem(x)),
+    )
+  }
+
   const installProgramsPrompt = await safeTryAsync(
     checkbox({
       message: 'Which apps should be installed?',
-      choices: config.map(
-        (x) =>
-          ({
-            value: x,
-            name: x.Name,
-            checked: x.installDefault,
-          }) satisfies Choice,
-      ),
+      choices,
       loop: false,
     }),
   )
