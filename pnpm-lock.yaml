@@ -217,6 +217,9 @@ importers:
       vitest:
         specifier: 3.2.4
         version: 3.2.4(@types/node@24.0.12)(jiti@2.4.2)(yaml@2.8.0)
+      zod:
+        specifier: 4.0.2
+        version: 4.0.2
 
   packages/ts-helpers:
     devDependencies:
@@ -3574,6 +3577,9 @@ packages:
 
   zod@4.0.5:
     resolution: {integrity: sha512-/5UuuRPStvHXu7RS+gmvRf4NXrNxpSllGwDnCBcJZtQsKrviYXm54yDGV2KYNLT5kq0lHGcl7lqWJLgSaG+tgA==}
+
+  zod@4.0.2:
+    resolution: {integrity: sha512-X2niJNY54MGam4L6Kj0AxeedeDIi/E5QFW0On2faSX5J4/pfLk1tW+cRMIMoojnCavn/u5W/kX17e1CSGnKMxA==}
 
 snapshots:
 
@@ -7168,3 +7174,5 @@ snapshots:
   yoctocolors-cjs@2.1.2: {}
 
   zod@4.0.5: {}
+
+  zod@4.0.2: {}
