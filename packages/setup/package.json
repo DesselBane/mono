@@ -6,6 +6,8 @@
   "scripts": {
     "prerun-bin": "pnpm turbo -F @desselbane/setup build",
     "run-bin": "node dist/main.js",
+    "preread-package-list": "pnpm turbo -F @desselbane/setup build",
+    "read-package-list": "node dist/read-package-list",
     "build": "tsdown",
     "test": "vitest run",
     "test:dev": "vitest",
@@ -40,7 +42,8 @@
     "tsdown": "0.12.9",
     "type-fest": "4.41.0",
     "typescript": "5.8.3",
-    "vitest": "3.2.4"
+    "vitest": "3.2.4",
+    "zod": "4.0.2"
   },
   "engines": {
     "node": ">=20"

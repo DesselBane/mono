@@ -60,8 +60,8 @@
     "installDefault": true
   },
   {
-    "Name": "Microsoft PowerToys",
-    "WingetId": "XP89DCGQ3K6VLD",
+    "Name": "PowerToys",
+    "WingetId": "Microsoft.PowerToys",
     "installDefault": true
   },
   {
@@ -223,5 +223,85 @@
     "Name": "Discord",
     "WingetId": "Discord.Discord",
     "installDefault": false
+  },
+  {
+    "Name": "WireGuard",
+    "WingetId": "WireGuard.WireGuard",
+    "installDefault": false
+  },
+  {
+    "Name": "Warp",
+    "WingetId": "Cloudflare.Warp",
+    "installDefault": true
+  },
+  {
+    "Name": "Neovim",
+    "WingetId": "Neovim.Neovim",
+    "installDefault": true
+  },
+  {
+    "Name": "Synology Drive",
+    "WingetId": "Synology.DriveClient",
+    "installDefault": true
+  },
+  {
+    "Name": "Git Butler",
+    "WingetId": "GitButler.GitButler",
+    "installDefault": true
+  },
+  {
+    "Name": "Nushell",
+    "WingetId": "Nushell.Nushell",
+    "installDefault": true
+  },
+  {
+    "Name": "Podman",
+    "WingetId": "RedHat.Podman",
+    "installDefault": true
+  },
+  {
+    "Name": "Podman Desktop",
+    "WingetId": "RedHat.Podman-Desktop",
+    "installDefault": true
+  },
+  {
+    "Name": "Windhawk",
+    "WingetId": "RamenSoftware.Windhawk",
+    "installDefault": true
+  },
+  {
+    "Name": "1Password CLI",
+    "WingetId": "AgileBits.1Password.CLI",
+    "installDefault": false
+  },
+   {
+    "Name": "kubectl",
+    "WingetId": "Kubernetes.kubectl",
+    "installDefault": false
+  },
+  {
+    "Name": "jj",
+    "WingetId": "jj-vcs.jj",
+    "installDefault": false
+  },
+  {
+    "Name": "ACT",
+    "WingetId": "nektos.act",
+    "installDefault": false
+  },
+  {
+    "Name": "Carapace",
+    "WingetId": "rsteube.Carapace",
+    "installDefault": true
+  },
+  {
+    "Name": "Yazi",
+    "WingetId": "sxyazi.yazi",
+    "installDefault": false
+  },
+  {
+    "Name": "SegoeIcons",
+    "WingetId": "zadjii.SegoeIcons",
+    "installDefault": true
   }
 ]
