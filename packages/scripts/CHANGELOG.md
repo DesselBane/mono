@@ -1,5 +1,19 @@
 # @repo/scripts
 
+## 0.1.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 4441786: deps: [patch|devDependencies] Update package @types/node from 24.0.10 to 24.0.11
+- 4f0092b: deps: [patch|devDependencies] Update package @types/node from 24.0.11 to 24.0.12
+- 6bfb1dc: deps: [patch|devDependencies] Update package @types/node from 24.0.12 to 24.0.13
+
+
+</details>
+
 ## 0.1.0
 
 ### Minor Changes
