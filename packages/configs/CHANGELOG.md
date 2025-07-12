@@ -1,5 +1,46 @@
 # @desselbane/configs
 
+## 14.0.0
+
+### Major Changes
+
+- 319f393: Remove support for `tsup`. Use `tsdown` instead.
+
+### Minor Changes
+
+- cb5c173: Enable `declarationMap` by default
+- ed64e9d: Turn off `unicorn/prevent-abbreviations`
+- 319f393: Migrate build system to `tsdown`. This enables `declarationMap`s.
+- 36ed2fb: Add support for `tsdown`.
+
+  This is a basic [`tsdown`](https://tsdown.dev/) config which by default targets esm and the `neutral` platform.
+
+  Place a `tsdown.config.ts` file next to your `package.json` with the following content:
+
+  ```typescript
+  import { defineConfig } from 'tsdown'
+  import { libConfig } from './src/tsdown.config.tpl.ts'
+
+  export default defineConfig({
+    ...libConfig,
+  })
+  ```
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 3924a9f: deps: [minor|dependencies] Update package @eslint/js from 9.30.1 to 9.31.0
+- 4441786: deps: [patch|devDependencies] Update package @types/node from 24.0.10 to 24.0.11
+- 4f0092b: deps: [patch|devDependencies] Update package @types/node from 24.0.11 to 24.0.12
+- 6bfb1dc: deps: [patch|devDependencies] Update package @types/node from 24.0.12 to 24.0.13
+- 87d2fbe: deps: [minor|dependencies] Update package eslint from 9.30.1 to 9.31.0
+- 3bf46b1: deps: [patch|devDependencies] Update package vite from 7.0.3 to 7.0.4
+
+
+</details>
+
 ## 13.0.0
 
 ### Major Changes
