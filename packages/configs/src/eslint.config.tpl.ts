@@ -103,7 +103,7 @@ const optionsSchema = z
     testMatch: z
       .array(z.string())
       .default(['**/*.spec.ts', '**/*.test.ts', '**/__mocks__/**/*.ts']),
-    additionalConfigs: z.array(z.object({}).passthrough()).default([]),
+    additionalConfigs: z.array(z.looseObject({})).default([]),
   })
   .transform((schema) => {
     return {
