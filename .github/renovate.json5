@@ -34,7 +34,7 @@
     commands: [
       'cp "$RENOVATE_POST_UPGRADE_COMMAND_DATA_FILE" ".changeset/update_{{{ replace "\/" "_" branchName}}}.json"',
     ],
-    dataFileTemplate: '[{{#each upgrades}}{"depName": "{{{depName}}}", "currentVersion": "{{{currentVersion}}}", "newVersion": "{{{newVersion}}}, "depType": "{{{depType}}}, "packageFile": "{{{packageFile}}}, "manager": "{{{manager}}}, "updateType": "{{{updateType}}}"}{{#unless @last}},{{\/unless}}{{\/each}}]',
+    dataFileTemplate: '[{{#each upgrades}}{"depName": "{{{depName}}}", "currentVersion": "{{{currentVersion}}}", "newVersion": "{{{newVersion}}}", "depType": "{{{depType}}}, "packageFile": "{{{packageFile}}}, "manager": "{{{manager}}}, "updateType": "{{{updateType}}}"}{{#unless @last}},{{\/unless}}{{\/each}}]',
     fileFilters: ['.changeset/*.md', '.changeset/*.json'],
     executionMode: 'update',
   },
