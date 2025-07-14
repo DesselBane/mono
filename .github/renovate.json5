@@ -32,9 +32,10 @@
   },
   postUpgradeTasks: {
     commands: [
-      "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --packageFile '{{packageFile}}' --manager '{{manager}}' --updateType '{{updateType}}'",
+      /* "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --packageFile '{{packageFile}}' --manager '{{manager}}' --updateType '{{updateType}}'", */
+      "echo \"[{{#each upgrades}}{\"depName\": \"{{{depName}}}\", \"currentValue\": \"{{{currentValue}}}\", \"newValue\": \"{{{newValue}}}\"}{{#unless @last}},{{\/unless}}{{\/each}}]\" >> .changeset/update_{{branchName}}.json"
     ],
-    fileFilters: ['.changeset/*.md'],
+    fileFilters: ['.changeset/*.md', '.changeset/*.json'],
     executionMode: 'update',
   },
   automerge: false,
