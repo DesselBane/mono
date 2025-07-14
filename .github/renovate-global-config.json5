@@ -1,4 +1,4 @@
 {
-  allowedCommands: ['^echo.*'],
+  allowedCommands: ['.*'],
   repositories: ['DesselBane/mono']
 }
