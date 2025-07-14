@@ -13,9 +13,9 @@ on:
           - WARN
           - ERROR
           - FATAL
-  schedule:
-    # Run every 4h
-    - cron: '0 */4 * * *'
+#  schedule:
+#    # Run every 4h
+#    - cron: '0 */4 * * *'
 
 permissions:
   contents: read
