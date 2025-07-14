@@ -1,4 +1,4 @@
 {
-  allowedCommands: ['^pnpm -w renovate-add-changeset.*'],
+  allowedCommands: ['^echo.*'],
   repositories: ['DesselBane/mono']
 }
