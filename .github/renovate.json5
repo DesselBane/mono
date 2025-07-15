@@ -32,10 +32,10 @@
   },
   postUpgradeTasks: {
     commands: [
-      "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --packageFile '{{packageFile}}' --manager '{{manager}}' --updateType '{{updateType}}'",
+      'cp "$RENOVATE_POST_UPGRADE_COMMAND_DATA_FILE" ".changeset/update_{{{ replace "\/" "_" branchName}}}.json"',
     ],
-
-    fileFilters: ['.changeset/*.md'],
+    dataFileTemplate: '[{{#each upgrades}}{"depName": "{{{depName}}}", "currentVersion": "{{{currentVersion}}}", "newVersion": "{{{newVersion}}}", "depType": "{{{depType}}}", "packageFile": "{{{packageFile}}}", "manager": "{{{manager}}}", "updateType": "{{{updateType}}}"}{{#unless @last}},{{\/unless}}{{\/each}}]',
+    fileFilters: ['.changeset/*.md', '.changeset/*.json'],
     executionMode: 'update',
   },
   automerge: false,
