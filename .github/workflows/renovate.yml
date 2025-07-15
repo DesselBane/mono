@@ -44,5 +44,6 @@ jobs:
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'INFO' }}
         with:
+          renovate-version: full
           configurationFile: .github/renovate-global-config.json5
           token: '${{ steps.get_token.outputs.token }}'
