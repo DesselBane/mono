@@ -1,6 +1,6 @@
 {
   "include": ["src/**/*.ts", "@types"],
-  "exclude": ["src/**/*.spec.ts", "**/__mocks__/**/*"],
+  "exclude": ["src/**/*.spec.ts", "**/__mocks__/**/*", "**/*.spec-d.ts"],
   "extends": "@desselbane/configs/tsconfig.node.tpl.json",
   "compilerOptions": {
     "allowImportingTsExtensions": true

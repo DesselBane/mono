@@ -48,7 +48,7 @@ Use a `tsconfig.app.json` for your app files:
 ```json
 {
   "include": ["src/**/*.ts", "@types", "**/*.vue"],
-  "exclude": ["src/**/*.spec.ts"],
+  "exclude": ["src/**/*.spec.ts", "**/__mocks__/**/*", "**/*.spec-d.ts"],
   "extends": "@desselbane/configs/tsconfig.bundler-web.tpl.json"
 }
 ```
