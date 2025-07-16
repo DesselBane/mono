@@ -1,5 +1,3 @@
-import { assertNotNil } from '../assertions'
-
 type SafeReturn<TValue> =
   | (readonly [undefined, TValue] & {
       readonly data: TValue
@@ -31,8 +29,6 @@ function createSafeReturnValue<TValue>(
   value?: TValue,
 ): SafeReturn<TValue> {
   if (error === undefined) {
-    assertNotNil(value)
-
     const returnValue = [undefined, value] as IntermediateSafeReturn<TValue>
     returnValue.error = undefined
     returnValue.data = value
