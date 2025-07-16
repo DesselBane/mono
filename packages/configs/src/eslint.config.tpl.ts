@@ -379,7 +379,13 @@ function configureNoUnusedImportsPlugin() {
 }
 
 function configureAdditionalRules(options: SafeOptions): Config {
-  const config: Config = []
+  const config: Config = [
+    {
+      linterOptions: {
+        reportUnusedInlineConfigs: 'error',
+      },
+    },
+  ]
 
   if (options.useTypeCheckedConfig) {
     config.push(
