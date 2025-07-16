@@ -21,8 +21,8 @@
 {{/runtimeIsWeb}}
     "test": "vitest run",
     "test:dev": "vitest",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "pnpm lint --fix",
     "typecheck:{{packageType}}": "{{#runtimeIsWeb}}vue-tsc{{else}}tsc{{/runtimeIsWeb}} --noEmit -p tsconfig.{{packageType}}.json",
     "typecheck:vitest": "{{#runtimeIsWeb}}vue-tsc{{else}}tsc{{/runtimeIsWeb}} --noEmit -p tsconfig.vitest.json"
   },
@@ -46,7 +46,7 @@
     "extends": "{{ voltaPath }}"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": "eslint --fix --max-warnings 0"
   },
   "devDependencies": {
     "@desselbane/configs": "workspace:*"

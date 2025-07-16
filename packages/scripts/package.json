@@ -7,8 +7,8 @@
   "scripts": {
     "test": "vitest run",
     "test:dev": "vitest",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "pnpm lint --fix",
     "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
     "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json",
     "reformat-changelogs": "node src/reformat-changelogs-cli.ts",
@@ -23,7 +23,7 @@
     "extends": "../../package.json"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": "eslint --fix --max-warnings 0"
   },
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
