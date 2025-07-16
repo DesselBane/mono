@@ -1,4 +1,6 @@
+import { describe, it, expect } from 'vitest'
 import { createCircularReferenceReplacer } from './circular-reference-replacer'
+import type { ReplacerFunction } from './types'
 
 describe('circularReferenceReplacer', () => {
   it('should replace recursive values', () => {
@@ -13,6 +15,7 @@ describe('circularReferenceReplacer', () => {
       JSON.stringify({ foo }, createCircularReferenceReplacer())
 
     expect(serialize).not.toThrow()
+
     const message = serialize()
 
     expect(JSON.parse(message)).toMatchObject({
@@ -25,7 +28,7 @@ describe('circularReferenceReplacer', () => {
   })
 
   it('should call scoped replacer functions', () => {
-    const spy = vi.fn()
+    const spy = vi.fn<ReplacerFunction>()
     const replacer = createCircularReferenceReplacer(spy)
 
     JSON.stringify({ foo: 'bar' }, replacer)

@@ -1,6 +1,6 @@
 import { ref, unref } from 'vue'
 import type { MaybeRef } from 'vue'
-import { expect } from 'vitest'
+import { expect, describe, it } from 'vitest'
 import { noop } from '@desselbane/ts-helpers'
 import {
   InvalidOperationError,
@@ -30,7 +30,7 @@ function usePaginationWithDataSetup<TData>(
   return usePaginationWithData(data, pageSize, options)
 }
 
-describe('usePagination', () => {
+describe(usePagination, () => {
   it.each([
     {
       pageSize: 7,
@@ -110,7 +110,7 @@ describe('usePagination', () => {
 
       expect(() => {
         nextPage()
-      }).toThrowError(InvalidOperationError)
+      }).toThrow(InvalidOperationError)
 
       warnSpy.mockRestore()
     })
@@ -125,7 +125,9 @@ describe('usePagination', () => {
       })
 
       expect(unref(currentPage)).toBe(1)
+
       nextPage()
+
       expect(unref(currentPage)).toBe(1)
     })
 
@@ -352,7 +354,7 @@ describe('usePagination', () => {
 
       expect(() => {
         previousPage()
-      }).toThrowError(InvalidOperationError)
+      }).toThrow(InvalidOperationError)
 
       warnSpy.mockRestore()
     })
@@ -449,7 +451,7 @@ describe('usePagination', () => {
   )
 })
 
-describe('usePaginationWithData', () => {
+describe(usePaginationWithData, () => {
   const defaultData = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
   describe('data', () => {
@@ -458,7 +460,7 @@ describe('usePaginationWithData', () => {
         pageSize: 4,
       })
 
-      expect(unref(paginatedData)).toEqual([1, 2, 3, 4])
+      expect(unref(paginatedData)).toStrictEqual([1, 2, 3, 4])
     })
 
     it('should be reactive', () => {
@@ -467,11 +469,11 @@ describe('usePaginationWithData', () => {
         pageSize: 4,
       })
 
-      expect(unref(paginatedData)).toEqual([1, 2, 3, 4])
+      expect(unref(paginatedData)).toStrictEqual([1, 2, 3, 4])
 
       data.value[0] = 9
 
-      expect(unref(paginatedData)).toEqual([9, 2, 3, 4])
+      expect(unref(paginatedData)).toStrictEqual([9, 2, 3, 4])
     })
   })
 })

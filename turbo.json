@@ -38,21 +38,21 @@
       "cache": false
     },
     "lint": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "@desselbane/configs#build"],
       "cache": true
     },
     "lint:fix": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "@desselbane/configs#build"],
       "cache": true
     },
     "typecheck:app": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build", "@desselbane/configs#build"]
     },
     "typecheck:lib": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build", "@desselbane/configs#build"]
     },
     "typecheck:vitest": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build", "@desselbane/configs#build"]
     },
     "docs:dev": {
       "cache": false

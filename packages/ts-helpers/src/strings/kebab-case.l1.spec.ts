@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { kebabCaseForShortStrings } from './kebab-case'
 
 describe('kebab-case', () => {

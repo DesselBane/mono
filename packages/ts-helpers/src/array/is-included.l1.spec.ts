@@ -1,8 +1,9 @@
-import { expect, expectTypeOf } from 'vitest'
+import { expect, expectTypeOf, describe, it } from 'vitest'
 import { isIncluded } from './is-included'
 
 describe('is-included', () => {
   const data = ['foo', 'bar'] as const
+
   it('should be false if element is not included', () => {
     expect(isIncluded(data, 'baz')).toBe(false)
   })

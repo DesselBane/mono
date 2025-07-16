@@ -31,6 +31,11 @@ export const defaultOptions = {
     coverage: {
       provider: 'v8',
     },
+    typecheck: {
+      enabled: true,
+      include: ['**/*.spec-d.ts'],
+      tsconfig: 'tsconfig.vitest.json',
+    },
   },
 } as const satisfies VitestConfig
 

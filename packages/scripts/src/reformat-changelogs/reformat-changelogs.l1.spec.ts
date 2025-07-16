@@ -1,22 +1,11 @@
 import path from 'node:path'
+import { globSync, readFileSync, writeFileSync } from 'node:fs'
+import { describe, expect } from 'vitest'
+import type { Mock, Use } from 'vitest'
 import { assertNotNil, workspaceRoot } from '../helper.ts'
 import { run } from './reformat-changelogs.ts'
 
-const { globSync, readFileSync, writeFileSync } = vi.hoisted(() => ({
-  globSync: vi.fn<() => string[]>(() => {
-    throw new Error('Mock globSync not initialized')
-  }),
-  readFileSync: vi.fn<(path: string) => Buffer>(() => {
-    throw new Error('Mock readFileSync not initialized')
-  }),
-  writeFileSync: vi.fn<(path: string, content: string) => void>(),
-}))
-
-vi.mock('node:fs', () => ({
-  globSync,
-  readFileSync,
-  writeFileSync,
-}))
+vi.mock('node:fs')
 
 const { readFileSync: actualReadFileSync } = (await vi.importActual(
   'node:fs',
@@ -53,13 +42,45 @@ const nodeModulesPath = path.join('node_modules', 'foo', 'CHANGELOG.md')
 const nodeModulesFullPath = path.join(workspaceRoot, nodeModulesPath)
 
 describe('reformat-changelogs', () => {
-  beforeEach(() => {
-    globSync.mockReturnValue([changelogPath, tsHelpersPath])
+  const it = test.extend<{
+    globSync: Mock<typeof globSync>
+    readFileSync: Mock<typeof readFileSync>
+    writeFileSync: Mock<typeof writeFileSync>
+  }>({
+    globSync: [
+      async ({}, use: Use<Mock<typeof globSync>>) => {
+        const globSyncSpy = vi.mocked(globSync)
+        globSyncSpy.mockReturnValue([changelogPath, tsHelpersPath])
 
-    readFileSync.mockReturnValue(Buffer.from(simpleChangelog))
+        await use(globSyncSpy)
+      },
+      {
+        auto: true,
+      },
+    ],
+
+    readFileSync: [
+      async ({}, use: Use<Mock<typeof readFileSync>>) => {
+        const readFileSyncSpy = vi.mocked(readFileSync)
+        readFileSyncSpy.mockReturnValue(Buffer.from(simpleChangelog))
+
+        await use(readFileSyncSpy)
+      },
+      { auto: true },
+    ],
+    writeFileSync: [
+      async ({}, use: Use<Mock<typeof writeFileSync>>) => {
+        const writeFileSyncSpy = vi.mocked(writeFileSync)
+        writeFileSyncSpy.mockImplementation(() => {
+          //
+        })
+        await use(writeFileSyncSpy)
+      },
+      { auto: true },
+    ],
   })
 
-  it('should find all changelog files', () => {
+  it('should find all changelog files', ({ readFileSync, writeFileSync }) => {
     run()
 
     expect(readFileSync).toHaveBeenCalledWith(changelogFullPath)
@@ -95,7 +116,7 @@ describe('reformat-changelogs', () => {
     )
   })
 
-  it('should extract dependency updates', async () => {
+  it('should extract dependency updates', async ({ writeFileSync }) => {
     run()
 
     const newContent = writeFileSync.mock.lastCall?.[1]
@@ -106,7 +127,10 @@ describe('reformat-changelogs', () => {
     )
   })
 
-  it('should extract dependency updates (bigger example data)', async () => {
+  it('should extract dependency updates (bigger example data)', async ({
+    readFileSync,
+    writeFileSync,
+  }) => {
     readFileSync.mockReturnValue(fullChangelog)
 
     run()
@@ -119,7 +143,10 @@ describe('reformat-changelogs', () => {
     )
   })
 
-  it('should extract dependency updates from all update types', async () => {
+  it('should extract dependency updates from all update types', async ({
+    readFileSync,
+    writeFileSync,
+  }) => {
     readFileSync.mockReturnValue(depsInAllChangelog)
 
     run()
@@ -132,7 +159,10 @@ describe('reformat-changelogs', () => {
     )
   })
 
-  it('should extract remove empty sections', async () => {
+  it('should extract remove empty sections', async ({
+    readFileSync,
+    writeFileSync,
+  }) => {
     readFileSync.mockReturnValue(removeEmptyChangelog)
 
     run()
@@ -145,7 +175,10 @@ describe('reformat-changelogs', () => {
     )
   })
 
-  it('should not duplicate dependency section', async () => {
+  it('should not duplicate dependency section', async ({
+    readFileSync,
+    writeFileSync,
+  }) => {
     readFileSync.mockReturnValue(noDuplicateChangelog)
 
     run()
@@ -158,12 +191,15 @@ describe('reformat-changelogs', () => {
     )
   })
 
-  it('should return the same value when called with formatted input', () => {
+  it('should return the same value when called with formatted input', ({
+    readFileSync,
+    writeFileSync,
+  }) => {
     readFileSync.mockReturnValue(fullChangelog)
 
     run()
 
-    const newContent = writeFileSync.mock.lastCall?.[1]
+    const newContent = writeFileSync.mock.lastCall?.[1] as string
     assertNotNil(newContent)
 
     readFileSync.mockReturnValue(Buffer.from(newContent))
@@ -177,7 +213,10 @@ describe('reformat-changelogs', () => {
     expect(secondContent).toBe(newContent)
   })
 
-  it('should add generated dependency updates from changesets', async () => {
+  it('should add generated dependency updates from changesets', async ({
+    readFileSync,
+    writeFileSync,
+  }) => {
     readFileSync.mockReturnValue(generatedChangelog)
 
     run()
@@ -185,12 +224,16 @@ describe('reformat-changelogs', () => {
     const newContent = writeFileSync.mock.lastCall?.[1]
 
     assertNotNil(newContent)
+
     await expect(newContent).toMatchFileSnapshot(
       path.join(snapshotFolder, 'generated.snap.md'),
     )
   })
 
-  it('should deduplicate generated dependency updates from changesets', async () => {
+  it('should deduplicate generated dependency updates from changesets', async ({
+    readFileSync,
+    writeFileSync,
+  }) => {
     readFileSync.mockReturnValue(generatedDuplicatesChangelog)
 
     run()
@@ -198,6 +241,7 @@ describe('reformat-changelogs', () => {
     const newContent = writeFileSync.mock.lastCall?.[1]
 
     assertNotNil(newContent)
+
     await expect(newContent).toMatchFileSnapshot(
       path.join(snapshotFolder, 'generated-duplicates.snap.md'),
     )

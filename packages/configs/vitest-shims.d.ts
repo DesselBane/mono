@@ -5,4 +5,5 @@ declare module 'vitest' {
   interface Assertion<T = any> extends CustomMatchers<T> {}
   interface AsymmetricMatchersContaining<T = any> extends CustomMatchers<T> {}
   interface ExpectStatic extends CustomMatchers<T> {}
+  type Use<T> = (value: T) => Promise<void>
 }

@@ -17,6 +17,7 @@ import { flatConfigs as importPluginFlatConfigs } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import unusedImports from 'eslint-plugin-unused-imports'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
+import vitest from '@vitest/eslint-plugin'
 
 /**
  * How to set up eslint
@@ -121,6 +122,7 @@ export function createEslintConfig(options: Options = {}): Config {
 
   return tsEslint.config(
     eslint.configs.recommended,
+    ...configureVitestPlugin(safeOptions),
     ...configureUnicornPlugin(safeOptions),
     ...configureImportPlugin(safeOptions),
     ...configurePlaywright(safeOptions),
@@ -322,6 +324,37 @@ function configureUnicornPlugin(options: SafeOptions): Config {
   ])
 }
 
+function configureVitestPlugin(options: SafeOptions): Config {
+  return tsEslint.config(
+    {
+      files: options.testMatch, // or any other pattern
+      ...vitest.configs.all,
+      settings: {
+        vitest: {
+          typecheck: true,
+        },
+      },
+    },
+    {
+      files: options.testMatch, // or any other pattern
+      rules: {
+        'vitest/no-disabled-tests': 'error',
+        'vitest/consistent-test-filename': 'off',
+        'vitest/prefer-expect-assertions': 'off',
+        'vitest/no-conditional-expect': 'off',
+        'vitest/no-conditional-in-test': 'off',
+        'vitest/no-conditional-test': 'off',
+        'vitest/prefer-called-with': 'off',
+        'vitest/prefer-to-be-falsy': 'off',
+        'vitest/prefer-to-be-truthy': 'off',
+        'vitest/consistent-test-it': 'off',
+        'vitest/require-hook': 'off',
+        'vitest/max-expects': 'off',
+      },
+    },
+  )
+}
+
 // Needs to come after configure typescript
 function configureNoUnusedImportsPlugin() {
   return tsEslint.config({
@@ -346,7 +379,14 @@ function configureNoUnusedImportsPlugin() {
 }
 
 function configureAdditionalRules(options: SafeOptions): Config {
-  const config: Config = []
+  const config: Config = [
+    {
+      linterOptions: {
+        reportUnusedInlineConfigs: 'error',
+        reportUnusedDisableDirectives: 'error',
+      },
+    },
+  ]
 
   if (options.useTypeCheckedConfig) {
     config.push(
@@ -429,6 +469,12 @@ function configureAdditionalRules(options: SafeOptions): Config {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-unsafe-return': 'off',
+        'no-empty-pattern': [
+          'error',
+          {
+            allowObjectPatternsAsParameters: true,
+          },
+        ],
       },
     },
     {
