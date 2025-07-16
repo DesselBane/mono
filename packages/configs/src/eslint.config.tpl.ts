@@ -383,6 +383,7 @@ function configureAdditionalRules(options: SafeOptions): Config {
     {
       linterOptions: {
         reportUnusedInlineConfigs: 'error',
+        reportUnusedDisableDirectives: 'error',
       },
     },
   ]
