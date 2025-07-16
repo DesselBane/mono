@@ -1,6 +1,8 @@
+import { describe, it, expect } from 'vitest'
 import { createErrorReplacer } from './error-replacer'
+import type { ReplacerFunction } from './types'
 
-describe('createErrorReplacer', () => {
+describe(createErrorReplacer, () => {
   it('should include name, message, stack and cause in stringified errors', () => {
     const error = new Error('foo', { cause: 'bar' })
 
@@ -15,7 +17,7 @@ describe('createErrorReplacer', () => {
   })
 
   it('should call scoped replacer functions', () => {
-    const spy = vi.fn()
+    const spy = vi.fn<ReplacerFunction>()
     const replacer = createErrorReplacer(spy)
 
     JSON.stringify(new Error('foo'), replacer)

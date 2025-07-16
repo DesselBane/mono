@@ -1,7 +1,7 @@
-import { expect } from 'vitest'
+import { expect, describe } from 'vitest'
 import { keylikeToString } from './keylike-to-string'
 
-describe('keylikeToString', () => {
+describe(keylikeToString, () => {
   it.each([
     {
       title: 'Returns strings as is',
