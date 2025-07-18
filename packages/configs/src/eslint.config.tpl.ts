@@ -351,6 +351,7 @@ function configureVitestPlugin(options: SafeOptions): Config {
         'vitest/require-hook': 'off',
         'vitest/max-expects': 'off',
         'vitest/require-top-level-describe': 'off',
+        'vitest/no-standalone-expect': 'off',
       },
     },
   )
