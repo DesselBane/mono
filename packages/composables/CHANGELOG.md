@@ -1,5 +1,40 @@
 # @desselbane/composables
 
+## 2.0.1
+
+### Patch Changes
+
+- a625004: Eslint fail on warnings
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 4441786: deps: [patch|devDependencies] Update package @types/node from 24.0.10 to 24.0.11
+- 4f0092b: deps: [patch|devDependencies] Update package @types/node from 24.0.11 to 24.0.12
+- 6bfb1dc: deps: [patch|devDependencies] Update package @types/node from 24.0.12 to 24.0.13
+- b64dde0: deps: [patch|devDependencies] Update package @types/node from 24.0.13 to 24.0.14
+- 3bf46b1: deps: [patch|devDependencies] Update package vite from 7.0.3 to 7.0.4
+- bafcc1a: deps: [patch|devDependencies] Update package vite from 7.0.4 to 7.0.5
+- de42ca4: deps: [patch|devDependencies] Update package vue-tsc from 3.0.1 to 3.0.2
+- a9456ff: deps: Updated lockfile
+- Updated dependencies [cb5c173]
+- Updated dependencies [b1cfc44]
+- Updated dependencies [a625004]
+- Updated dependencies [5a37d9f]
+- Updated dependencies [cf46467]
+- Updated dependencies [104b649]
+- Updated dependencies [4441786]
+- Updated dependencies [4f0092b]
+- Updated dependencies [6bfb1dc]
+- Updated dependencies [b64dde0]
+- Updated dependencies [a9456ff]
+  - @desselbane/ts-helpers@3.1.0
+
+
+</details>
+
 ## 2.0.0
 
 ### Major Changes
