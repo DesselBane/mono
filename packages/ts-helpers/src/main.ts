@@ -7,11 +7,3 @@ export * from './wait-async/wait-async'
 export * from './assertions'
 export * from './objects/keylike-to-string'
 export * from './strings/kebab-case'
-
-/**
- * This function is not doing anything and should be used with mocks
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function noop(..._arguments: unknown[]): any {
-  // This function is not doing anything and should be used with mocks
-}

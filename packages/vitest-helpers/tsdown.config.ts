@@ -5,9 +5,20 @@ export default defineConfig({
   ...libConfig,
   platform: 'node',
   unbundle: true,
+  exports: {
+    customExports(exports) {
+      const newExports: Record<string, unknown> = {
+        ...exports,
+        '.': exports['./main'] as unknown,
+      }
+      delete newExports['./main']
+
+      return newExports
+    },
+  },
   entry: {
-    utils: 'src/utils.ts',
-    'node/fs': 'src/node/fs.ts',
-    'node/child_process': 'src/node/child_process.ts',
+    main: 'src/main.ts',
+    'node/fs': 'src/mocks/node/fs.ts',
+    'node/child_process': 'src/mocks/node/child_process.ts',
   },
 })

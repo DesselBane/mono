@@ -1,5 +1,5 @@
-import { execSync as execSyncNode } from 'node:child_process'
-import { noop, safeTry } from '@desselbane/ts-helpers'
+import { noop, it, baseTest } from '@desselbane/vitest-helpers'
+import { safeTry } from '@desselbane/ts-helpers'
 import type { MockInstance } from 'vitest'
 import {
   execSync as execSyncHelper,
@@ -10,50 +10,8 @@ import {
 
 vi.mock('node:child_process')
 
-type Use<T> = (value: T) => Promise<void>
-
-const ct = test.extend<{
-  execSyncSpy: MockInstance<typeof execSyncNode>
-  consoleLogSpy: MockInstance<typeof console.log>
-  processExitSpy: MockInstance<typeof process.exit>
-}>({
-  execSyncSpy: [
-    async ({}, use) => {
-      const execSyncSpy = vi.mocked(execSyncNode)
-      execSyncSpy.mockImplementation(noop)
-
-      await use(execSyncSpy)
-    },
-    { scope: 'test' },
-  ],
-  consoleLogSpy: [
-    async ({}, use: Use<MockInstance<typeof console.log>>) => {
-      const consoleLogSpy = vi.spyOn(console, 'log')
-      consoleLogSpy.mockImplementation(noop)
-
-      await use(consoleLogSpy)
-
-      consoleLogSpy.mockRestore()
-    },
-    { scope: 'test' },
-  ],
-
-  processExitSpy: [
-    async ({}, use: Use<MockInstance<typeof process.exit>>) => {
-      const processExitSpy = vi.spyOn(process, 'exit')
-      processExitSpy.mockImplementation(noop as never)
-
-      await use(processExitSpy)
-
-      processExitSpy.mockRestore()
-    },
-    { scope: 'test' },
-  ],
-})
-const it = ct
-
 describe(isAdmin, () => {
-  const it = ct.extend<{
+  const it = baseTest.extend<{
     platformSpy: MockInstance<() => NodeJS.Platform>
     _autoSetup: unknown
   }>({
@@ -98,7 +56,7 @@ describe(isAdmin, () => {
 })
 
 describe(cleanExit, () => {
-  const it = ct.extend({
+  const it = baseTest.extend({
     _autoSetup: [
       async ({ processExitSpy: _, consoleLogSpy: __ }, use) => {
         await use('')

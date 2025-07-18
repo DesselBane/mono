@@ -56,6 +56,9 @@ importers:
       '@desselbane/configs':
         specifier: workspace:*
         version: link:../configs
+      '@desselbane/vitest-helpers':
+        specifier: workspace:*
+        version: link:../vitest-helpers
       '@types/node':
         specifier: 24.0.14
         version: 24.0.14
@@ -232,6 +235,9 @@ importers:
       '@desselbane/configs':
         specifier: workspace:*
         version: link:../configs
+      '@desselbane/vitest-helpers':
+        specifier: workspace:*
+        version: link:../vitest-helpers
       '@types/node':
         specifier: 24.0.14
         version: 24.0.14
@@ -262,9 +268,6 @@ importers:
       '@types/node':
         specifier: 24.0.14
         version: 24.0.14
-      '@vitest/coverage-v8':
-        specifier: 3.2.4
-        version: 3.2.4(vitest@3.2.4(@types/node@24.0.14)(jiti@2.4.2)(yaml@2.8.0))
       tsdown:
         specifier: 0.12.9
         version: 0.12.9(typescript@5.8.3)(unplugin-unused@0.5.1)

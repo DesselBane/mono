@@ -1,5 +1,5 @@
 import type * as n from 'node:fs'
-import { SpyNotSetupError } from '../utils'
+import { SpyNotSetupError } from '../../utils'
 
 export const globSync = vi.fn<typeof n.globSync>(() => {
   throw new SpyNotSetupError()
