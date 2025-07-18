@@ -1,0 +1,368 @@
+[
+  {
+    "Name": "Windows Terminal",
+    "WingetId": "9N0DX20HK701",
+    "installDefault": false,
+    "group": "Core"
+  },
+  {
+    "Name": "Windows Terminal Preview",
+    "WingetId": "9N8G5RFZ9XK3",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "Powershell 7",
+    "WingetId": "Microsoft.PowerShell",
+    "installDefault": false,
+    "group": "Core"
+  },
+  {
+    "Name": "Starship",
+    "WingetId": "Starship.Starship",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "Visual Studio Code",
+    "WingetId": "Microsoft.VisualStudioCode",
+    "installDefault": true,
+    "group": "Programming"
+  },
+  {
+    "Name": "Volta",
+    "WingetId": "Volta.Volta",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "7-Zip",
+    "WingetId": "7zip.7zip",
+    "installDefault": true,
+    "group": "Util"
+  },
+  {
+    "Name": "JetBrains Toolbox",
+    "WingetId": "JetBrains.Toolbox",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "Logitech Unifying Software",
+    "WingetId": "Logitech.UnifyingSoftware",
+    "installDefault": false,
+    "group": "Peripherals"
+  },
+  {
+    "Name": "Firefox",
+    "WingetId": "9NZVDKPMR9RD",
+    "installDefault": false,
+    "group": "Media"
+  },
+  {
+    "Name": "Nextcloud",
+    "WingetId": "Nextcloud.NextcloudDesktop",
+    "installDefault": false,
+    "group": "Cloud"
+  },
+  {
+    "Name": "Notepad++",
+    "WingetId": "Notepad++.Notepad++",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "PowerToys",
+    "WingetId": "Microsoft.PowerToys",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "Spotify",
+    "WingetId": "9NCBCSZSJRSB",
+    "installDefault": true,
+    "group": "Media"
+  },
+  {
+    "Name": "Telegram",
+    "WingetId": "Telegram.TelegramDesktop",
+    "installDefault": true,
+    "group": "Media"
+  },
+  {
+    "Name": "WinDirStat",
+    "WingetId": "WinDirStat.WinDirStat",
+    "installDefault": false,
+    "group": "Util"
+  },
+  {
+    "Name": "Region to Share",
+    "WingetId": "9N4066W2R5Q4",
+    "installDefault": true,
+    "group": "Programming"
+  },
+  {
+    "Name": "Sysinternals Suite",
+    "WingetId": "9P7KNL5RWT25",
+    "installDefault": false,
+    "group": "Util"
+  },
+  {
+    "Name": "Enpass Password Manager",
+    "WingetId": "9NJ3KMH29VGJ",
+    "installDefault": false,
+    "group": "Util"
+  },
+  {
+    "Name": "AltDrag",
+    "WingetId": "AltDrag.AltDrag",
+    "installDefault": false,
+    "group": "Util"
+  },
+  {
+    "Name": "Deno",
+    "WingetId": "DenoLand.Deno",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "MKCert",
+    "WingetId": "FiloSottile.mkcert",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "NVDA",
+    "WingetId": "NVAccess.NVDA",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "Postman",
+    "WingetId": "Postman.Postman",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "Rustup",
+    "WingetId": "Rustlang.Rustup",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "SteelSeries GG",
+    "WingetId": "SteelSeries.GG",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "ZOxide",
+    "WingetId": "ajeetdsouza.zoxide",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "fzf fuzzy finder",
+    "WingetId": "junegunn.fzf",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "JQ",
+    "WingetId": "jqlang.jq",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "delta",
+    "WingetId": "dandavison.delta",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "less",
+    "WingetId": "jftuga.less",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "eza",
+    "WingetId": "eza-community.eza",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "bat",
+    "WingetId": "sharkdp.bat",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "btop",
+    "WingetId": "aristocratos.btop4win",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "Lazy Git",
+    "WingetId": "JesseDuffield.lazygit",
+    "installDefault": false,
+    "group": "CLI"
+  },
+  {
+    "Name": "Lazy Docker",
+    "WingetId": "JesseDuffield.Lazydocker",
+    "installDefault": false,
+    "group": "CLI"
+  },
+  {
+    "Name": "Elgato StreamDeck",
+    "WingetId": "Elgato.StreamDeck",
+    "installDefault": true,
+    "group": "Peripherals"
+  },
+  {
+    "Name": "GLab Gitlab CLI",
+    "WingetId": "GLab.GLab",
+    "installDefault": false,
+    "group": "CLI"
+  },
+  {
+    "Name": "Zoom",
+    "WingetId": "Zoom.Zoom",
+    "installDefault": false,
+    "group": "Media"
+  },
+  {
+    "Name": "Google Chrome",
+    "WingetId": "Google.Chrome",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "Zen Browser",
+    "WingetId": "Zen-Team.Zen-Browser",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "QMK Toolbox",
+    "WingetId": "QMK.QMKToolbox",
+    "installDefault": false,
+    "group": "Peripherals"
+  },
+  {
+    "Name": "AusweisApp",
+    "WingetId": "Governikus.AusweisApp",
+    "installDefault": false,
+    "group": "Util"
+  },
+  {
+    "Name": "Steam",
+    "WingetId": "Valve.Steam",
+    "installDefault": false,
+    "group": "Media"
+  },
+  {
+    "Name": "Discord",
+    "WingetId": "Discord.Discord",
+    "installDefault": false,
+    "group": "Media"
+  },
+  {
+    "Name": "WireGuard",
+    "WingetId": "WireGuard.WireGuard",
+    "installDefault": false,
+    "group": "Util"
+  },
+  {
+    "Name": "Warp",
+    "WingetId": "Cloudflare.Warp",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "Neovim",
+    "WingetId": "Neovim.Neovim",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "Synology Drive",
+    "WingetId": "Synology.DriveClient",
+    "installDefault": true,
+    "group": "Media"
+  },
+  {
+    "Name": "Git Butler",
+    "WingetId": "GitButler.GitButler",
+    "installDefault": true,
+    "group": "Programming"
+  },
+  {
+    "Name": "Nushell",
+    "WingetId": "Nushell.Nushell",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
+    "Name": "Podman",
+    "WingetId": "RedHat.Podman",
+    "installDefault": true,
+    "group": "Programming"
+  },
+  {
+    "Name": "Podman Desktop",
+    "WingetId": "RedHat.Podman-Desktop",
+    "installDefault": true,
+    "group": "Programming"
+  },
+  {
+    "Name": "Windhawk",
+    "WingetId": "RamenSoftware.Windhawk",
+    "installDefault": true,
+    "group": "Util"
+  },
+  {
+    "Name": "1Password CLI",
+    "WingetId": "AgileBits.1Password.CLI",
+    "installDefault": false,
+    "group": "CLI"
+  },
+   {
+    "Name": "kubectl",
+    "WingetId": "Kubernetes.kubectl",
+    "installDefault": false,
+    "group": "CLI"
+  },
+  {
+    "Name": "jj",
+    "WingetId": "jj-vcs.jj",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "ACT",
+    "WingetId": "nektos.act",
+    "installDefault": false,
+    "group": "Programming"
+  },
+  {
+    "Name": "Carapace",
+    "WingetId": "rsteube.Carapace",
+    "installDefault": true,
+    "group": "CLI"
+  },
+  {
+    "Name": "Yazi",
+    "WingetId": "sxyazi.yazi",
+    "installDefault": false,
+    "group": "CLI"
+  },
+  {
+    "Name": "SegoeIcons",
+    "WingetId": "zadjii.SegoeIcons",
+    "installDefault": true,
+    "group": "Media"
+  }
+]

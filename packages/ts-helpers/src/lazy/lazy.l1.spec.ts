@@ -1,4 +1,3 @@
-import { expect, describe, it } from 'vitest'
 import { lazy } from './lazy'
 
 describe(lazy, () => {

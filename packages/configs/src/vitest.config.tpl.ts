@@ -30,6 +30,7 @@ export const defaultOptions = {
     },
     coverage: {
       provider: 'v8',
+      exclude: ['**/__mocks__/**'],
     },
     typecheck: {
       enabled: true,
