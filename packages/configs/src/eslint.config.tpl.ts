@@ -350,6 +350,7 @@ function configureVitestPlugin(options: SafeOptions): Config {
         'vitest/consistent-test-it': 'off',
         'vitest/require-hook': 'off',
         'vitest/max-expects': 'off',
+        'vitest/require-top-level-describe': 'off',
       },
     },
   )
