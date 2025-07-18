@@ -1,4 +1,4 @@
-import { noop } from '../main'
+import { noop } from '@desselbane/vitest-helpers'
 import { finallyForMaybePromise } from './finally-for-maybe-promise'
 
 describe(finallyForMaybePromise, () => {

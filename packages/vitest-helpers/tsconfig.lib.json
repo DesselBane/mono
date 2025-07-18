@@ -1,0 +1,7 @@
+{
+  "include": ["src/**/*.ts", "@types"],
+  "extends": "@desselbane/configs/tsconfig.bundler-node.tpl.json",
+  "compilerOptions": {
+    "types": [ "vitest/globals", "@desselbane/configs/vitest-shims.d.ts" ]
+  }
+}
