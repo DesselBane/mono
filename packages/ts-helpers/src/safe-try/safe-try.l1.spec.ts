@@ -1,4 +1,3 @@
-import { describe, expect, it } from 'vitest'
 import { safeTry, safeTryAsync } from './safe-try'
 
 const testFunctionBadSync: () => void = () => {

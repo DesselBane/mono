@@ -1,4 +1,3 @@
-import { expect, describe } from 'vitest'
 import { keylikeToString } from './keylike-to-string'
 
 describe(keylikeToString, () => {

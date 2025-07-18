@@ -1,4 +1,3 @@
-import { describe, it, expect } from 'vitest'
 import { createCircularReferenceReplacer } from './circular-reference-replacer'
 import type { ReplacerFunction } from './types'
 
