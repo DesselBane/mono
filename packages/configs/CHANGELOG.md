@@ -1,5 +1,65 @@
 # @desselbane/configs
 
+## 14.0.0
+
+### Major Changes
+
+- 319f393: Remove support for `tsup`. Use `tsdown` instead.
+
+### Minor Changes
+
+- 27d268f: Support and enable type tests by default. Any files using the `.spec-d.ts` extension will are classified as type tests.
+- f35e74f: Eslint `reportUnusedInlineConfigs` as errors
+- cb5c173: Enable `declarationMap` by default
+- ed64e9d: Turn off `unicorn/prevent-abbreviations`
+- 319f393: Migrate build system to `tsdown`. This enables `declarationMap`s.
+- ae1f41f: Eslint `reportUnusedDisableDirectives` as `error`
+- 36ed2fb: Add support for `tsdown`.
+
+  This is a basic [`tsdown`](https://tsdown.dev/) config which by default targets esm and the `neutral` platform.
+
+  Place a `tsdown.config.ts` file next to your `package.json` with the following content:
+
+  ```typescript
+  import { defineConfig } from 'tsdown'
+  import { libConfig } from './src/tsdown.config.tpl.ts'
+
+  export default defineConfig({
+    ...libConfig,
+  })
+  ```
+
+- 8542b98: Add `@vitest/eslint-plugin-vitest`
+- e1f842a: tsdown config add `nodeConsoleAppConfig`
+- 730280f: Disable `vitest/prefer-importing-vitest-globals` in favor of `vitest/no-importing-vitest-globals`
+- 15c8cbd: Disable `vitest/require-top-level-describe`
+- 954927f: Exclude `**/__mocks__/**` from vitest coverage
+
+### Patch Changes
+
+- c51c633: Turn off `vitest/no-standalone-expect` as it incorrecltly flags extended tests as not a test.
+- a625004: Eslint fail on warnings
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 3924a9f: deps: [minor|dependencies] Update package @eslint/js from 9.30.1 to 9.31.0
+- 4441786: deps: [patch|devDependencies] Update package @types/node from 24.0.10 to 24.0.11
+- 4f0092b: deps: [patch|devDependencies] Update package @types/node from 24.0.11 to 24.0.12
+- 6bfb1dc: deps: [patch|devDependencies] Update package @types/node from 24.0.12 to 24.0.13
+- b64dde0: deps: [patch|devDependencies] Update package @types/node from 24.0.13 to 24.0.14
+- 87d2fbe: deps: [minor|dependencies] Update package eslint from 9.30.1 to 9.31.0
+- ac524f4: deps: [minor|dependencies] Update package typescript-eslint from 8.36.0 to 8.37.0
+- 3bf46b1: deps: [patch|devDependencies] Update package vite from 7.0.3 to 7.0.4
+- bafcc1a: deps: [patch|devDependencies] Update package vite from 7.0.4 to 7.0.5
+- 920c7ea: deps: [major|dependencies] Update package zod from 3.25.76 to 4.0.5
+- a9456ff: deps: Updated lockfile
+
+
+</details>
+
 ## 13.0.0
 
 ### Major Changes

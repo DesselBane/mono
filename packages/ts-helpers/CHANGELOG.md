@@ -1,5 +1,40 @@
 # @desselbane/ts-helpers
 
+## 3.1.0
+
+### Minor Changes
+
+- cb5c173: Migrate build system from `tsup` to `tsdown`. This enables faster build times and declaration maps which greatly helps in the mono repo
+- b1cfc44: Export type `SafeReturn<TValue>`, `SafeTryReturnData<TValue>` and `SafeTryReturnError`
+- cf46467: Enhance `safeTryAsync`. Allow passing a promise in addition to a function which returns a promise.
+- 104b649: Enhance `safeTry`/`safeTryAsync`. Add an object variant to the return type.
+
+  Now you can also access the values like this:
+
+  ```typescript
+  const { error, data } = safeTry(() => myBadFunction())
+  const { error, data } = await safeTryAsync(() => myBadPromise())
+  ```
+
+### Patch Changes
+
+- a625004: Eslint fail on warnings
+- 5a37d9f: Fix `safeTry` and `safeTryAsync` do not throw if null or undefined is returned by the function.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 4441786: deps: [patch|devDependencies] Update package @types/node from 24.0.10 to 24.0.11
+- 4f0092b: deps: [patch|devDependencies] Update package @types/node from 24.0.11 to 24.0.12
+- 6bfb1dc: deps: [patch|devDependencies] Update package @types/node from 24.0.12 to 24.0.13
+- b64dde0: deps: [patch|devDependencies] Update package @types/node from 24.0.13 to 24.0.14
+- a9456ff: deps: Updated lockfile
+
+
+</details>
+
 ## 3.0.0
 
 ### Major Changes

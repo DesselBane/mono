@@ -1,5 +1,40 @@
 # @repo/changelog
 
+## 0.2.0
+
+### Minor Changes
+
+- 75d1fe3: Add new package `@desselbane/setup`
+
+### Patch Changes
+
+- a625004: Eslint fail on warnings
+- 075de46: Renovate install tool pnpm. This ensures that pnpm is available for post upgrade tasks.
+- 8c26a5b: Ensure `@desselbane/configs` package is built before linting
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6f22c2b: deps: [patch|devDependencies] Update package @turbo/gen from 2.5.4 to 2.5.5
+- 4441786: deps: [patch|devDependencies] Update package @types/node from 24.0.10 to 24.0.11
+- 4f0092b: deps: [patch|devDependencies] Update package @types/node from 24.0.11 to 24.0.12
+- 6bfb1dc: deps: [patch|devDependencies] Update package @types/node from 24.0.12 to 24.0.13
+- b64dde0: deps: [patch|devDependencies] Update package @types/node from 24.0.13 to 24.0.14
+- 87d2fbe: deps: [minor|devDependencies] Update package eslint from 9.30.1 to 9.31.0
+- 1420554: deps: [minor|engines] Update package node from v24.3.0 to v24.4.0
+- 53c2e36: deps: [patch|engines] Update package node from v24.4.0 to v24.4.1
+- 1420554: deps: [minor|volta] Update package pnpm from 10.12.4 to 10.13.1
+- 5a977d2: deps: [patch|action] Update package renovatebot/github-action from v43.0.2 to v43.0.3
+- 6f22c2b: deps: [patch|devDependencies] Update package turbo from 2.5.4 to 2.5.5
+- a9456ff: deps: Updated lockfile
+- a9456ff: deps: Updated lockfile
+- a9456ff: deps: Updated lockfile
+
+
+</details>
+
 ## 0.1.0
 
 ### Minor Changes
