@@ -1,5 +1,21 @@
 # @repo/scripts
 
+## 0.2.0
+
+### Minor Changes
+
+- fa5a409: Refactor `__mocks__` folders to use `@desselbane/vitest-helpers` package
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 55464ee: deps: [patch|devDependencies] Update package @types/node from 24.0.14 to 24.0.15
+
+
+</details>
+
 ## 0.1.1
 
 ### Patch Changes

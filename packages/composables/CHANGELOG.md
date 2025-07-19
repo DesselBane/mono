@@ -1,5 +1,21 @@
 # @desselbane/composables
 
+## 2.0.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 55464ee: deps: [patch|devDependencies] Update package @types/node from 24.0.14 to 24.0.15
+- d19983f: deps: [patch|devDependencies] Update package vue-tsc from 3.0.2 to 3.0.3
+- Updated dependencies [261a08e]
+- Updated dependencies [55464ee]
+  - @desselbane/ts-helpers@4.0.0
+
+
+</details>
+
 ## 2.0.1
 
 ### Patch Changes

@@ -1,5 +1,23 @@
 # @desselbane/configs
 
+## 14.1.0
+
+### Minor Changes
+
+- 393b3b6: Add `@desselbane/vitest-helpers` as default package for newly created packages.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 55464ee: deps: [patch|devDependencies] Update package @types/node from 24.0.14 to 24.0.15
+- c370e46: deps: [patch|dependencies] Update package eslint-config-prettier from 10.1.5 to 10.1.8
+- c370e46: deps: [patch|dependencies] Update package eslint-plugin-prettier from 5.5.1 to 5.5.3
+
+
+</details>
+
 ## 14.0.0
 
 ### Major Changes
