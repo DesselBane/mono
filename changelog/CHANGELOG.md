@@ -1,5 +1,21 @@
 # @repo/changelog
 
+## 0.3.0
+
+### Minor Changes
+
+- c2132f3: Add package `@desselbane/vitest-helpers`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 55464ee: deps: [patch|devDependencies] Update package @types/node from 24.0.14 to 24.0.15
+
+
+</details>
+
 ## 0.2.0
 
 ### Minor Changes

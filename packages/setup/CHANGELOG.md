@@ -1,5 +1,23 @@
 # @desselbane/setup
 
+## 0.2.0
+
+### Minor Changes
+
+- fa5a409: Refactor `__mocks__` folders to use `@desselbane/vitest-helpers` package
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 9ed9a76: deps: [patch|devDependencies] Update package @types/node from 24.0.12 to 24.0.14
+- 55464ee: deps: [patch|devDependencies] Update package @types/node from 24.0.14 to 24.0.15
+- d19983f: deps: [patch|devDependencies] Update package zod from 4.0.2 to 4.0.5
+
+
+</details>
+
 ## 0.1.0
 
 ### Minor Changes
