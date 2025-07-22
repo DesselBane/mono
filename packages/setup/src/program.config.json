@@ -97,7 +97,7 @@
   },
   {
     "Name": "Region to Share",
-    "WingetId": "9N4066W2R5Q4",
+    "WingetId": "TomEnglert.RegionToShare",
     "installDefault": true,
     "group": "Programming"
   },
@@ -218,6 +218,12 @@
   {
     "Name": "Elgato StreamDeck",
     "WingetId": "Elgato.StreamDeck",
+    "installDefault": false,
+    "group": "Peripherals"
+  },
+  {
+    "Name": "Loupedeck",
+    "WingetId": "Loupedeck.Loupedeck",
     "installDefault": true,
     "group": "Peripherals"
   },
