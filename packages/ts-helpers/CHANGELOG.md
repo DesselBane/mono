@@ -1,5 +1,21 @@
 # @desselbane/ts-helpers
 
+## 4.0.0
+
+### Major Changes
+
+- 261a08e: Move function `noop` from package `@desselbane/ts-helpers` to `@desselbane/vitest-helpers`
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 55464ee: deps: [patch|devDependencies] Update package @types/node from 24.0.14 to 24.0.15
+
+
+</details>
+
 ## 3.1.0
 
 ### Minor Changes

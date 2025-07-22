@@ -1,5 +1,26 @@
 # @desselbane/configs
 
+## 14.1.0
+
+### Minor Changes
+
+- 393b3b6: Add `@desselbane/vitest-helpers` as default package for newly created packages.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 55464ee: deps: [patch|devDependencies] Update package @types/node from 24.0.14 to 24.0.15
+- c370e46: deps: [patch|dependencies] Update package eslint-config-prettier from 10.1.5 to 10.1.8
+- c370e46: deps: [patch|dependencies] Update package eslint-plugin-prettier from 5.5.1 to 5.5.3
+- c3b9c3a: deps: [major|dependencies] Update package eslint-plugin-unicorn from 59.0.1 to 60.0.0
+- 9679b5a: deps: [minor|peerDependencies] Update package tsdown from 0.12.9 to 0.13.0
+- 53a7dfa: deps: [minor|dependencies] Update package typescript-eslint from 8.37.0 to 8.38.0
+
+
+</details>
+
 ## 14.0.0
 
 ### Major Changes
