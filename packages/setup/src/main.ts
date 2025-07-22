@@ -3,6 +3,7 @@
 import { execSync, isAdmin } from './helper'
 import { setupDotConfig } from './setup-dot-config'
 import { installPrograms } from './install-programs'
+import { runDeveloperDSC } from './dsc'
 
 console.log('🧙 Checking admin 🧙‍♂️')
 
@@ -16,3 +17,4 @@ console.log('Bootstraping Windows, hold on to your socks')
 
 await setupDotConfig()
 await installPrograms()
+await runDeveloperDSC()
