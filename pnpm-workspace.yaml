@@ -2,7 +2,9 @@ packages:
   - changelog
   - packages/**
   - '!packages/**/turbo/**'
+
 onlyBuiltDependencies:
+  - '@parcel/watcher'
   - core-js-pure
   - esbuild
   - unrs-resolver
