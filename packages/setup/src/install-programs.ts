@@ -19,7 +19,7 @@ export async function installPrograms() {
   const updateInstalledProgramsPrompt = await safeTryAsync(
     confirm({
       message: 'Do you want to update all currently installed Programs?',
-      default: true,
+      default: false,
     }),
   )
   cleanExit(updateInstalledProgramsPrompt)
@@ -31,7 +31,7 @@ export async function installPrograms() {
   const installProgramsPrompt = await safeTryAsync(
     confirm({
       message: 'Do you want to install additional programs?',
-      default: true,
+      default: false,
     }),
   )
   cleanExit(installProgramsPrompt)
