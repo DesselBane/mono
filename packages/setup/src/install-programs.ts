@@ -28,6 +28,17 @@ export async function installPrograms() {
     execSync('winget update -r')
   }
 
+  const installProgramsPrompt = await safeTryAsync(
+    confirm({
+      message: 'Do you want to install additional programs?',
+      default: true,
+    }),
+  )
+  cleanExit(installProgramsPrompt)
+  if (!installProgramsPrompt.data) {
+    return
+  }
+
   const choices: Choices = []
 
   function mapConfigItem(item: (typeof config)[number]): Choices[number] {
@@ -52,23 +63,23 @@ export async function installPrograms() {
     )
   }
 
-  const installProgramsPrompt = await safeTryAsync(
+  const whichProgramsPrompt = await safeTryAsync(
     checkbox({
       message: 'Which apps should be installed?',
       choices,
       loop: false,
     }),
   )
-  cleanExit(installProgramsPrompt)
+  cleanExit(whichProgramsPrompt)
 
-  if (installProgramsPrompt.data.length === 0) {
+  if (whichProgramsPrompt.data.length === 0) {
     console.log('Nothing selected...')
     return
   }
 
   console.log('Will install the following programms:')
 
-  for (const program of installProgramsPrompt.data) {
+  for (const program of whichProgramsPrompt.data) {
     console.log(`- ${program.Name}`)
   }
 
@@ -84,6 +95,6 @@ export async function installPrograms() {
   }
 
   wingetInstall(
-    installProgramsPrompt.data.map((x) => `"${x.WingetId}"`).join(' '),
+    whichProgramsPrompt.data.map((x) => `"${x.WingetId}"`).join(' '),
   )
 }
