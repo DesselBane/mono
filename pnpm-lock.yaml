@@ -196,7 +196,7 @@ importers:
   packages/setup:
     dependencies:
       '@inquirer/prompts':
-        specifier: ^7.6.0
+        specifier: 7.6.0
         version: 7.6.0(@types/node@24.0.15)
     devDependencies:
       '@desselbane/configs':
