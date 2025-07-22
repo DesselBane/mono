@@ -1,5 +1,9 @@
 # Setup
 
+Manual Steps:
+
+- Install [FiraCode Font](https://github.com/tonsky/FiraCode/wiki/Installing)
+
 Run in Admin Powershell:
 
 ```powershell
@@ -17,4 +21,7 @@ volta install pnpm
 
 pnpm dlx @desselbane/setup -y
 ```
-pnpm dlx @desselbane/setup@rc -y
+
+After the script you might want to
+
+- Restore PowerToys Settings

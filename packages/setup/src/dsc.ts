@@ -13,7 +13,7 @@ export async function runDeveloperDSC() {
   const shouldRunPrompt = await safeTryAsync(
     confirm({
       message: 'Run Developer DSC module?',
-      default: true,
+      default: false,
     }),
   )
   cleanExit(shouldRunPrompt)
