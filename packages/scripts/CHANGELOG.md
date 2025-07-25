@@ -1,5 +1,17 @@
 # @repo/scripts
 
+## 0.2.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e095ed0: deps: [minor|devDependencies] Update package @types/node from 24.0.15 to 24.1.0
+
+
+</details>
+
 ## 0.2.0
 
 ### Minor Changes

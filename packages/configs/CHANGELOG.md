@@ -1,5 +1,26 @@
 # @desselbane/configs
 
+## 14.1.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 85e47ef: deps: [minor|dependencies] Update package @eslint/js from 9.31.0 to 9.32.0
+- e095ed0: deps: [minor|devDependencies] Update package @types/node from 24.0.15 to 24.1.0
+- 85e47ef: deps: [minor|dependencies] Update package eslint from 9.31.0 to 9.32.0
+- d8fe1d1: deps: [minor|dependencies] Update package jiti from 2.4.2 to 2.5.0
+- 2e29a87: deps: [patch|dependencies] Update package jiti from 2.5.0 to 2.5.1
+- be2659f: deps: [minor|devDependencies] Update package tsdown from 0.12.9 to 0.13.0
+- 96126e3: deps: [patch|devDependencies] Update package vite from 7.0.5 to 7.0.6
+- 0f85495: deps: [patch|dependencies] Update package zod from 4.0.5 to 4.0.8
+- 2e29a87: deps: [patch|dependencies] Update package zod from 4.0.8 to 4.0.9
+- ef9cf5b: deps: [patch|dependencies] Update package zod from 4.0.9 to 4.0.10
+
+
+</details>
+
 ## 14.1.0
 
 ### Minor Changes
