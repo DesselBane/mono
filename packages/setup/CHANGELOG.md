@@ -1,5 +1,21 @@
 # @desselbane/setup
 
+## 1.0.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e095ed0: deps: [minor|devDependencies] Update package @types/node from 24.0.15 to 24.1.0
+- be2659f: deps: [minor|devDependencies] Update package tsdown from 0.12.9 to 0.13.0
+- 0f85495: deps: [patch|devDependencies] Update package zod from 4.0.5 to 4.0.8
+- 2e29a87: deps: [patch|devDependencies] Update package zod from 4.0.8 to 4.0.9
+- ef9cf5b: deps: [patch|devDependencies] Update package zod from 4.0.9 to 4.0.10
+
+
+</details>
+
 ## 1.0.0
 
 ### Major Changes
