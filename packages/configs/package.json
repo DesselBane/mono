@@ -92,7 +92,7 @@
     "typescript-eslint": "8.38.0",
     "vue-eslint-parser": "10.2.0",
     "vue3-snapshot-serializer": "2.12.0",
-    "zod": "4.0.11"
+    "zod": "4.0.13"
   },
   "peerDependencies": {
     "@vue/test-utils": "^2.0.0",
