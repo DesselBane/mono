@@ -85,7 +85,7 @@
     "eslint-plugin-prettier": "5.5.3",
     "eslint-plugin-unicorn": "60.0.0",
     "eslint-plugin-unused-imports": "4.1.4",
-    "eslint-plugin-vue": "10.3.0",
+    "eslint-plugin-vue": "10.4.0",
     "jest-extended": "6.0.0",
     "jiti": "2.5.1",
     "prettier": "3.6.2",
