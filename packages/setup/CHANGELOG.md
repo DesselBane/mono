@@ -1,5 +1,28 @@
 # @desselbane/setup
 
+## 1.0.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 3a6c6bb: deps: [minor|dependencies] Update package @inquirer/prompts from 7.7.1 to 7.8.0
+- e095ed0: deps: [minor|devDependencies] Update package @types/node from 24.0.15 to 24.1.0
+- be2659f: deps: [minor|devDependencies] Update package tsdown from 0.12.9 to 0.13.0
+- df6f8ec: deps: [patch|devDependencies] Update package tsdown from 0.13.0 to 0.13.1
+- 69bfb72: deps: [minor|devDependencies] Update package typescript from 5.8.3 to 5.9.2
+- a4dc62e: deps: [patch|devDependencies] Update package zod from 4.0.10 to 4.0.11
+- 552d09f: deps: [patch|devDependencies] Update package zod from 4.0.11 to 4.0.13
+- 46bfab5: deps: [patch|devDependencies] Update package zod from 4.0.13 to 4.0.14
+- 0f85495: deps: [patch|devDependencies] Update package zod from 4.0.5 to 4.0.8
+- 2e29a87: deps: [patch|devDependencies] Update package zod from 4.0.8 to 4.0.9
+- ef9cf5b: deps: [patch|devDependencies] Update package zod from 4.0.9 to 4.0.10
+- 93bd1ff: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.0
 
 ### Major Changes
