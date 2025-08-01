@@ -1,5 +1,25 @@
 # @repo/changelog
 
+## 0.3.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e095ed0: deps: [minor|devDependencies] Update package @types/node from 24.0.15 to 24.1.0
+- 85e47ef: deps: [minor|devDependencies] Update package eslint from 9.31.0 to 9.32.0
+- 6e75afc: deps: [minor|engines] Update package node from v24.4.1 to v24.5.0
+- c281908: deps: [minor|volta] Update package pnpm from 10.13.1 to 10.14.0
+- 0f85495: deps: [patch|action] Update package renovatebot/github-action from v43.0.3 to v43.0.4
+- a4dc62e: deps: [patch|action] Update package renovatebot/github-action from v43.0.4 to v43.0.5
+- 93bd1ff: deps: Updated lockfile
+- 93bd1ff: deps: Updated lockfile
+- 93bd1ff: deps: Updated lockfile
+
+
+</details>
+
 ## 0.3.0
 
 ### Minor Changes

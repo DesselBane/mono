@@ -1,5 +1,21 @@
 # @desselbane/ts-helpers
 
+## 4.0.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e095ed0: deps: [minor|devDependencies] Update package @types/node from 24.0.15 to 24.1.0
+- be2659f: deps: [minor|devDependencies] Update package tsdown from 0.12.9 to 0.13.0
+- df6f8ec: deps: [patch|devDependencies] Update package tsdown from 0.13.0 to 0.13.1
+- 69bfb72: deps: [minor|devDependencies] Update package typescript from 5.8.3 to 5.9.2
+- 93bd1ff: deps: Updated lockfile
+
+
+</details>
+
 ## 4.0.0
 
 ### Major Changes
