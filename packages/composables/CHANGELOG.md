@@ -1,5 +1,18 @@
 # @desselbane/composables
 
+## 2.0.4
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- Updated dependencies [f319fbc]
+  - @desselbane/ts-helpers@4.0.2
+
+
+</details>
+
 ## 2.0.3
 
 ### Dependency Changes
