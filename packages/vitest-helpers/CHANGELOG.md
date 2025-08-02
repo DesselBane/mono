@@ -1,5 +1,17 @@
 # @desselbane/vitest-helpers
 
+## 1.0.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f319fbc: deps: [patch|devDependencies] Update package tsdown from 0.13.1 to 0.13.2
+
+
+</details>
+
 ## 1.0.1
 
 ### Dependency Changes

@@ -1,5 +1,17 @@
 # @desselbane/configs
 
+## 14.1.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- f319fbc: deps: [patch|devDependencies] Update package tsdown from 0.13.1 to 0.13.2
+
+
+</details>
+
 ## 14.1.1
 
 ### Dependency Changes
