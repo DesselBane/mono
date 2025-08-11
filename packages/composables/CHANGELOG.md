@@ -1,5 +1,32 @@
 # @desselbane/composables
 
+## 2.0.4
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- b4d9ff3: deps: [minor|devDependencies] Update package @types/node from 24.1.0 to 24.2.0
+- 341851a: deps: [patch|devDependencies] Update package @types/node from 24.2.0 to 24.2.1
+- 061af41: deps: [minor|devDependencies] Update package vite from 7.0.6 to 7.1.0
+- fb6af4b: deps: [patch|devDependencies] Update package vite from 7.1.0 to 7.1.1
+- 36adbe0: deps: Updated lockfile
+- 5150293: deps: Updated lockfile
+- Updated dependencies [b1a01be]
+- Updated dependencies [b4d9ff3]
+- Updated dependencies [341851a]
+- Updated dependencies [f319fbc]
+- Updated dependencies [9c686b3]
+- Updated dependencies [8c64366]
+- Updated dependencies [889bf3d]
+- Updated dependencies [36adbe0]
+- Updated dependencies [5150293]
+  - @desselbane/ts-helpers@4.1.0
+
+
+</details>
+
 ## 2.0.3
 
 ### Dependency Changes

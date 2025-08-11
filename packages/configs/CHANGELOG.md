@@ -1,5 +1,35 @@
 # @desselbane/configs
 
+## 14.1.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- ce10ec9: deps: [patch|dependencies] Update package @eslint/compat from 1.3.1 to 1.3.2
+- 6c86063: deps: [minor|dependencies] Update package @eslint/js from 9.32.0 to 9.33.0
+- b4d9ff3: deps: [minor|devDependencies] Update package @types/node from 24.1.0 to 24.2.0
+- 341851a: deps: [patch|devDependencies] Update package @types/node from 24.2.0 to 24.2.1
+- 6c86063: deps: [minor|dependencies] Update package eslint from 9.32.0 to 9.33.0
+- 1b496ca: deps: [patch|dependencies] Update package eslint-plugin-prettier from 5.5.3 to 5.5.4
+- f319fbc: deps: [patch|devDependencies] Update package tsdown from 0.13.1 to 0.13.2
+- 9c686b3: deps: [patch|devDependencies] Update package tsdown from 0.13.2 to 0.13.3
+- 8c64366: deps: [patch|devDependencies] Update package tsdown from 0.13.3 to 0.13.4
+- 889bf3d: deps: [minor|devDependencies] Update package tsdown from 0.13.4 to 0.14.0
+- ef1aa5b: deps: [minor|peerDependencies] Update package tsdown from 0.13.5 to 0.14.0
+- 7110ffd: deps: [minor|dependencies] Update package typescript-eslint from 8.38.0 to 8.39.0
+- 061af41: deps: [minor|devDependencies] Update package vite from 7.0.6 to 7.1.0
+- fb6af4b: deps: [patch|devDependencies] Update package vite from 7.1.0 to 7.1.1
+- d5c80c9: deps: [patch|dependencies] Update package zod from 4.0.14 to 4.0.15
+- 719b83a: deps: [patch|dependencies] Update package zod from 4.0.15 to 4.0.16
+- b0e6b84: deps: [patch|dependencies] Update package zod from 4.0.16 to 4.0.17
+- 36adbe0: deps: Updated lockfile
+- 5150293: deps: Updated lockfile
+
+
+</details>
+
 ## 14.1.1
 
 ### Dependency Changes
