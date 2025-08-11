@@ -1,5 +1,7 @@
 import { AssertionError } from '../assertions/assertion-error'
 
+export type KeyLike = string | number | symbol
+
 /**
  * Converts a keylike value into string for easy logging
  * @param keylike The value to be converted
@@ -17,7 +19,7 @@ import { AssertionError } from '../assertions/assertion-error'
  * ```
  */
 export function keylikeToString(
-  keylike: string | symbol | number,
+  keylike: KeyLike,
   symbolDefaultValue = 'unknown symbol',
 ): string {
   switch (typeof keylike) {
