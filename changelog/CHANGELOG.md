@@ -1,5 +1,28 @@
 # @repo/changelog
 
+## 0.3.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- b4d9ff3: deps: [minor|devDependencies] Update package @types/node from 24.1.0 to 24.2.0
+- 341851a: deps: [patch|devDependencies] Update package @types/node from 24.2.0 to 24.2.1
+- 6c86063: deps: [minor|devDependencies] Update package eslint from 9.32.0 to 9.33.0
+- a805584: deps: [patch|devDependencies] Update package lint-staged from 16.1.2 to 16.1.4
+- 8c64366: deps: [patch|devDependencies] Update package lint-staged from 16.1.4 to 16.1.5
+- 8c64366: deps: [patch|action] Update package renovatebot/github-action from v43.0.5 to v43.0.6
+- 36adbe0: deps: Updated lockfile
+- 36adbe0: deps: Updated lockfile
+- 36adbe0: deps: Updated lockfile
+- 5150293: deps: Updated lockfile
+- 5150293: deps: Updated lockfile
+- 5150293: deps: Updated lockfile
+
+
+</details>
+
 ## 0.3.1
 
 ### Dependency Changes

@@ -1,6 +1,6 @@
 {
   "name": "@desselbane/ts-helpers",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "type": "module",
   "description": "Helper package which includes typescript assertions and type guards",
   "scripts": {
