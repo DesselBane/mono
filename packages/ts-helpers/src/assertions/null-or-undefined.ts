@@ -1,5 +1,5 @@
 import type { UnknownRecord } from 'type-fest'
-import { keylikeToString } from '../objects/keylike-to-string'
+import { propertyKeyToString } from '../objects/property-key-to-string'
 import { AssertionError } from './assertion-error'
 import type { AssertionContext } from './assertion-error'
 
@@ -28,7 +28,7 @@ export function assertPropertiesNotNil<
   for (const property of propertiesToCheck) {
     if (value[property] == undefined) {
       throw new AssertionError(
-        `Expected prop ${keylikeToString(property)} not to be nil.`,
+        `Expected prop ${propertyKeyToString(property)} not to be nil.`,
         {
           actualValue: value,
           expectedValue: 'Values of given keys should not be nil.',
