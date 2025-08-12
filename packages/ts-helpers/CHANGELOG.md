@@ -168,10 +168,10 @@
   }
   ```
 
-- c8c542f: Add `keylikeToString` helper.
+- c8c542f: Add `propertyKeyToString` helper.
 
   ```typescript
-  export function keylikeToString(
+  export function propertyKeyToString(
     keylike: string | symbol | number,
     symbolDefaultValue = 'unknown symbol',
   ): string
@@ -189,7 +189,7 @@
     key: keyof TTarget,
   ) {
     const keyNameError: string = key // Error TS2322: Type string | number | symbol is not assignable to type string
-    const keyName: string = keylikeToString(key, 'Symbol without description') // Works
+    const keyName: string = propertyKeyToString(key, 'Symbol without description') // Works
 
     console.log(`Value of ${keyName} is ${String(target[key])}`)
   }

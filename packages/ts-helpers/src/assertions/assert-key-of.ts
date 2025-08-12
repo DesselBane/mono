@@ -1,22 +1,24 @@
-import { keylikeToString } from '../objects/keylike-to-string'
-import type { KeyLike } from '../objects/keylike-to-string'
+import { propertyKeyToString } from '../objects/property-key-to-string'
 import { AssertionError } from './assertion-error'
 
 export function isKeyOf<TObject extends object>(
   data: TObject,
-  key: KeyLike,
+  key: PropertyKey,
 ): key is keyof TObject {
   return key in data
 }
 
 export function assertKeyOf<TObject extends object>(
   data: TObject,
-  key: KeyLike,
+  key: PropertyKey,
 ): asserts key is keyof TObject {
   if (!isKeyOf(data, key)) {
-    throw new AssertionError(`"${keylikeToString(key)}" is not a key of data`, {
-      data,
-      key,
-    })
+    throw new AssertionError(
+      `"${propertyKeyToString(key)}" is not a key of data`,
+      {
+        data,
+        key,
+      },
+    )
   }
 }

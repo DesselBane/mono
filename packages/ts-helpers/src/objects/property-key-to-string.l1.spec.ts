@@ -1,6 +1,6 @@
-import { keylikeToString } from './keylike-to-string'
+import { propertyKeyToString } from './property-key-to-string'
 
-describe(keylikeToString, () => {
+describe(propertyKeyToString, () => {
   it.each([
     {
       title: 'Returns strings as is',
@@ -29,6 +29,6 @@ describe(keylikeToString, () => {
       expectedResult: 'foobar',
     },
   ])('$title', ({ input, defaultValue, expectedResult }) => {
-    expect(keylikeToString(input, defaultValue)).toBe(expectedResult)
+    expect(propertyKeyToString(input, defaultValue)).toBe(expectedResult)
   })
 })
