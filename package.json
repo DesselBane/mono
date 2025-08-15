@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "2.29.5",
-    "@turbo/gen": "2.5.5",
+    "@turbo/gen": "2.5.6",
     "@types/node": "24.2.1",
     "@desselbane/configs": "workspace:*",
     "@repo/scripts": "workspace:*",
@@ -40,7 +40,7 @@
     "lint-staged": "16.1.5",
     "prettier": "3.6.2",
     "semver": "7.7.2",
-    "turbo": "2.5.5"
+    "turbo": "2.5.6"
   },
   "packageManager": "pnpm@10.14.0",
   "engines": {
