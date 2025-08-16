@@ -1,5 +1,18 @@
 # @desselbane/vitest-helpers
 
+## 1.0.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- 5114890: deps: [patch|devDependencies] Update package tsdown from 0.14.0 to 0.14.1
+
+
+</details>
+
 ## 1.0.2
 
 ### Dependency Changes

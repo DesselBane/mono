@@ -1,5 +1,23 @@
 # @repo/changelog
 
+## 0.3.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 5e89109: deps: [patch|devDependencies] Update package @changesets/cli from 2.29.5 to 2.29.6
+- ff7d600: deps: [patch|devDependencies] Update package @turbo/gen from 2.5.5 to 2.5.6
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- d38a362: deps: [major|action] Update package actions/checkout from v4 to v5
+- 635589f: deps: [minor|engines] Update package node from v24.5.0 to v24.6.0
+- 5114890: deps: [patch|action] Update package renovatebot/github-action from v43.0.6 to v43.0.7
+- ff7d600: deps: [patch|devDependencies] Update package turbo from 2.5.5 to 2.5.6
+
+
+</details>
+
 ## 0.3.2
 
 ### Dependency Changes

@@ -1,5 +1,19 @@
 # @desselbane/setup
 
+## 1.0.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 3d80af0: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.1 to 7.8.2
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- 5114890: deps: [patch|devDependencies] Update package tsdown from 0.14.0 to 0.14.1
+
+
+</details>
+
 ## 1.0.2
 
 ### Dependency Changes

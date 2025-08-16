@@ -1,5 +1,22 @@
 # @desselbane/composables
 
+## 2.0.5
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- 2f41ce2: deps: [patch|devDependencies] Update package vite from 7.1.1 to 7.1.2
+- Updated dependencies [286c261]
+- Updated dependencies [07f989a]
+- Updated dependencies [5114890]
+  - @desselbane/ts-helpers@5.0.0
+
+
+</details>
+
 ## 2.0.4
 
 ### Dependency Changes

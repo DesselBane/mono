@@ -1,5 +1,20 @@
 # @desselbane/configs
 
+## 14.1.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- 5114890: deps: [patch|devDependencies] Update package tsdown from 0.14.0 to 0.14.1
+- 993bcbc: deps: [patch|dependencies] Update package typescript-eslint from 8.39.0 to 8.39.1
+- 2f41ce2: deps: [patch|devDependencies] Update package vite from 7.1.1 to 7.1.2
+
+
+</details>
+
 ## 14.1.2
 
 ### Dependency Changes
