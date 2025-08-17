@@ -41,7 +41,7 @@
     "tsdown": "0.14.1",
     "type-fest": "4.41.0",
     "typescript": "5.9.2",
-    "unplugin-unused": "0.5.1",
+    "unplugin-unused": "0.5.2",
     "vitest": "3.2.4"
   }
 }
