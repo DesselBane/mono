@@ -1,5 +1,28 @@
 # @desselbane/configs
 
+## 14.1.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e6fca53: deps: [minor|dependencies] Update package @eslint/js from 9.33.0 to 9.34.0
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- e0de2a4: deps: [minor|dependencies] Update package eslint from 9.33.0 to 9.34.0
+- 391688b: deps: [minor|dependencies] Update package eslint-plugin-unused-imports from 4.1.4 to 4.2.0
+- 5114890: deps: [patch|devDependencies] Update package tsdown from 0.14.0 to 0.14.1
+- 993bcbc: deps: [patch|dependencies] Update package typescript-eslint from 8.39.0 to 8.39.1
+- 54067c0: deps: [minor|dependencies] Update package typescript-eslint from 8.39.1 to 8.40.0
+- 2f41ce2: deps: [patch|devDependencies] Update package vite from 7.1.1 to 7.1.2
+- 923be61: deps: [patch|devDependencies] Update package vite from 7.1.2 to 7.1.3
+- 7276b3d: deps: [minor|dependencies] Update package zod from 4.0.17 to 4.1.0
+- 4d7b86f: deps: [patch|dependencies] Update package zod from 4.1.0 to 4.1.1
+- 12a821f: deps: Updated lockfile
+
+
+</details>
+
 ## 14.1.2
 
 ### Dependency Changes
