@@ -1,5 +1,26 @@
 # @desselbane/setup
 
+## 1.0.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 3d80af0: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.1 to 7.8.2
+- 67eb7f1: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.2 to 7.8.3
+- c53786b: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.3 to 7.8.4
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- 5114890: deps: [patch|devDependencies] Update package tsdown from 0.14.0 to 0.14.1
+- af7996f: deps: [patch|devDependencies] Update package tsdown from 0.14.1 to 0.14.2
+- 7276b3d: deps: [minor|devDependencies] Update package zod from 4.0.17 to 4.1.0
+- 4d7b86f: deps: [patch|devDependencies] Update package zod from 4.1.0 to 4.1.1
+- af7996f: deps: [patch|devDependencies] Update package zod from 4.1.1 to 4.1.5
+- 12a821f: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.2
 
 ### Dependency Changes

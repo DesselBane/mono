@@ -1,5 +1,25 @@
 # @desselbane/ts-helpers
 
+## 5.0.0
+
+### Major Changes
+
+- 286c261: Rename `keylikeToString` into `propertyKeyToString` and use ts native `PropertyKey` type instead of custom type.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- 5114890: deps: [patch|devDependencies] Update package tsdown from 0.14.0 to 0.14.1
+- af7996f: deps: [patch|devDependencies] Update package tsdown from 0.14.1 to 0.14.2
+- 09e8bd1: deps: [patch|devDependencies] Update package unplugin-unused from 0.5.1 to 0.5.2
+- 12a821f: deps: Updated lockfile
+
+
+</details>
+
 ## 4.1.0
 
 ### Minor Changes
@@ -189,7 +209,10 @@
     key: keyof TTarget,
   ) {
     const keyNameError: string = key // Error TS2322: Type string | number | symbol is not assignable to type string
-    const keyName: string = propertyKeyToString(key, 'Symbol without description') // Works
+    const keyName: string = propertyKeyToString(
+      key,
+      'Symbol without description',
+    ) // Works
 
     console.log(`Value of ${keyName} is ${String(target[key])}`)
   }
