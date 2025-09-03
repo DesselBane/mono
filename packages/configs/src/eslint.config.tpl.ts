@@ -2,6 +2,7 @@ import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { includeIgnoreFile } from '@eslint/compat'
 import eslint from '@eslint/js'
+import { defineConfig } from 'eslint/config'
 import {
   configureVueProject,
   defineConfigWithVueTs,
@@ -11,7 +12,7 @@ import playwright from 'eslint-plugin-playwright'
 import prettierLint from 'eslint-plugin-prettier/recommended'
 import pluginVue from 'eslint-plugin-vue'
 import type { ConfigWithExtends } from 'typescript-eslint'
-import tsEslint, { configs as tsEslintConfigs } from 'typescript-eslint'
+import { configs as tsEslintConfigs } from 'typescript-eslint'
 import { z } from 'zod'
 import { flatConfigs as importPluginFlatConfigs } from 'eslint-plugin-import-x'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
@@ -115,12 +116,12 @@ const optionsSchema = z
   })
 
 type SafeOptions = z.infer<typeof optionsSchema>
-type Config = ReturnType<typeof tsEslint.config>
+type Config = ReturnType<typeof defineConfig>
 
 export function createEslintConfig(options: Options = {}): Config {
   const safeOptions = optionsSchema.parse(options)
 
-  return tsEslint.config(
+  return defineConfig(
     eslint.configs.recommended,
     ...configureVitestPlugin(safeOptions),
     ...configureUnicornPlugin(safeOptions),
@@ -153,7 +154,7 @@ function configureVue(options: SafeOptions): Config {
     )
   }
 
-  return tsEslint.config(...pluginVue.configs['flat/recommended'], {
+  return defineConfig(...pluginVue.configs['flat/recommended'], {
     files: ['*.vue', '**/*.vue'],
     languageOptions: {
       parserOptions: {
@@ -168,7 +169,7 @@ function configurePlaywright(options: SafeOptions): Config {
     return []
   }
 
-  return tsEslint.config({
+  return defineConfig({
     ...playwright.configs['flat/recommended'],
     files: ['tests/**'],
     settings: {
@@ -183,7 +184,7 @@ function configurePlaywright(options: SafeOptions): Config {
 }
 
 function configureIgnores(options: SafeOptions): Config {
-  const config: Config = tsEslint.config({
+  const config: Config = defineConfig({
     ignores: [
       '**/*.d.ts',
       // Ignores all js files in the root of a package since these are typically config files and can be safely ignored
@@ -223,7 +224,7 @@ function configureTypescript(options: SafeOptions): Config {
 }
 
 function configureImportPlugin(options: SafeOptions): Config {
-  return tsEslint.config(
+  return defineConfig(
     importPluginFlatConfigs.recommended,
     importPluginFlatConfigs.typescript,
     {
@@ -271,7 +272,7 @@ function configureUnicornPlugin(options: SafeOptions): Config {
     return []
   }
 
-  return tsEslint.config([
+  return defineConfig([
     eslintPluginUnicorn.configs.all,
     {
       rules: {
@@ -325,7 +326,7 @@ function configureUnicornPlugin(options: SafeOptions): Config {
 }
 
 function configureVitestPlugin(options: SafeOptions): Config {
-  return tsEslint.config(
+  return defineConfig(
     {
       files: options.testMatch, // or any other pattern
       ...vitest.configs.all,
@@ -361,7 +362,7 @@ function configureVitestPlugin(options: SafeOptions): Config {
 
 // Needs to come after configure typescript
 function configureNoUnusedImportsPlugin() {
-  return tsEslint.config({
+  return defineConfig({
     plugins: {
       'unused-imports': unusedImports,
     },
@@ -394,7 +395,7 @@ function configureAdditionalRules(options: SafeOptions): Config {
 
   if (options.useTypeCheckedConfig) {
     config.push(
-      ...tsEslint.config(
+      ...defineConfig(
         {
           languageOptions: {
             parserOptions: {
@@ -461,7 +462,7 @@ function configureAdditionalRules(options: SafeOptions): Config {
     })
   }
 
-  return tsEslint.config(
+  return defineConfig(
     ...config,
     {
       files: options.testMatch,
