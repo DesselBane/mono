@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
-    "@types/node": "24.3.0",
+    "@types/node": "24.3.1",
     "tsdown": "0.14.2",
     "type-fest": "4.41.0",
     "typescript": "5.9.2",
