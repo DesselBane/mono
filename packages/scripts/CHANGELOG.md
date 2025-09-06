@@ -1,5 +1,20 @@
 # @repo/scripts
 
+## 0.2.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- d9f1876: deps: [patch|devDependencies] Update package @types/node from 24.3.0 to 24.3.1
+- 12a821f: deps: Updated lockfile
+- 5d93987: deps: Updated lockfile
+
+
+</details>
+
 ## 0.2.2
 
 ### Dependency Changes
