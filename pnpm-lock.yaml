@@ -154,8 +154,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       tsdown:
-        specifier: 0.14.2
-        version: 0.14.2(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
+        specifier: 0.15.0
+        version: 0.15.0(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -215,8 +215,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(vitest@3.2.4(@types/node@24.3.1)(jiti@2.5.1)(yaml@2.8.1))
       tsdown:
-        specifier: 0.14.2
-        version: 0.14.2(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
+        specifier: 0.15.0
+        version: 0.15.0(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
       type-fest:
         specifier: 4.41.0
         version: 4.41.0
@@ -245,8 +245,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(vitest@3.2.4(@types/node@24.3.1)(jiti@2.5.1)(yaml@2.8.1))
       tsdown:
-        specifier: 0.14.2
-        version: 0.14.2(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
+        specifier: 0.15.0
+        version: 0.15.0(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
       type-fest:
         specifier: 4.41.0
         version: 4.41.0
@@ -269,8 +269,8 @@ importers:
         specifier: 24.3.1
         version: 24.3.1
       tsdown:
-        specifier: 0.14.2
-        version: 0.14.2(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
+        specifier: 0.15.0
+        version: 0.15.0(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2))
       type-fest:
         specifier: 4.41.0
         version: 4.41.0
@@ -3000,8 +3000,8 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  rolldown-plugin-dts@0.15.10:
-    resolution: {integrity: sha512-8cPVAVQUo9tYAoEpc3jFV9RxSil13hrRRg8cHC9gLXxRMNtWPc1LNMSDXzjyD+5Vny49sDZH77JlXp/vlc4I3g==}
+  rolldown-plugin-dts@0.16.1:
+    resolution: {integrity: sha512-bEfJpvhHm+h2cldNUbj8dT5tF9BJrJawPquScFdodob/55DqYkBis7iar8nkn8wSNIFKxwd2jP9ly/Z7lRME2w==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       '@typescript/native-preview': '>=7.0.0-dev.20250601.1'
@@ -3286,8 +3286,8 @@ packages:
       '@swc/wasm':
         optional: true
 
-  tsdown@0.14.2:
-    resolution: {integrity: sha512-6ThtxVZoTlR5YJov5rYvH8N1+/S/rD/pGfehdCLGznGgbxz+73EASV1tsIIZkLw2n+SXcERqHhcB/OkyxdKv3A==}
+  tsdown@0.15.0:
+    resolution: {integrity: sha512-xbz8tvdlB2wspocZWcJQhZNDLJC+sKV+sTIpiRgfUiQCUxLFGnUZUPc9KoKp3nfMeXQqTyMi6FM9/SasSj+csQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -6467,7 +6467,7 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rolldown-plugin-dts@0.15.10(rolldown@1.0.0-beta.36)(typescript@5.9.2)(vue-tsc@3.0.6(typescript@5.9.2)):
+  rolldown-plugin-dts@0.16.1(rolldown@1.0.0-beta.36)(typescript@5.9.2)(vue-tsc@3.0.6(typescript@5.9.2)):
     dependencies:
       '@babel/generator': 7.28.3
       '@babel/parser': 7.28.4
@@ -6775,7 +6775,7 @@ snapshots:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  tsdown@0.14.2(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2)):
+  tsdown@0.15.0(typescript@5.9.2)(unplugin-unused@0.5.3)(vue-tsc@3.0.6(typescript@5.9.2)):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
@@ -6785,7 +6785,7 @@ snapshots:
       empathic: 2.0.0
       hookable: 5.5.3
       rolldown: 1.0.0-beta.36
-      rolldown-plugin-dts: 0.15.10(rolldown@1.0.0-beta.36)(typescript@5.9.2)(vue-tsc@3.0.6(typescript@5.9.2))
+      rolldown-plugin-dts: 0.16.1(rolldown@1.0.0-beta.36)(typescript@5.9.2)(vue-tsc@3.0.6(typescript@5.9.2))
       semver: 7.7.2
       tinyexec: 1.0.1
       tinyglobby: 0.2.15
