@@ -1,5 +1,5 @@
 ---
-'@desselbane/configs': patch
+'@desselbane/configs': major
 ---
 
-deps: [minor|devDependencies] Update package tsdown from 0.14.2 to 0.15.0
+deps: [major|peerDependencies] Update package peerDependency tsdown to ^0.15.0
