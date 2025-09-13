@@ -39,7 +39,7 @@
     "@desselbane/configs": "workspace:*",
     "@types/node": "24.3.3",
     "tsdown": "0.15.1",
-    "type-fest": "4.41.0",
+    "type-fest": "5.0.0",
     "typescript": "5.9.2",
     "unplugin-unused": "0.5.3",
     "vitest": "3.2.4"
