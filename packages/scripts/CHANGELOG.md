@@ -1,5 +1,24 @@
 # @repo/scripts
 
+## 0.2.3
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- d9f1876: deps: [patch|devDependencies] Update package @types/node from 24.3.0 to 24.3.1
+- 908e130: deps: [patch|devDependencies] Update package @types/node from 24.3.1 to 24.3.2
+- eac00a2: deps: [patch|devDependencies] Update package @types/node from 24.3.2 to 24.3.3
+- 03c9b47: deps: [major|devDependencies] Update package type-fest from 4.41.0 to 5.0.0
+- 12a821f: deps: Updated lockfile
+- 5d93987: deps: Updated lockfile
+- 89130f2: deps: Updated lockfile
+
+
+</details>
+
 ## 0.2.2
 
 ### Dependency Changes
