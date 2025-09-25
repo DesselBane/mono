@@ -332,7 +332,7 @@ function configureVitestPlugin(options: SafeOptions): Config {
       ...vitest.configs.all,
       settings: {
         vitest: {
-          typecheck: true,
+          typecheck: options.useTypeCheckedConfig,
         },
       },
     },
@@ -437,6 +437,7 @@ function configureAdditionalRules(options: SafeOptions): Config {
                 allowRegExp: true,
               },
             ],
+            '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
             '@typescript-eslint/no-unnecessary-condition': [
               'error',
               {
@@ -485,7 +486,7 @@ function configureAdditionalRules(options: SafeOptions): Config {
     {
       rules: {
         curly: 'error',
-        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+
         '@typescript-eslint/consistent-type-imports': [
           'error',
           {
