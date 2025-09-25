@@ -1,5 +1,74 @@
 # @repo/changelog
 
+## 0.3.3
+
+### Patch Changes
+
+- 8f03d77: Run typecheck command and not lint command in typecheck pipeline stage
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 5e89109: deps: [patch|devDependencies] Update package @changesets/cli from 2.29.5 to 2.29.6
+- fdf9442: deps: [patch|devDependencies] Update package @changesets/cli from 2.29.6 to 2.29.7
+- ff7d600: deps: [patch|devDependencies] Update package @turbo/gen from 2.5.5 to 2.5.6
+- 4b52681: deps: [patch|devDependencies] Update package @turbo/gen from 2.5.6 to 2.5.7
+- 7f91119: deps: [patch|devDependencies] Update package @turbo/gen from 2.5.7 to 2.5.8
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- d9f1876: deps: [patch|devDependencies] Update package @types/node from 24.3.0 to 24.3.1
+- 908e130: deps: [patch|devDependencies] Update package @types/node from 24.3.1 to 24.3.2
+- eac00a2: deps: [patch|devDependencies] Update package @types/node from 24.3.2 to 24.3.3
+- 985254d: deps: [minor|devDependencies] Update package @types/node from 24.3.3 to 24.4.0
+- 2f9cefa: deps: [minor|devDependencies] Update package @types/node from 24.4.0 to 24.5.0
+- 29353de: deps: [patch|devDependencies] Update package @types/node from 24.5.0 to 24.5.1
+- 6c1e1d4: deps: [patch|devDependencies] Update package @types/node from 24.5.1 to 24.5.2
+- d38a362: deps: [major|action] Update package actions/checkout from v4 to v5
+- a8af9ef: deps: [major|action] Update package actions/setup-node from v4 to v5
+- e0de2a4: deps: [minor|devDependencies] Update package eslint from 9.33.0 to 9.34.0
+- 52ab2a1: deps: [minor|devDependencies] Update package eslint from 9.34.0 to 9.35.0
+- 9628bf9: deps: [minor|devDependencies] Update package eslint from 9.35.0 to 9.36.0
+- 02a8a8f: deps: [patch|devDependencies] Update package lint-staged from 16.1.5 to 16.1.6
+- 00d5885: deps: [minor|devDependencies] Update package lint-staged from 16.1.6 to 16.2.0
+- 635589f: deps: [minor|engines] Update package node from v24.5.0 to v24.6.0
+- 57f38d9: deps: [minor|engines] Update package node from v24.6.0 to v24.7.0
+- 5b0835f: deps: [minor|engines] Update package node from v24.7.0 to v24.8.0
+- b7b8774: deps: [minor|volta] Update package pnpm from 10.14.0 to 10.15.0
+- ee2a684: deps: [patch|volta] Update package pnpm from 10.15.0 to 10.15.1
+- 908e130: deps: [minor|volta] Update package pnpm from 10.15.1 to 10.16.0
+- 77f1237: deps: [patch|volta] Update package pnpm from 10.16.0 to 10.16.1
+- 1490f7b: deps: [minor|volta] Update package pnpm from 10.16.1 to 10.17.0
+- 60f1846: deps: [patch|volta] Update package pnpm from 10.17.0 to 10.17.1
+- d68ef20: deps: [patch|action] Update package renovatebot/github-action from v43.0.10 to v43.0.11
+- a969525: deps: [patch|action] Update package renovatebot/github-action from v43.0.11 to v43.0.12
+- bb8aa7f: deps: [patch|action] Update package renovatebot/github-action from v43.0.12 to v43.0.13
+- 5114890: deps: [patch|action] Update package renovatebot/github-action from v43.0.6 to v43.0.7
+- e5515a9: deps: [patch|action] Update package renovatebot/github-action from v43.0.7 to v43.0.8
+- af7996f: deps: [patch|action] Update package renovatebot/github-action from v43.0.8 to v43.0.9
+- 02a8a8f: deps: [patch|action] Update package renovatebot/github-action from v43.0.9 to v43.0.10
+- ff7d600: deps: [patch|devDependencies] Update package turbo from 2.5.5 to 2.5.6
+- 4b52681: deps: [patch|devDependencies] Update package turbo from 2.5.6 to 2.5.7
+- 7f91119: deps: [patch|devDependencies] Update package turbo from 2.5.7 to 2.5.8
+- 12a821f: deps: Updated lockfile
+- 12a821f: deps: Updated lockfile
+- 12a821f: deps: Updated lockfile
+- 5d93987: deps: Updated lockfile
+- 5d93987: deps: Updated lockfile
+- 5d93987: deps: Updated lockfile
+- 89130f2: deps: Updated lockfile
+- 89130f2: deps: Updated lockfile
+- 89130f2: deps: Updated lockfile
+- fe65b13: deps: Updated lockfile
+- fe65b13: deps: Updated lockfile
+- fe65b13: deps: Updated lockfile
+- f56fffb: deps: Updated lockfile
+- f56fffb: deps: Updated lockfile
+- f56fffb: deps: Updated lockfile
+
+
+</details>
+
 ## 0.3.2
 
 ### Dependency Changes
