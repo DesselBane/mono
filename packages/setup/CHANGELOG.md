@@ -2,10 +2,6 @@
 
 ## 1.0.3
 
-### Patch Changes
-
-- 4fc6c61: Fix non typechecked eslint config
-
 ### Dependency Changes
 
 <details>
