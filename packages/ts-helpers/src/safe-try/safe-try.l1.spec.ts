@@ -59,7 +59,7 @@ describe(safeTryAsync, () => {
 
     describe('generator function', () => {
       describe('array', () => {
-        it('should catch and return a thrown error ', async () => {
+        it('should catch and return a thrown error', async () => {
           const [error] = await safeTryAsync(testFunctionBadAsync)
 
           expect(error).toBeInstanceOf(Error)
@@ -74,7 +74,7 @@ describe(safeTryAsync, () => {
       })
 
       describe('object', () => {
-        it('should catch and return a thrown error ', async () => {
+        it('should catch and return a thrown error', async () => {
           const { error } = await safeTryAsync(testFunctionBadAsync)
 
           expect(error).toBeInstanceOf(Error)
@@ -91,7 +91,7 @@ describe(safeTryAsync, () => {
 
     describe('plain promise', () => {
       describe('array', () => {
-        it('should catch and return a thrown error ', async () => {
+        it('should catch and return a thrown error', async () => {
           const [error] = await safeTryAsync(testFunctionBadAsync())
 
           expect(error).toBeInstanceOf(Error)
@@ -106,7 +106,7 @@ describe(safeTryAsync, () => {
       })
 
       describe('object', () => {
-        it('should catch and return a thrown error ', async () => {
+        it('should catch and return a thrown error', async () => {
           const { error } = await safeTryAsync(testFunctionBadAsync())
 
           expect(error).toBeInstanceOf(Error)

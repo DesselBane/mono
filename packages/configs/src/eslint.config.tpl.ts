@@ -329,6 +329,7 @@ function configureUnicornPlugin(options: SafeOptions): Config {
 
 function configureVitestPlugin(options: SafeOptions): Config {
   return defineConfig(
+    // @ts-expect-error TODO fix this
     {
       files: options.testMatch, // or any other pattern
       ...vitest.configs.all,
