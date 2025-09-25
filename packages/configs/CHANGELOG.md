@@ -1,5 +1,11 @@
 # @desselbane/configs
 
+## 15.0.1
+
+### Patch Changes
+
+- 981eb66: Fix non typechecked eslint config
+
 ## 15.0.0
 
 ### Dependency Changes
