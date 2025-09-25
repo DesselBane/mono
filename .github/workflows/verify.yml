@@ -44,5 +44,5 @@ jobs:
       - id: Setup
         uses: ./.github/actions/setup
 
-      - name: Lint
-        run: pnpm -w tl
+      - name: Typecheck
+        run: pnpm -w ttc
