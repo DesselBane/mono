@@ -147,6 +147,7 @@ function configureVue(options: SafeOptions): Config {
       rootDir: options.packageDir,
     })
 
+    // @ts-expect-error TODO fix this
     return defineConfigWithVueTs(
       pluginVue.configs['flat/recommended'],
       vueTsConfigs.strictTypeChecked,
@@ -225,6 +226,7 @@ function configureTypescript(options: SafeOptions): Config {
 
 function configureImportPlugin(options: SafeOptions): Config {
   return defineConfig(
+    // @ts-expect-error TODO fix this
     importPluginFlatConfigs.recommended,
     importPluginFlatConfigs.typescript,
     {
