@@ -1,5 +1,54 @@
 # @desselbane/setup
 
+## 1.0.3
+
+### Patch Changes
+
+- 4fc6c61: Fix non typechecked eslint config
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 3d80af0: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.1 to 7.8.2
+- 67eb7f1: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.2 to 7.8.3
+- c53786b: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.3 to 7.8.4
+- 3ebc102: deps: [patch|dependencies] Update package @inquirer/prompts from 7.8.4 to 7.8.6
+- 07f989a: deps: [minor|devDependencies] Update package @types/node from 24.2.1 to 24.3.0
+- d9f1876: deps: [patch|devDependencies] Update package @types/node from 24.3.0 to 24.3.1
+- 908e130: deps: [patch|devDependencies] Update package @types/node from 24.3.1 to 24.3.2
+- eac00a2: deps: [patch|devDependencies] Update package @types/node from 24.3.2 to 24.3.3
+- 985254d: deps: [minor|devDependencies] Update package @types/node from 24.3.3 to 24.4.0
+- 2f9cefa: deps: [minor|devDependencies] Update package @types/node from 24.4.0 to 24.5.0
+- 29353de: deps: [patch|devDependencies] Update package @types/node from 24.5.0 to 24.5.1
+- 6c1e1d4: deps: [patch|devDependencies] Update package @types/node from 24.5.1 to 24.5.2
+- 5114890: deps: [patch|devDependencies] Update package tsdown from 0.14.0 to 0.14.1
+- af7996f: deps: [patch|devDependencies] Update package tsdown from 0.14.1 to 0.14.2
+- 91638f3: deps: [minor|devDependencies] Update package tsdown from 0.14.2 to 0.15.0
+- 37e00ee: deps: [patch|devDependencies] Update package tsdown from 0.15.0 to 0.15.1
+- 324e549: deps: [patch|devDependencies] Update package tsdown from 0.15.1 to 0.15.2
+- a1eda12: deps: [patch|devDependencies] Update package tsdown from 0.15.2 to 0.15.3
+- 9838346: deps: [patch|devDependencies] Update package tsdown from 0.15.3 to 0.15.4
+- 03c9b47: deps: [major|devDependencies] Update package type-fest from 4.41.0 to 5.0.0
+- c708112: deps: [patch|devDependencies] Update package type-fest from 5.0.0 to 5.0.1
+- 7276b3d: deps: [minor|devDependencies] Update package zod from 4.0.17 to 4.1.0
+- 4d7b86f: deps: [patch|devDependencies] Update package zod from 4.1.0 to 4.1.1
+- af7996f: deps: [patch|devDependencies] Update package zod from 4.1.1 to 4.1.5
+- 89dd150: deps: [patch|devDependencies] Update package zod from 4.1.5 to 4.1.6
+- 46b3bb8: deps: [patch|devDependencies] Update package zod from 4.1.6 to 4.1.7
+- 5f9af1b: deps: [patch|devDependencies] Update package zod from 4.1.7 to 4.1.8
+- 6c4a8de: deps: [patch|devDependencies] Update package zod from 4.1.8 to 4.1.9
+- 9838346: deps: [patch|devDependencies] Update package zod from 4.1.9 to 4.1.11
+- 12a821f: deps: Updated lockfile
+- 5d93987: deps: Updated lockfile
+- 89130f2: deps: Updated lockfile
+- fe65b13: deps: Updated lockfile
+- f56fffb: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.2
 
 ### Dependency Changes
