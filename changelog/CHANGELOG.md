@@ -1,5 +1,18 @@
 # @repo/changelog
 
+## 0.3.4
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 7d56894: deps: [patch|devDependencies] Update package lint-staged from 16.2.0 to 16.2.1
+- 4f78cac: deps: [minor|engines] Update package node from v24.8.0 to v24.9.0
+
+
+</details>
+
 ## 0.3.3
 
 ### Patch Changes

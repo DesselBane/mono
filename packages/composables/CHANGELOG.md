@@ -1,5 +1,18 @@
 # @desselbane/composables
 
+## 2.0.6
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- Updated dependencies [ca214cb]
+  - @desselbane/ts-helpers@5.0.1
+
+
+</details>
+
 ## 2.0.5
 
 ### Dependency Changes
