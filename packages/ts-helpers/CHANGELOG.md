@@ -1,5 +1,17 @@
 # @desselbane/ts-helpers
 
+## 5.0.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- ca214cb: deps: [patch|devDependencies] Update package tsdown from 0.15.4 to 0.15.5
+
+
+</details>
+
 ## 5.0.0
 
 ### Major Changes

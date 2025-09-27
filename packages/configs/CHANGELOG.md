@@ -1,5 +1,18 @@
 # @desselbane/configs
 
+## 15.0.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- eb13703: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.12 to 1.3.13
+- ca214cb: deps: [patch|devDependencies] Update package tsdown from 0.15.4 to 0.15.5
+
+
+</details>
+
 ## 15.0.1
 
 ### Patch Changes

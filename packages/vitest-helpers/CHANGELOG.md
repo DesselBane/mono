@@ -1,5 +1,17 @@
 # @desselbane/vitest-helpers
 
+## 1.0.4
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- ca214cb: deps: [patch|devDependencies] Update package tsdown from 0.15.4 to 0.15.5
+
+
+</details>
+
 ## 1.0.3
 
 ### Dependency Changes
