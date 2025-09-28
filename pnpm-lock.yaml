@@ -81,8 +81,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(@types/node@24.5.2)(jiti@2.6.0)(yaml@2.8.1)
       vue-tsc:
-        specifier: 3.0.8
-        version: 3.0.8(typescript@5.9.2)
+        specifier: 3.1.0
+        version: 3.1.0(typescript@5.9.2)
 
   packages/configs:
     dependencies:
@@ -1395,6 +1395,14 @@ packages:
       typescript:
         optional: true
 
+  '@vue/language-core@3.1.0':
+    resolution: {integrity: sha512-a7ns+X9vTbdmk7QLrvnZs8s4E1wwtxG/sELzr6F2j4pU+r/OoAv6jJGSz+5tVTU6e4+3rjepGhSP8jDmBBcb3w==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   '@vue/reactivity@3.5.21':
     resolution: {integrity: sha512-3ah7sa+Cwr9iiYEERt9JfZKPw4A2UlbY8RbbnH2mGCE8NwHkhmlZt2VsH0oDA3P08X3jJd29ohBDtX+TbD9AsA==}
 
@@ -1471,6 +1479,9 @@ packages:
 
   alien-signals@2.0.7:
     resolution: {integrity: sha512-wE7y3jmYeb0+h6mr5BOovuqhFv22O/MV9j5p0ndJsa7z1zJNPGQ4ph5pQk/kTTCWRC3xsA4SmtwmkzQO+7NCNg==}
+
+  alien-signals@3.0.0:
+    resolution: {integrity: sha512-JHoRJf18Y6HN4/KZALr3iU+0vW9LKG+8FMThQlbn4+gv8utsLIkwpomjElGPccGeNwh0FI2HN6BLnyFLo6OyLQ==}
 
   ansi-colors@4.1.3:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
@@ -3557,6 +3568,12 @@ packages:
     peerDependencies:
       typescript: '>=5.0.0'
 
+  vue-tsc@3.1.0:
+    resolution: {integrity: sha512-fbMynMG7kXSnqZTRBSCh9ROYaVpXfCZbEO0gY3lqOjLbp361uuS88n6BDajiUriDIF+SGLWoinjvf6stS2J3Gg==}
+    hasBin: true
+    peerDependencies:
+      typescript: '>=5.0.0'
+
   vue3-snapshot-serializer@2.13.0:
     resolution: {integrity: sha512-/v4x+2nDsKtty/wwBsmzLV12DamZFFi7jp7hBB3ZVtxWSNH9/+D9/+yVPdECyKGbyMQJIHyCzWKIhumUCW1PIA==}
 
@@ -4810,6 +4827,19 @@ snapshots:
       picomatch: 4.0.3
     optionalDependencies:
       typescript: 5.9.2
+    optional: true
+
+  '@vue/language-core@3.1.0(typescript@5.9.2)':
+    dependencies:
+      '@volar/language-core': 2.4.23
+      '@vue/compiler-dom': 3.5.21
+      '@vue/shared': 3.5.21
+      alien-signals: 3.0.0
+      muggle-string: 0.4.1
+      path-browserify: 1.0.1
+      picomatch: 4.0.3
+    optionalDependencies:
+      typescript: 5.9.2
 
   '@vue/reactivity@3.5.21':
     dependencies:
@@ -4890,7 +4920,10 @@ snapshots:
 
   alien-signals@0.4.14: {}
 
-  alien-signals@2.0.7: {}
+  alien-signals@2.0.7:
+    optional: true
+
+  alien-signals@3.0.0: {}
 
   ansi-colors@4.1.3: {}
 
@@ -7074,6 +7107,13 @@ snapshots:
     dependencies:
       '@volar/typescript': 2.4.23
       '@vue/language-core': 3.0.8(typescript@5.9.2)
+      typescript: 5.9.2
+    optional: true
+
+  vue-tsc@3.1.0(typescript@5.9.2):
+    dependencies:
+      '@volar/typescript': 2.4.23
+      '@vue/language-core': 3.1.0(typescript@5.9.2)
       typescript: 5.9.2
 
   vue3-snapshot-serializer@2.13.0:
