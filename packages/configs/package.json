@@ -115,7 +115,7 @@
     }
   },
   "devDependencies": {
-    "@types/node": "24.5.2",
+    "@types/node": "24.6.0",
     "@vue/test-utils": "2.4.6",
     "tsdown": "0.15.5",
     "typescript": "5.9.2",
