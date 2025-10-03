@@ -1,6 +1,6 @@
 {
   "name": "@desselbane/vitest-helpers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "Utilities to write better unit tests",
   "scripts": {

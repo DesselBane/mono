@@ -1,5 +1,21 @@
 # @repo/scripts
 
+## 0.2.4
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- cc32e17: deps: [minor|devDependencies] Update package @types/node from 24.5.2 to 24.6.0
+- 6f8e50d: deps: [patch|devDependencies] Update package @types/node from 24.6.0 to 24.6.1
+- e63493a: deps: [patch|devDependencies] Update package @types/node from 24.6.1 to 24.6.2
+- fa7b39a: deps: [patch|devDependencies] Update package typescript from 5.9.2 to 5.9.3
+- 5cae16a: deps: Updated lockfile
+
+
+</details>
+
 ## 0.2.3
 
 ### Dependency Changes
