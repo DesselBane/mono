@@ -8,7 +8,7 @@ import {
   wingetInstall,
 } from './helper'
 
-vi.mock('node:child_process')
+vi.mock(import('node:child_process'))
 
 describe(isAdmin, () => {
   const it = baseTest.extend<{
