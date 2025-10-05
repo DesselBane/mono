@@ -4,7 +4,7 @@ import type { Mock, Use } from 'vitest'
 import { assertNotNil, workspaceRoot } from '../helper.ts'
 import { run } from './reformat-changelogs.ts'
 
-vi.mock('node:fs')
+vi.mock(import('node:fs'))
 
 const { readFileSync: actualReadFileSync } = (await vi.importActual(
   'node:fs',
@@ -82,15 +82,17 @@ describe('reformat-changelogs', () => {
   it('should find all changelog files', ({ readFileSync, writeFileSync }) => {
     run()
 
-    expect(readFileSync).toHaveBeenCalledWith(changelogFullPath)
-    expect(readFileSync).toHaveBeenCalledWith(tsHelpersFullPath)
+    expect(readFileSync).toHaveBeenNthCalledWith(1, changelogFullPath)
+    expect(readFileSync).toHaveBeenNthCalledWith(2, tsHelpersFullPath)
 
-    expect(writeFileSync).toHaveBeenCalledWith(
+    expect(writeFileSync).toHaveBeenNthCalledWith(
+      1,
       changelogFullPath,
       expect.anything(),
     )
-    expect(writeFileSync).toHaveBeenCalledWith(
-      changelogFullPath,
+    expect(writeFileSync).toHaveBeenNthCalledWith(
+      2,
+      tsHelpersFullPath,
       expect.anything(),
     )
   })
@@ -98,7 +100,7 @@ describe('reformat-changelogs', () => {
   it('should not include changelogs in node_modules', () => {
     run()
 
-    expect(globSync).toHaveBeenCalledWith(
+    expect(globSync).toHaveBeenCalledExactlyOnceWith(
       expect.anything(),
       expect.objectContaining({
         exclude: expect.toIncludeSameMembers([
