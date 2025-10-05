@@ -332,7 +332,7 @@ function configureVitestPlugin(options: SafeOptions): Config {
     // @ts-expect-error TODO fix this
     {
       files: options.testMatch, // or any other pattern
-      ...vitest.configs.all,
+      ...vitest.configs.recommended,
       settings: {
         vitest: {
           typecheck: options.useTypeCheckedConfig,
