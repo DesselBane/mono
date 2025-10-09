@@ -1,5 +1,37 @@
 # @repo/changelog
 
+## 0.3.4
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- cc32e17: deps: [minor|devDependencies] Update package @types/node from 24.5.2 to 24.6.0
+- 6f8e50d: deps: [patch|devDependencies] Update package @types/node from 24.6.0 to 24.6.1
+- e63493a: deps: [patch|devDependencies] Update package @types/node from 24.6.1 to 24.6.2
+- a756f63: deps: [minor|devDependencies] Update package @types/node from 24.6.2 to 24.7.0
+- fa6ecaf: deps: [minor|devDependencies] Update package eslint from 9.36.0 to 9.37.0
+- 7d56894: deps: [patch|devDependencies] Update package lint-staged from 16.2.0 to 16.2.1
+- c0c397d: deps: [patch|devDependencies] Update package lint-staged from 16.2.1 to 16.2.2
+- d954de2: deps: [patch|devDependencies] Update package lint-staged from 16.2.2 to 16.2.3
+- 4f78cac: deps: [minor|engines] Update package node from v24.8.0 to v24.9.0
+- 5d5b408: deps: [minor|engines] Update package node from v24.9.0 to v24.10.0
+- 4f413f0: deps: [minor|volta] Update package pnpm from 10.17.1 to 10.18.0
+- a756f63: deps: [patch|volta] Update package pnpm from 10.18.0 to 10.18.1
+- fa7b39a: deps: [patch|action] Update package renovatebot/github-action from v43.0.13 to v43.0.14
+- f48065e: deps: [patch|action] Update package renovatebot/github-action from v43.0.14 to v43.0.15
+- 9e5bc19: deps: [patch|devDependencies] Update package semver from 7.7.2 to 7.7.3
+- 5cae16a: deps: Updated lockfile
+- 5cae16a: deps: Updated lockfile
+- 5cae16a: deps: Updated lockfile
+- 61e4a18: deps: Updated lockfile
+- 61e4a18: deps: Updated lockfile
+- 61e4a18: deps: Updated lockfile
+
+
+</details>
+
 ## 0.3.3
 
 ### Patch Changes
