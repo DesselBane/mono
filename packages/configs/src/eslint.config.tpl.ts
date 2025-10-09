@@ -240,24 +240,24 @@ function configureImportPlugin(options: SafeOptions): Config {
     },
     {
       rules: {
+        // Handled by typescript
+        'import-x/named': 'off',
+        'import-x/namespace': 'off',
+        'import-x/default': 'off',
+        'import-x/no-named-as-default-member': 'off',
+        'import-x/no-unresolved': 'off',
+
         'import-x/consistent-type-specifier-style': [
           'error',
           'prefer-top-level',
         ],
-        'import-x/no-deprecated': 'warn',
+
         'import-x/no-mutable-exports': 'error',
         'import-x/no-unused-modules': 'error',
-        'import-x/no-cycle': 'warn',
-        'import-x/no-self-import': 'warn',
         'import-x/first': 'error',
         'import-x/newline-after-import': 'error',
         'import-x/no-anonymous-default-export': 'error',
-        'import-x/no-unresolved': [
-          'error',
-          {
-            ignore: ['^shell$'],
-          },
-        ],
+
         'import-x/order': [
           'error',
           {

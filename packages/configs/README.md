@@ -24,6 +24,51 @@ export default createEslintConfig({
 
 For more info on what you can pass as options to the `createEslintConfig` function consult the type docs.
 
+Additionally it is advised to turn off certain rules on save as they slow down eslint considerably. The following settings are recommended for vs code:
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onSave",
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "typescript",
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "vue-html",
+    "html",
+    "markdown",
+    "mdx"
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.lintTask.options": ". --cache",
+  "eslint.options": {
+    "overrideConfig": {
+      "rules": {
+        "prefer-const": "off",
+        "import-x/no-cycle": "off",
+        "import-x/no-deprecated": "off",
+        "import-x/no-named-as-default": "off",
+        "import-x/no-unused-modules": "off",
+      }
+    }
+  }
+}
+```
+
 ## Prettier
 
 Place a `prettier.config.js` next to your `package.json` with the following content:
