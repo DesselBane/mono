@@ -1,5 +1,45 @@
 # @desselbane/configs
 
+## 16.0.0
+
+### Major Changes
+
+- e509906: Eslint turn off rules: `import-x/named`, `import-x/namespace`, `import-x/default`, `import-x/no-named-as-default-member`, `import-x/no-unresolved` as they are covered by typescript. Check your ts config an re-enable them if they are not covered by your config.
+
+### Minor Changes
+
+- 1cddff1: Eslint use vitest.recommended instead of all config preset
+- 3be793d: Eslint add vscode default config to README
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- fa6ecaf: deps: [minor|dependencies] Update package @eslint/js from 9.36.0 to 9.37.0
+- cc32e17: deps: [minor|devDependencies] Update package @types/node from 24.5.2 to 24.6.0
+- 6f8e50d: deps: [patch|devDependencies] Update package @types/node from 24.6.0 to 24.6.1
+- e63493a: deps: [patch|devDependencies] Update package @types/node from 24.6.1 to 24.6.2
+- a756f63: deps: [minor|devDependencies] Update package @types/node from 24.6.2 to 24.7.0
+- eb13703: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.12 to 1.3.13
+- fa6ecaf: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.13 to 1.3.15
+- 69c2dce: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.15 to 1.3.16
+- fa6ecaf: deps: [minor|dependencies] Update package eslint from 9.36.0 to 9.37.0
+- fa7b39a: deps: [patch|dependencies] Update package jiti from 2.6.0 to 2.6.1
+- ca214cb: deps: [patch|devDependencies] Update package tsdown from 0.15.4 to 0.15.5
+- fa7b39a: deps: [patch|devDependencies] Update package tsdown from 0.15.5 to 0.15.6
+- fa7b39a: deps: [patch|devDependencies] Update package typescript from 5.9.2 to 5.9.3
+- ca43bdf: deps: [minor|dependencies] Update package typescript-eslint from 8.44.1 to 8.45.0
+- 04c4a72: deps: [minor|dependencies] Update package typescript-eslint from 8.45.0 to 8.46.0
+- b5f2d6e: deps: [patch|devDependencies] Update package vite from 7.1.7 to 7.1.8
+- feb1d3f: deps: [patch|devDependencies] Update package vite from 7.1.8 to 7.1.9
+- f48065e: deps: [patch|dependencies] Update package zod from 4.1.11 to 4.1.12
+- 5cae16a: deps: Updated lockfile
+- 61e4a18: deps: Updated lockfile
+
+
+</details>
+
 ## 15.0.1
 
 ### Patch Changes

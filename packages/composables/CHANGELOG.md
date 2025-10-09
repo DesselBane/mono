@@ -1,5 +1,36 @@
 # @desselbane/composables
 
+## 2.0.6
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- cc32e17: deps: [minor|devDependencies] Update package @types/node from 24.5.2 to 24.6.0
+- 6f8e50d: deps: [patch|devDependencies] Update package @types/node from 24.6.0 to 24.6.1
+- e63493a: deps: [patch|devDependencies] Update package @types/node from 24.6.1 to 24.6.2
+- a756f63: deps: [minor|devDependencies] Update package @types/node from 24.6.2 to 24.7.0
+- fa7b39a: deps: [patch|devDependencies] Update package typescript from 5.9.2 to 5.9.3
+- b5f2d6e: deps: [patch|devDependencies] Update package vite from 7.1.7 to 7.1.8
+- feb1d3f: deps: [patch|devDependencies] Update package vite from 7.1.8 to 7.1.9
+- ad479a8: deps: [minor|devDependencies] Update package vue-tsc from 3.0.8 to 3.1.0
+- f48065e: deps: [patch|devDependencies] Update package vue-tsc from 3.1.0 to 3.1.1
+- 5cae16a: deps: Updated lockfile
+- 61e4a18: deps: Updated lockfile
+- Updated dependencies [cc32e17]
+- Updated dependencies [6f8e50d]
+- Updated dependencies [e63493a]
+- Updated dependencies [a756f63]
+- Updated dependencies [ca214cb]
+- Updated dependencies [fa7b39a]
+- Updated dependencies [5cae16a]
+- Updated dependencies [61e4a18]
+  - @desselbane/ts-helpers@5.0.1
+
+
+</details>
+
 ## 2.0.5
 
 ### Dependency Changes
