@@ -155,7 +155,7 @@ importers:
         version: 2.4.6
       tsdown:
         specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.3)(vue-tsc@3.1.1(typescript@5.9.3))
+        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -216,7 +216,7 @@ importers:
         version: 3.2.4(vitest@3.2.4(@types/node@24.7.1)(jiti@2.6.1)(yaml@2.8.1))
       tsdown:
         specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.3)(vue-tsc@3.1.1(typescript@5.9.3))
+        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       type-fest:
         specifier: 5.0.1
         version: 5.0.1
@@ -246,7 +246,7 @@ importers:
         version: 3.2.4(vitest@3.2.4(@types/node@24.7.1)(jiti@2.6.1)(yaml@2.8.1))
       tsdown:
         specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.3)(vue-tsc@3.1.1(typescript@5.9.3))
+        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       type-fest:
         specifier: 5.0.1
         version: 5.0.1
@@ -254,8 +254,8 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
       unplugin-unused:
-        specifier: 0.5.3
-        version: 0.5.3
+        specifier: 0.5.4
+        version: 0.5.4
       vitest:
         specifier: 3.2.4
         version: 3.2.4(@types/node@24.7.1)(jiti@2.6.1)(yaml@2.8.1)
@@ -270,7 +270,7 @@ importers:
         version: 24.7.1
       tsdown:
         specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.3)(vue-tsc@3.1.1(typescript@5.9.3))
+        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       type-fest:
         specifier: 5.0.1
         version: 5.0.1
@@ -278,8 +278,8 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
       unplugin-unused:
-        specifier: 0.5.3
-        version: 0.5.3
+        specifier: 0.5.4
+        version: 0.5.4
       vitest:
         specifier: 3.2.4
         version: 3.2.4(@types/node@24.7.1)(jiti@2.6.1)(yaml@2.8.1)
@@ -3430,9 +3430,9 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
-  unplugin-unused@0.5.3:
-    resolution: {integrity: sha512-YZ9xXe9UQDRwDg5X4nyptZgVQeHuT84GQBpf0tEap08XGwx5jCT29P1/LTuChqno/A9SFFG14LWE5Bg/YhKeBQ==}
-    engines: {node: '>=20.18.0'}
+  unplugin-unused@0.5.4:
+    resolution: {integrity: sha512-R11StgC5j43CECdjHFbc6Ep4MgM97xuI7rku/nCw7OpIEw9sG4btxvR7Ld4RViwAF+eEQjSebesE+jTJTFFWmQ==}
+    engines: {node: '>=20.19.0'}
 
   unplugin@2.3.10:
     resolution: {integrity: sha512-6NCPkv1ClwH+/BGE9QeoTIl09nuiAt0gS28nn1PvYXsGKRwM2TCbFA2QiilmehPDTXIe684k4rZI1yl3A1PCUw==}
@@ -6813,7 +6813,7 @@ snapshots:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  tsdown@0.15.6(typescript@5.9.3)(unplugin-unused@0.5.3)(vue-tsc@3.1.1(typescript@5.9.3)):
+  tsdown@0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3)):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
@@ -6831,7 +6831,7 @@ snapshots:
       unconfig: 7.3.3
     optionalDependencies:
       typescript: 5.9.3
-      unplugin-unused: 0.5.3
+      unplugin-unused: 0.5.4
     transitivePeerDependencies:
       - '@ts-macro/tsc'
       - '@typescript/native-preview'
@@ -6917,10 +6917,9 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unplugin-unused@0.5.3:
+  unplugin-unused@0.5.4:
     dependencies:
       js-tokens: 9.0.1
-      picocolors: 1.1.1
       pkg-types: 2.3.0
       unplugin: 2.3.10
 
