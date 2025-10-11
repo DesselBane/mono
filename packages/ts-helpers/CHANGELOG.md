@@ -1,5 +1,19 @@
 # @desselbane/ts-helpers
 
+## 5.0.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- 95ae206: deps: [patch|devDependencies] Update package unplugin-unused from 0.5.3 to 0.5.4
+
+
+</details>
+
 ## 5.0.1
 
 ### Dependency Changes

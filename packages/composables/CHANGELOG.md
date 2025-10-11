@@ -1,5 +1,22 @@
 # @desselbane/composables
 
+## 2.0.7
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- Updated dependencies [e0816be]
+- Updated dependencies [ea37720]
+- Updated dependencies [95ae206]
+  - @desselbane/ts-helpers@5.0.2
+
+
+</details>
+
 ## 2.0.6
 
 ### Dependency Changes
