@@ -1,5 +1,18 @@
 # @repo/scripts
 
+## 0.2.5
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+
+
+</details>
+
 ## 0.2.4
 
 ### Patch Changes

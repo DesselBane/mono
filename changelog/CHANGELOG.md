@@ -1,5 +1,21 @@
 # @repo/changelog
 
+## 0.3.5
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- fcc125b: deps: [patch|devDependencies] Update package lint-staged from 16.2.3 to 16.2.4
+- 9c01d10: deps: [patch|volta] Update package pnpm from 10.18.1 to 10.18.2
+- 95ae206: deps: [patch|action] Update package renovatebot/github-action from v43.0.15 to v43.0.16
+
+
+</details>
+
 ## 0.3.4
 
 ### Dependency Changes
