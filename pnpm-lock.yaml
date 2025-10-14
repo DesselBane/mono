@@ -154,8 +154,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       tsdown:
-        specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
+        specifier: 0.15.7
+        version: 0.15.7(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -215,8 +215,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(vitest@3.2.4(@types/node@24.7.2)(jiti@2.6.1)(yaml@2.8.1))
       tsdown:
-        specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
+        specifier: 0.15.7
+        version: 0.15.7(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       type-fest:
         specifier: 5.1.0
         version: 5.1.0
@@ -245,8 +245,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(vitest@3.2.4(@types/node@24.7.2)(jiti@2.6.1)(yaml@2.8.1))
       tsdown:
-        specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
+        specifier: 0.15.7
+        version: 0.15.7(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       type-fest:
         specifier: 5.1.0
         version: 5.1.0
@@ -269,8 +269,8 @@ importers:
         specifier: 24.7.2
         version: 24.7.2
       tsdown:
-        specifier: 0.15.6
-        version: 0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
+        specifier: 0.15.7
+        version: 0.15.7(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3))
       type-fest:
         specifier: 5.1.0
         version: 5.1.0
@@ -3309,8 +3309,8 @@ packages:
       '@swc/wasm':
         optional: true
 
-  tsdown@0.15.6:
-    resolution: {integrity: sha512-W6++O3JeV9gm3JY6P/vLiC7zzTcJbZhQxXb+p3AvRMpDOPBIg82yXULyZCcwjsihY/bFG+Qw37HkezZbP7fzUg==}
+  tsdown@0.15.7:
+    resolution: {integrity: sha512-uFaVgWAogjOMqjY+CQwrUt3C6wzy6ynt82CIoXymnbS17ipUZ8WDXUceJjkislUahF/BZc5+W44Ue3p2oWtqUg==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -6813,7 +6813,7 @@ snapshots:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  tsdown@0.15.6(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3)):
+  tsdown@0.15.7(typescript@5.9.3)(unplugin-unused@0.5.4)(vue-tsc@3.1.1(typescript@5.9.3)):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
