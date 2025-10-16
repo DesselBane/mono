@@ -1,0 +1,5 @@
+---
+'@desselbane/configs': patch
+---
+
+deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
