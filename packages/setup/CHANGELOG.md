@@ -1,5 +1,24 @@
 # @desselbane/setup
 
+## 1.0.5
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 90196be: deps: [minor|dependencies] Update package @inquirer/prompts from 7.8.6 to 7.9.0
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- baef070: deps: [patch|devDependencies] Update package tsdown from 0.15.6 to 0.15.7
+- 2a32078: deps: [minor|devDependencies] Update package type-fest from 5.0.1 to 5.1.0
+- 1fe446c: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.4
 
 ### Patch Changes
