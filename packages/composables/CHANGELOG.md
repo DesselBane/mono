@@ -1,5 +1,32 @@
 # @desselbane/composables
 
+## 2.0.7
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 2a32078: deps: [minor|devDependencies] Update package type-fest from 5.0.1 to 5.1.0
+- 538f385: deps: [patch|devDependencies] Update package vite from 7.1.9 to 7.1.10
+- 1fe446c: deps: Updated lockfile
+- Updated dependencies [e0816be]
+- Updated dependencies [ea37720]
+- Updated dependencies [e7cd4b1]
+- Updated dependencies [9207748]
+- Updated dependencies [baef070]
+- Updated dependencies [2a32078]
+- Updated dependencies [95ae206]
+- Updated dependencies [1fe446c]
+  - @desselbane/ts-helpers@5.0.2
+
+
+</details>
+
 ## 2.0.6
 
 ### Dependency Changes

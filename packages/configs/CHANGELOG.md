@@ -1,5 +1,31 @@
 # @desselbane/configs
 
+## 16.0.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 3f97677: deps: [minor|dependencies] Update package @eslint/js from 9.37.0 to 9.38.0
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- a8e7630: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.16 to 1.3.17
+- 64aaa51: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.17 to 1.3.18
+- b7b8807: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.18 to 1.3.20
+- 3f97677: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.20 to 1.3.23
+- 3f97677: deps: [minor|dependencies] Update package eslint from 9.37.0 to 9.38.0
+- 257053a: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.5.0 to 10.5.1
+- baef070: deps: [patch|devDependencies] Update package tsdown from 0.15.6 to 0.15.7
+- 64aaa51: deps: [patch|dependencies] Update package typescript-eslint from 8.46.0 to 8.46.1
+- 538f385: deps: [patch|devDependencies] Update package vite from 7.1.9 to 7.1.10
+- 1fe446c: deps: Updated lockfile
+
+
+</details>
+
 ## 16.0.0
 
 ### Major Changes
