@@ -1,0 +1,5 @@
+---
+'@desselbane/ts-helpers': patch
+---
+
+deps: [major|devDependencies] Update package vitest from 3.2.4 to 4.0.1
