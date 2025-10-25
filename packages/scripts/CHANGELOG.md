@@ -1,5 +1,34 @@
 # @repo/scripts
 
+## 0.2.5
+
+### Patch Changes
+
+- e783c7e: Fix vitest tsconfig to include node types.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 184d2ee: deps: [minor|devDependencies] Update package @types/node from 24.8.1 to 24.9.0
+- 54c65ef: deps: [patch|devDependencies] Update package @types/node from 24.9.0 to 24.9.1
+- 60de6d2: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.2 to 4.0.3
+- 2a32078: deps: [minor|devDependencies] Update package type-fest from 5.0.1 to 5.1.0
+- 60de6d2: deps: [major|devDependencies] Update package vitest from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package vitest from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package vitest from 4.0.2 to 4.0.3
+- 1fe446c: deps: Updated lockfile
+
+
+</details>
+
 ## 0.2.4
 
 ### Patch Changes

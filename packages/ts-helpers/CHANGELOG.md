@@ -1,5 +1,34 @@
 # @desselbane/ts-helpers
 
+## 5.0.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 184d2ee: deps: [minor|devDependencies] Update package @types/node from 24.8.1 to 24.9.0
+- 54c65ef: deps: [patch|devDependencies] Update package @types/node from 24.9.0 to 24.9.1
+- 60de6d2: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.2 to 4.0.3
+- baef070: deps: [patch|devDependencies] Update package tsdown from 0.15.6 to 0.15.7
+- ff874e0: deps: [patch|devDependencies] Update package tsdown from 0.15.7 to 0.15.8
+- a9d43b6: deps: [patch|devDependencies] Update package tsdown from 0.15.8 to 0.15.9
+- 2a32078: deps: [minor|devDependencies] Update package type-fest from 5.0.1 to 5.1.0
+- 95ae206: deps: [patch|devDependencies] Update package unplugin-unused from 0.5.3 to 0.5.4
+- 60de6d2: deps: [major|devDependencies] Update package vitest from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package vitest from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package vitest from 4.0.2 to 4.0.3
+- 1fe446c: deps: Updated lockfile
+
+
+</details>
+
 ## 5.0.1
 
 ### Dependency Changes
