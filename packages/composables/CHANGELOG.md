@@ -1,5 +1,50 @@
 # @desselbane/composables
 
+## 2.0.7
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 184d2ee: deps: [minor|devDependencies] Update package @types/node from 24.8.1 to 24.9.0
+- 54c65ef: deps: [patch|devDependencies] Update package @types/node from 24.9.0 to 24.9.1
+- 60de6d2: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.2 to 4.0.3
+- 2a32078: deps: [minor|devDependencies] Update package type-fest from 5.0.1 to 5.1.0
+- 1dd0c88: deps: [patch|devDependencies] Update package vite from 7.1.10 to 7.1.11
+- be49f6a: deps: [patch|devDependencies] Update package vite from 7.1.11 to 7.1.12
+- 538f385: deps: [patch|devDependencies] Update package vite from 7.1.9 to 7.1.10
+- 60de6d2: deps: [major|devDependencies] Update package vitest from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package vitest from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package vitest from 4.0.2 to 4.0.3
+- 376de83: deps: [patch|devDependencies] Update package vue-tsc from 3.1.1 to 3.1.2
+- 1fe446c: deps: Updated lockfile
+- Updated dependencies [e0816be]
+- Updated dependencies [ea37720]
+- Updated dependencies [e7cd4b1]
+- Updated dependencies [9207748]
+- Updated dependencies [184d2ee]
+- Updated dependencies [54c65ef]
+- Updated dependencies [60de6d2]
+- Updated dependencies [a480137]
+- Updated dependencies [f36f9f0]
+- Updated dependencies [baef070]
+- Updated dependencies [ff874e0]
+- Updated dependencies [a9d43b6]
+- Updated dependencies [2a32078]
+- Updated dependencies [95ae206]
+- Updated dependencies [1fe446c]
+  - @desselbane/ts-helpers@5.0.2
+
+
+</details>
+
 ## 2.0.6
 
 ### Dependency Changes
