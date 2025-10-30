@@ -29,10 +29,10 @@
     "@desselbane/configs": "workspace:*",
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.9.2",
-    "@vitest/coverage-v8": "4.0.4",
+    "@vitest/coverage-v8": "4.0.5",
     "simple-git": "3.28.0",
     "type-fest": "5.1.0",
     "typescript": "5.9.3",
-    "vitest": "4.0.4"
+    "vitest": "4.0.5"
   }
 }
