@@ -1,5 +1,44 @@
 # @repo/changelog
 
+## 0.3.5
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e9b7d1b: deps: [minor|devDependencies] Update package @turbo/gen from 2.5.8 to 2.6.0
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 184d2ee: deps: [minor|devDependencies] Update package @types/node from 24.8.1 to 24.9.0
+- 54c65ef: deps: [patch|devDependencies] Update package @types/node from 24.9.0 to 24.9.1
+- fc2acac: deps: [patch|devDependencies] Update package @types/node from 24.9.1 to 24.9.2
+- bda301d: deps: [major|action] Update package actions/setup-node from v5 to v6
+- 3f97677: deps: [minor|devDependencies] Update package eslint from 9.37.0 to 9.38.0
+- fcc125b: deps: [patch|devDependencies] Update package lint-staged from 16.2.3 to 16.2.4
+- a9d43b6: deps: [patch|devDependencies] Update package lint-staged from 16.2.4 to 16.2.5
+- 957752f: deps: [patch|devDependencies] Update package lint-staged from 16.2.5 to 16.2.6
+- fc2acac: deps: [minor|engines] Update package node from v24.10.0 to v24.11.0
+- 9c01d10: deps: [patch|volta] Update package pnpm from 10.18.1 to 10.18.2
+- 4791058: deps: [patch|volta] Update package pnpm from 10.18.2 to 10.18.3
+- 35e75ff: deps: [minor|volta] Update package pnpm from 10.18.3 to 10.19.0
+- fc2acac: deps: [minor|volta] Update package pnpm from 10.19.0 to 10.20.0
+- 95ae206: deps: [patch|action] Update package renovatebot/github-action from v43.0.15 to v43.0.16
+- baef070: deps: [patch|action] Update package renovatebot/github-action from v43.0.16 to v43.0.17
+- a9d43b6: deps: [patch|action] Update package renovatebot/github-action from v43.0.17 to v43.0.18
+- 9438395: deps: [minor|devDependencies] Update package turbo from 2.5.8 to 2.6.0
+- 1fe446c: deps: Updated lockfile
+- 1fe446c: deps: Updated lockfile
+- 1fe446c: deps: Updated lockfile
+- 85f3cc4: deps: Updated lockfile
+- 85f3cc4: deps: Updated lockfile
+- 85f3cc4: deps: Updated lockfile
+
+
+</details>
+
 ## 0.3.4
 
 ### Dependency Changes
