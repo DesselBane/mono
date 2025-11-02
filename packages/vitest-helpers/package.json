@@ -38,10 +38,10 @@
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
     "@types/node": "24.9.2",
-    "tsdown": "0.15.10",
+    "tsdown": "0.15.12",
     "type-fest": "5.1.0",
     "typescript": "5.9.3",
-    "unplugin-unused": "0.5.4",
+    "unplugin-unused": "0.5.5",
     "vitest": "4.0.6"
   }
 }
