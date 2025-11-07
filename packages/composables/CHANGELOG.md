@@ -1,5 +1,77 @@
 # @desselbane/composables
 
+## 2.0.7
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 184d2ee: deps: [minor|devDependencies] Update package @types/node from 24.8.1 to 24.9.0
+- 54c65ef: deps: [patch|devDependencies] Update package @types/node from 24.9.0 to 24.9.1
+- fc2acac: deps: [patch|devDependencies] Update package @types/node from 24.9.1 to 24.9.2
+- 736e98f: deps: [minor|devDependencies] Update package @types/node from 24.9.2 to 24.10.0
+- 60de6d2: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.2 to 4.0.3
+- e8d1889: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.3 to 4.0.4
+- 35812a1: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.4 to 4.0.5
+- e9fa84c: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.5 to 4.0.6
+- cd8d406: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.6 to 4.0.7
+- 2a32078: deps: [minor|devDependencies] Update package type-fest from 5.0.1 to 5.1.0
+- 3d3b6f2: deps: [minor|devDependencies] Update package type-fest from 5.1.0 to 5.2.0
+- 1dd0c88: deps: [patch|devDependencies] Update package vite from 7.1.10 to 7.1.11
+- be49f6a: deps: [patch|devDependencies] Update package vite from 7.1.11 to 7.1.12
+- 9e7794a: deps: [minor|devDependencies] Update package vite from 7.1.12 to 7.2.0
+- 538f385: deps: [patch|devDependencies] Update package vite from 7.1.9 to 7.1.10
+- 1fa24a3: deps: [patch|devDependencies] Update package vite from 7.2.0 to 7.2.1
+- 5b5e902: deps: [patch|devDependencies] Update package vite from 7.2.1 to 7.2.2
+- 60de6d2: deps: [major|devDependencies] Update package vitest from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package vitest from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package vitest from 4.0.2 to 4.0.3
+- e8d1889: deps: [patch|devDependencies] Update package vitest from 4.0.3 to 4.0.4
+- 35812a1: deps: [patch|devDependencies] Update package vitest from 4.0.4 to 4.0.5
+- e9fa84c: deps: [patch|devDependencies] Update package vitest from 4.0.5 to 4.0.6
+- cd8d406: deps: [patch|devDependencies] Update package vitest from 4.0.6 to 4.0.7
+- 376de83: deps: [patch|devDependencies] Update package vue-tsc from 3.1.1 to 3.1.2
+- 0e7ff49: deps: [patch|devDependencies] Update package vue-tsc from 3.1.2 to 3.1.3
+- 1fe446c: deps: Updated lockfile
+- 85f3cc4: deps: Updated lockfile
+- Updated dependencies [e0816be]
+- Updated dependencies [ea37720]
+- Updated dependencies [e7cd4b1]
+- Updated dependencies [9207748]
+- Updated dependencies [184d2ee]
+- Updated dependencies [54c65ef]
+- Updated dependencies [fc2acac]
+- Updated dependencies [736e98f]
+- Updated dependencies [60de6d2]
+- Updated dependencies [a480137]
+- Updated dependencies [f36f9f0]
+- Updated dependencies [e8d1889]
+- Updated dependencies [35812a1]
+- Updated dependencies [e9fa84c]
+- Updated dependencies [cd8d406]
+- Updated dependencies [1932b8b]
+- Updated dependencies [baef070]
+- Updated dependencies [ff874e0]
+- Updated dependencies [a9d43b6]
+- Updated dependencies [9eef257]
+- Updated dependencies [2a32078]
+- Updated dependencies [3d3b6f2]
+- Updated dependencies [95ae206]
+- Updated dependencies [8b3ffaf]
+- Updated dependencies [1fe446c]
+- Updated dependencies [85f3cc4]
+  - @desselbane/ts-helpers@5.0.2
+
+
+</details>
+
 ## 2.0.6
 
 ### Dependency Changes

@@ -1,5 +1,70 @@
 # @desselbane/configs
 
+## 16.0.1
+
+### Patch Changes
+
+- e783c7e: Fix vitest tsconfig to include node types.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 54e17ee: deps: [patch|dependencies] Update package @eslint/compat from 1.4.0 to 1.4.1
+- 3f97677: deps: [minor|dependencies] Update package @eslint/js from 9.37.0 to 9.38.0
+- 54e17ee: deps: [minor|dependencies] Update package @eslint/js from 9.38.0 to 9.39.1
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 184d2ee: deps: [minor|devDependencies] Update package @types/node from 24.8.1 to 24.9.0
+- 54c65ef: deps: [patch|devDependencies] Update package @types/node from 24.9.0 to 24.9.1
+- fc2acac: deps: [patch|devDependencies] Update package @types/node from 24.9.1 to 24.9.2
+- 736e98f: deps: [minor|devDependencies] Update package @types/node from 24.9.2 to 24.10.0
+- a8e7630: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.16 to 1.3.17
+- 64aaa51: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.17 to 1.3.18
+- b7b8807: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.18 to 1.3.20
+- 3f97677: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.20 to 1.3.23
+- 62b2f23: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.23 to 1.3.24
+- d22e302: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.24 to 1.3.25
+- ea06ef1: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.3.25 to 1.3.26
+- 54e17ee: deps: [minor|dependencies] Update package @vitest/eslint-plugin from 1.3.26 to 1.4.0
+- 4123c7d: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.0 to 1.4.1
+- 3f97677: deps: [minor|dependencies] Update package eslint from 9.37.0 to 9.38.0
+- 54e17ee: deps: [minor|dependencies] Update package eslint from 9.38.0 to 9.39.1
+- 54e17ee: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.2.2 to 2.3.0
+- 424bc03: deps: [major|dependencies] Update package eslint-plugin-unicorn from 61.0.2 to 62.0.0
+- b7e6c37: deps: [minor|dependencies] Update package eslint-plugin-unused-imports from 4.2.0 to 4.3.0
+- 257053a: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.5.0 to 10.5.1
+- 290a444: deps: [major|dependencies] Update package jest-extended from 6.0.0 to 7.0.0
+- 1932b8b: deps: [patch|devDependencies] Update package tsdown from 0.15.10 to 0.15.12
+- baef070: deps: [patch|devDependencies] Update package tsdown from 0.15.6 to 0.15.7
+- ff874e0: deps: [patch|devDependencies] Update package tsdown from 0.15.7 to 0.15.8
+- a9d43b6: deps: [patch|devDependencies] Update package tsdown from 0.15.8 to 0.15.9
+- 9eef257: deps: [patch|devDependencies] Update package tsdown from 0.15.9 to 0.15.10
+- 64aaa51: deps: [patch|dependencies] Update package typescript-eslint from 8.46.0 to 8.46.1
+- e8ce638: deps: [patch|dependencies] Update package typescript-eslint from 8.46.1 to 8.46.2
+- 54e17ee: deps: [patch|dependencies] Update package typescript-eslint from 8.46.2 to 8.46.3
+- 1dd0c88: deps: [patch|devDependencies] Update package vite from 7.1.10 to 7.1.11
+- be49f6a: deps: [patch|devDependencies] Update package vite from 7.1.11 to 7.1.12
+- 9e7794a: deps: [minor|devDependencies] Update package vite from 7.1.12 to 7.2.0
+- 538f385: deps: [patch|devDependencies] Update package vite from 7.1.9 to 7.1.10
+- 1fa24a3: deps: [patch|devDependencies] Update package vite from 7.2.0 to 7.2.1
+- 5b5e902: deps: [patch|devDependencies] Update package vite from 7.2.1 to 7.2.2
+- 60de6d2: deps: [major|devDependencies] Update package vitest from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package vitest from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package vitest from 4.0.2 to 4.0.3
+- e8d1889: deps: [patch|devDependencies] Update package vitest from 4.0.3 to 4.0.4
+- 35812a1: deps: [patch|devDependencies] Update package vitest from 4.0.4 to 4.0.5
+- e9fa84c: deps: [patch|devDependencies] Update package vitest from 4.0.5 to 4.0.6
+- cd8d406: deps: [patch|devDependencies] Update package vitest from 4.0.6 to 4.0.7
+- 1fe446c: deps: Updated lockfile
+- 85f3cc4: deps: Updated lockfile
+
+
+</details>
+
 ## 16.0.0
 
 ### Major Changes

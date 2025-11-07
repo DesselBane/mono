@@ -1,6 +1,6 @@
 {
   "name": "@desselbane/setup",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "Setting up a new environment with Dessel Banes most favourite settings and apps.",
   "scripts": {
