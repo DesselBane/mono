@@ -1,4 +1,4 @@
-import type { UserConfig } from 'tsdown'
+import type { InlineConfig } from 'tsdown'
 
 export const libConfig = {
   entry: ['src/main.ts'],
@@ -8,7 +8,8 @@ export const libConfig = {
   platform: 'neutral',
   sourcemap: true,
   unused: true,
-} as const satisfies UserConfig
+  fixedExtension: false,
+} as const satisfies InlineConfig
 
 export const nodeConsoleAppConfig = {
   entry: ['src/main.ts'],
@@ -17,4 +18,5 @@ export const nodeConsoleAppConfig = {
   platform: 'node',
   sourcemap: false,
   unused: true,
-} as const satisfies UserConfig
+  fixedExtension: false,
+} as const satisfies InlineConfig
