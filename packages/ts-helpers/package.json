@@ -41,7 +41,7 @@
     "tsdown": "0.15.12",
     "type-fest": "5.2.0",
     "typescript": "5.9.3",
-    "unplugin-unused": "0.5.5",
+    "unplugin-unused": "0.5.6",
     "vitest": "4.0.7"
   },
   "main": "./dist/main.js",
