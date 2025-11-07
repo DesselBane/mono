@@ -39,11 +39,11 @@
     "@desselbane/ts-helpers": "workspace:*",
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.10.0",
-    "@vitest/coverage-v8": "4.0.7",
+    "@vitest/coverage-v8": "4.0.8",
     "tsdown": "0.15.12",
     "type-fest": "5.2.0",
     "typescript": "5.9.3",
-    "vitest": "4.0.7",
+    "vitest": "4.0.8",
     "zod": "4.1.12"
   },
   "engines": {
