@@ -1,6 +1,6 @@
 {
   "name": "@desselbane/configs",
-  "version": "16.0.0",
+  "version": "16.0.1",
   "description": "This package contains the opinionated configuration files of Dessel Bane.",
   "type": "module",
   "files": [

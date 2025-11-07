@@ -1,6 +1,6 @@
 {
   "name": "@repo/scripts",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "type": "module",
   "private": true,
   "description": "Scripts which are used thorughout the mono repo.",

@@ -1,5 +1,48 @@
 # @repo/scripts
 
+## 0.2.5
+
+### Patch Changes
+
+- e783c7e: Fix vitest tsconfig to include node types.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- e0816be: deps: [patch|devDependencies] Update package @types/node from 24.7.0 to 24.7.1
+- ea37720: deps: [patch|devDependencies] Update package @types/node from 24.7.1 to 24.7.2
+- e7cd4b1: deps: [minor|devDependencies] Update package @types/node from 24.7.2 to 24.8.0
+- 9207748: deps: [patch|devDependencies] Update package @types/node from 24.8.0 to 24.8.1
+- 184d2ee: deps: [minor|devDependencies] Update package @types/node from 24.8.1 to 24.9.0
+- 54c65ef: deps: [patch|devDependencies] Update package @types/node from 24.9.0 to 24.9.1
+- fc2acac: deps: [patch|devDependencies] Update package @types/node from 24.9.1 to 24.9.2
+- 736e98f: deps: [minor|devDependencies] Update package @types/node from 24.9.2 to 24.10.0
+- 60de6d2: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.2 to 4.0.3
+- e8d1889: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.3 to 4.0.4
+- 35812a1: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.4 to 4.0.5
+- e9fa84c: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.5 to 4.0.6
+- cd8d406: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.6 to 4.0.7
+- 269d798: deps: [minor|devDependencies] Update package simple-git from 3.28.0 to 3.29.0
+- 2c158bd: deps: [minor|devDependencies] Update package simple-git from 3.29.0 to 3.30.0
+- 2a32078: deps: [minor|devDependencies] Update package type-fest from 5.0.1 to 5.1.0
+- 3d3b6f2: deps: [minor|devDependencies] Update package type-fest from 5.1.0 to 5.2.0
+- 60de6d2: deps: [major|devDependencies] Update package vitest from 3.2.4 to 4.0.1
+- a480137: deps: [patch|devDependencies] Update package vitest from 4.0.1 to 4.0.2
+- f36f9f0: deps: [patch|devDependencies] Update package vitest from 4.0.2 to 4.0.3
+- e8d1889: deps: [patch|devDependencies] Update package vitest from 4.0.3 to 4.0.4
+- 35812a1: deps: [patch|devDependencies] Update package vitest from 4.0.4 to 4.0.5
+- e9fa84c: deps: [patch|devDependencies] Update package vitest from 4.0.5 to 4.0.6
+- cd8d406: deps: [patch|devDependencies] Update package vitest from 4.0.6 to 4.0.7
+- 1fe446c: deps: Updated lockfile
+- 85f3cc4: deps: Updated lockfile
+
+
+</details>
+
 ## 0.2.4
 
 ### Patch Changes
