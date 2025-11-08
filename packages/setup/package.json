@@ -50,6 +50,6 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@inquirer/prompts": "7.9.0"
+    "@inquirer/prompts": "7.10.0"
   }
 }
