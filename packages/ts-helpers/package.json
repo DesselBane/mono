@@ -38,7 +38,7 @@
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.10.1",
     "@vitest/coverage-v8": "4.0.8",
-    "tsdown": "0.16.1",
+    "tsdown": "0.16.3",
     "type-fest": "5.2.0",
     "typescript": "5.9.3",
     "unplugin-unused": "0.5.6",
