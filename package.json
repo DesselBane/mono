@@ -32,7 +32,7 @@
   "devDependencies": {
     "@changesets/cli": "2.29.7",
     "@turbo/gen": "2.6.0",
-    "@types/node": "24.10.0",
+    "@types/node": "24.10.1",
     "@desselbane/configs": "workspace:*",
     "@repo/scripts": "workspace:*",
     "eslint": "9.39.1",
@@ -44,10 +44,10 @@
   },
   "packageManager": "pnpm@10.21.0",
   "engines": {
-    "node": "24.11.0"
+    "node": "24.11.1"
   },
   "volta": {
-    "node": "24.11.0",
+    "node": "24.11.1",
     "pnpm": "10.21.0"
   }
 }
