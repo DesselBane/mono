@@ -40,7 +40,7 @@
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.10.1",
     "@vitest/coverage-v8": "4.0.8",
-    "tsdown": "0.16.3",
+    "tsdown": "0.16.4",
     "type-fest": "5.2.0",
     "typescript": "5.9.3",
     "vitest": "4.0.8",
@@ -50,6 +50,6 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@inquirer/prompts": "7.10.0"
+    "@inquirer/prompts": "7.10.1"
   }
 }
