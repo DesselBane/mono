@@ -10,8 +10,7 @@
     "test:dev": "vitest",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "pnpm lint --fix",
-    "typecheck:lib": "vue-tsc --noEmit -p tsconfig.lib.json",
-    "typecheck:vitest": "vue-tsc --noEmit -p tsconfig.vitest.json"
+    "typecheck": "vue-tsc --build"
   },
   "repository": {
     "type": "git",

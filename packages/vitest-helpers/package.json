@@ -8,7 +8,7 @@
     "build": "tsdown",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "pnpm lint --fix",
-    "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json"
+    "typecheck": "tsc --build"
   },
   "repository": {
     "type": "git",

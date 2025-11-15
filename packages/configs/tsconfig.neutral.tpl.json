@@ -38,6 +38,7 @@
     // Emit
     "declaration": true,
     "declarationMap": true,
+    "declarationDir": "${configDir}/node_modules/.build/declarations",
     "sourceMap": true,
     "inlineSourceMap": false,
     "inlineSources": false,
@@ -45,7 +46,14 @@
     "newLine": "lf",
     "removeComments": false,
     "stripInternal": true,
-    "noEmit": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "${configDir}/node_modules/.build",
+
+    // Projects
+    "composite": true,
+    "incremental": true,
+
 
     // JS Support
     "allowJs": false,
@@ -58,10 +66,6 @@
 
     // Language
     "useDefineForClassFields": true,
-
-    // Projects
-    "composite": false,
-    "incremental": false,
 
     // Output Formatting
     "noErrorTruncation": true,

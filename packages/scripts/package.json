@@ -3,14 +3,13 @@
   "version": "0.2.5",
   "type": "module",
   "private": true,
-  "description": "Scripts which are used thorughout the mono repo.",
+  "description": "Scripts which are used throughout the mono repo.",
   "scripts": {
     "test": "vitest run",
     "test:dev": "vitest",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "pnpm lint --fix",
-    "typecheck:lib": "tsc --noEmit -p tsconfig.lib.json",
-    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json",
+    "typecheck": "tsc --build",
     "reformat-changelogs": "node src/reformat-changelogs-cli.ts",
     "renovate-add-changeset": "node src/renovate-add-changeset.ts"
   },

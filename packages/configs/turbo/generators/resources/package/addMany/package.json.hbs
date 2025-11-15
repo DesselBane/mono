@@ -23,8 +23,7 @@
     "test:dev": "vitest",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "pnpm lint --fix",
-    "typecheck:{{packageType}}": "{{#runtimeIsWeb}}vue-tsc{{else}}tsc{{/runtimeIsWeb}} --noEmit -p tsconfig.{{packageType}}.json",
-    "typecheck:vitest": "{{#runtimeIsWeb}}vue-tsc{{else}}tsc{{/runtimeIsWeb}} --noEmit -p tsconfig.vitest.json"
+    "typecheck": "{{#runtimeIsWeb}}vue-{{/runtimeIsWeb}}tsc --build"
   },
   "repository": {
     "type": "git",

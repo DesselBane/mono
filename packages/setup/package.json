@@ -13,8 +13,7 @@
     "test:dev": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "typecheck:app": "tsc --noEmit -p tsconfig.app.json",
-    "typecheck:vitest": "tsc --noEmit -p tsconfig.vitest.json",
+    "typecheck": "tsc --build",
     "prepublish": "pnpm turbo -F @desselbane/setup build"
   },
   "repository": {
