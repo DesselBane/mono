@@ -4,8 +4,12 @@
   "globalEnv": ["DEBUG", "NO_COLOR", "DO_NOT_TRACK"],
   "globalPassThroughEnv": ["PLAYWRIGHT_BROWSERS_PATH"],
   "tasks": {
-    "build": {
+    "typecheck": {
       "dependsOn": ["^build"],
+      "outputs": ["node_modules/.build/**"]
+    },
+    "build": {
+      "dependsOn": ["^build", "typecheck"],
       "outputs": ["dist/**"]
     },
     "generate": {
@@ -13,7 +17,7 @@
       "outputs": ["generated/**"]
     },
     "test": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["build"],
       "outputs": ["playwright-report/**", "test-results/**"]
     },
     "dev": {
@@ -44,15 +48,6 @@
     "lint:fix": {
       "dependsOn": ["^build", "@desselbane/configs#build"],
       "cache": true
-    },
-    "typecheck:app": {
-      "dependsOn": ["^build", "@desselbane/configs#build"]
-    },
-    "typecheck:lib": {
-      "dependsOn": ["^build", "@desselbane/configs#build"]
-    },
-    "typecheck:vitest": {
-      "dependsOn": ["^build", "@desselbane/configs#build"]
     },
     "docs:dev": {
       "cache": false

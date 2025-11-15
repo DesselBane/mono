@@ -2,7 +2,6 @@
   "extends": "./tsconfig.node.tpl.json",
   "include": ["*.config.ts"],
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "declaration": false
+    "allowImportingTsExtensions": true
   }
 }

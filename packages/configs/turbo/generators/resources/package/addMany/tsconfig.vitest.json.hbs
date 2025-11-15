@@ -1,6 +1,7 @@
 {
   "extends": "@desselbane/configs/tsconfig.{{runtime}}.tpl.json",
-  "include": [ "src/**/*", "@types", "__mocks__/**/*" ],
+  "include": [ "src/**/*.spec.ts", "@types", "__mocks__/**/*" ],
+  "references": [{"path": "./tsconfig.{{packageType}}.json"}],
   "compilerOptions": {
     "types": [ "vitest/globals", "@desselbane/configs/vitest-shims.d.ts", "node" ]
   }
