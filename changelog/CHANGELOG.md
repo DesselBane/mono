@@ -1,5 +1,24 @@
 # @repo/changelog
 
+## 0.3.6
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- c4d5db2: deps: [patch|devDependencies] Update package @turbo/gen from 2.6.0 to 2.6.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 1d95aa7: deps: [patch|engines] Update package node from v24.11.0 to v24.11.1
+- 1fbe186: deps: [minor|volta] Update package pnpm from 10.20.0 to 10.21.0
+- fdfcb6d: deps: [minor|volta] Update package pnpm from 10.21.0 to 10.22.0
+- 0ce2404: deps: [major|action] Update package renovatebot/github-action from v43.0.20 to v44.0.0
+- c4d5db2: deps: [patch|action] Update package renovatebot/github-action from v44.0.0 to v44.0.2
+- c4d5db2: deps: [patch|devDependencies] Update package turbo from 2.6.0 to 2.6.1
+
+
+</details>
+
 ## 0.3.5
 
 ### Dependency Changes

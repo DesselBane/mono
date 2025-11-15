@@ -1,5 +1,30 @@
 # @desselbane/setup
 
+## 1.0.6
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- ae8ec42: deps: [patch|dependencies] Update package @inquirer/prompts from 7.10.0 to 7.10.1
+- 5ce0f4f: deps: [minor|dependencies] Update package @inquirer/prompts from 7.9.0 to 7.10.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- 5320df8: deps: [minor|devDependencies] Update package tsdown from 0.15.12 to 0.16.1
+- c4d5db2: deps: [patch|devDependencies] Update package tsdown from 0.16.1 to 0.16.3
+- ae8ec42: deps: [patch|devDependencies] Update package tsdown from 0.16.3 to 0.16.4
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+
+
+</details>
+
 ## 1.0.5
 
 ### Patch Changes

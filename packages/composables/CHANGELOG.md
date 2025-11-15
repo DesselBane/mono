@@ -1,5 +1,34 @@
 # @desselbane/composables
 
+## 2.0.8
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- fbf7501: deps: [patch|devDependencies] Update package vue-tsc from 3.1.3 to 3.1.4
+- Updated dependencies [db54b62]
+- Updated dependencies [1d95aa7]
+- Updated dependencies [0959a2b]
+- Updated dependencies [bc0ea2a]
+- Updated dependencies [5320df8]
+- Updated dependencies [c4d5db2]
+- Updated dependencies [ae8ec42]
+  - @desselbane/ts-helpers@5.0.3
+
+
+</details>
+
 ## 2.0.7
 
 ### Dependency Changes
