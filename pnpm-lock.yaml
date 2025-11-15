@@ -81,8 +81,8 @@ importers:
         specifier: 4.0.9
         version: 4.0.9(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.1)
       vue-tsc:
-        specifier: 3.1.3
-        version: 3.1.3(typescript@5.9.3)
+        specifier: 3.1.4
+        version: 3.1.4(typescript@5.9.3)
 
   packages/configs:
     dependencies:
@@ -155,7 +155,7 @@ importers:
         version: 2.4.6
       tsdown:
         specifier: 0.16.4
-        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.3(typescript@5.9.3))
+        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.4(typescript@5.9.3))
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -216,7 +216,7 @@ importers:
         version: 4.0.9(vitest@4.0.9(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.1))
       tsdown:
         specifier: 0.16.4
-        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.3(typescript@5.9.3))
+        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.4(typescript@5.9.3))
       type-fest:
         specifier: 5.2.0
         version: 5.2.0
@@ -246,7 +246,7 @@ importers:
         version: 4.0.9(vitest@4.0.9(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.1))
       tsdown:
         specifier: 0.16.4
-        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.3(typescript@5.9.3))
+        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.4(typescript@5.9.3))
       type-fest:
         specifier: 5.2.0
         version: 5.2.0
@@ -270,7 +270,7 @@ importers:
         version: 24.10.1
       tsdown:
         specifier: 0.16.4
-        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.3(typescript@5.9.3))
+        version: 0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.4(typescript@5.9.3))
       type-fest:
         specifier: 5.2.0
         version: 5.2.0
@@ -1403,8 +1403,8 @@ packages:
       typescript:
         optional: true
 
-  '@vue/language-core@3.1.3':
-    resolution: {integrity: sha512-KpR1F/eGAG9D1RZ0/T6zWJs6dh/pRLfY5WupecyYKJ1fjVmDMgTPw9wXmKv2rBjo4zCJiOSiyB8BDP1OUwpMEA==}
+  '@vue/language-core@3.1.4':
+    resolution: {integrity: sha512-n/58wm8SkmoxMWkUNUH/PwoovWe4hmdyPJU2ouldr3EPi1MLoS7iDN46je8CsP95SnVBs2axInzRglPNKvqMcg==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -3540,8 +3540,8 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
-  vue-tsc@3.1.3:
-    resolution: {integrity: sha512-StMNfZHwPIXQgY3KxPKM0Jsoc8b46mDV3Fn2UlHCBIwRJApjqrSwqeMYgWf0zpN+g857y74pv7GWuBm+UqQe1w==}
+  vue-tsc@3.1.4:
+    resolution: {integrity: sha512-GsRJxttj4WkmXW/zDwYPGMJAN3np/4jTzoDFQTpTsI5Vg/JKMWamBwamlmLihgSVHO66y9P7GX+uoliYxeI4Hw==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
@@ -4791,7 +4791,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@vue/language-core@3.1.3(typescript@5.9.3)':
+  '@vue/language-core@3.1.4(typescript@5.9.3)':
     dependencies:
       '@volar/language-core': 2.4.23
       '@vue/compiler-dom': 3.5.22
@@ -6452,7 +6452,7 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rolldown-plugin-dts@0.17.7(ms@2.1.3)(rolldown@1.0.0-beta.50)(typescript@5.9.3)(vue-tsc@3.1.3(typescript@5.9.3)):
+  rolldown-plugin-dts@0.17.7(ms@2.1.3)(rolldown@1.0.0-beta.50)(typescript@5.9.3)(vue-tsc@3.1.4(typescript@5.9.3)):
     dependencies:
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.5
@@ -6466,7 +6466,7 @@ snapshots:
       rolldown: 1.0.0-beta.50
     optionalDependencies:
       typescript: 5.9.3
-      vue-tsc: 3.1.3(typescript@5.9.3)
+      vue-tsc: 3.1.4(typescript@5.9.3)
     transitivePeerDependencies:
       - ms
       - oxc-resolver
@@ -6746,7 +6746,7 @@ snapshots:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  tsdown@0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.3(typescript@5.9.3)):
+  tsdown@0.16.4(ms@2.1.3)(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.4(typescript@5.9.3)):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
@@ -6756,7 +6756,7 @@ snapshots:
       hookable: 5.5.3
       obug: 1.0.0(ms@2.1.3)
       rolldown: 1.0.0-beta.50
-      rolldown-plugin-dts: 0.17.7(ms@2.1.3)(rolldown@1.0.0-beta.50)(typescript@5.9.3)(vue-tsc@3.1.3(typescript@5.9.3))
+      rolldown-plugin-dts: 0.17.7(ms@2.1.3)(rolldown@1.0.0-beta.50)(typescript@5.9.3)(vue-tsc@3.1.4(typescript@5.9.3))
       semver: 7.7.3
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
@@ -7007,10 +7007,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-tsc@3.1.3(typescript@5.9.3):
+  vue-tsc@3.1.4(typescript@5.9.3):
     dependencies:
       '@volar/typescript': 2.4.23
-      '@vue/language-core': 3.1.3(typescript@5.9.3)
+      '@vue/language-core': 3.1.4(typescript@5.9.3)
       typescript: 5.9.3
 
   vue3-snapshot-serializer@2.13.0:
