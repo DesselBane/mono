@@ -1,5 +1,66 @@
 # @desselbane/configs
 
+## 17.0.0
+
+### Major Changes
+
+- db54b62: Move to incremental and composite build by default.
+
+  If you want to opt out of this change set
+
+  ```json
+  {
+    "compilerOptions": {
+      "incremental": false,
+      "composite": false
+    }
+  }
+  ```
+
+- db54b62: Emitting declaration files by default and setting outDir.
+
+  By default the following values are now set:
+
+  ```json
+  {
+    "compilerOptions": {
+      "noEmit": false,
+      "emitDeclarationOnly": true,
+      "outDir": "${configDir}/node_modules/.build",
+      "declarationDir": "${configDir}/node_modules/.build/declarations"
+    }
+  }
+  ```
+
+  This is due to the `composite` and `incremental` build being activated by default.
+
+### Minor Changes
+
+- db54b62: Update templates to reflect new typecheck scripts
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 9330a5d: deps: [minor-breaking|peerDependencies] Require package `tsdown ^0.16.0`
+- 5ed328f: deps: [major|dependencies] Update package @eslint/compat from 1.4.1 to 2.0.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.1 to 1.4.2
+- 5320df8: deps: [minor|devDependencies] Update package tsdown from 0.15.12 to 0.16.1
+- c4d5db2: deps: [patch|devDependencies] Update package tsdown from 0.16.1 to 0.16.3
+- ae8ec42: deps: [patch|devDependencies] Update package tsdown from 0.16.3 to 0.16.4
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.46.3 to 8.46.4
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+
+
+</details>
+
 ## 16.0.1
 
 ### Patch Changes
