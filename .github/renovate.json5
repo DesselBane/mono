@@ -1,8 +1,15 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
-  labels: ['♻renovate'],
-  assignees: ['DesselBane'],
-  enabledManagers: ['npm', 'github-actions'],
+  labels: [
+    '♻renovate',
+  ],
+  assignees: [
+    'DesselBane',
+  ],
+  enabledManagers: [
+    'npm',
+    'github-actions',
+  ],
   assigneesSampleSize: 1,
   commitBodyTable: true,
   configMigration: true,
@@ -15,66 +22,92 @@
   osvVulnerabilityAlerts: true,
   skipInstalls: false,
   stopUpdatingLabel: '❄️ On Hold',
-  postUpdateOptions: ['pnpmDedupe'],
+  postUpdateOptions: [
+    'pnpmDedupe',
+  ],
   prConcurrentLimit: 0,
   prHourlyLimit: 1,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
     recreateWhen: 'always',
-    rebaseStalePrs: true,
+    rebaseWhen: 'behind-base-branch',
     branchTopic: 'lock-file-maintenance',
     commitMessageAction: 'Lock file maintenance',
-    schedule: ['before 4am on monday'],
+    schedule: [
+      'before 4am on monday',
+    ],
     groupName: null,
-    prBodyDefinitions: { Change: 'All locks refreshed' },
+    prBodyDefinitions: {
+      Change: 'All locks refreshed',
+    },
   },
   postUpgradeTasks: {
     commands: [
       'install-tool pnpm',
       "pnpm -w renovate-add-changeset --currentVersion '{{currentVersion}}' --newVersion '{{newVersion}}' --depName '{{depName}}' --depType '{{depType}}' --packageFile '{{packageFile}}' --manager '{{manager}}' --updateType '{{updateType}}'",
     ],
-    fileFilters: ['.changeset/*.md'],
+    fileFilters: [
+      '.changeset/*.md',
+    ],
     executionMode: 'update',
   },
   automerge: false,
   npm: {
     minor: {
       automerge: true,
-      addLabels: ['automerge'],
+      addLabels: [
+        'automerge',
+      ],
     },
     patch: {
       automerge: true,
-      addLabels: ['automerge'],
+      addLabels: [
+        'automerge',
+      ],
     },
   },
   packageRules: [
     {
       groupName: 'Patch Updates',
-      matchUpdateTypes: ['patch'],
+      matchUpdateTypes: [
+        'patch',
+      ],
     },
     {
       groupName: 'Peer Dependencies',
       rangeStrategy: 'widen',
-      matchDepTypes: ['peerDependencies'],
+      matchDepTypes: [
+        'peerDependencies',
+      ],
       automerge: false,
     },
     {
       groupName: 'Vite',
-      matchPackageNames: ['/.*vite.*/', 'vue3-snapshot-serializer'],
+      matchPackageNames: [
+        '/.*vite.*/',
+        'vue3-snapshot-serializer',
+      ],
     },
     {
       groupName: '⚡Engines',
       rangeStrategy: 'widen',
-      matchPackageNames: ['/.*node.*/', '/.*pnpm.*/'],
+      matchPackageNames: [
+        '/.*node.*/',
+        '/.*pnpm.*/',
+      ],
     },
     {
       groupName: 'Lodash',
-      matchPackageNames: ['/.*lodash.*/'],
+      matchPackageNames: [
+        '/.*lodash.*/',
+      ],
     },
     {
       groupName: 'ESlint',
-      matchPackageNames: ['/.*eslint.*/'],
+      matchPackageNames: [
+        '/.*eslint.*/',
+      ],
     },
   ],
 }
