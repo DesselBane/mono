@@ -1,5 +1,49 @@
 # @desselbane/composables
 
+## 2.0.8
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6bc252e: deps: Updated lockfile
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 304f59f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.12 to 4.0.13
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.9 to 4.0.10
+- 304f59f: deps: [patch|devDependencies] Update package vite from 7.2.2 to 7.2.4
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+- fbf7501: deps: [patch|devDependencies] Update package vue-tsc from 3.1.3 to 3.1.4
+- 6b5d4bf: deps: [patch|devDependencies] Update package vue-tsc from 3.1.4 to 3.1.5
+- Updated dependencies [db54b62]
+- Updated dependencies [6bc252e]
+- Updated dependencies [1d95aa7]
+- Updated dependencies [304f59f]
+- Updated dependencies [5b9394e]
+- Updated dependencies [0959a2b]
+- Updated dependencies [bc0ea2a]
+- Updated dependencies [ecff42a]
+- Updated dependencies [5320df8]
+- Updated dependencies [c4d5db2]
+- Updated dependencies [ae8ec42]
+- Updated dependencies [c628ed6]
+- Updated dependencies [3f64853]
+  - @desselbane/ts-helpers@5.0.3
+
+
+</details>
+
 ## 2.0.7
 
 ### Dependency Changes
