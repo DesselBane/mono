@@ -1,5 +1,32 @@
 # @repo/scripts
 
+## 0.2.6
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6bc252e: deps: Updated lockfile
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 304f59f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.12 to 4.0.13
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.9 to 4.0.10
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+
+
+</details>
+
 ## 0.2.5
 
 ### Patch Changes
