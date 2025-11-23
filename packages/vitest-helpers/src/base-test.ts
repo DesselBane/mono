@@ -1,6 +1,6 @@
 /* eslint-disable no-empty-pattern */
 import { execSync } from 'node:child_process'
-import { it as itVitest } from 'vitest'
+import { it as itVitest, vi } from 'vitest'
 import type { MockInstance } from 'vitest'
 import { noop } from './noop'
 

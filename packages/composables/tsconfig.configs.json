@@ -1,4 +1,7 @@
 {
   "extends": "@desselbane/configs/tsconfig.node.tpl.json",
-  "include": [ "*.config.ts" ]
+  "include": [ "*.config.ts" ],
+  "compilerOptions": {
+    "types": ["node", "vitest/config"]
+  }
 }

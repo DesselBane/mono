@@ -3,6 +3,6 @@
   "exclude": ["src/**/*.spec.ts", "**/__mocks__/**/*", "src/**/*.spec-d.ts"],
   "extends": "./tsconfig.bundler-node.tpl.json",
   "compilerOptions": {
-    "types": ["vitest/globals", "./vitest-shims.d.ts"]
+    "types": ["./vitest-shims.d.ts"]
   }
 }

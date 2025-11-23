@@ -1,6 +1,7 @@
 import { noop, it, baseTest } from '@desselbane/vitest-helpers'
 import { safeTry } from '@desselbane/ts-helpers'
 import type { MockInstance } from 'vitest'
+import { vi, describe, expect } from 'vitest'
 import {
   execSync as execSyncHelper,
   cleanExit,

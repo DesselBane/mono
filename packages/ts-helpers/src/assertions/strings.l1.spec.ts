@@ -1,5 +1,6 @@
 /* eslint-disable unicorn/no-null */
 
+import { describe, expect, it, expectTypeOf } from 'vitest'
 import { AssertionError } from './assertion-error'
 import {
   isNilOrWhitespace,

@@ -4,6 +4,6 @@
   "references": [{"path": "./tsconfig.lib.json"}],
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "types": ["vitest/globals", "@desselbane/configs/vitest-shims.d.ts", "node"]
+    "types": ["@desselbane/configs/vitest-shims.d.ts", "node"]
   }
 }

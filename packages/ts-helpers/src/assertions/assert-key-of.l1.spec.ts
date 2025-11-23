@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { assertKeyOf, isKeyOf } from './assert-key-of'
 import { AssertionError } from './assertion-error'
 

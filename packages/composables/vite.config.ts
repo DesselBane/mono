@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
+import { createVitestConfig } from '@desselbane/configs/vitest'
 
 export default defineConfig({
   plugins: [
@@ -17,4 +18,7 @@ export default defineConfig({
       external: ['vue'],
     },
   },
+  test: createVitestConfig({
+    enableLevel2: false,
+  }).test,
 })
