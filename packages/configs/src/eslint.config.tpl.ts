@@ -356,7 +356,7 @@ function configureVitestPlugin(options: SafeOptions): Config {
         'vitest/require-top-level-describe': 'off',
         'vitest/no-standalone-expect': 'off',
         'vitest/prefer-importing-vitest-globals': 'off',
-        'vitest/no-importing-vitest-globals': 'error',
+        'vitest/no-importing-vitest-globals': 'off',
       },
     },
   )

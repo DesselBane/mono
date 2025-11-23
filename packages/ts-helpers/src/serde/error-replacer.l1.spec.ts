@@ -1,3 +1,4 @@
+import { vi, describe, it, expect } from 'vitest'
 import { createErrorReplacer } from './error-replacer'
 import type { ReplacerFunction } from './types'
 

@@ -1,6 +1,7 @@
 import path from 'node:path'
 import { globSync, readFileSync, writeFileSync } from 'node:fs'
 import type { Mock, Use } from 'vitest'
+import { vi, expect, describe, test } from 'vitest'
 import { assertNotNil, workspaceRoot } from '../helper.ts'
 import { run } from './reformat-changelogs.ts'
 

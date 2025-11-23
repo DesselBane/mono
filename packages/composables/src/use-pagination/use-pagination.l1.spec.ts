@@ -1,3 +1,4 @@
+import { vi, describe, expect, it } from 'vitest'
 import { ref, unref } from 'vue'
 import type { MaybeRef } from 'vue'
 import { noop } from '@desselbane/vitest-helpers'

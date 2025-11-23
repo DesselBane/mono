@@ -1,3 +1,4 @@
+import { vi, describe, it, expect } from 'vitest'
 import { lazy } from './lazy'
 
 describe(lazy, () => {

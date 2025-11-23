@@ -1,4 +1,5 @@
 import type * as n from 'node:child_process'
+import { vi } from 'vitest'
 import { SpyNotSetupError } from '../../utils'
 
 export const execSync = vi.fn<typeof n.execSync>(() => {

@@ -1,16 +1,12 @@
 {
   "extends": "@desselbane/configs/tsconfig.bundler-web.tpl.json",
-  "include": [
-    "src/**/*.spec.ts",
-    "@types",
-    "**/__mocks__/**/*"
-  ],
+  "include": ["src/**/*.spec.ts", "@types", "**/__mocks__/**/*"],
   "references": [
     {
       "path": "./tsconfig.lib.json"
     }
   ],
   "compilerOptions": {
-    "types": [ "vitest/globals", "@desselbane/configs/vitest-shims.d.ts" ]
+    "types": ["@desselbane/configs/vitest-shims.d.ts"]
   }
 }

@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { propertyKeyToString } from './property-key-to-string'
 
 describe(propertyKeyToString, () => {

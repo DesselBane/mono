@@ -1,5 +1,5 @@
 import * as matchers from 'jest-extended'
-import { expect } from 'vitest'
+import { expect, vi } from 'vitest'
 
 function setupJestExtended() {
   expect.extend(matchers)
