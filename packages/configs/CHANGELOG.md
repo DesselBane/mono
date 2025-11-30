@@ -1,5 +1,91 @@
 # @desselbane/configs
 
+## 17.0.0
+
+### Major Changes
+
+- db54b62: Move to incremental and composite build by default.
+
+  If you want to opt out of this change set
+
+  ```json
+  {
+    "compilerOptions": {
+      "incremental": false,
+      "composite": false
+    }
+  }
+  ```
+
+- db54b62: Emitting declaration files by default and setting outDir.
+
+  By default the following values are now set:
+
+  ```json
+  {
+    "compilerOptions": {
+      "noEmit": false,
+      "emitDeclarationOnly": true,
+      "outDir": "${configDir}/node_modules/.build",
+      "declarationDir": "${configDir}/node_modules/.build/declarations"
+    }
+  }
+  ```
+
+  This is due to the `composite` and `incremental` build being activated by default.
+
+### Minor Changes
+
+- db54b62: Update templates to reflect new typecheck scripts
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 9330a5d: deps: [minor-breaking|peerDependencies] Require package `tsdown ^0.16.0`
+- 6bc252e: deps: Updated lockfile
+- 5ed328f: deps: [major|dependencies] Update package @eslint/compat from 1.4.1 to 2.0.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.1 to 1.4.2
+- 96b5a16: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.2 to 1.4.3
+- 5914d38: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.3 to 1.4.4
+- 951a7d2: deps: [minor|dependencies] Update package @vitest/eslint-plugin from 1.4.4 to 1.5.0
+- cbd9513: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.5.0 to 1.5.1
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.3.0 to 2.4.0
+- 13f7db1: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.5.1 to 10.6.0
+- 6663137: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.6.0 to 10.6.1
+- 8890504: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.6.1 to 10.6.2
+- 63809c2: deps: [minor|dependencies] Update package prettier from 3.6.2 to 3.7.1
+- 8cf0e97: deps: [patch|dependencies] Update package prettier from 3.7.1 to 3.7.2
+- dd4b929: deps: [patch|dependencies] Update package prettier from 3.7.2 to 3.7.3
+- 5320df8: deps: [minor|devDependencies] Update package tsdown from 0.15.12 to 0.16.1
+- c4d5db2: deps: [patch|devDependencies] Update package tsdown from 0.16.1 to 0.16.3
+- ae8ec42: deps: [patch|devDependencies] Update package tsdown from 0.16.3 to 0.16.4
+- c628ed6: deps: [patch|devDependencies] Update package tsdown from 0.16.4 to 0.16.5
+- 3f64853: deps: [patch|devDependencies] Update package tsdown from 0.16.5 to 0.16.6
+- a49610a: deps: [patch|devDependencies] Update package tsdown from 0.16.6 to 0.16.7
+- 990247a: deps: [patch|devDependencies] Update package tsdown from 0.16.7 to 0.16.8
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.46.3 to 8.46.4
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.46.4 to 8.47.0
+- 951a7d2: deps: [minor|dependencies] Update package typescript-eslint from 8.47.0 to 8.48.0
+- 304f59f: deps: [patch|devDependencies] Update package vite from 7.2.2 to 7.2.4
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package vitest from 4.0.13 to 4.0.14
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+- ec65c6a: deps: [patch|dependencies] Update package zod from 4.1.12 to 4.1.13
+- 74a6e26: deps: Updated lockfile
+
+
+</details>
+
 ## 16.0.1
 
 ### Patch Changes

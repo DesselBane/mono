@@ -1,5 +1,42 @@
 # @repo/changelog
 
+## 0.3.6
+
+### Patch Changes
+
+- 24161d1: Update renovate `lockFileMaintenance` config
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6bc252e: deps: Updated lockfile
+- 990247a: deps: [patch|devDependencies] Update package @changesets/cli from 2.29.7 to 2.29.8
+- c4d5db2: deps: [patch|devDependencies] Update package @turbo/gen from 2.6.0 to 2.6.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- b795acf: deps: [major|action] Update package actions/checkout from v5 to v6
+- 1ebf8a9: deps: [patch|devDependencies] Update package lint-staged from 16.2.6 to 16.2.7
+- 1d95aa7: deps: [patch|engines] Update package node from v24.11.0 to v24.11.1
+- 1fbe186: deps: [minor|volta] Update package pnpm from 10.20.0 to 10.21.0
+- fdfcb6d: deps: [minor|volta] Update package pnpm from 10.21.0 to 10.22.0
+- 6de20b2: deps: [minor|volta] Update package pnpm from 10.22.0 to 10.23.0
+- eca0bd7: deps: [minor|volta] Update package pnpm from 10.23.0 to 10.24.0
+- 63809c2: deps: [minor|devDependencies] Update package prettier from 3.6.2 to 3.7.1
+- 8cf0e97: deps: [patch|devDependencies] Update package prettier from 3.7.1 to 3.7.2
+- dd4b929: deps: [patch|devDependencies] Update package prettier from 3.7.2 to 3.7.3
+- 0ce2404: deps: [major|action] Update package renovatebot/github-action from v43.0.20 to v44.0.0
+- c4d5db2: deps: [patch|action] Update package renovatebot/github-action from v44.0.0 to v44.0.2
+- c628ed6: deps: [patch|action] Update package renovatebot/github-action from v44.0.2 to v44.0.3
+- ec65c6a: deps: [patch|action] Update package renovatebot/github-action from v44.0.3 to v44.0.4
+- c4d5db2: deps: [patch|devDependencies] Update package turbo from 2.6.0 to 2.6.1
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+
+
+</details>
+
 ## 0.3.5
 
 ### Dependency Changes
