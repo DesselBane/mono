@@ -66,8 +66,8 @@ importers:
         specifier: 4.0.15
         version: 4.0.15(vitest@4.0.15(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2))
       type-fest:
-        specifier: 5.2.0
-        version: 5.2.0
+        specifier: 5.3.0
+        version: 5.3.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -184,8 +184,8 @@ importers:
         specifier: 3.30.0
         version: 3.30.0
       type-fest:
-        specifier: 5.2.0
-        version: 5.2.0
+        specifier: 5.3.0
+        version: 5.3.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -218,8 +218,8 @@ importers:
         specifier: 0.16.8
         version: 0.16.8(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.5(typescript@5.9.3))
       type-fest:
-        specifier: 5.2.0
-        version: 5.2.0
+        specifier: 5.3.0
+        version: 5.3.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -248,8 +248,8 @@ importers:
         specifier: 0.16.8
         version: 0.16.8(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.5(typescript@5.9.3))
       type-fest:
-        specifier: 5.2.0
-        version: 5.2.0
+        specifier: 5.3.0
+        version: 5.3.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -272,8 +272,8 @@ importers:
         specifier: 0.16.8
         version: 0.16.8(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.5(typescript@5.9.3))
       type-fest:
-        specifier: 5.2.0
-        version: 5.2.0
+        specifier: 5.3.0
+        version: 5.3.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -3363,8 +3363,8 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
-  type-fest@5.2.0:
-    resolution: {integrity: sha512-xxCJm+Bckc6kQBknN7i9fnP/xobQRsRQxR01CztFkp/h++yfVxUUcmMgfR2HttJx/dpWjS9ubVuyspJv24Q9DA==}
+  type-fest@5.3.0:
+    resolution: {integrity: sha512-d9CwU93nN0IA1QL+GSNDdwLAu1Ew5ZjTwupvedwg3WdfoH6pIDvYQ2hV0Uc2nKBLPq7NB5apCx57MLS5qlmO5g==}
     engines: {node: '>=20'}
 
   typescript-eslint@8.48.1:
@@ -6832,7 +6832,7 @@ snapshots:
 
   type-fest@0.21.3: {}
 
-  type-fest@5.2.0:
+  type-fest@5.3.0:
     dependencies:
       tagged-tag: 1.0.0
 
