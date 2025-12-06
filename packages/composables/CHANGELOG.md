@@ -1,5 +1,66 @@
 # @desselbane/composables
 
+## 2.0.8
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6bc252e: deps: Updated lockfile
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 304f59f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.14 to 4.0.15
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.9 to 4.0.10
+- 1febe15: deps: [minor|devDependencies] Update package type-fest from 5.2.0 to 5.3.0
+- 304f59f: deps: [patch|devDependencies] Update package vite from 7.2.2 to 7.2.4
+- 239345f: deps: [patch|devDependencies] Update package vite from 7.2.4 to 7.2.6
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package vitest from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package vitest from 4.0.14 to 4.0.15
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+- fbf7501: deps: [patch|devDependencies] Update package vue-tsc from 3.1.3 to 3.1.4
+- 6b5d4bf: deps: [patch|devDependencies] Update package vue-tsc from 3.1.4 to 3.1.5
+- cddad94: deps: [patch|devDependencies] Update package vue-tsc from 3.1.5 to 3.1.6
+- 74a6e26: deps: Updated lockfile
+- e96fef2: deps: Updated lockfile
+- Updated dependencies [db54b62]
+- Updated dependencies [6bc252e]
+- Updated dependencies [1d95aa7]
+- Updated dependencies [304f59f]
+- Updated dependencies [5b9394e]
+- Updated dependencies [b0b3d55]
+- Updated dependencies [41a8a2f]
+- Updated dependencies [0959a2b]
+- Updated dependencies [bc0ea2a]
+- Updated dependencies [ecff42a]
+- Updated dependencies [5320df8]
+- Updated dependencies [c4d5db2]
+- Updated dependencies [ae8ec42]
+- Updated dependencies [c628ed6]
+- Updated dependencies [3f64853]
+- Updated dependencies [a49610a]
+- Updated dependencies [990247a]
+- Updated dependencies [81d1b02]
+- Updated dependencies [1febe15]
+- Updated dependencies [74a6e26]
+- Updated dependencies [e96fef2]
+  - @desselbane/ts-helpers@5.0.3
+
+
+</details>
+
 ## 2.0.7
 
 ### Dependency Changes
