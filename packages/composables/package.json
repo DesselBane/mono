@@ -40,12 +40,12 @@
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.10.1",
     "@vitest/coverage-v8": "4.0.15",
-    "type-fest": "5.3.0",
+    "type-fest": "5.3.1",
     "typescript": "5.9.3",
     "vite": "7.2.6",
     "vite-plugin-dts": "4.5.4",
     "vitest": "4.0.15",
-    "vue-tsc": "3.1.6"
+    "vue-tsc": "3.1.7"
   },
   "dependencies": {
     "@desselbane/ts-helpers": "workspace:*"
