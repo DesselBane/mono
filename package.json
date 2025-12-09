@@ -32,7 +32,7 @@
   "devDependencies": {
     "@changesets/cli": "2.29.8",
     "@turbo/gen": "2.6.3",
-    "@types/node": "24.10.1",
+    "@types/node": "24.10.2",
     "@desselbane/configs": "workspace:*",
     "@repo/scripts": "workspace:*",
     "eslint": "9.39.1",
