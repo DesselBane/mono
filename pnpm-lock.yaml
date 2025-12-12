@@ -154,8 +154,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       tsdown:
-        specifier: 0.17.2
-        version: 0.17.2(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
+        specifier: 0.17.3
+        version: 0.17.3(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -215,8 +215,8 @@ importers:
         specifier: 4.0.15
         version: 4.0.15(vitest@4.0.15(@types/node@24.10.3)(jiti@2.6.1)(yaml@2.8.2))
       tsdown:
-        specifier: 0.17.2
-        version: 0.17.2(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
+        specifier: 0.17.3
+        version: 0.17.3(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
       type-fest:
         specifier: 5.3.1
         version: 5.3.1
@@ -245,8 +245,8 @@ importers:
         specifier: 4.0.15
         version: 4.0.15(vitest@4.0.15(@types/node@24.10.3)(jiti@2.6.1)(yaml@2.8.2))
       tsdown:
-        specifier: 0.17.2
-        version: 0.17.2(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
+        specifier: 0.17.3
+        version: 0.17.3(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
       type-fest:
         specifier: 5.3.1
         version: 5.3.1
@@ -269,8 +269,8 @@ importers:
         specifier: 24.10.3
         version: 24.10.3
       tsdown:
-        specifier: 0.17.2
-        version: 0.17.2(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
+        specifier: 0.17.3
+        version: 0.17.3(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3))
       type-fest:
         specifier: 5.3.1
         version: 5.3.1
@@ -1797,6 +1797,9 @@ packages:
   defaults@1.0.4:
     resolution: {integrity: sha512-eFuaLoy/Rxalv2kr+lqMlUnrDWV+3j4pljOIJgLIhI058IQfWJ7vXhyEIHu+HtC738klGALYxOKDO0bQP3tg8A==}
 
+  defu@6.1.4:
+    resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
+
   degenerator@5.0.1:
     resolution: {integrity: sha512-TllpMR/t0M5sqCXfj85i4XaAzxmS5tVA16dqvdkMwGmzI+dXLXnw3J+3Vdv7VKw+ThlTMboK6i9rnZ6Nntj5CQ==}
     engines: {node: '>= 14'}
@@ -2311,8 +2314,8 @@ packages:
     resolution: {integrity: sha512-rKtvo6a868b5Hu3heneU+L4yEQ4jYKLtjpnPeUdK7h0yzXGmyBTypknlkCvHFBqfX9YlorEiMM6Dnq/5atfHkw==}
     engines: {node: '>=8'}
 
-  import-without-cache@0.2.2:
-    resolution: {integrity: sha512-4TTuRrZ0jBULXzac3EoX9ZviOs8Wn9iAbNhJEyLhTpAGF9eNmYSruaMMN/Tec/yqaO7H6yS2kALfQDJ5FxfatA==}
+  import-without-cache@0.2.3:
+    resolution: {integrity: sha512-roCvX171VqJ7+7pQt1kSRfwaJvFAC2zhThJWXal1rN8EqzPS3iapkAoNpHh4lM8Na1BDen+n9rVfo73RN+Y87g==}
     engines: {node: '>=20.19.0'}
 
   imurmurhash@0.1.4:
@@ -3267,8 +3270,8 @@ packages:
       '@swc/wasm':
         optional: true
 
-  tsdown@0.17.2:
-    resolution: {integrity: sha512-SuU+0CWm/95KfXqojHTVuwcouIsdn7HpYcwDyOdKktJi285NxKwysjFUaxYLxpCNqqPvcFvokXLO4dZThRwzkw==}
+  tsdown@0.17.3:
+    resolution: {integrity: sha512-bgLgTog+oyadDTr9SZ57jZtb+A4aglCjo3xgJrkCDxbzcQl2l2iDDr4b06XHSQHwyDNIhYFDgPRhuu1wL3pNsw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -5163,6 +5166,8 @@ snapshots:
     dependencies:
       clone: 1.0.4
 
+  defu@6.1.4: {}
+
   degenerator@5.0.1:
     dependencies:
       ast-types: 0.13.4
@@ -5740,7 +5745,7 @@ snapshots:
 
   import-lazy@4.0.0: {}
 
-  import-without-cache@0.2.2: {}
+  import-without-cache@0.2.3: {}
 
   imurmurhash@0.1.4: {}
 
@@ -6722,13 +6727,14 @@ snapshots:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  tsdown@0.17.2(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3)):
+  tsdown@0.17.3(synckit@0.11.11)(typescript@5.9.3)(unplugin-unused@0.5.6)(vue-tsc@3.1.8(typescript@5.9.3)):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
+      defu: 6.1.4
       empathic: 2.0.0
       hookable: 5.5.3
-      import-without-cache: 0.2.2
+      import-without-cache: 0.2.3
       obug: 2.1.1
       rolldown: 1.0.0-beta.53
       rolldown-plugin-dts: 0.18.3(rolldown@1.0.0-beta.53)(typescript@5.9.3)(vue-tsc@3.1.8(typescript@5.9.3))
