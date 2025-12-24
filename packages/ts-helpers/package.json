@@ -36,12 +36,12 @@
     "@desselbane/configs": "workspace:*",
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.10.4",
-    "@vitest/coverage-v8": "4.0.15",
+    "@vitest/coverage-v8": "4.0.16",
     "tsdown": "0.18.3",
     "type-fest": "5.3.1",
     "typescript": "5.9.3",
     "unplugin-unused": "0.5.6",
-    "vitest": "4.0.15"
+    "vitest": "4.0.16"
   },
   "main": "./dist/main.js",
   "module": "./dist/main.js",
