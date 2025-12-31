@@ -144,8 +144,8 @@ importers:
         specifier: 2.13.0
         version: 2.13.0
       zod:
-        specifier: 4.2.1
-        version: 4.2.1
+        specifier: 4.3.2
+        version: 4.3.2
     devDependencies:
       '@types/node':
         specifier: 24.10.4
@@ -227,8 +227,8 @@ importers:
         specifier: 4.0.15
         version: 4.0.15(@types/node@24.10.4)(jiti@2.6.1)(yaml@2.8.2)
       zod:
-        specifier: 4.2.1
-        version: 4.2.1
+        specifier: 4.3.2
+        version: 4.3.2
 
   packages/ts-helpers:
     devDependencies:
@@ -3636,8 +3636,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@4.2.1:
-    resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
+  zod@4.3.2:
+    resolution: {integrity: sha512-b8L8yn4rIVfiXyHAmnr52/ZEpDumlT0bmxiq3Ws1ybrinhflGpt12Hvv54kYnEsGPRs6o/Ka3/ppA2OWY21IVg==}
 
 snapshots:
 
@@ -7097,4 +7097,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@4.2.1: {}
+  zod@4.3.2: {}
