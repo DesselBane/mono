@@ -56,68 +56,68 @@ describe(safeTryAsync, () => {
     ).resolves.not.toThrow()
 
     await expect(safeTryAsync(testFunctionBadAsync())).resolves.not.toThrow()
+  })
 
-    describe('generator function', () => {
-      describe('array', () => {
-        it('should catch and return a thrown error', async () => {
-          const [error] = await safeTryAsync(testFunctionBadAsync)
+  describe('generator function', () => {
+    describe('array', () => {
+      it('should catch and return a thrown error', async () => {
+        const [error] = await safeTryAsync(testFunctionBadAsync)
 
-          expect(error).toBeInstanceOf(Error)
-          expect(error?.message).toBe('test error')
-        })
-
-        it('should return the data if no error is thrown', async () => {
-          const [, data] = await safeTryAsync(testFunctionGoodAsync)
-
-          expect(data).toBe('test')
-        })
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
       })
 
-      describe('object', () => {
-        it('should catch and return a thrown error', async () => {
-          const { error } = await safeTryAsync(testFunctionBadAsync)
+      it('should return the data if no error is thrown', async () => {
+        const [, data] = await safeTryAsync(testFunctionGoodAsync)
 
-          expect(error).toBeInstanceOf(Error)
-          expect(error?.message).toBe('test error')
-        })
-
-        it('should return the data if no error is thrown', async () => {
-          const { data } = await safeTryAsync(testFunctionGoodAsync)
-
-          expect(data).toBe('test')
-        })
+        expect(data).toBe('test')
       })
     })
 
-    describe('plain promise', () => {
-      describe('array', () => {
-        it('should catch and return a thrown error', async () => {
-          const [error] = await safeTryAsync(testFunctionBadAsync())
+    describe('object', () => {
+      it('should catch and return a thrown error', async () => {
+        const { error } = await safeTryAsync(testFunctionBadAsync)
 
-          expect(error).toBeInstanceOf(Error)
-          expect(error?.message).toBe('test error')
-        })
-
-        it('should return the data if no error is thrown', async () => {
-          const [, data] = await safeTryAsync(testFunctionGoodAsync())
-
-          expect(data).toBe('test')
-        })
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
       })
 
-      describe('object', () => {
-        it('should catch and return a thrown error', async () => {
-          const { error } = await safeTryAsync(testFunctionBadAsync())
+      it('should return the data if no error is thrown', async () => {
+        const { data } = await safeTryAsync(testFunctionGoodAsync)
 
-          expect(error).toBeInstanceOf(Error)
-          expect(error?.message).toBe('test error')
-        })
+        expect(data).toBe('test')
+      })
+    })
+  })
 
-        it('should return the data if no error is thrown', async () => {
-          const { data } = await safeTryAsync(testFunctionGoodAsync())
+  describe('plain promise', () => {
+    describe('array', () => {
+      it('should catch and return a thrown error', async () => {
+        const [error] = await safeTryAsync(testFunctionBadAsync())
 
-          expect(data).toBe('test')
-        })
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
+      })
+
+      it('should return the data if no error is thrown', async () => {
+        const [, data] = await safeTryAsync(testFunctionGoodAsync())
+
+        expect(data).toBe('test')
+      })
+    })
+
+    describe('object', () => {
+      it('should catch and return a thrown error', async () => {
+        const { error } = await safeTryAsync(testFunctionBadAsync())
+
+        expect(error).toBeInstanceOf(Error)
+        expect(error?.message).toBe('test error')
+      })
+
+      it('should return the data if no error is thrown', async () => {
+        const { data } = await safeTryAsync(testFunctionGoodAsync())
+
+        expect(data).toBe('test')
       })
     })
   })
