@@ -1,5 +1,111 @@
 # @repo/changelog
 
+## 0.3.6
+
+### Patch Changes
+
+- 24161d1: Update renovate `lockFileMaintenance` config
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6bc252e: deps: Updated lockfile
+- 990247a: deps: [patch|devDependencies] Update package @changesets/cli from 2.29.7 to 2.29.8
+- c4d5db2: deps: [patch|devDependencies] Update package @turbo/gen from 2.6.0 to 2.6.1
+- 18bea54: deps: [patch|devDependencies] Update package @turbo/gen from 2.6.1 to 2.6.2
+- 1ed1354: deps: [patch|devDependencies] Update package @turbo/gen from 2.6.2 to 2.6.3
+- 2ede514: deps: [minor|devDependencies] Update package @turbo/gen from 2.6.3 to 2.7.0
+- 3b7a3a9: deps: [patch|devDependencies] Update package @turbo/gen from 2.7.0 to 2.7.1
+- 8678341: deps: [patch|devDependencies] Update package @turbo/gen from 2.7.1 to 2.7.2
+- fe2f038: deps: [patch|devDependencies] Update package @turbo/gen from 2.7.2 to 2.7.3
+- 7533f2a: deps: [patch|devDependencies] Update package @turbo/gen from 2.7.3 to 2.7.4
+- 4211ecf: deps: [patch|devDependencies] Update package @turbo/gen from 2.7.4 to 2.7.5
+- e0647e5: deps: [patch|devDependencies] Update package @turbo/gen from 2.7.5 to 2.7.6
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- cd47b49: deps: [patch|devDependencies] Update package @types/node from 24.10.1 to 24.10.2
+- ae78c6e: deps: [patch|devDependencies] Update package @types/node from 24.10.2 to 24.10.3
+- 47cc9cb: deps: [patch|devDependencies] Update package @types/node from 24.10.3 to 24.10.4
+- e48315e: deps: [patch|devDependencies] Update package @types/node from 24.10.4 to 24.10.6
+- dd408a6: deps: [patch|devDependencies] Update package @types/node from 24.10.6 to 24.10.7
+- e61f4d5: deps: [patch|devDependencies] Update package @types/node from 24.10.7 to 24.10.8
+- 816cde5: deps: [patch|devDependencies] Update package @types/node from 24.10.8 to 24.10.9
+- 108e9f4: deps: [major|action] Update package actions/cache from v4 to v5
+- b795acf: deps: [major|action] Update package actions/checkout from v5 to v6
+- 3f2de43: deps: [patch|devDependencies] Update package eslint from 9.39.1 to 9.39.2
+- 1ebf8a9: deps: [patch|devDependencies] Update package lint-staged from 16.2.6 to 16.2.7
+- 1d95aa7: deps: [patch|engines] Update package node from v24.11.0 to v24.11.1
+- ae78c6e: deps: [minor|engines] Update package node from v24.11.1 to v24.12.0
+- e61f4d5: deps: [minor|engines] Update package node from v24.12.0 to v24.13.0
+- 1fbe186: deps: [minor|volta] Update package pnpm from 10.20.0 to 10.21.0
+- fdfcb6d: deps: [minor|volta] Update package pnpm from 10.21.0 to 10.22.0
+- 6de20b2: deps: [minor|volta] Update package pnpm from 10.22.0 to 10.23.0
+- eca0bd7: deps: [minor|volta] Update package pnpm from 10.23.0 to 10.24.0
+- ee6114f: deps: [minor|volta] Update package pnpm from 10.24.0 to 10.25.0
+- d13e768: deps: [minor|volta] Update package pnpm from 10.25.0 to 10.26.0
+- 093c743: deps: [patch|volta] Update package pnpm from 10.26.0 to 10.26.1
+- 561695e: deps: [patch|volta] Update package pnpm from 10.26.1 to 10.26.2
+- e5a4114: deps: [minor|volta] Update package pnpm from 10.26.2 to 10.27.0
+- e48315e: deps: [minor|volta] Update package pnpm from 10.27.0 to 10.28.0
+- a3f7a6c: deps: [patch|volta] Update package pnpm from 10.28.0 to 10.28.1
+- 206d4d0: deps: [patch|volta] Update package pnpm from 10.28.1 to 10.28.2
+- 63809c2: deps: [minor|devDependencies] Update package prettier from 3.6.2 to 3.7.1
+- 8cf0e97: deps: [patch|devDependencies] Update package prettier from 3.7.1 to 3.7.2
+- dd4b929: deps: [patch|devDependencies] Update package prettier from 3.7.2 to 3.7.3
+- ee3e11a: deps: [patch|devDependencies] Update package prettier from 3.7.3 to 3.7.4
+- 7803ee9: deps: [minor|devDependencies] Update package prettier from 3.7.4 to 3.8.0
+- f5755e4: deps: [patch|devDependencies] Update package prettier from 3.8.0 to 3.8.1
+- 0ce2404: deps: [major|action] Update package renovatebot/github-action from v43.0.20 to v44.0.0
+- c4d5db2: deps: [patch|action] Update package renovatebot/github-action from v44.0.0 to v44.0.2
+- c628ed6: deps: [patch|action] Update package renovatebot/github-action from v44.0.2 to v44.0.3
+- ec65c6a: deps: [patch|action] Update package renovatebot/github-action from v44.0.3 to v44.0.4
+- ee3e11a: deps: [patch|action] Update package renovatebot/github-action from v44.0.4 to v44.0.5
+- f0b8f0e: deps: [minor|action] Update package renovatebot/github-action from v44.0.5 to v44.1.0
+- cfdfe11: deps: [minor|action] Update package renovatebot/github-action from v44.1.0 to v44.2.0
+- 028e30d: deps: [patch|action] Update package renovatebot/github-action from v44.2.0 to v44.2.1
+- fe2f038: deps: [patch|action] Update package renovatebot/github-action from v44.2.1 to v44.2.3
+- bd5b35b: deps: [patch|action] Update package renovatebot/github-action from v44.2.3 to v44.2.4
+- f5755e4: deps: [patch|action] Update package renovatebot/github-action from v44.2.4 to v44.2.5
+- 073633c: deps: [patch|action] Update package renovatebot/github-action from v44.2.5 to v44.2.6
+- c4d5db2: deps: [patch|devDependencies] Update package turbo from 2.6.0 to 2.6.1
+- 18bea54: deps: [patch|devDependencies] Update package turbo from 2.6.1 to 2.6.2
+- 1ed1354: deps: [patch|devDependencies] Update package turbo from 2.6.2 to 2.6.3
+- 1c8dfbd: deps: [minor|devDependencies] Update package turbo from 2.6.3 to 2.7.0
+- 3b7a3a9: deps: [patch|devDependencies] Update package turbo from 2.7.0 to 2.7.1
+- 8678341: deps: [patch|devDependencies] Update package turbo from 2.7.1 to 2.7.2
+- fe2f038: deps: [patch|devDependencies] Update package turbo from 2.7.2 to 2.7.3
+- 7533f2a: deps: [patch|devDependencies] Update package turbo from 2.7.3 to 2.7.4
+- 4211ecf: deps: [patch|devDependencies] Update package turbo from 2.7.4 to 2.7.5
+- e0647e5: deps: [patch|devDependencies] Update package turbo from 2.7.5 to 2.7.6
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- e96fef2: deps: Updated lockfile
+- e96fef2: deps: Updated lockfile
+- e96fef2: deps: Updated lockfile
+- 5d442aa: deps: Updated lockfile
+- 5d442aa: deps: Updated lockfile
+- 5d442aa: deps: Updated lockfile
+- ffdd050: deps: Updated lockfile
+- ffdd050: deps: Updated lockfile
+- ffdd050: deps: Updated lockfile
+- 1f64b27: deps: Updated lockfile
+- 1f64b27: deps: Updated lockfile
+- 1f64b27: deps: Updated lockfile
+- 7c85b44: deps: Updated lockfile
+- 7c85b44: deps: Updated lockfile
+- 7c85b44: deps: Updated lockfile
+- 8fb689f: deps: Updated lockfile
+- 8fb689f: deps: Updated lockfile
+- 8fb689f: deps: Updated lockfile
+- d4b5b5e: deps: Updated lockfile
+- d4b5b5e: deps: Updated lockfile
+- d4b5b5e: deps: Updated lockfile
+
+
+</details>
+
 ## 0.3.5
 
 ### Dependency Changes
