@@ -32,13 +32,15 @@
   "lint-staged": {
     "*": "eslint --fix --max-warnings 0"
   },
+  "dependencies": {
+    "type-fest": "5.4.1"
+  },
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.10.9",
     "@vitest/coverage-v8": "4.0.18",
     "tsdown": "0.20.1",
-    "type-fest": "5.4.1",
     "typescript": "5.9.3",
     "unplugin-unused": "0.5.7",
     "vitest": "4.0.18"

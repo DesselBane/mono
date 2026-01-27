@@ -198,6 +198,9 @@ importers:
       '@inquirer/prompts':
         specifier: 8.2.0
         version: 8.2.0(@types/node@24.10.9)
+      zod:
+        specifier: 4.3.6
+        version: 4.3.6
     devDependencies:
       '@desselbane/configs':
         specifier: workspace:*
@@ -226,11 +229,12 @@ importers:
       vitest:
         specifier: 4.0.18
         version: 4.0.18(@types/node@24.10.9)(jiti@2.6.1)(yaml@2.8.2)
-      zod:
-        specifier: 4.3.6
-        version: 4.3.6
 
   packages/ts-helpers:
+    dependencies:
+      type-fest:
+        specifier: 5.4.1
+        version: 5.4.1
     devDependencies:
       '@desselbane/configs':
         specifier: workspace:*
@@ -247,9 +251,6 @@ importers:
       tsdown:
         specifier: 0.20.1
         version: 0.20.1(synckit@0.11.12)(typescript@5.9.3)(unplugin-unused@0.5.7)(vue-tsc@3.2.4(typescript@5.9.3))
-      type-fest:
-        specifier: 5.4.1
-        version: 5.4.1
       typescript:
         specifier: 5.9.3
         version: 5.9.3
