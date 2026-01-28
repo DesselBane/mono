@@ -18,8 +18,8 @@ importers:
         specifier: workspace:*
         version: link:packages/scripts
       '@turbo/gen':
-        specifier: 2.7.6
-        version: 2.7.6(@types/node@24.10.9)(typescript@5.9.3)
+        specifier: 2.8.0
+        version: 2.8.0(@types/node@24.10.9)(typescript@5.9.3)
       '@types/node':
         specifier: 24.10.9
         version: 24.10.9
@@ -1156,12 +1156,12 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
-  '@turbo/gen@2.7.6':
-    resolution: {integrity: sha512-OZve6gsDJLa/wbNq9c1B8VJRNqQS/3aeSuA5W0LEazTuC9Ej36wCFsXCjfws0Y/jffuXqDXTUmB+vo10cLotow==}
+  '@turbo/gen@2.8.0':
+    resolution: {integrity: sha512-AqEaeLaIRPvxhRvZUZxbZ6dvw4zWk8sRJ0JrY54ZrBlniaX6i+VaSJJ70BPHwtVjZAgF+Q9wmh+ii3PqnyokIw==}
     hasBin: true
 
-  '@turbo/workspaces@2.7.6':
-    resolution: {integrity: sha512-Mtv2KPcBbtchqyMoTtUOvICTI4bsLqCfxagZSv/sHyaFPY43/ZRAfF9DUrXi+1g0p/qFq3XIiRWy8x7rTIqD/w==}
+  '@turbo/workspaces@2.8.0':
+    resolution: {integrity: sha512-BNTa+A2Ca6Ud6Lif96d+5BJoTBRM364kLtFjLSQ//VOMSL7QUqo2z9vGhC4IMAwCwbaNCwaZT4UGUzlTFaOnLQ==}
     hasBin: true
 
   '@tybys/wasm-util@0.10.1':
@@ -4504,9 +4504,9 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@turbo/gen@2.7.6(@types/node@24.10.9)(typescript@5.9.3)':
+  '@turbo/gen@2.8.0(@types/node@24.10.9)(typescript@5.9.3)':
     dependencies:
-      '@turbo/workspaces': 2.7.6
+      '@turbo/workspaces': 2.8.0
       commander: 10.0.0
       fs-extra: 10.1.0
       inquirer: 8.2.4
@@ -4524,7 +4524,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@turbo/workspaces@2.7.6':
+  '@turbo/workspaces@2.8.0':
     dependencies:
       commander: 10.0.0
       execa: 5.1.1
