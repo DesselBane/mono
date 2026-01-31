@@ -66,8 +66,8 @@ importers:
         specifier: 4.0.18
         version: 4.0.18(vitest@4.0.18(@types/node@24.10.9)(jiti@2.6.1)(yaml@2.8.2))
       type-fest:
-        specifier: 5.4.2
-        version: 5.4.2
+        specifier: 5.4.3
+        version: 5.4.3
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -184,8 +184,8 @@ importers:
         specifier: 3.30.0
         version: 3.30.0
       type-fest:
-        specifier: 5.4.2
-        version: 5.4.2
+        specifier: 5.4.3
+        version: 5.4.3
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -221,8 +221,8 @@ importers:
         specifier: 0.20.1
         version: 0.20.1(synckit@0.11.12)(typescript@5.9.3)(unplugin-unused@0.5.7)(vue-tsc@3.2.4(typescript@5.9.3))
       type-fest:
-        specifier: 5.4.2
-        version: 5.4.2
+        specifier: 5.4.3
+        version: 5.4.3
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -233,8 +233,8 @@ importers:
   packages/ts-helpers:
     dependencies:
       type-fest:
-        specifier: 5.4.2
-        version: 5.4.2
+        specifier: 5.4.3
+        version: 5.4.3
     devDependencies:
       '@desselbane/configs':
         specifier: workspace:*
@@ -273,8 +273,8 @@ importers:
         specifier: 0.20.1
         version: 0.20.1(synckit@0.11.12)(typescript@5.9.3)(unplugin-unused@0.5.7)(vue-tsc@3.2.4(typescript@5.9.3))
       type-fest:
-        specifier: 5.4.2
-        version: 5.4.2
+        specifier: 5.4.3
+        version: 5.4.3
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -3421,8 +3421,8 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
-  type-fest@5.4.2:
-    resolution: {integrity: sha512-FLEenlVYf7Zcd34ISMLo3ZzRE1gRjY1nMDTp+bQRBiPsaKyIW8K3Zr99ioHDUgA9OGuGGJPyYpNcffGmBhJfGg==}
+  type-fest@5.4.3:
+    resolution: {integrity: sha512-AXSAQJu79WGc79/3e9/CR77I/KQgeY1AhNvcShIH4PTcGYyC4xv6H4R4AUOwkPS5799KlVDAu8zExeCrkGquiA==}
     engines: {node: '>=20'}
 
   typescript-eslint@8.54.0:
@@ -6904,7 +6904,7 @@ snapshots:
 
   type-fest@0.21.3: {}
 
-  type-fest@5.4.2:
+  type-fest@5.4.3:
     dependencies:
       tagged-tag: 1.0.0
 
