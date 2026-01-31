@@ -33,7 +33,7 @@
     "*": "eslint --fix --max-warnings 0"
   },
   "dependencies": {
-    "type-fest": "5.4.2"
+    "type-fest": "5.4.3"
   },
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
