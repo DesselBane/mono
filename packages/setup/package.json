@@ -37,7 +37,7 @@
     "@desselbane/configs": "workspace:*",
     "@desselbane/ts-helpers": "workspace:*",
     "@desselbane/vitest-helpers": "workspace:*",
-    "@types/node": "24.10.11",
+    "@types/node": "24.10.12",
     "@vitest/coverage-v8": "4.0.18",
     "tsdown": "0.20.3",
     "type-fest": "5.4.3",
