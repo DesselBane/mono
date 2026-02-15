@@ -1,0 +1,5 @@
+---
+'@repo/changelog': patch
+---
+
+deps: [patch|devDependencies] Update package @turbo/gen from 2.8.8 to 2.8.9
