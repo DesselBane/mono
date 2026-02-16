@@ -89,7 +89,7 @@
     "jest-extended": "7.0.0",
     "jiti": "2.6.1",
     "prettier": "3.8.1",
-    "typescript-eslint": "8.55.0",
+    "typescript-eslint": "8.56.0",
     "vue-eslint-parser": "10.4.0",
     "vue3-snapshot-serializer": "2.13.0",
     "zod": "4.3.6"
