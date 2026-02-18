@@ -1,4 +1,5 @@
 {
   allowedCommands: ['.*'],
+  allowShellExecutorForPostUpgradeCommands: true,
   repositories: ['DesselBane/mono']
 }
