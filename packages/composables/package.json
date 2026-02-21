@@ -1,6 +1,6 @@
 {
   "name": "@desselbane/composables",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "type": "module",
   "description": "Vue composables which can be reused across projects.",
   "scripts": {

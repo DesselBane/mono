@@ -1,5 +1,147 @@
 # @desselbane/composables
 
+## 2.0.8
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6bc252e: deps: Updated lockfile
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- cd47b49: deps: [patch|devDependencies] Update package @types/node from 24.10.1 to 24.10.2
+- 1ddd417: deps: [patch|devDependencies] Update package @types/node from 24.10.10 to 24.10.11
+- 286d852: deps: [patch|devDependencies] Update package @types/node from 24.10.11 to 24.10.12
+- de083a8: deps: [patch|devDependencies] Update package @types/node from 24.10.12 to 24.10.13
+- ae78c6e: deps: [patch|devDependencies] Update package @types/node from 24.10.2 to 24.10.3
+- 47cc9cb: deps: [patch|devDependencies] Update package @types/node from 24.10.3 to 24.10.4
+- e48315e: deps: [patch|devDependencies] Update package @types/node from 24.10.4 to 24.10.6
+- dd408a6: deps: [patch|devDependencies] Update package @types/node from 24.10.6 to 24.10.7
+- e61f4d5: deps: [patch|devDependencies] Update package @types/node from 24.10.7 to 24.10.8
+- 816cde5: deps: [patch|devDependencies] Update package @types/node from 24.10.8 to 24.10.9
+- 7c11e5a: deps: [patch|devDependencies] Update package @types/node from 24.10.9 to 24.10.10
+- 304f59f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.14 to 4.0.15
+- 035694c: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.15 to 4.0.17
+- 21e79ea: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.17 to 4.0.18
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.9 to 4.0.10
+- 1febe15: deps: [minor|devDependencies] Update package type-fest from 5.2.0 to 5.3.0
+- babaabb: deps: [patch|devDependencies] Update package type-fest from 5.3.0 to 5.3.1
+- 1ada9ba: deps: [minor|devDependencies] Update package type-fest from 5.3.1 to 5.4.0
+- bd5b35b: deps: [patch|devDependencies] Update package type-fest from 5.4.0 to 5.4.1
+- 24457ec: deps: [patch|devDependencies] Update package type-fest from 5.4.1 to 5.4.2
+- 8cdd9e6: deps: [patch|devDependencies] Update package type-fest from 5.4.2 to 5.4.3
+- da6ca94: deps: [patch|devDependencies] Update package type-fest from 5.4.3 to 5.4.4
+- 304f59f: deps: [patch|devDependencies] Update package vite from 7.2.2 to 7.2.4
+- 239345f: deps: [patch|devDependencies] Update package vite from 7.2.4 to 7.2.6
+- 058b27a: deps: [patch|devDependencies] Update package vite from 7.2.6 to 7.2.7
+- 3f793ed: deps: [minor|devDependencies] Update package vite from 7.2.7 to 7.3.0
+- 035694c: deps: [patch|devDependencies] Update package vite from 7.3.0 to 7.3.1
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package vitest from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package vitest from 4.0.14 to 4.0.15
+- 035694c: deps: [patch|devDependencies] Update package vitest from 4.0.15 to 4.0.17
+- 21e79ea: deps: [patch|devDependencies] Update package vitest from 4.0.17 to 4.0.18
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+- fbf7501: deps: [patch|devDependencies] Update package vue-tsc from 3.1.3 to 3.1.4
+- 6b5d4bf: deps: [patch|devDependencies] Update package vue-tsc from 3.1.4 to 3.1.5
+- cddad94: deps: [patch|devDependencies] Update package vue-tsc from 3.1.5 to 3.1.6
+- babaabb: deps: [patch|devDependencies] Update package vue-tsc from 3.1.6 to 3.1.7
+- 4b1e19a: deps: [patch|devDependencies] Update package vue-tsc from 3.1.7 to 3.1.8
+- b8aab23: deps: [minor|devDependencies] Update package vue-tsc from 3.1.8 to 3.2.0
+- 028e30d: deps: [patch|devDependencies] Update package vue-tsc from 3.2.0 to 3.2.1
+- fe2f038: deps: [patch|devDependencies] Update package vue-tsc from 3.2.1 to 3.2.2
+- 5ffb170: deps: [patch|devDependencies] Update package vue-tsc from 3.2.2 to 3.2.3
+- 073633c: deps: [patch|devDependencies] Update package vue-tsc from 3.2.3 to 3.2.4
+- 71cdacb: deps: [patch|devDependencies] Update package vue-tsc from 3.2.4 to 3.2.5
+- 74a6e26: deps: Updated lockfile
+- e96fef2: deps: Updated lockfile
+- 5d442aa: deps: Updated lockfile
+- ffdd050: deps: Updated lockfile
+- 1f64b27: deps: Updated lockfile
+- 7c85b44: deps: Updated lockfile
+- 8fb689f: deps: Updated lockfile
+- d4b5b5e: deps: Updated lockfile
+- 94dc8a9: deps: Updated lockfile
+- 33ef9d6: deps: Updated lockfile
+- Updated dependencies [db54b62]
+- Updated dependencies [6bc252e]
+- Updated dependencies [1d95aa7]
+- Updated dependencies [cd47b49]
+- Updated dependencies [1ddd417]
+- Updated dependencies [286d852]
+- Updated dependencies [de083a8]
+- Updated dependencies [ae78c6e]
+- Updated dependencies [47cc9cb]
+- Updated dependencies [e48315e]
+- Updated dependencies [dd408a6]
+- Updated dependencies [e61f4d5]
+- Updated dependencies [816cde5]
+- Updated dependencies [7c11e5a]
+- Updated dependencies [304f59f]
+- Updated dependencies [5b9394e]
+- Updated dependencies [b0b3d55]
+- Updated dependencies [41a8a2f]
+- Updated dependencies [035694c]
+- Updated dependencies [21e79ea]
+- Updated dependencies [0959a2b]
+- Updated dependencies [bc0ea2a]
+- Updated dependencies [ecff42a]
+- Updated dependencies [5320df8]
+- Updated dependencies [c4d5db2]
+- Updated dependencies [ae8ec42]
+- Updated dependencies [c628ed6]
+- Updated dependencies [3f64853]
+- Updated dependencies [a49610a]
+- Updated dependencies [990247a]
+- Updated dependencies [81d1b02]
+- Updated dependencies [dac8204]
+- Updated dependencies [d7b201d]
+- Updated dependencies [b269ce5]
+- Updated dependencies [da85682]
+- Updated dependencies [ddd3786]
+- Updated dependencies [562b6f3]
+- Updated dependencies [b654f02]
+- Updated dependencies [43ed4e0]
+- Updated dependencies [fe2f038]
+- Updated dependencies [4c03f9a]
+- Updated dependencies [a9d299f]
+- Updated dependencies [c451251]
+- Updated dependencies [11b75ea]
+- Updated dependencies [1febe15]
+- Updated dependencies [babaabb]
+- Updated dependencies [1ada9ba]
+- Updated dependencies [bd5b35b]
+- Updated dependencies [24457ec]
+- Updated dependencies [8cdd9e6]
+- Updated dependencies [da6ca94]
+- Updated dependencies [a757be4]
+- Updated dependencies [74a6e26]
+- Updated dependencies [e96fef2]
+- Updated dependencies [5d442aa]
+- Updated dependencies [ffdd050]
+- Updated dependencies [1f64b27]
+- Updated dependencies [7c85b44]
+- Updated dependencies [8fb689f]
+- Updated dependencies [d4b5b5e]
+- Updated dependencies [94dc8a9]
+- Updated dependencies [33ef9d6]
+  - @desselbane/ts-helpers@5.0.3
+
+
+</details>
+
 ## 2.0.7
 
 ### Dependency Changes
