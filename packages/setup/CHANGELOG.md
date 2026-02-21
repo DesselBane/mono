@@ -1,5 +1,102 @@
 # @desselbane/setup
 
+## 1.0.6
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 6bc252e: deps: Updated lockfile
+- ae8ec42: deps: [patch|dependencies] Update package @inquirer/prompts from 7.10.0 to 7.10.1
+- 8bcaed8: deps: [major|dependencies] Update package @inquirer/prompts from 7.10.1 to 8.0.1
+- 5ce0f4f: deps: [minor|dependencies] Update package @inquirer/prompts from 7.9.0 to 7.10.0
+- ee3e11a: deps: [patch|dependencies] Update package @inquirer/prompts from 8.0.1 to 8.0.2
+- 664a8c5: deps: [minor|dependencies] Update package @inquirer/prompts from 8.0.2 to 8.1.0
+- 5302e5b: deps: [minor|dependencies] Update package @inquirer/prompts from 8.1.0 to 8.2.0
+- 5050f88: deps: [patch|dependencies] Update package @inquirer/prompts from 8.2.0 to 8.2.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- cd47b49: deps: [patch|devDependencies] Update package @types/node from 24.10.1 to 24.10.2
+- 1ddd417: deps: [patch|devDependencies] Update package @types/node from 24.10.10 to 24.10.11
+- 286d852: deps: [patch|devDependencies] Update package @types/node from 24.10.11 to 24.10.12
+- de083a8: deps: [patch|devDependencies] Update package @types/node from 24.10.12 to 24.10.13
+- ae78c6e: deps: [patch|devDependencies] Update package @types/node from 24.10.2 to 24.10.3
+- 47cc9cb: deps: [patch|devDependencies] Update package @types/node from 24.10.3 to 24.10.4
+- e48315e: deps: [patch|devDependencies] Update package @types/node from 24.10.4 to 24.10.6
+- dd408a6: deps: [patch|devDependencies] Update package @types/node from 24.10.6 to 24.10.7
+- e61f4d5: deps: [patch|devDependencies] Update package @types/node from 24.10.7 to 24.10.8
+- 816cde5: deps: [patch|devDependencies] Update package @types/node from 24.10.8 to 24.10.9
+- 7c11e5a: deps: [patch|devDependencies] Update package @types/node from 24.10.9 to 24.10.10
+- 304f59f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.14 to 4.0.15
+- 035694c: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.15 to 4.0.17
+- 21e79ea: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.17 to 4.0.18
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.9 to 4.0.10
+- 5320df8: deps: [minor|devDependencies] Update package tsdown from 0.15.12 to 0.16.1
+- c4d5db2: deps: [patch|devDependencies] Update package tsdown from 0.16.1 to 0.16.3
+- ae8ec42: deps: [patch|devDependencies] Update package tsdown from 0.16.3 to 0.16.4
+- c628ed6: deps: [patch|devDependencies] Update package tsdown from 0.16.4 to 0.16.5
+- 3f64853: deps: [patch|devDependencies] Update package tsdown from 0.16.5 to 0.16.6
+- a49610a: deps: [patch|devDependencies] Update package tsdown from 0.16.6 to 0.16.7
+- 990247a: deps: [patch|devDependencies] Update package tsdown from 0.16.7 to 0.16.8
+- 81d1b02: deps: [minor|devDependencies] Update package tsdown from 0.16.8 to 0.17.0
+- dac8204: deps: [patch|devDependencies] Update package tsdown from 0.17.0 to 0.17.1
+- d7b201d: deps: [patch|devDependencies] Update package tsdown from 0.17.1 to 0.17.2
+- b269ce5: deps: [patch|devDependencies] Update package tsdown from 0.17.2 to 0.17.3
+- da85682: deps: [patch|devDependencies] Update package tsdown from 0.17.3 to 0.17.4
+- ddd3786: deps: [minor|devDependencies] Update package tsdown from 0.17.4 to 0.18.0
+- 562b6f3: deps: [patch|devDependencies] Update package tsdown from 0.18.0 to 0.18.1
+- b654f02: deps: [patch|devDependencies] Update package tsdown from 0.18.1 to 0.18.2
+- 43ed4e0: deps: [patch|devDependencies] Update package tsdown from 0.18.2 to 0.18.3
+- fe2f038: deps: [patch|devDependencies] Update package tsdown from 0.18.3 to 0.18.4
+- 4c03f9a: deps: [minor|devDependencies] Update package tsdown from 0.18.4 to 0.19.0
+- a9d299f: deps: [minor|devDependencies] Update package tsdown from 0.19.0 to 0.20.1
+- c451251: deps: [patch|devDependencies] Update package tsdown from 0.20.1 to 0.20.2
+- 11b75ea: deps: [patch|devDependencies] Update package tsdown from 0.20.2 to 0.20.3
+- 1febe15: deps: [minor|devDependencies] Update package type-fest from 5.2.0 to 5.3.0
+- babaabb: deps: [patch|devDependencies] Update package type-fest from 5.3.0 to 5.3.1
+- 1ada9ba: deps: [minor|devDependencies] Update package type-fest from 5.3.1 to 5.4.0
+- bd5b35b: deps: [patch|devDependencies] Update package type-fest from 5.4.0 to 5.4.1
+- 24457ec: deps: [patch|devDependencies] Update package type-fest from 5.4.1 to 5.4.2
+- 8cdd9e6: deps: [patch|devDependencies] Update package type-fest from 5.4.2 to 5.4.3
+- da6ca94: deps: [patch|devDependencies] Update package type-fest from 5.4.3 to 5.4.4
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package vitest from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package vitest from 4.0.14 to 4.0.15
+- 035694c: deps: [patch|devDependencies] Update package vitest from 4.0.15 to 4.0.17
+- 21e79ea: deps: [patch|devDependencies] Update package vitest from 4.0.17 to 4.0.18
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+- ec65c6a: deps: [patch|devDependencies] Update package zod from 4.1.12 to 4.1.13
+- 90ccdc5: deps: [minor|devDependencies] Update package zod from 4.1.13 to 4.2.0
+- 35d08d2: deps: [patch|devDependencies] Update package zod from 4.2.0 to 4.2.1
+- f0b1da8: deps: [minor|devDependencies] Update package zod from 4.2.1 to 4.3.2
+- fe2f038: deps: [patch|devDependencies] Update package zod from 4.3.2 to 4.3.5
+- a757be4: deps: [patch|devDependencies] Update package zod from 4.3.5 to 4.3.6
+- 74a6e26: deps: Updated lockfile
+- e96fef2: deps: Updated lockfile
+- 5d442aa: deps: Updated lockfile
+- ffdd050: deps: Updated lockfile
+- 1f64b27: deps: Updated lockfile
+- 7c85b44: deps: Updated lockfile
+- 8fb689f: deps: Updated lockfile
+- d4b5b5e: deps: Updated lockfile
+- 94dc8a9: deps: Updated lockfile
+- 33ef9d6: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.5
 
 ### Patch Changes
