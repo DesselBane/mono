@@ -226,7 +226,6 @@ function configureTypescript(options: SafeOptions): Config {
 
 function configureImportPlugin(options: SafeOptions): Config {
   return defineConfig(
-    // @ts-expect-error TODO fix this
     importPluginFlatConfigs.recommended,
     importPluginFlatConfigs.typescript,
     {
@@ -253,7 +252,6 @@ function configureImportPlugin(options: SafeOptions): Config {
         ],
 
         'import-x/no-mutable-exports': 'error',
-        'import-x/no-unused-modules': 'error',
         'import-x/first': 'error',
         'import-x/newline-after-import': 'error',
         'import-x/no-anonymous-default-export': 'error',
