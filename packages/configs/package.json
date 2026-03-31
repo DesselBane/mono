@@ -97,6 +97,7 @@
   "peerDependencies": {
     "@vue/test-utils": "^2.0.0",
     "tsdown": "^0.21.0",
+	"typescript": "^6.0.0",
     "vite": "^8.0.0",
     "vitest": "^4.0.0"
   },
