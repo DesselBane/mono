@@ -181,8 +181,8 @@ importers:
         specifier: 4.1.2
         version: 4.1.2(vitest@4.1.2(@types/node@24.12.2)(vite@8.0.5(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@24.12.2)(jiti@2.6.1)(yaml@2.8.3)))
       simple-git:
-        specifier: 3.33.0
-        version: 3.33.0
+        specifier: 3.35.1
+        version: 3.35.1
       type-fest:
         specifier: 5.5.0
         version: 5.5.0
@@ -1119,6 +1119,12 @@ packages:
 
   '@rushstack/ts-command-line@5.3.3':
     resolution: {integrity: sha512-c+ltdcvC7ym+10lhwR/vWiOhsrm/bP3By2VsFcs5qTKv+6tTmxgbVrtJ5NdNjANiV5TcmOZgUN+5KYQ4llsvEw==}
+
+  '@simple-git/args-pathspec@1.0.1':
+    resolution: {integrity: sha512-lpHyxg2BpMT17oj2kyTfQefuCi8S5SMF2QTIm9IlWCTyqAzDa5sfdL725a4QqP//ReZYyT+Ym7cE8DxFEIryOw==}
+
+  '@simple-git/argv-parser@1.0.2':
+    resolution: {integrity: sha512-2ePPyzXESoRsPfw4IN6LEXBh3M8Y4gcz3NZ6IBsPb8hISW9rT9WgUeRjL6Xs+zK603DY/jTkQvWB9O71/9mWYg==}
 
   '@sinclair/typebox@0.34.49':
     resolution: {integrity: sha512-brySQQs7Jtn0joV8Xh9ZV/hZb9Ozb0pmazDIASBkYKCjXrXU3mpcFahmK/z4YDhGkQvP9mWJbVyahdtU5wQA+A==}
@@ -2786,8 +2792,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-git@3.33.0:
-    resolution: {integrity: sha512-D4V/tGC2sjsoNhoMybKyGoE+v8A60hRawKQ1iFRA1zwuDgGZCBJ4ByOzZ5J8joBbi4Oam0qiPH+GhzmSBwbJng==}
+  simple-git@3.35.1:
+    resolution: {integrity: sha512-pAG7pC3x5ATFGLN/dmV4eVazL9Lf03MWa01vyi6fsSXMn/j8ypoWUKvVAyv8Inh5X/zbDOcFA7FnQTQ8S1wErA==}
 
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -4019,6 +4025,12 @@ snapshots:
       string-argv: 0.3.2
     transitivePeerDependencies:
       - '@types/node'
+
+  '@simple-git/args-pathspec@1.0.1': {}
+
+  '@simple-git/argv-parser@1.0.2':
+    dependencies:
+      '@simple-git/args-pathspec': 1.0.1
 
   '@sinclair/typebox@0.34.49': {}
 
@@ -5645,10 +5657,12 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-git@3.33.0:
+  simple-git@3.35.1:
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
+      '@simple-git/args-pathspec': 1.0.1
+      '@simple-git/argv-parser': 1.0.2
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
