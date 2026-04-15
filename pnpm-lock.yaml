@@ -93,8 +93,8 @@ importers:
         specifier: 10.0.1
         version: 10.0.1(eslint@10.2.0(jiti@2.6.1))
       '@vitest/eslint-plugin':
-        specifier: 1.6.15
-        version: 1.6.15(@typescript-eslint/eslint-plugin@8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.1.4)
+        specifier: 1.6.16
+        version: 1.6.16(@typescript-eslint/eslint-plugin@8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.1.4)
       '@vue/eslint-config-typescript':
         specifier: 14.7.0
         version: 14.7.0(eslint-plugin-vue@10.8.0(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.2.0(jiti@2.6.1))))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
@@ -1226,6 +1226,7 @@ packages:
 
   '@simple-git/argv-parser@1.1.0':
     resolution: {integrity: sha512-sUKOu2lb5vGIWADNNLpscyj07DAeQZU3KLbnE2Tj53tW6BbDQKMly2CCfnR4oYzqtRELCPWfwaPg+Q0T8qfKBg==}
+    deprecated: Contains a breaking change that should be a major version bump
 
   '@sinclair/typebox@0.34.49':
     resolution: {integrity: sha512-brySQQs7Jtn0joV8Xh9ZV/hZb9Ozb0pmazDIASBkYKCjXrXU3mpcFahmK/z4YDhGkQvP9mWJbVyahdtU5wQA+A==}
@@ -1468,8 +1469,8 @@ packages:
       '@vitest/browser':
         optional: true
 
-  '@vitest/eslint-plugin@1.6.15':
-    resolution: {integrity: sha512-dTMjrdngmcB+DxomlKQ+SUubCTvd0m2hQQFpv5sx+GRodmeoxr2PVbphk57SVp250vpxphk9Ccwyv6fQ6+2gkA==}
+  '@vitest/eslint-plugin@1.6.16':
+    resolution: {integrity: sha512-2pBN1F1JXq6zTSaYC58CMJa7pGxXIRsLfOioeZM4cPE3pRdSh1ySTSoHPQlOTEF5WgoVzWZQxhGQ3ygT78hOVg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '*'
@@ -4418,7 +4419,7 @@ snapshots:
       tinyrainbow: 3.1.0
       vitest: 4.1.4(@types/node@24.12.2)(@vitest/coverage-v8@4.1.4)(vite@8.0.8(@types/node@24.12.2)(jiti@2.6.1)(yaml@2.8.3))
 
-  '@vitest/eslint-plugin@1.6.15(@typescript-eslint/eslint-plugin@8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.1.4)':
+  '@vitest/eslint-plugin@1.6.16(@typescript-eslint/eslint-plugin@8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)(vitest@4.1.4)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.58.2
       '@typescript-eslint/utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
