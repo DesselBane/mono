@@ -66,8 +66,8 @@ importers:
         specifier: 4.1.4
         version: 4.1.4(vitest@4.1.4)
       type-fest:
-        specifier: 5.5.0
-        version: 5.5.0
+        specifier: 5.6.0
+        version: 5.6.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -184,8 +184,8 @@ importers:
         specifier: 3.36.0
         version: 3.36.0
       type-fest:
-        specifier: 5.5.0
-        version: 5.5.0
+        specifier: 5.6.0
+        version: 5.6.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -221,8 +221,8 @@ importers:
         specifier: 0.21.9
         version: 0.21.9(synckit@0.11.12)(typescript@6.0.3)(unplugin-unused@0.5.7)(vue-tsc@3.2.6(typescript@6.0.3))
       type-fest:
-        specifier: 5.5.0
-        version: 5.5.0
+        specifier: 5.6.0
+        version: 5.6.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -233,8 +233,8 @@ importers:
   packages/ts-helpers:
     dependencies:
       type-fest:
-        specifier: 5.5.0
-        version: 5.5.0
+        specifier: 5.6.0
+        version: 5.6.0
     devDependencies:
       '@desselbane/configs':
         specifier: workspace:*
@@ -273,8 +273,8 @@ importers:
         specifier: 0.21.9
         version: 0.21.9(synckit@0.11.12)(typescript@6.0.3)(unplugin-unused@0.5.7)(vue-tsc@3.2.6(typescript@6.0.3))
       type-fest:
-        specifier: 5.5.0
-        version: 5.5.0
+        specifier: 5.6.0
+        version: 5.6.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -3070,8 +3070,8 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
-  type-fest@5.5.0:
-    resolution: {integrity: sha512-PlBfpQwiUvGViBNX84Yxwjsdhd1TUlXr6zjX7eoirtCPIr08NAmxwa+fcYBTeRQxHo9YC9wwF3m9i700sHma8g==}
+  type-fest@5.6.0:
+    resolution: {integrity: sha512-8ZiHFm91orbSAe2PSAiSVBVko18pbhbiB3U9GglSzF/zCGkR+rxpHx6sEMCUm4kxY4LjDIUGgCfUMtwfZfjfUA==}
     engines: {node: '>=20'}
 
   typescript-eslint@8.58.2:
@@ -6001,7 +6001,7 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
-  type-fest@5.5.0:
+  type-fest@5.6.0:
     dependencies:
       tagged-tag: 1.0.0
 
