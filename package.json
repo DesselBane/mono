@@ -30,7 +30,7 @@
     "renovate-add-changeset": "pnpm -F @repo/scripts renovate-add-changeset"
   },
   "devDependencies": {
-    "@changesets/cli": "2.30.0",
+    "@changesets/cli": "2.31.0",
     "@turbo/gen": "2.9.6",
     "@types/node": "24.12.2",
     "@desselbane/configs": "workspace:*",
