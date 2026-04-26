@@ -10,7 +10,6 @@
   platformAutomerge: true,
   platformCommit: 'enabled',
   automergeType: 'pr',
-  rangeStrategy: 'pin',
   rebaseWhen: 'behind-base-branch',
   osvVulnerabilityAlerts: true,
   skipInstalls: false,
@@ -43,6 +42,7 @@
     minor: {
       automerge: true,
       addLabels: ['automerge'],
+      rangeStrategy: 'pin',
     },
     patch: {
       automerge: true,
@@ -54,7 +54,7 @@
       groupName: 'Node Types',
       matchPackageNames: ['@types/node'],
       matchUpdateTypes: ['major'],
-      enabled: false
+      enabled: false,
     },
     {
       groupName: 'Patch Updates',
