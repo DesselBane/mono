@@ -151,8 +151,8 @@ importers:
         specifier: 24.12.2
         version: 24.12.2
       '@vue/test-utils':
-        specifier: 2.4.8
-        version: 2.4.8(@vue/compiler-dom@3.5.31)(@vue/server-renderer@3.5.31(vue@3.5.31(typescript@6.0.3)))(vue@3.5.31(typescript@6.0.3))
+        specifier: 2.4.10
+        version: 2.4.10(@vue/compiler-dom@3.5.31)(@vue/server-renderer@3.5.31(vue@3.5.31(typescript@6.0.3)))(vue@3.5.31(typescript@6.0.3))
       tsdown:
         specifier: 0.21.10
         version: 0.21.10(synckit@0.11.12)(typescript@6.0.3)(unplugin-unused@0.5.7)(vue-tsc@3.2.7(typescript@6.0.3))
@@ -1465,8 +1465,8 @@ packages:
   '@vue/shared@3.5.31':
     resolution: {integrity: sha512-nBxuiuS9Lj5bPkPbWogPUnjxxWpkRniX7e5UBQDWl6Fsf4roq9wwV+cR7ezQ4zXswNvPIlsdj1slcLB7XCsRAw==}
 
-  '@vue/test-utils@2.4.8':
-    resolution: {integrity: sha512-cjAKFbSXFhtZ9Cj+ug60b21lW/BN737e+Syu2LPACIW6R0zVtj65Fnfe649KjfHor3Etx3ZavDFFBrZ+p21YNw==}
+  '@vue/test-utils@2.4.10':
+    resolution: {integrity: sha512-SmoZ5EA1kYiAFs9NkYdiFFQF+cSnUwnvlYEbY+DogWQZUiqOm/Y29eSbc5T6yi75SgSF9863SBeXniIEoPajCA==}
     peerDependencies:
       '@vue/compiler-dom': 3.x
       '@vue/server-renderer': 3.x
@@ -4436,7 +4436,7 @@ snapshots:
 
   '@vue/shared@3.5.31': {}
 
-  '@vue/test-utils@2.4.8(@vue/compiler-dom@3.5.31)(@vue/server-renderer@3.5.31(vue@3.5.31(typescript@6.0.3)))(vue@3.5.31(typescript@6.0.3))':
+  '@vue/test-utils@2.4.10(@vue/compiler-dom@3.5.31)(@vue/server-renderer@3.5.31(vue@3.5.31(typescript@6.0.3)))(vue@3.5.31(typescript@6.0.3))':
     dependencies:
       '@vue/compiler-dom': 3.5.31
       js-beautify: 1.15.4
