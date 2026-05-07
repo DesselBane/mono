@@ -1,6 +1,6 @@
 {
   "name": "@desselbane/configs",
-  "version": "16.0.1",
+  "version": "17.0.0",
   "description": "This package contains the opinionated configuration files of Dessel Bane.",
   "type": "module",
   "files": [
@@ -97,7 +97,7 @@
   "peerDependencies": {
     "@vue/test-utils": "^2.0.0",
     "tsdown": "^0.21.0 || ^0.22.0",
-	"typescript": "^6.0.0",
+    "typescript": "^6.0.0",
     "vite": "^8.0.0",
     "vitest": "^4.0.0"
   },
