@@ -39,7 +39,7 @@
     "husky": "9.1.7",
     "lint-staged": "17.0.3",
     "prettier": "3.8.3",
-    "semver": "7.7.4",
+    "semver": "7.8.0",
     "turbo": "2.9.10"
   },
   "packageManager": "pnpm@10.33.4",
