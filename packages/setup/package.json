@@ -48,7 +48,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@inquirer/prompts": "8.4.2",
+    "@inquirer/prompts": "8.4.3",
     "zod": "4.4.3"
   }
 }
