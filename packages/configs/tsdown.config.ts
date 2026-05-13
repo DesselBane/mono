@@ -10,4 +10,5 @@ export default defineConfig({
   ],
   platform: 'node',
   exports: false,
+  unused: false,
 })

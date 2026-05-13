@@ -23,7 +23,6 @@
     "new:adr": "turbo gen adr",
     "new:rfc": "turbo gen rfc",
     "prepare": "node .husky/install.js",
-    "postinstall": "turbo @desselbane/configs#build",
     "renovate:validate": "npx --yes --package renovate -- renovate-config-validator",
     "version": "pnpm changeset version && pnpm reformat-changelogs",
     "reformat-changelogs": "pnpm -F @repo/scripts reformat-changelogs",
@@ -42,12 +41,12 @@
     "semver": "7.8.0",
     "turbo": "2.9.12"
   },
-  "packageManager": "pnpm@10.33.4",
+  "packageManager": "pnpm@11.1.1",
   "engines": {
     "node": "24.15.0"
   },
   "volta": {
     "node": "24.15.0",
-    "pnpm": "10.33.4"
+    "pnpm": "11.1.1"
   }
 }
