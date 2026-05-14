@@ -121,7 +121,7 @@
     "@vue/test-utils": "2.4.10",
     "tsdown": "0.22.0",
     "typescript": "6.0.3",
-    "vite": "8.0.12",
+    "vite": "8.0.13",
     "vitest": "4.1.6"
   }
 }
