@@ -26,14 +26,15 @@
     "renovate:validate": "npx --yes --package renovate -- renovate-config-validator",
     "version": "pnpm changeset version && pnpm reformat-changelogs",
     "reformat-changelogs": "pnpm -F @repo/scripts reformat-changelogs",
-    "renovate-add-changeset": "pnpm -F @repo/scripts renovate-add-changeset"
+    "renovate-add-changeset": "pnpm -F @repo/scripts renovate-add-changeset",
+    "renovate-validate": "pnpm dlx --package renovate -- renovate-config-validator"
   },
   "devDependencies": {
     "@changesets/cli": "2.31.0",
-    "@turbo/gen": "2.9.14",
-    "@types/node": "24.12.4",
     "@desselbane/configs": "workspace:*",
     "@repo/scripts": "workspace:*",
+    "@turbo/gen": "2.9.14",
+    "@types/node": "24.12.4",
     "eslint": "10.4.0",
     "husky": "9.1.7",
     "lint-staged": "17.0.5",
