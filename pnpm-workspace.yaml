@@ -4,5 +4,10 @@ packages:
   - '!packages/**/turbo/**'
 
 allowBuilds:
+  better-sqlite3: false
+  core-js-pure: false
+  dtrace-provider: false
   esbuild: true
+  protobufjs: false
+  re2: false
   unrs-resolver: true

@@ -17,6 +17,7 @@
   postUpdateOptions: ['pnpmDedupe'],
   prConcurrentLimit: 0,
   prHourlyLimit: 1,
+  minimumReleaseAge: "1 day",
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
