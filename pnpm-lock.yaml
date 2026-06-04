@@ -144,8 +144,8 @@ importers:
         specifier: 10.4.1
         version: 10.4.1(eslint@10.4.1(jiti@2.7.0))
       vue3-snapshot-serializer:
-        specifier: 2.13.2
-        version: 2.13.2
+        specifier: 2.13.3
+        version: 2.13.3
       zod:
         specifier: 4.4.3
         version: 4.4.3
@@ -3044,8 +3044,8 @@ packages:
     peerDependencies:
       typescript: '>=5.0.0'
 
-  vue3-snapshot-serializer@2.13.2:
-    resolution: {integrity: sha512-pX/Lv9UzVnYLGUr1m0iMqNarJcmakYufk/64AuXx6tsmWOIUwWVUGd7sSZSHOx9gt+k6xtsGfAEwEHprkS4FOw==}
+  vue3-snapshot-serializer@2.13.3:
+    resolution: {integrity: sha512-tIKOX0wLUTAU2ZVawHDzsgxDszRAIEBbGddvjV+skLsSZNFcoZLxae7wmqqOg/bii2jQXgpq5dYfFpEKfW7Jdg==}
 
   vue@3.5.34:
     resolution: {integrity: sha512-WdLBG9gm02OgJIG9axd5Hpx0TFLdzVgfG2evFFu8Rur5O/IoGc5cMjnjh3tPL6GnRGsYvUhBSKVPYVcxRKpMCA==}
@@ -5731,7 +5731,7 @@ snapshots:
       '@vue/language-core': 3.3.3
       typescript: 6.0.3
 
-  vue3-snapshot-serializer@2.13.2:
+  vue3-snapshot-serializer@2.13.3:
     dependencies:
       cheerio: 1.2.0
       htmlparser2: 12.0.0
