@@ -40,7 +40,7 @@
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.13.0",
     "@vitest/coverage-v8": "4.1.8",
-    "tsdown": "0.22.1",
+    "tsdown": "0.22.2",
     "typescript": "6.0.3",
     "unplugin-unused": "0.5.7",
     "vitest": "4.1.8"
