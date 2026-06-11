@@ -285,6 +285,7 @@ function configureUnicornPlugin(options: SafeOptions): Config {
         ],
         'unicorn/no-keyword-prefix': 'off',
         'unicorn/prevent-abbreviations': 'off',
+        'unicorn/try-complexity': ['error', { max: 2 }],
       },
     },
     {
