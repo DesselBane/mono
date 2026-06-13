@@ -35,7 +35,7 @@
     "@repo/scripts": "workspace:*",
     "@turbo/gen": "2.9.18",
     "@types/node": "24.13.2",
-    "eslint": "10.4.1",
+    "eslint": "10.5.0",
     "husky": "9.1.7",
     "lint-staged": "17.0.7",
     "prettier": "3.8.4",
