@@ -39,11 +39,11 @@
     "@desselbane/configs": "workspace:*",
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "24.13.2",
-    "@vitest/coverage-v8": "4.1.8",
+    "@vitest/coverage-v8": "4.1.9",
     "tsdown": "0.22.2",
     "typescript": "6.0.3",
     "unplugin-unused": "0.5.7",
-    "vitest": "4.1.8"
+    "vitest": "4.1.9"
   },
   "types": "./dist/main.d.ts"
 }
