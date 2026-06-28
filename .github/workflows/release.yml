@@ -25,7 +25,7 @@ jobs:
         uses: actions/create-github-app-token@v3
         with:
           private-key: ${{ secrets.CHANGESETS_PRIVATE_KEY }}
-          app-id: ${{ secrets.CHANGESETS_APP_ID }}
+          client-id: ${{ secrets.CHANGESETS_APP_ID }}
           owner: ${{ github.repository_owner }}
           repositories: 'mono'
       - uses: actions/checkout@v7
