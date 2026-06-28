@@ -9,8 +9,7 @@ export type SafeTryReturnData<TValue> = readonly [undefined, TValue] & {
 }
 
 export type SafeTryReturn<TValue> =
-  | SafeTryReturnData<TValue>
-  | SafeTryReturnError
+  SafeTryReturnData<TValue> | SafeTryReturnError
 
 type IntermediateSafeReturn<TValue> =
   | (readonly [undefined, TValue] & {
