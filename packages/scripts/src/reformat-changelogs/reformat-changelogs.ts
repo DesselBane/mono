@@ -110,13 +110,13 @@ function parseFile(lines: string[]): ChangelogContents {
 
 function parseVersion(lines: string[]): VersionContent | undefined {
   let currentLine = lines.shift()
-  let currentChangeActive = false
+  let isCurrentChangeActive = false
   const generatedDependencyUpdateCache = new Set<string>()
   let currentSection:
     | 'major changes section'
     | 'minor changes section'
     | 'patch changes section'
-    | undefined = undefined
+    | undefined
 
   const version: VersionContent = {
     dependencyUpdates: [],
@@ -186,26 +186,26 @@ function parseVersion(lines: string[]): VersionContent | undefined {
       case 'major changes section':
       case 'minor changes section':
       case 'patch changes section': {
-        currentChangeActive = false
+        isCurrentChangeActive = false
         currentSection = type
         break
       }
       case 'dependency changes section': {
-        currentChangeActive = false
+        isCurrentChangeActive = false
         break
       }
       case 'dependency update': {
-        currentChangeActive = false
+        isCurrentChangeActive = false
         version.dependencyUpdates.push(currentLine)
         break
       }
       case 'changeset start': {
-        currentChangeActive = true
+        isCurrentChangeActive = true
         addToChange()
         break
       }
       case 'unknown': {
-        if (currentChangeActive) {
+        if (isCurrentChangeActive) {
           addToChange()
         }
         break

@@ -25,7 +25,7 @@ async function setupVueI18n() {
 
     config.global.renderStubDefaultSlot = true
   } catch {
-    // If vue test utils is not installed the import will throw an error but overall it's fine
+    // If Vue.js test utils is not installed the import will throw an error but overall it's fine
   }
 }
 

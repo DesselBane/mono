@@ -13,11 +13,11 @@ export type SetKeysNonNil<
 }
 
 /**
- * Checks if the {@link propertiesToCheck} are present on the {@link value}.
- * @throws AssertionError If any of the {@link propertiesToCheck} is `null` or `undefined`
- * @param value The object to check
- * @param propertiesToCheck The properties which must exist
- */
+Checks if the {@link propertiesToCheck} are present on the {@link value}.
+@throws AssertionError If any of the {@link propertiesToCheck} is `null` or `undefined`
+@param value The object to check
+@param propertiesToCheck The properties which must exist
+*/
 export function assertPropertiesNotNil<
   TValue extends UnknownRecord,
   TKeys extends (keyof TValue)[],
@@ -40,12 +40,12 @@ export function assertPropertiesNotNil<
 }
 
 /**
- * Checks if {@link data} exists.
- * @throws AssertionError If {@link data} is `null` or `undefined`
- * @param data The value to check.
- * @param message A custom message for the error
- * @param assertionContext Custom information about the assertion site
- */
+Checks if {@link data} exists.
+@throws AssertionError If {@link data} is `null` or `undefined`
+@param data The value to check.
+@param message A custom message for the error
+@param assertionContext Custom information about the assertion site
+*/
 export function assertNotNil<TValue>(
   data: TValue,
   message = `Data was nil`,
@@ -62,11 +62,11 @@ export function assertNotNil<TValue>(
 }
 
 /**
- * Checks if {@link value} is `null | undefined`
- * @param value The value to check
- * @param message A custom message for the error
- * @param context A custom context for the error
- */
+Checks if {@link value} is `null | undefined`
+@param value The value to check
+@param message A custom message for the error
+@param context A custom context for the error
+*/
 export function assertNil(
   value: unknown,
   message = `Expected data to be null or undefined`,

@@ -159,7 +159,7 @@ describe(usePagination, () => {
 
       expect(unref(currentPage)).toBe(2)
 
-      currentPage.value = Number.NaN
+      currentPage.value = NaN
 
       expect(unref(currentPage)).toBe(1)
     })

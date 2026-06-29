@@ -7,7 +7,7 @@ import type { PackageJson } from 'type-fest'
 import { assertNotNil, changesetFolder, workspaceRoot } from './helper.ts'
 
 function makeStringSafe(value: string): string {
-  return value.replaceAll('/', '_').replaceAll('@', '_').replaceAll('.', '_')
+  return value.replaceAll(/[/@.]/g, '_')
 }
 
 const { values } = parseArgs({

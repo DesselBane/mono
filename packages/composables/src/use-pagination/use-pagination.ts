@@ -10,101 +10,101 @@ export class InvalidOperationError extends Error {
 
 export type UsePaginationOptions = {
   /**
-   * On which page to start if {@link UsePaginationOptions#pageRef} is not passed.
-   * @default 1
-   */
+  On which page to start if {@link UsePaginationOptions#pageRef} is not passed.
+  @default 1
+  */
   initialPage?: number
 
   /**
-   * Total number of items.
-   * @default Infinity
-   */
+  Total number of items.
+  @default Infinity
+  */
   total?: MaybeRef<number>
 
   /**
-   * How to handle the case of a page size change. This will shift items through pages.
-   * @default goToFirstPage
-   */
+  How to handle the case of a page size change. This will shift items through pages.
+  @default goToFirstPage
+  */
   handlePageSizeChanged?: 'doNothing' | 'goToFirstPage' | 'goToLastPage'
 
   /**
-   * How to handle the error case that the current page becomes invalid when the last page changes. Last page may change if either `total` or `pageSize` changes. `handlePageSizeChanged` takes precedence.
-   * @default goToLastPage
-   */
+  How to handle the error case that the current page becomes invalid when the last page changes. Last page may change if either `total` or `pageSize` changes. `handlePageSizeChanged` takes precedence.
+  @default goToLastPage
+  */
   handlePageAfterLast?: 'goToFirstPage' | 'goToLastPage'
 
   /**
-   * Whether to throw on error or stay on last known good page.
-   * @default true
-   */
+  Whether to throw on error or stay on last known good page.
+  @default true
+  */
   throwOnError?: boolean
 
   /**
-   * If the current page is already available pass it in here. This could be the case if e.g. the page is persisted in the URL.
-   * @default A new ref will be created.
-   */
+  If the current page is already available pass it in here. This could be the case if e.g. the page is persisted in the URL.
+  @default A new ref will be created.
+  */
   pageRef?: Ref<number>
 }
 
 /**
- * Reactively calculate the current page, first/last item on page based on page size, total items and offset.
- * Use this when working with API data where not all data is available in the frontend.
- * @example
- * ```typescript
- * // Script block
- * import { syncRef } from "@vueuse/core";
- *
- * const currentPage = ref(1)
- * const perPage = ref(10)
- * const perPageOptions = [10, 50, 100]
- * const total = ref(Infinity)
- *
- * const { pageOffset, firstItem, lastItem } = usePagination(
- *   perPage,
- *   {
- *     total,
- *     handlePageAfterLast: "goToFirstPage",
- *     handlePageSizeChanged: "goToFirstPage",
- *     pageRef: currentPage,
- *   },
- * );
- *
- * const { data, dataTotal } = reactivelyGetMyData(pageOffset, perPage)
- * syncRef(dataTotal, total, {
- *   direction: "ltr",
- *   transform: {
- *     ltr: (value) => value ?? Infinity,
- *   },
- * });
- *
- * ```
- * ```html
- * <!-- Template Block -->
- * <div class="footer-container">
- *   <span>Per Page</span>
- *   <wui-form-multiselect
- *     v-model="perPage"
- *     :options="perPageOptions"
- *     :allow-empty="false"
- *   />
- *   <span>{{
- *     t("carts.list.pagination.numberOfItems", {
- *       from: formatter(firstItem),
- *       to: formatter(lastItem),
- *       count: total,
- *     })
- *   }}</span>
- *   <wui-quick-pagination
- *     v-model="currentPage"
- *     :total-rows="total"
- *     :limit="perPage"
- *   />
- * </div>
- * ```
- *
- * @param pageSize The currently selected page size.
- * @param options Options to fine tune how to react to changes.
- */
+Reactively calculate the current page, first/last item on page based on page size, total items and offset.
+Use this when working with API data where not all data is available in the frontend.
+@example
+```typescript
+// Script block
+import { syncRef } from "@vueuse/core";
+
+const currentPage = ref(1)
+const perPage = ref(10)
+const perPageOptions = [10, 50, 100]
+const total = ref(Infinity)
+
+const { pageOffset, firstItem, lastItem } = usePagination(
+  perPage,
+  {
+    total,
+    handlePageAfterLast: "goToFirstPage",
+    handlePageSizeChanged: "goToFirstPage",
+    pageRef: currentPage,
+  },
+);
+
+const { data, dataTotal } = reactivelyGetMyData(pageOffset, perPage)
+syncRef(dataTotal, total, {
+  direction: "ltr",
+  transform: {
+    ltr: (value) => value ?? Infinity,
+  },
+});
+
+```
+```html
+<!-- Template Block -->
+<div class="footer-container">
+  <span>Per Page</span>
+  <wui-form-multiselect
+    v-model="perPage"
+    :options="perPageOptions"
+    :allow-empty="false"
+  />
+  <span>{{
+    t("carts.list.pagination.numberOfItems", {
+      from: formatter(firstItem),
+      to: formatter(lastItem),
+      count: total,
+    })
+  }}</span>
+  <wui-quick-pagination
+    v-model="currentPage"
+    :total-rows="total"
+    :limit="perPage"
+  />
+</div>
+```
+
+@param pageSize The currently selected page size.
+@param options Options to fine tune how to react to changes.
+*/
 export function usePagination(
   pageSize: MaybeRef<number>,
   options: UsePaginationOptions = {},
@@ -113,7 +113,7 @@ export function usePagination(
   const total = options.total ?? Infinity
   const handlePageSizeChanged = options.handlePageSizeChanged ?? 'goToFirstPage'
   const handlePageAfterLast = options.handlePageAfterLast ?? 'goToLastPage'
-  const throwOnError = options.throwOnError ?? true
+  const shouldThrowOnError = options.throwOnError ?? true
 
   const page = options.pageRef ?? ref(initialPage)
 
@@ -130,11 +130,11 @@ export function usePagination(
     page,
     (nextPage, previousPage) => {
       if (
-        !Number.isInteger(nextPage) ||
+        !Number.isSafeInteger(nextPage) ||
         Number.isNaN(nextPage) ||
         nextPage < 1
       ) {
-        if (throwOnError) {
+        if (shouldThrowOnError) {
           throw new InvalidOperationError(
             `Can not decrease page below 1 or newPage is not a valid integer: ${nextPage}`,
           )
@@ -143,7 +143,7 @@ export function usePagination(
       }
 
       if (nextPage > unref(lastPage)) {
-        if (throwOnError) {
+        if (shouldThrowOnError) {
           throw new InvalidOperationError(
             `Can not increase page above lastPage: ${unref(lastPage)}`,
           )
@@ -220,57 +220,57 @@ export function usePagination(
 export type UsePaginationWithDataOptions = Omit<UsePaginationOptions, 'total'>
 
 /**
- * Reactively calculate the current page, first/last item on page based on page size, total items and offset.
- * Use this when working with local data where all data is available in the frontend.
- * @example
- * ```typescript
- * // Script block
- * const currentPage = ref(1)
- * const perPage = ref(10)
- * const perPageOptions = [10, 50, 100]
- * const data = ref([1, 2, 3, 4, 5, 6])
- *
- * const { paginatedData, firstItem, lastItem } = usePaginationWithData(
- *   data,
- *   perPage,
- *   {
- *     handlePageAfterLast: "goToFirstPage",
- *     handlePageSizeChanged: "goToFirstPage",
- *     pageRef: currentPage,
- *   },
- * );
- * ```
- * ```html
- * <!-- Template Block -->
- * <ul>
- *   <li v-for="item in paginatedData">{{item}}</li>
- * </ul>
- * <div class="footer-container">
- *   <span>Per Page</span>
- *   <wui-form-multiselect
- *     v-model="perPage"
- *     :options="perPageOptions"
- *     :allow-empty="false"
- *   />
- *   <span>{{
- *     t("carts.list.pagination.numberOfItems", {
- *       from: formatter(firstItem),
- *       to: formatter(lastItem),
- *       count: data.length,
- *     })
- *   }}</span>
- *   <wui-quick-pagination
- *     v-model="currentPage"
- *     :total-rows="data.length"
- *     :limit="perPage"
- *   />
- * </div>
- * ```
+Reactively calculate the current page, first/last item on page based on page size, total items and offset.
+Use this when working with local data where all data is available in the frontend.
+@example
+```typescript
+// Script block
+const currentPage = ref(1)
+const perPage = ref(10)
+const perPageOptions = [10, 50, 100]
+const data = ref([1, 2, 3, 4, 5, 6])
 
- * @param data The input data to be paginated.
- * @param pageSize The currently selected page size.
- * @param options Options to fine tune how to react to changes.
- */
+const { paginatedData, firstItem, lastItem } = usePaginationWithData(
+  data,
+  perPage,
+  {
+    handlePageAfterLast: "goToFirstPage",
+    handlePageSizeChanged: "goToFirstPage",
+    pageRef: currentPage,
+  },
+);
+```
+```html
+<!-- Template Block -->
+<ul>
+  <li v-for="item in paginatedData">{{item}}</li>
+</ul>
+<div class="footer-container">
+  <span>Per Page</span>
+  <wui-form-multiselect
+    v-model="perPage"
+    :options="perPageOptions"
+    :allow-empty="false"
+  />
+  <span>{{
+    t("carts.list.pagination.numberOfItems", {
+      from: formatter(firstItem),
+      to: formatter(lastItem),
+      count: data.length,
+    })
+  }}</span>
+  <wui-quick-pagination
+    v-model="currentPage"
+    :total-rows="data.length"
+    :limit="perPage"
+  />
+</div>
+```
+
+@param data The input data to be paginated.
+@param pageSize The currently selected page size.
+@param options Options to fine tune how to react to changes.
+*/
 export function usePaginationWithData<TData>(
   data: MaybeRef<TData[]>,
   pageSize: MaybeRef<number>,

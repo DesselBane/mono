@@ -8,6 +8,7 @@ export default createEslintConfig({
     {
       rules: {
         'unicorn/no-process-exit': 'off',
+        'unicorn/no-top-level-side-effects': 'off',
       },
     },
   ],
