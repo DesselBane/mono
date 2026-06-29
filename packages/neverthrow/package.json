@@ -1,0 +1,49 @@
+{
+  "name": "@desselbane/neverthrow",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Fork of supermacro/neverthrow https://github.com/supermacro/neverthrow with custom extensions. Backwards compatible to v8",
+  "scripts": {
+    "dev": "tsdown --watch --no-clean",
+    "build": "tsdown",
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "pnpm lint --fix",
+    "typecheck": "tsc --build"
+  },
+  "files": [
+    "dist/**",
+    "package.json",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    ".": "./dist/main.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DesselBane/mono",
+    "directory": "packages/neverthrow"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  },
+  "lint-staged": {
+    "*": "eslint --fix --max-warnings 0"
+  },
+  "devDependencies": {
+    "@desselbane/configs": "workspace:*",
+    "@desselbane/vitest-helpers": "workspace:*",
+    "@types/node": "24.13.2",
+    "@vitest/coverage-v8": "4.1.9",
+    "testdouble": "^3.20.2",
+    "ts-toolbelt": "^9.6.0",
+    "tsdown": "0.22.3",
+    "type-fest": "5.7.0",
+    "typescript": "6.0.3",
+    "unplugin-unused": "0.5.7",
+    "vitest": "4.1.9"
+  },
+  "types": "./dist/main.d.ts"
+}
