@@ -27,7 +27,7 @@ describe(isNilOrWhitespace, () => {
     },
     {
       // Non-breakable space is still just a space
-      input: '\u00A0',
+      input: '\u{A0}',
       expectedResult: true,
     },
     {

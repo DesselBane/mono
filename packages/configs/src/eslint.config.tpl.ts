@@ -21,75 +21,75 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import vitest from '@vitest/eslint-plugin'
 
 /**
- * How to set up eslint
- */
+How to set up ESLint
+*/
 export type Options = {
   /**
-   * Any ignore patterns you need which are not part of `.gitignore` files (see {@link Options#packageDir} and {@link Options#workspaceDir} for more info about `.gitignore` files.
-   * @default []
-   */
+  Any ignore patterns you need which are not part of `.gitignore` files (see {@link Options#packageDir} and {@link Options#workspaceDir} for more info about `.gitignore` files.
+  @default []
+  */
   ignores?: string[]
   /**
-   * The absolut path to the package. This path will be used to determine the location of `tsconfig.json` files as well as `.gitignore` files. If it is not provided typescript-eslint can not use the `*typeChecked` config files and there will be no automatic ignores based on `.gitignore` files.
-   * @example
-   * ```javascript
-   * import path from 'node:path'
-   * import { createEslintConfig } from '@desselbane/configs/eslint'
-   *
-   * export default createEslintConfig({
-   *   packageDir: import.meta.dirname,
-   *   workspaceDir: path.join(import.meta.dirname, '..', '..'),
-   * })
-   * ```
-   */
+  The absolut path to the package. This path will be used to determine the location of `tsconfig.json` files as well as `.gitignore` files. If it is not provided typescript-eslint can not use the `*typeChecked` config files and there will be no automatic ignores based on `.gitignore` files.
+  @example
+  ```javascript
+  import path from 'node:path'
+  import { createEslintConfig } from '@desselbane/configs/eslint'
+
+  export default createEslintConfig({
+    packageDir: import.meta.dirname,
+    workspaceDir: path.join(import.meta.dirname, '..', '..'),
+  })
+  ```
+  */
   packageDir?: string
   /**
-   * The absolut path to the workspace. This is the root folder of a mono-repo. This path is used to determine the location of the global `.gitignore` file. If it is not provided there will be no automatic ignores based on the `.gitignore` file.
-   * @example
-   * ```javascript
-   * import path from 'node:path'
-   * import { createEslintConfig } from '@desselbane/configs/eslint'
-   *
-   * export default createEslintConfig({
-   *   packageDir: import.meta.dirname,
-   *   workspaceDir: path.join(import.meta.dirname, '..', '..'),
-   * })
-   * ```
-   */
+  The absolut path to the workspace. This is the root folder of a mono-repo. This path is used to determine the location of the global `.gitignore` file. If it is not provided there will be no automatic ignores based on the `.gitignore` file.
+  @example
+  ```javascript
+  import path from 'node:path'
+  import { createEslintConfig } from '@desselbane/configs/eslint'
+
+  export default createEslintConfig({
+    packageDir: import.meta.dirname,
+    workspaceDir: path.join(import.meta.dirname, '..', '..'),
+  })
+  ```
+  */
   workspaceDir?: string
   /**
-   * Whether to use the typeChecked variants of the typescript-eslint configs.
-   * @default true if {@link Options.packageDir} is set
-   */
+  Whether to use the typeChecked variants of the typescript-eslint configs.
+  @default true if {@link Options.packageDir} is set
+  */
   useTypeCheckedConfig?: boolean
 
   /**
-   * Whether to include eslint-plugin-vue rules
-   * @default false
-   */
+  Whether to include eslint-plugin-vue rules
+  @default false
+  */
   vue?: boolean
   /**
-   * Whether to include eslint-plugin-playwright rules
-   * @default false
-   */
+  Whether to include eslint-plugin-playwright rules
+  @default false
+  */
   playwright?: boolean
 
   /**
-   * Whether to include eslint-plugin-unicorn rules
-   * @see https://github.com/sindresorhus/eslint-plugin-unicorn/tree/main
-   * @default true
-   */
+  Whether to include eslint-plugin-unicorn rules
+  @see https://github.com/sindresorhus/eslint-plugin-unicorn/tree/main
+  @default true
+  */
   useUnicornPlugin?: boolean
 
   /**
-   * This is used as value for the `files` property to override eslint rules for test files (like allowing any etc.)
-   * @default ['** /*.spec.ts', '** /*.test.ts', '** /__mocks__/** /*.ts'] (without the spaces)
-   */
+  This is used as value for the `files` property to override ESLint rules for test files (like allowing any etc.)
+  @default ['** /*.spec.ts', '** /*.test.ts', '** /__mocks__/** /*.ts'] (without the spaces)
+  */
   testMatch?: string[]
 
   /**
-   * Additional config objects which will be passed to eslint
-   */
+  Additional config objects which will be passed to ESLint
+  */
   additionalConfigs?: ConfigWithExtends[]
 }
 
@@ -211,7 +211,7 @@ function configureIgnores(options: SafeOptions): Config {
 }
 
 function configureTypescript(options: SafeOptions): Config {
-  // If vue is enabled the tsEslint configs are added through the vue plugin
+  // If Vue.js is enabled the tsEslint configs are added through the Vue.js plugin
   if (options.vue) {
     return []
   }
@@ -239,7 +239,7 @@ function configureImportPlugin(options: SafeOptions): Config {
     },
     {
       rules: {
-        // Handled by typescript
+        // Handled by TypeScript
         'import-x/named': 'off',
         'import-x/namespace': 'off',
         'import-x/default': 'off',
@@ -285,7 +285,12 @@ function configureUnicornPlugin(options: SafeOptions): Config {
         ],
         'unicorn/no-keyword-prefix': 'off',
         'unicorn/prevent-abbreviations': 'off',
+        'unicorn/name-replacements': 'off',
+        'unicorn/no-array-front-mutation': 'off',
+        'unicorn/prefer-early-return': 'off',
+        'unicorn/no-break-in-nested-loop': 'off',
         'unicorn/try-complexity': ['error', { max: 2 }],
+        'unicorn/max-nested-calls': 'off',
       },
     },
     {
@@ -361,7 +366,7 @@ function configureVitestPlugin(options: SafeOptions): Config {
   )
 }
 
-// Needs to come after configure typescript
+// Needs to come after configure TypeScript
 function configureNoUnusedImportsPlugin() {
   return defineConfig({
     plugins: {

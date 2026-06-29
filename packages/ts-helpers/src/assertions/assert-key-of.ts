@@ -5,7 +5,7 @@ export function isKeyOf<TObject extends object>(
   data: TObject,
   key: PropertyKey,
 ): key is keyof TObject {
-  return key in data
+  return Object.hasOwn(data, key)
 }
 
 export function assertKeyOf<TObject extends object>(

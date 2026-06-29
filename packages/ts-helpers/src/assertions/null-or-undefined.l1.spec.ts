@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/no-null,unicorn/no-useless-undefined */
+/* eslint-disable unicorn/no-null */
 
 import {
   assertNotNil,
@@ -60,7 +60,7 @@ describe(assertPropertiesNotNil, () => {
     },
     {
       title: 'foo = NaN',
-      data: { foo: Number.NaN },
+      data: { foo: NaN },
     },
     {
       title: 'foo = 0 (bigInt)',
@@ -90,7 +90,7 @@ describe(assertNotNil, () => {
     }).toThrow(AssertionError)
   })
 
-  it.each(['', 0, -0, 0n, Number.NaN, false])(
+  it.each(['', 0, -0, 0n, NaN, false])(
     'should not throw if falsy value is passed: %s',
     (falsyValue) => {
       expect(() => {
@@ -127,7 +127,7 @@ describe(assertNil, () => {
     }).not.toThrow(AssertionError)
   })
 
-  it.each(['', 0, -0, 0n, Number.NaN, false])(
+  it.each(['', 0, -0, 0n, NaN, false])(
     'should throw if falsy but non nullish value is passed: %s',
     (falsyValue) => {
       expect(() => {

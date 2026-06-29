@@ -2,9 +2,9 @@ import type { InlineConfig } from 'vitest/node'
 
 export type CreateVitestConfigOptions = {
   /**
-   * Use the vue3-snapshot-serializer package to clean up snapshots
-   * @default true
-   */
+  Use the vue3-snapshot-serializer package to clean up snapshots
+  @default true
+  */
   useVue3SnapshotSerializer?: boolean
 }
 

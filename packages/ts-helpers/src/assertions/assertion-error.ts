@@ -7,6 +7,7 @@ export class AssertionError extends Error {
   private readonly context: AssertionContext
   constructor(
     message: string,
+    // eslint-disable-next-line unicorn/custom-error-definition -- Kept to not introduce breaking changes
     context: AssertionContext,
     options?: ErrorOptions,
   ) {

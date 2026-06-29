@@ -25,7 +25,6 @@ execSync(`winget export -o ${tmpFile}`)
 const wingetExports = wingetExportSchema.parse(
   JSON.parse(readFileSync(tmpFile).toString()),
 )
-
 rmSync(tmpFile)
 
 const packageIds = new Set(
@@ -40,7 +39,7 @@ for (const configEntry of config) {
 
 console.log(
   JSON.stringify(
-    [...packageIds.values()].map((x) => ({
+    [...packageIds].map((x) => ({
       Name: '',
       WingetId: x,
       installDefault: false,

@@ -14,7 +14,7 @@ describe(propertyKeyToString, () => {
     },
     {
       title: 'Stringifies NaN',
-      input: Number.NaN,
+      input: NaN,
       expectedResult: 'NaN',
     },
     {
