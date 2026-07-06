@@ -30,7 +30,7 @@
     "@types/node": "24.13.2",
     "@vitest/coverage-v8": "4.1.9",
     "simple-git": "3.36.0",
-    "type-fest": "5.7.0",
+    "type-fest": "5.8.0",
     "typescript": "6.0.3",
     "vitest": "4.1.9"
   }
