@@ -291,6 +291,7 @@ function configureUnicornPlugin(options: SafeOptions): Config {
         'unicorn/no-break-in-nested-loop': 'off',
         'unicorn/try-complexity': ['error', { max: 2 }],
         'unicorn/max-nested-calls': 'off',
+        'unicorn/consistent-boolean-name': 'off',
       },
     },
     {
