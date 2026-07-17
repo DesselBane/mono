@@ -120,7 +120,7 @@
     "@types/node": "24.13.3",
     "@vue/test-utils": "2.4.11",
     "tsdown": "0.22.8",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vite": "8.1.5",
     "vitest": "4.1.10"
   }

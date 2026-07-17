@@ -31,7 +31,7 @@
     "@vitest/coverage-v8": "4.1.10",
     "simple-git": "3.36.0",
     "type-fest": "5.8.0",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vitest": "4.1.10"
   }
 }
