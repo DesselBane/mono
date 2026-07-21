@@ -68,7 +68,6 @@ describe(cleanExit, () => {
   it('should log before exiting', ({ consoleLogSpy }) => {
     cleanExit()
 
-    // eslint-disable-next-line vitest/valid-expect -- false positive
     expect(consoleLogSpy).toHaveBeenCalledExactlyOnceWith(expect.any(String))
   })
 
