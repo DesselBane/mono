@@ -30,7 +30,7 @@ Asserts that a value is of type string | null | undefined
 export function assertIsNullableString(
   value: unknown,
 ): asserts value is Nullable<string> {
-  if (value == undefined || typeof value === 'string') {
+  if (typeof value === 'string' || value == undefined) {
     return
   }
 
