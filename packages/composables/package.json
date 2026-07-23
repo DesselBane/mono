@@ -45,7 +45,7 @@
     "vite": "8.1.5",
     "vite-plugin-dts": "5.0.3",
     "vitest": "4.1.10",
-    "vue-tsc": "3.3.7"
+    "vue-tsc": "3.3.8"
   },
   "dependencies": {
     "@desselbane/ts-helpers": "workspace:*"
