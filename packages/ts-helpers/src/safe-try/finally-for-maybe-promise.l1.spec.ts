@@ -14,11 +14,11 @@ describe(finallyForMaybePromise, () => {
     it('should call finally with error', () => {
       const finallyMock = vi.fn<VoidFunction>()
 
-      expect(() =>
-        finallyForMaybePromise(() => {
+      expect(() => {
+        return finallyForMaybePromise(() => {
           throw new Error('test')
-        }, finallyMock),
-      ).toThrow('test')
+        }, finallyMock)
+      }).toThrow('test')
 
       expect(finallyMock).toHaveBeenCalledTimes(1)
     })
@@ -36,12 +36,12 @@ describe(finallyForMaybePromise, () => {
     it('should call finally with error', async () => {
       const finallyMock = vi.fn<VoidFunction>()
 
-      await expect(() =>
-        finallyForMaybePromise(
+      await expect(() => {
+        return finallyForMaybePromise(
           () => Promise.reject(new Error('test')),
           finallyMock,
-        ),
-      ).rejects.toThrow('test')
+        )
+      }).rejects.toThrow('test')
 
       expect(finallyMock).toHaveBeenCalledTimes(1)
     })
