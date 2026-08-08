@@ -39,11 +39,13 @@ for (const configEntry of config) {
 
 console.log(
   JSON.stringify(
-    [...packageIds].map((x) => ({
-      Name: '',
-      WingetId: x,
-      installDefault: false,
-    })),
+    [...packageIds].map((x) => {
+      return {
+        Name: '',
+        WingetId: x,
+        installDefault: false,
+      }
+    }),
     undefined,
     2,
   ),

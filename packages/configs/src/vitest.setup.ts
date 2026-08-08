@@ -6,14 +6,20 @@ function setupJestExtended() {
 }
 
 const { t } = vi.hoisted(() => {
-  return { t: vi.fn((...arguments_: unknown[]) => JSON.stringify(arguments_)) }
+  return {
+    t: vi.fn((...arguments_: unknown[]) => JSON.stringify(arguments_)),
+  }
 })
 
-vi.mock('vue-i18n', () => ({
-  useI18n: vi.fn(() => ({
-    t,
-  })),
-}))
+vi.mock('vue-i18n', () => {
+  return {
+    useI18n: vi.fn(() => {
+      return {
+        t,
+      }
+    }),
+  }
+})
 
 async function setupVueI18n() {
   try {
@@ -33,9 +39,7 @@ vi.mock('@vueuse/core', async (importOriginal) => {
   const org: Record<string, unknown> = await importOriginal()
   return {
     ...org,
-    createSharedComposable: (delegate: unknown) => {
-      return delegate
-    },
+    createSharedComposable: (delegate: unknown) => delegate,
   }
 })
 

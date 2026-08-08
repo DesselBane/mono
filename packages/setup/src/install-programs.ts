@@ -83,12 +83,12 @@ export async function installPrograms() {
     console.log(`- ${program.Name}`)
   }
 
-  const continuePrompt = await safeTryAsync(() =>
-    confirm({
+  const continuePrompt = await safeTryAsync(() => {
+    return confirm({
       message: 'Continue?',
       default: false,
-    }),
-  )
+    })
+  })
 
   if (continuePrompt.error != undefined || !continuePrompt.data) {
     cleanExit()
