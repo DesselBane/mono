@@ -1,5 +1,126 @@
 # @repo/scripts
 
+## 0.2.6
+
+### Patch Changes
+
+- db54b62: Adapt to new incremental and composite build strategy.
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- db54b62: deps: Updated lockfile
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.1 to 24.10.2
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.10 to 24.10.11
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.11 to 24.10.12
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.12 to 24.10.13
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.13 to 24.10.14
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.14 to 24.10.15
+- e621ca7: deps: [minor|devDependencies] Update package @types/node from 24.10.15 to 24.11.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.2 to 24.10.3
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.3 to 24.10.4
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.4 to 24.10.6
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.6 to 24.10.7
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.7 to 24.10.8
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.8 to 24.10.9
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.9 to 24.10.10
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.11.0 to 24.11.2
+- e621ca7: deps: [minor|devDependencies] Update package @types/node from 24.11.2 to 24.12.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.12.0 to 24.12.2
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.12.2 to 24.12.3
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.12.3 to 24.12.4
+- e621ca7: deps: [minor|devDependencies] Update package @types/node from 24.12.4 to 24.13.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.13.0 to 24.13.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.13.1 to 24.13.2
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.13.2 to 24.13.3
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.10 to 4.0.12
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.12 to 4.0.13
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.13 to 4.0.14
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.14 to 4.0.15
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.15 to 4.0.17
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.17 to 4.0.18
+- 8e89609: deps: [minor|devDependencies] Update package @vitest/coverage-v8 from 4.0.18 to 4.1.0
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.7 to 4.0.8
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.8 to 4.0.9
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.0.9 to 4.0.10
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.0 to 4.1.1
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.1 to 4.1.2
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.2 to 4.1.3
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.3 to 4.1.4
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.4 to 4.1.5
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.5 to 4.1.6
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.6 to 4.1.7
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.7 to 4.1.8
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.8 to 4.1.9
+- 0959a2b: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.9 to 4.1.10
+- f4a4262: deps: [minor|devDependencies] Update package simple-git from 3.30.0 to 3.31.1
+- f4a4262: deps: [minor|devDependencies] Update package simple-git from 3.31.1 to 3.32.1
+- 758717d: deps: [patch|devDependencies] Update package simple-git from 3.32.1 to 3.32.2
+- 758717d: deps: [patch|devDependencies] Update package simple-git from 3.32.2 to 3.32.3
+- f4a4262: deps: [minor|devDependencies] Update package simple-git from 3.32.3 to 3.33.0
+- f4a4262: deps: [minor|devDependencies] Update package simple-git from 3.33.0 to 3.35.1
+- 758717d: deps: [patch|devDependencies] Update package simple-git from 3.35.1 to 3.35.2
+- f4a4262: deps: [minor|devDependencies] Update package simple-git from 3.35.2 to 3.36.0
+- 1febe15: deps: [minor|devDependencies] Update package type-fest from 5.2.0 to 5.3.0
+- babaabb: deps: [patch|devDependencies] Update package type-fest from 5.3.0 to 5.3.1
+- 1ada9ba: deps: [minor|devDependencies] Update package type-fest from 5.3.1 to 5.4.0
+- bd5b35b: deps: [patch|devDependencies] Update package type-fest from 5.4.0 to 5.4.1
+- bd5b35b: deps: [patch|devDependencies] Update package type-fest from 5.4.1 to 5.4.2
+- bd5b35b: deps: [patch|devDependencies] Update package type-fest from 5.4.2 to 5.4.3
+- bd5b35b: deps: [patch|devDependencies] Update package type-fest from 5.4.3 to 5.4.4
+- 2e34f1f: deps: [minor|devDependencies] Update package type-fest from 5.4.4 to 5.5.0
+- ab67db4: deps: [minor|devDependencies] Update package type-fest from 5.5.0 to 5.6.0
+- 2383e47: deps: [minor|devDependencies] Update package type-fest from 5.6.0 to 5.7.0
+- 6687eef: deps: [minor|devDependencies] Update package type-fest from 5.7.0 to 5.8.0
+- 8cee8fc: deps: [major|devDependencies] Update package typescript from 5.9.3 to 6.0.2
+- 7e3d136: deps: [patch|devDependencies] Update package typescript from 6.0.2 to 6.0.3
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package vitest from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package vitest from 4.0.14 to 4.0.15
+- 035694c: deps: [patch|devDependencies] Update package vitest from 4.0.15 to 4.0.17
+- 21e79ea: deps: [patch|devDependencies] Update package vitest from 4.0.17 to 4.0.18
+- 8e89609: deps: [minor|devDependencies] Update package vitest from 4.0.18 to 4.1.0
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+- 95b2811: deps: [patch|devDependencies] Update package vitest from 4.1.0 to 4.1.1
+- f286e8a: deps: [patch|devDependencies] Update package vitest from 4.1.1 to 4.1.2
+- c344179: deps: [patch|devDependencies] Update package vitest from 4.1.2 to 4.1.3
+- 326d1ef: deps: [patch|devDependencies] Update package vitest from 4.1.3 to 4.1.4
+- 6deb5cc: deps: [patch|devDependencies] Update package vitest from 4.1.4 to 4.1.5
+- 6ef61b5: deps: [patch|devDependencies] Update package vitest from 4.1.5 to 4.1.6
+- f6cb09a: deps: [patch|devDependencies] Update package vitest from 4.1.6 to 4.1.7
+- 0d2e515: deps: [patch|devDependencies] Update package vitest from 4.1.7 to 4.1.8
+- 7d4462d: deps: [patch|devDependencies] Update package vitest from 4.1.8 to 4.1.9
+- f622a95: deps: [patch|devDependencies] Update package vitest from 4.1.9 to 4.1.10
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+
+
+</details>
+
 ## 0.2.5
 
 ### Patch Changes

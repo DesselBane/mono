@@ -1,5 +1,379 @@
 # @desselbane/configs
 
+## 17.0.0
+
+### Major Changes
+
+- db54b62: Move to incremental and composite build by default.
+  
+  If you want to opt out of this change set
+  
+  ```json
+  {
+    "compilerOptions": {
+      "incremental": false,
+      "composite": false
+    }
+  }
+  ```
+- fc0f4c2: Add `typescript ^6.0.0` as peerDependency
+- 236a259: Set `unicorn/try-complexity` to max 2
+- 9e26c7c: Disable eslint `import-x/no-unused-modules` rule
+- db54b62: Emitting declaration files by default and setting outDir.
+  
+  By default the following values are now set:
+  
+  ```json
+  {
+    "compilerOptions": {
+      "noEmit": false,
+      "emitDeclarationOnly": true,
+      "outDir": "${configDir}/node_modules/.build",
+      "declarationDir": "${configDir}/node_modules/.build/declarations"
+    }
+  }
+  ```
+  
+  This is due to the `composite` and `incremental` build being activated by default.
+
+### Minor Changes
+
+- db54b62: Update templates to reflect new typecheck scripts
+
+### Patch Changes
+
+- 7719137: Use `includeIgnoreFile` from `@eslint/config-helpers`
+- 9e26c7c: Fix: typecheck script
+- db54b62: Adapt to new incremental and composite build strategy.
+- 9e26c7c: Remove unused @ts-expect-error directive
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- ab615bc: deps: [minor|peerDependencies] Update package tsdown from ^0.20.0 to ^0.21.0
+- bc6553c: deps: [major|peerDependencies] Require vite ^8.0.0
+- bc6553c: deps: [major|peerDependencies] Require vitest ^4.0.0
+- 9330a5d: deps: [minor-breaking|peerDependencies] Require package `tsdown ^0.16.0`
+- 50d52e6: deps: [major|dependencies] Update package eslint-plugin-unicorn from 64.0.0 to 65.0.1
+- 679298c: deps: [minor|peerDependencies] Update peerDependency tsdown from ^0.19.0 to ^0.20.0
+- 95683e9: deps: [minor|peerDependencies] Update tsdown peerDependency from ^0.16.0 to ^0.18.0
+- 95683e9: deps: [minor|peerDependencies] Update tsdown peerDependency from ^0.18.0 to ^0.19.0
+- db54b62: deps: Updated lockfile
+- 5ed328f: deps: [major|dependencies] Update package @eslint/compat from 1.4.1 to 2.0.0
+- 6fc9499: deps: [patch|dependencies] Update package @eslint/compat from 2.0.0 to 2.0.1
+- 6fc9499: deps: [patch|dependencies] Update package @eslint/compat from 2.0.1 to 2.0.2
+- 6fc9499: deps: [patch|dependencies] Update package @eslint/compat from 2.0.2 to 2.0.3
+- 6fc9499: deps: [patch|dependencies] Update package @eslint/compat from 2.0.3 to 2.0.4
+- 6fc9499: deps: [patch|dependencies] Update package @eslint/compat from 2.0.4 to 2.0.5
+- 55887f9: deps: [minor|dependencies] Update package @eslint/compat from 2.0.5 to 2.1.0
+- d0b3376: deps: [minor|dependencies] Update package @eslint/config-helpers from 0.6.0 to 0.7.0
+- 3f2de43: deps: [patch|dependencies] Update package @eslint/js from 9.39.1 to 9.39.2
+- 1b01a4a: deps: [patch|dependencies] Update package @eslint/js from 9.39.2 to 9.39.3
+- 1c2c01f: deps: [patch|dependencies] Update package @eslint/js from 9.39.3 to 9.39.4
+- 50d52e6: deps: [major|dependencies] Update package @eslint/js from 9.39.4 to 10.0.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.0 to 24.10.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.1 to 24.10.2
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.10 to 24.10.11
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.11 to 24.10.12
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.12 to 24.10.13
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.13 to 24.10.14
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.14 to 24.10.15
+- e621ca7: deps: [minor|devDependencies] Update package @types/node from 24.10.15 to 24.11.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.2 to 24.10.3
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.3 to 24.10.4
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.4 to 24.10.6
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.6 to 24.10.7
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.7 to 24.10.8
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.8 to 24.10.9
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.10.9 to 24.10.10
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.11.0 to 24.11.2
+- e621ca7: deps: [minor|devDependencies] Update package @types/node from 24.11.2 to 24.12.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.12.0 to 24.12.2
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.12.2 to 24.12.3
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.12.3 to 24.12.4
+- e621ca7: deps: [minor|devDependencies] Update package @types/node from 24.12.4 to 24.13.0
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.13.0 to 24.13.1
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.13.1 to 24.13.2
+- 1d95aa7: deps: [patch|devDependencies] Update package @types/node from 24.13.2 to 24.13.3
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.1 to 1.4.2
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.2 to 1.4.3
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.4.3 to 1.4.4
+- 951a7d2: deps: [minor|dependencies] Update package @vitest/eslint-plugin from 1.4.4 to 1.5.0
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.5.0 to 1.5.1
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.5.1 to 1.5.2
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.5.2 to 1.5.4
+- 951a7d2: deps: [minor|dependencies] Update package @vitest/eslint-plugin from 1.5.4 to 1.6.1
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.1 to 1.6.3
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.10 to 1.6.11
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.11 to 1.6.12
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.12 to 1.6.13
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.13 to 1.6.14
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.14 to 1.6.15
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.15 to 1.6.16
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.16 to 1.6.17
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.17 to 1.6.18
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.18 to 1.6.19
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.19 to 1.6.20
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.20 to 1.6.21
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.21 to 1.6.23
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.23 to 1.6.24
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.24 to 1.6.25
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.25 to 1.6.26
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.26 to 1.6.27
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.3 to 1.6.4
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.4 to 1.6.5
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.5 to 1.6.6
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.6 to 1.6.7
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.7 to 1.6.9
+- eba27af: deps: [patch|dependencies] Update package @vitest/eslint-plugin from 1.6.9 to 1.6.10
+- 09c362b: deps: [minor|dependencies] Update package @vue/eslint-config-typescript from 14.6.0 to 14.7.0
+- 09c362b: deps: [minor|dependencies] Update package @vue/eslint-config-typescript from 14.7.0 to 14.8.0
+- 09c362b: deps: [minor|dependencies] Update package @vue/eslint-config-typescript from 14.8.0 to 14.9.0
+- 14de709: deps: [patch|devDependencies] Update package @vue/test-utils from 2.4.10 to 2.4.11
+- 14de709: deps: [patch|devDependencies] Update package @vue/test-utils from 2.4.6 to 2.4.8
+- 14de709: deps: [patch|devDependencies] Update package @vue/test-utils from 2.4.8 to 2.4.10
+- eb2d585: deps: [minor|dependencies] Update package eslint from 10.0.3 to 10.1.0
+- 9f016c9: deps: [minor|dependencies] Update package eslint from 10.1.0 to 10.2.0
+- 2af3b5e: deps: [patch|dependencies] Update package eslint from 10.2.0 to 10.2.1
+- a368c35: deps: [minor|dependencies] Update package eslint from 10.2.1 to 10.3.0
+- 783fb9b: deps: [minor|dependencies] Update package eslint from 10.3.0 to 10.4.0
+- 6ae4569: deps: [patch|dependencies] Update package eslint from 10.4.0 to 10.4.1
+- 4198608: deps: [minor|dependencies] Update package eslint from 10.4.1 to 10.5.0
+- ec476ed: deps: [minor|dependencies] Update package eslint from 10.5.0 to 10.6.0
+- eef5b96: deps: [minor|dependencies] Update package eslint from 10.6.0 to 10.7.0
+- 3b6fee3: deps: [minor|dependencies] Update package eslint from 10.7.0 to 10.8.0
+- 99d6743: deps: [patch|dependencies] Update package eslint from 10.8.0 to 10.8.1
+- 3f2de43: deps: [patch|dependencies] Update package eslint from 9.39.1 to 9.39.2
+- 1b01a4a: deps: [patch|dependencies] Update package eslint from 9.39.2 to 9.39.3
+- 1c2c01f: deps: [patch|dependencies] Update package eslint from 9.39.3 to 9.39.4
+- 50d52e6: deps: [major|dependencies] Update package eslint from 9.39.4 to 10.0.3
+- f5c608d: deps: [patch|dependencies] Update package eslint-import-resolver-typescript from 4.4.4 to 4.4.5
+- 721bff4: deps: [patch|dependencies] Update package eslint-plugin-import-x from 4.16.1 to 4.16.2
+- d854ceb: deps: [minor|dependencies] Update package eslint-plugin-import-x from 4.16.2 to 4.17.0
+- 721bff4: deps: [patch|dependencies] Update package eslint-plugin-import-x from 4.17.0 to 4.17.1
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.10.0 to 2.10.1
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.10.1 to 2.10.2
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.10.2 to 2.10.3
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.10.3 to 2.10.4
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.10.4 to 2.10.5
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.10.5 to 2.11.0
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.3.0 to 2.4.0
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.4.0 to 2.4.1
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.4.1 to 2.5.0
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.5.0 to 2.5.1
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.5.1 to 2.6.0
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.6.0 to 2.7.0
+- 6fc9499: deps: [patch|dependencies] Update package eslint-plugin-playwright from 2.7.0 to 2.7.1
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.7.1 to 2.8.0
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.8.0 to 2.9.0
+- ed918ae: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.9.0 to 2.10.0
+- 134ef72: deps: [patch|dependencies] Update package eslint-plugin-prettier from 5.5.4 to 5.5.5
+- 134ef72: deps: [patch|dependencies] Update package eslint-plugin-prettier from 5.5.5 to 5.5.6
+- 50d52e6: deps: [major|dependencies] Update package eslint-plugin-unicorn from 62.0.0 to 63.0.0
+- 50d52e6: deps: [major|dependencies] Update package eslint-plugin-unicorn from 63.0.0 to 64.0.0
+- 50d52e6: deps: [major|dependencies] Update package eslint-plugin-unicorn from 65.0.1 to 69.0.0
+- 50d52e6: deps: [major|dependencies] Update package eslint-plugin-unicorn from 69.0.0 to 71.1.0
+- 50d52e6: deps: [major|dependencies] Update package eslint-plugin-unicorn from 71.1.0 to 72.0.0
+- 50d52e6: deps: [major|dependencies] Update package eslint-plugin-unicorn from 72.0.0 to 73.0.0
+- 5984485: deps: [minor|dependencies] Update package eslint-plugin-unused-imports from 4.3.0 to 4.4.1
+- 13f7db1: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.5.1 to 10.6.0
+- 6663137: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.6.0 to 10.6.1
+- 6663137: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.6.1 to 10.6.2
+- 13f7db1: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.6.2 to 10.7.0
+- 13f7db1: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.7.0 to 10.8.0
+- 13f7db1: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.8.0 to 10.9.0
+- 6663137: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.9.0 to 10.9.1
+- 6663137: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.9.1 to 10.9.2
+- 13f7db1: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.9.2 to 10.10.0
+- 495b9cc: deps: [minor|dependencies] Update package jiti from 2.6.1 to 2.7.0
+- 63809c2: deps: [minor|dependencies] Update package prettier from 3.6.2 to 3.7.1
+- 8cf0e97: deps: [patch|dependencies] Update package prettier from 3.7.1 to 3.7.2
+- dd4b929: deps: [patch|dependencies] Update package prettier from 3.7.2 to 3.7.3
+- ee3e11a: deps: [patch|dependencies] Update package prettier from 3.7.3 to 3.7.4
+- 7803ee9: deps: [minor|dependencies] Update package prettier from 3.7.4 to 3.8.0
+- f5755e4: deps: [patch|dependencies] Update package prettier from 3.8.0 to 3.8.1
+- 2e50009: deps: [patch|dependencies] Update package prettier from 3.8.1 to 3.8.2
+- 7e3d136: deps: [patch|dependencies] Update package prettier from 3.8.2 to 3.8.3
+- 2160e5b: deps: [patch|dependencies] Update package prettier from 3.8.3 to 3.8.4
+- 9aad865: deps: [patch|dependencies] Update package prettier from 3.8.4 to 3.8.5
+- f8965ca: deps: [minor|dependencies] Update package prettier from 3.8.5 to 3.9.0
+- 3dd17b0: deps: [patch|dependencies] Update package prettier from 3.9.0 to 3.9.1
+- 28fd74e: deps: [patch|dependencies] Update package prettier from 3.9.1 to 3.9.3
+- 23f78f6: deps: [patch|dependencies] Update package prettier from 3.9.3 to 3.9.4
+- 3a611f6: deps: [patch|dependencies] Update package prettier from 3.9.4 to 3.9.5
+- 6181103: deps: [patch|dependencies] Update package prettier from 3.9.5 to 3.9.6
+- 5320df8: deps: [minor|devDependencies] Update package tsdown from 0.15.12 to 0.16.1
+- c4d5db2: deps: [patch|devDependencies] Update package tsdown from 0.16.1 to 0.16.3
+- ae8ec42: deps: [patch|devDependencies] Update package tsdown from 0.16.3 to 0.16.4
+- c628ed6: deps: [patch|devDependencies] Update package tsdown from 0.16.4 to 0.16.5
+- 3f64853: deps: [patch|devDependencies] Update package tsdown from 0.16.5 to 0.16.6
+- a49610a: deps: [patch|devDependencies] Update package tsdown from 0.16.6 to 0.16.7
+- 990247a: deps: [patch|devDependencies] Update package tsdown from 0.16.7 to 0.16.8
+- 81d1b02: deps: [minor|devDependencies] Update package tsdown from 0.16.8 to 0.17.0
+- dac8204: deps: [patch|devDependencies] Update package tsdown from 0.17.0 to 0.17.1
+- d7b201d: deps: [patch|devDependencies] Update package tsdown from 0.17.1 to 0.17.2
+- b269ce5: deps: [patch|devDependencies] Update package tsdown from 0.17.2 to 0.17.3
+- da85682: deps: [patch|devDependencies] Update package tsdown from 0.17.3 to 0.17.4
+- ddd3786: deps: [minor|devDependencies] Update package tsdown from 0.17.4 to 0.18.0
+- 562b6f3: deps: [patch|devDependencies] Update package tsdown from 0.18.0 to 0.18.1
+- b654f02: deps: [patch|devDependencies] Update package tsdown from 0.18.1 to 0.18.2
+- 43ed4e0: deps: [patch|devDependencies] Update package tsdown from 0.18.2 to 0.18.3
+- fe2f038: deps: [patch|devDependencies] Update package tsdown from 0.18.3 to 0.18.4
+- 4c03f9a: deps: [minor|devDependencies] Update package tsdown from 0.18.4 to ^0.19.0
+- a9d299f: deps: [minor|devDependencies] Update package tsdown from 0.19.0 to 0.20.1
+- c451251: deps: [patch|devDependencies] Update package tsdown from 0.20.1 to 0.20.2
+- 11b75ea: deps: [patch|devDependencies] Update package tsdown from 0.20.2 to 0.20.3
+- 3b6fcf2: deps: [minor|devDependencies] Update package tsdown from 0.20.3 to 0.21.0
+- 19bab0c: deps: [patch|devDependencies] Update package tsdown from 0.21.0 to 0.21.1
+- c56d599: deps: [patch|devDependencies] Update package tsdown from 0.21.1 to 0.21.2
+- bf03384: deps: [minor|devDependencies] Update package tsdown from 0.21.10 to 0.22.0
+- b2e7a3f: deps: [patch|devDependencies] Update package tsdown from 0.21.2 to 0.21.3
+- 03e484c: deps: [patch|devDependencies] Update package tsdown from 0.21.3 to 0.21.4
+- d274647: deps: [patch|devDependencies] Update package tsdown from 0.21.4 to 0.21.5
+- 02af5ed: deps: [patch|devDependencies] Update package tsdown from 0.21.5 to 0.21.6
+- b99d4dc: deps: [patch|devDependencies] Update package tsdown from 0.21.6 to 0.21.7
+- 7e3d136: deps: [patch|devDependencies] Update package tsdown from 0.21.7 to 0.21.9
+- 2c3f247: deps: [patch|devDependencies] Update package tsdown from 0.21.9 to 0.21.10
+- 48e926b: deps: [patch|devDependencies] Update package tsdown from 0.22.0 to 0.22.1
+- d9e6af6: deps: [patch|devDependencies] Update package tsdown from 0.22.1 to 0.22.2
+- 1977e14: deps: [patch|devDependencies] Update package tsdown from 0.22.11 to 0.22.12
+- 10a00f7: deps: [patch|devDependencies] Update package tsdown from 0.22.12 to 0.22.13
+- 66785b9: deps: [patch|devDependencies] Update package tsdown from 0.22.13 to 0.22.14
+- 7c7dec9: deps: [patch|devDependencies] Update package tsdown from 0.22.2 to 0.22.3
+- ca86d57: deps: [patch|devDependencies] Update package tsdown from 0.22.3 to 0.22.4
+- 7364b16: deps: [patch|devDependencies] Update package tsdown from 0.22.4 to 0.22.5
+- da91af0: deps: [patch|devDependencies] Update package tsdown from 0.22.5 to 0.22.8
+- 0709e98: deps: [patch|devDependencies] Update package tsdown from 0.22.8 to 0.22.9
+- b9efb35: deps: [patch|devDependencies] Update package tsdown from 0.22.9 to 0.22.11
+- 8cee8fc: deps: [major|devDependencies] Update package typescript from 5.9.3 to 6.0.2
+- 7e3d136: deps: [patch|devDependencies] Update package typescript from 6.0.2 to 6.0.3
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.46.3 to 8.46.4
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.46.4 to 8.47.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.47.0 to 8.48.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.48.0 to 8.48.1
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.48.1 to 8.49.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.49.0 to 8.50.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.50.0 to 8.50.1
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.50.1 to 8.51.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.51.0 to 8.52.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.52.0 to 8.53.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.53.0 to 8.53.1
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.53.1 to 8.54.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.54.0 to 8.55.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.55.0 to 8.56.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.56.0 to 8.56.1
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.56.1 to 8.57.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.57.0 to 8.57.1
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.57.1 to 8.57.2
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.57.2 to 8.58.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.58.0 to 8.58.1
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.58.1 to 8.58.2
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.58.2 to 8.59.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.59.0 to 8.59.1
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.59.1 to 8.59.2
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.59.2 to 8.59.3
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.59.3 to 8.59.4
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.59.4 to 8.60.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.60.0 to 8.60.1
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.60.1 to 8.61.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.61.0 to 8.61.1
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.61.1 to 8.62.0
+- 14b239c: deps: [patch|dependencies] Update package typescript-eslint from 8.62.0 to 8.62.1
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.62.1 to 8.63.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.63.0 to 8.64.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.64.0 to 8.65.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.65.0 to 8.66.0
+- 8d010ce: deps: [minor|dependencies] Update package typescript-eslint from 8.66.0 to 8.67.0
+- 304f59f: deps: [patch|devDependencies] Update package vite from 7.2.2 to 7.2.4
+- 239345f: deps: [patch|devDependencies] Update package vite from 7.2.4 to 7.2.6
+- 058b27a: deps: [patch|devDependencies] Update package vite from 7.2.6 to 7.2.7
+- 3f793ed: deps: [minor|devDependencies] Update package vite from 7.2.7 to 7.3.0
+- 035694c: deps: [patch|devDependencies] Update package vite from 7.3.0 to 7.3.1
+- bc6553c: deps: [major|devDependencies] Update package vite from 7.3.1 to 8.0.0
+- a69bdcb: deps: [patch|devDependencies] Update package vite from 8.0.0 to 8.0.1
+- 95b2811: deps: [patch|devDependencies] Update package vite from 8.0.1 to 8.0.2
+- 49408f1: deps: [patch|devDependencies] Update package vite from 8.0.10 to 8.0.11
+- 2edb782: deps: [patch|devDependencies] Update package vite from 8.0.11 to 8.0.12
+- 9e51437: deps: [patch|devDependencies] Update package vite from 8.0.12 to 8.0.13
+- 4a82628: deps: [patch|devDependencies] Update package vite from 8.0.13 to 8.0.14
+- 0d2e515: deps: [patch|devDependencies] Update package vite from 8.0.14 to 8.0.16
+- 1697920: deps: [minor|devDependencies] Update package vite from 8.0.16 to 8.1.0
+- fa8c365: deps: [patch|devDependencies] Update package vite from 8.0.2 to 8.0.3
+- 5164121: deps: [patch|devDependencies] Update package vite from 8.0.3 to 8.0.5
+- c344179: deps: [patch|devDependencies] Update package vite from 8.0.5 to 8.0.6
+- 23d18e0: deps: [patch|devDependencies] Update package vite from 8.0.6 to 8.0.7
+- 080241d: deps: [patch|devDependencies] Update package vite from 8.0.7 to 8.0.8
+- 7bbb3bd: deps: [patch|devDependencies] Update package vite from 8.0.8 to 8.0.9
+- d0d63e2: deps: [patch|devDependencies] Update package vite from 8.0.9 to 8.0.10
+- 59971ed: deps: [patch|devDependencies] Update package vite from 8.1.0 to 8.1.1
+- ef2573b: deps: [patch|devDependencies] Update package vite from 8.1.1 to 8.1.2
+- 3314126: deps: [patch|devDependencies] Update package vite from 8.1.2 to 8.1.3
+- 9e5eefe: deps: [patch|devDependencies] Update package vite from 8.1.3 to 8.1.4
+- 4426550: deps: [patch|devDependencies] Update package vite from 8.1.4 to 8.1.5
+- c06f1ee: deps: [minor|devDependencies] Update package vite from 8.1.5 to 8.2.0
+- 990a1ad: deps: [patch|devDependencies] Update package vite from 8.2.0 to 8.2.1
+- 304f59f: deps: [patch|devDependencies] Update package vitest from 4.0.10 to 4.0.12
+- 5b9394e: deps: [patch|devDependencies] Update package vitest from 4.0.12 to 4.0.13
+- b0b3d55: deps: [patch|devDependencies] Update package vitest from 4.0.13 to 4.0.14
+- 41a8a2f: deps: [patch|devDependencies] Update package vitest from 4.0.14 to 4.0.15
+- 035694c: deps: [patch|devDependencies] Update package vitest from 4.0.15 to 4.0.17
+- 21e79ea: deps: [patch|devDependencies] Update package vitest from 4.0.17 to 4.0.18
+- 8e89609: deps: [minor|devDependencies] Update package vitest from 4.0.18 to 4.1.0
+- 0959a2b: deps: [patch|devDependencies] Update package vitest from 4.0.7 to 4.0.8
+- bc0ea2a: deps: [patch|devDependencies] Update package vitest from 4.0.8 to 4.0.9
+- ecff42a: deps: [patch|devDependencies] Update package vitest from 4.0.9 to 4.0.10
+- 95b2811: deps: [patch|devDependencies] Update package vitest from 4.1.0 to 4.1.1
+- f286e8a: deps: [patch|devDependencies] Update package vitest from 4.1.1 to 4.1.2
+- c344179: deps: [patch|devDependencies] Update package vitest from 4.1.2 to 4.1.3
+- 326d1ef: deps: [patch|devDependencies] Update package vitest from 4.1.3 to 4.1.4
+- 6deb5cc: deps: [patch|devDependencies] Update package vitest from 4.1.4 to 4.1.5
+- 6ef61b5: deps: [patch|devDependencies] Update package vitest from 4.1.5 to 4.1.6
+- f6cb09a: deps: [patch|devDependencies] Update package vitest from 4.1.6 to 4.1.7
+- 0d2e515: deps: [patch|devDependencies] Update package vitest from 4.1.7 to 4.1.8
+- 7d4462d: deps: [patch|devDependencies] Update package vitest from 4.1.8 to 4.1.9
+- f622a95: deps: [patch|devDependencies] Update package vitest from 4.1.9 to 4.1.10
+- 2c319b5: deps: [minor|dependencies] Update package vue-eslint-parser from 10.2.0 to 10.3.0
+- 2c319b5: deps: [minor|dependencies] Update package vue-eslint-parser from 10.3.0 to 10.4.0
+- 28d0ba3: deps: [patch|dependencies] Update package vue-eslint-parser from 10.4.0 to 10.4.1
+- e9f86de: deps: [patch|dependencies] Update package vue3-snapshot-serializer from 2.13.0 to 2.13.1
+- e9f86de: deps: [patch|dependencies] Update package vue3-snapshot-serializer from 2.13.1 to 2.13.2
+- e9f86de: deps: [patch|dependencies] Update package vue3-snapshot-serializer from 2.13.2 to 2.13.3
+- e9f86de: deps: [patch|dependencies] Update package vue3-snapshot-serializer from 2.13.3 to 2.13.4
+- ec65c6a: deps: [patch|dependencies] Update package zod from 4.1.12 to 4.1.13
+- 90ccdc5: deps: [minor|dependencies] Update package zod from 4.1.13 to 4.2.0
+- 35d08d2: deps: [patch|dependencies] Update package zod from 4.2.0 to 4.2.1
+- f0b1da8: deps: [minor|dependencies] Update package zod from 4.2.1 to 4.3.2
+- fe2f038: deps: [patch|dependencies] Update package zod from 4.3.2 to 4.3.5
+- a757be4: deps: [patch|dependencies] Update package zod from 4.3.5 to 4.3.6
+- 0b5fd14: deps: [minor|dependencies] Update package zod from 4.3.6 to 4.4.1
+- f9849ba: deps: [patch|dependencies] Update package zod from 4.4.1 to 4.4.2
+- 660ad73: deps: [patch|dependencies] Update package zod from 4.4.2 to 4.4.3
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+- 74a6e26: deps: Updated lockfile
+
+
+</details>
+
 ## 16.0.1
 
 ### Patch Changes
