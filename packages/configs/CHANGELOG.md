@@ -1,5 +1,15 @@
 # @desselbane/configs
 
+## 17.1.0
+
+### Minor Changes
+
+- 3139c7e: Add a meta updater script to manage files in the monorepo
+
+### Patch Changes
+
+- 744efbe: Fix configs ts project now references the lib project
+
 ## 17.0.0
 
 ### Major Changes
