@@ -1,3 +1,18 @@
 {
-  "type": "commonjs"
+  "type": "module",
+  "author": "Dessel Bane",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.21.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.19.0"
+    }
+  },
+  "volta": {
+    "node": "24.19.0",
+    "pnpm": "11.21.0"
+  }
 }

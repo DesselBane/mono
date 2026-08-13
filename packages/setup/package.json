@@ -28,7 +28,8 @@
     "CHANGELOG.md"
   ],
   "volta": {
-    "extends": "../../package.json"
+    "node": "24.19.0",
+    "pnpm": "11.21.0"
   },
   "lint-staged": {
     "*": "eslint --fix"
@@ -50,5 +51,16 @@
   "dependencies": {
     "@inquirer/prompts": "8.5.2",
     "zod": "4.4.3"
+  },
+  "author": "Dessel Bane",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.21.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.19.0"
+    }
   }
 }

@@ -68,7 +68,8 @@
     "meta-updater": "node node/meta-updater.ts"
   },
   "volta": {
-    "extends": "../../package.json"
+    "node": "24.19.0",
+    "pnpm": "11.21.0"
   },
   "lint-staged": {
     "*": "eslint --fix --max-warnings 0"
@@ -124,5 +125,16 @@
     "typescript": "6.0.3",
     "vite": "8.2.1",
     "vitest": "4.1.10"
+  },
+  "author": "Dessel Bane",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.21.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.19.0"
+    }
   }
 }
