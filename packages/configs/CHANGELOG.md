@@ -1,5 +1,11 @@
 # @desselbane/configs
 
+## 17.1.1
+
+### Patch Changes
+
+- 4eceda4: Use root package.json devEngines & volta values for other package.jsons
+
 ## 17.1.0
 
 ### Minor Changes
