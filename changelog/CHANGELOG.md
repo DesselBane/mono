@@ -1,5 +1,11 @@
 # @repo/changelog
 
+## 0.5.0
+
+### Minor Changes
+
+- 8b1d76d: Use new pnpm/setup action instead of pnpm/action-setup and actions/setup-node@v7
+
 ## 0.4.1
 
 ### Patch Changes
