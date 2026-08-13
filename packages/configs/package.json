@@ -64,10 +64,12 @@
     "build": "tsdown",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "pnpm lint --fix",
-    "typecheck": "tsc --noEmit -p tsconfig.lib.json"
+    "typecheck": "tsc --noEmit -p tsconfig.lib.json",
+    "meta-updater": "node node/meta-updater.ts"
   },
   "volta": {
-    "extends": "../../package.json"
+    "node": "24.19.0",
+    "pnpm": "11.21.0"
   },
   "lint-staged": {
     "*": "eslint --fix --max-warnings 0"
@@ -89,7 +91,6 @@
     "eslint-plugin-vue": "10.10.0",
     "jest-extended": "7.0.0",
     "jiti": "2.7.0",
-    "prettier": "3.9.6",
     "typescript-eslint": "8.67.0",
     "vue-eslint-parser": "10.4.1",
     "vue3-snapshot-serializer": "2.13.4",
@@ -119,9 +120,21 @@
   "devDependencies": {
     "@types/node": "24.13.3",
     "@vue/test-utils": "2.4.11",
+    "prettier": "3.9.6",
     "tsdown": "0.22.14",
     "typescript": "6.0.3",
     "vite": "8.2.1",
     "vitest": "4.1.10"
+  },
+  "author": "Dessel Bane",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.21.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.19.0"
+    }
   }
 }

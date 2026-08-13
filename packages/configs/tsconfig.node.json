@@ -1,0 +1,5 @@
+{
+  "include": ["node/*.ts", "@types"],
+  "exclude": ["src/**/*.spec.ts", "**/__mocks__/**/*", "src/**/*.spec-d.ts"],
+  "extends": "./tsconfig.node.tpl.json"
+}

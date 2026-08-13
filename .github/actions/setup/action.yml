@@ -11,14 +11,9 @@ runs:
         restore-keys: |
           ${{ runner.os }}-turbo-
 
-    - uses: pnpm/action-setup@v6
-
-    - uses: actions/setup-node@v7
+    - uses: pnpm/setup@v2
       with:
-        node-version-file: 'package.json'
-        cache: 'pnpm'
-        cache-dependency-path: 'pnpm-lock.yaml'
-        registry-url: 'https://registry.npmjs.org/'
+        cache: true
 
     - name: Install Depedencies
       shell: bash

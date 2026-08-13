@@ -27,7 +27,8 @@
     "directory": "packages/ts-helpers"
   },
   "volta": {
-    "extends": "../../package.json"
+    "node": "24.19.0",
+    "pnpm": "11.21.0"
   },
   "lint-staged": {
     "*": "eslint --fix --max-warnings 0"
@@ -45,5 +46,16 @@
     "unplugin-unused": "0.6.0",
     "vitest": "4.1.10"
   },
-  "types": "./dist/main.d.ts"
+  "types": "./dist/main.d.ts",
+  "author": "Dessel Bane",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.21.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.19.0"
+    }
+  }
 }

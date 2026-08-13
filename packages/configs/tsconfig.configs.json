@@ -1,5 +1,6 @@
 {
   "extends": "./tsconfig.node.tpl.json",
+  "references": [{"path": "tsconfig.lib.json"}],
   "include": ["*.config.ts"],
   "compilerOptions": {
     "allowImportingTsExtensions": true
