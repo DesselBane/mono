@@ -33,14 +33,14 @@
     "@changesets/cli": "3.0.0",
     "@desselbane/configs": "workspace:*",
     "@repo/scripts": "workspace:*",
-    "@turbo/gen": "2.10.10",
+    "@turbo/gen": "2.10.11",
     "@types/node": "24.13.3",
     "eslint": "10.8.1",
     "husky": "9.1.7",
     "lint-staged": "17.3.0",
     "prettier": "3.9.6",
     "semver": "7.8.5",
-    "turbo": "2.10.10"
+    "turbo": "2.10.11"
   },
   "devEngines": {
     "packageManager": {
