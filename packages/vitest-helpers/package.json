@@ -43,7 +43,7 @@
     "type-fest": "5.8.0",
     "typescript": "6.0.3",
     "unplugin-unused": "0.6.0",
-    "vitest": "4.1.10"
+    "vitest": "4.1.11"
   },
   "author": "Dessel Bane",
   "devEngines": {
