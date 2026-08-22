@@ -1,5 +1,27 @@
 # @desselbane/composables
 
+## 2.0.9
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 452d41f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.10 to 4.1.11
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 26252cd: deps: [patch|devDependencies] Update package vite from 8.2.1 to 8.2.2
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 866e061: deps: [patch|devDependencies] Update package vue-tsc from 3.3.10 to 3.3.11
+- 3e88dff: deps: [patch|devDependencies] Update package vue-tsc from 3.3.9 to 3.3.10
+- 9acf827: deps: Updated lockfile
+- Updated dependencies [452d41f]
+- Updated dependencies [1735ac2]
+- Updated dependencies [9acf827]
+  - @desselbane/ts-helpers@5.0.4
+
+
+</details>
+
 ## 2.0.8
 
 ### Patch Changes
