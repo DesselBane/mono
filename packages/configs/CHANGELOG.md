@@ -1,5 +1,21 @@
 # @desselbane/configs
 
+## 17.1.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 5042748: deps: [minor|dependencies] Update package eslint from 10.8.1 to 10.9.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 26252cd: deps: [patch|devDependencies] Update package vite from 8.2.1 to 8.2.2
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 9acf827: deps: Updated lockfile
+
+
+</details>
+
 ## 17.1.1
 
 ### Patch Changes

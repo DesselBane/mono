@@ -1,5 +1,21 @@
 # @desselbane/setup
 
+## 1.0.7
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- b52d0c9: deps: [minor|dependencies] Update package @inquirer/prompts from 8.5.2 to 8.6.0
+- 452d41f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.10 to 4.1.11
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 9acf827: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.6
 
 ### Patch Changes

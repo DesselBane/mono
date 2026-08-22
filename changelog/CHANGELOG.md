@@ -1,5 +1,27 @@
 # @repo/changelog
 
+## 0.5.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 73ba62c: deps: [patch|devDependencies] Update package @changesets/cli from 3.0.0 to 3.0.1
+- fec6b39: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.10 to 2.10.11
+- fec6b39: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.9 to 2.10.10
+- f4ba72a: deps: [minor|action] Update package changesets/action from v2.0.0 to v2.1.1
+- 5042748: deps: [minor|devDependencies] Update package eslint from 10.8.1 to 10.9.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 1b88de9: deps: [patch|devDependencies] Update package turbo from 2.10.10 to 2.10.11
+- fec6b39: deps: [patch|devDependencies] Update package turbo from 2.10.9 to 2.10.10
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+
+
+</details>
+
 ## 0.5.0
 
 ### Minor Changes
