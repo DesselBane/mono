@@ -29,7 +29,7 @@
   ],
   "volta": {
     "node": "24.19.0",
-    "pnpm": "11.22.0"
+    "pnpm": "11.23.0"
   },
   "lint-staged": {
     "*": "eslint --fix"
