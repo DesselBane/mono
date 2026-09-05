@@ -1,5 +1,33 @@
 # @desselbane/setup
 
+## 1.0.7
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- b52d0c9: deps: [minor|dependencies] Update package @inquirer/prompts from 8.5.2 to 8.6.0
+- b52d0c9: deps: [minor|dependencies] Update package @inquirer/prompts from 8.6.0 to 8.7.0
+- 452d41f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.10 to 4.1.11
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 9256fa9: deps: [minor|devDependencies] Update package tsdown from 0.22.14 to 0.23.0
+- 635dae6: deps: [minor|devDependencies] Update package type-fest from 5.8.0 to 5.9.0
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- d0cf9d6: deps: [minor|dependencies] Update package zod from 4.4.3 to 4.5.1
+- af6e43a: deps: [patch|dependencies] Update package zod from 4.5.1 to 4.5.2
+- e0bf31c: deps: [patch|dependencies] Update package zod from 4.5.2 to 4.5.4
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.6
 
 ### Patch Changes

@@ -1,5 +1,43 @@
 # @repo/changelog
 
+## 0.5.1
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 73ba62c: deps: [patch|devDependencies] Update package @changesets/cli from 3.0.0 to 3.0.1
+- fec6b39: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.10 to 2.10.11
+- fec6b39: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.11 to 2.10.12
+- fec6b39: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.9 to 2.10.10
+- f4ba72a: deps: [minor|action] Update package changesets/action from v2.0.0 to v2.1.1
+- 5042748: deps: [minor|devDependencies] Update package eslint from 10.8.1 to 10.9.0
+- 50c3fc4: deps: [patch|devDependencies] Update package eslint from 10.9.0 to 10.9.1
+- 36f5839: deps: [minor|devDependencies] Update package eslint from 10.9.1 to 10.10.0
+- fbaf1bc: deps: [minor|devDependencies] Update package lint-staged from 17.3.0 to 17.4.1
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- af6e43a: deps: [patch|action] Update package renovatebot/github-action from v46.2.2 to v46.2.4
+- 1b88de9: deps: [patch|devDependencies] Update package turbo from 2.10.10 to 2.10.11
+- af6e43a: deps: [patch|devDependencies] Update package turbo from 2.10.11 to 2.10.12
+- fec6b39: deps: [patch|devDependencies] Update package turbo from 2.10.9 to 2.10.10
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+
+
+</details>
+
 ## 0.5.0
 
 ### Minor Changes
