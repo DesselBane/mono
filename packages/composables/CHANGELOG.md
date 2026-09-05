@@ -1,5 +1,41 @@
 # @desselbane/composables
 
+## 2.0.9
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 452d41f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.10 to 4.1.11
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 635dae6: deps: [minor|devDependencies] Update package type-fest from 5.8.0 to 5.9.0
+- 26252cd: deps: [patch|devDependencies] Update package vite from 8.2.1 to 8.2.2
+- 521645e: deps: [minor|devDependencies] Update package vite-plugin-dts from 5.0.3 to 5.1.0
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 866e061: deps: [patch|devDependencies] Update package vue-tsc from 3.3.10 to 3.3.11
+- 3e88dff: deps: [patch|devDependencies] Update package vue-tsc from 3.3.9 to 3.3.10
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- Updated dependencies [452d41f]
+- Updated dependencies [197e7e8]
+- Updated dependencies [1735ac2]
+- Updated dependencies [63e6223]
+- Updated dependencies [2b7f697]
+- Updated dependencies [66997a7]
+- Updated dependencies [9256fa9]
+- Updated dependencies [635dae6]
+- Updated dependencies [9acf827]
+  - @desselbane/ts-helpers@5.0.4
+
+
+</details>
+
 ## 2.0.8
 
 ### Patch Changes
