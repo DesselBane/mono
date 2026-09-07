@@ -49,7 +49,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@inquirer/prompts": "8.7.0",
+    "@inquirer/prompts": "8.7.1",
     "zod": "4.5.4"
   },
   "author": "Dessel Bane",
