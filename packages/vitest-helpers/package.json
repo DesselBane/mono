@@ -34,7 +34,7 @@
     "*": "eslint --fix --max-warnings 0"
   },
   "peerDependencies": {
-    "vitest": "^3.2.0 || ^4.0.0"
+    "vitest": "^3.2.0 || ^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
@@ -43,7 +43,7 @@
     "type-fest": "5.9.0",
     "typescript": "6.0.3",
     "unplugin-unused": "0.6.0",
-    "vitest": "4.1.11"
+    "vitest": "5.0.0"
   },
   "author": "Dessel Bane",
   "devEngines": {
