@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@inquirer/prompts": "8.7.1",
-    "zod": "4.5.4"
+    "zod": "4.6.1"
   },
   "author": "Dessel Bane",
   "devEngines": {
