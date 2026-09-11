@@ -1,5 +1,57 @@
 # @desselbane/composables
 
+## 2.0.9
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- d17963f: deps: [patch|devDependencies] Update package @types/node from 24.13.3 to 24.13.4
+- 452d41f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 4.1.11 to 5.0.0
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 0da3dd1: deps: [minor|volta] Update package node from v24.20.0 to v24.21.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 8329acd: deps: [major|volta] Update package pnpm from 11.25.0 to 12.3.4
+- 16b10da: deps: [minor|volta] Update package pnpm from 12.3.4 to 12.4.1
+- 635dae6: deps: [minor|devDependencies] Update package type-fest from 5.8.0 to 5.9.0
+- 26252cd: deps: [patch|devDependencies] Update package vite from 8.2.1 to 8.2.2
+- 0ffd41f: deps: [minor|devDependencies] Update package vite from 8.2.2 to 8.3.0
+- 521645e: deps: [minor|devDependencies] Update package vite-plugin-dts from 5.0.3 to 5.1.0
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package vitest from 4.1.11 to 5.0.0
+- 866e061: deps: [patch|devDependencies] Update package vue-tsc from 3.3.10 to 3.3.11
+- 3e88dff: deps: [patch|devDependencies] Update package vue-tsc from 3.3.9 to 3.3.10
+- 9acf827: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+- Updated dependencies [d17963f]
+- Updated dependencies [452d41f]
+- Updated dependencies [41cfeb6]
+- Updated dependencies [197e7e8]
+- Updated dependencies [0da3dd1]
+- Updated dependencies [1735ac2]
+- Updated dependencies [63e6223]
+- Updated dependencies [2b7f697]
+- Updated dependencies [66997a7]
+- Updated dependencies [8329acd]
+- Updated dependencies [16b10da]
+- Updated dependencies [9256fa9]
+- Updated dependencies [635dae6]
+- Updated dependencies [9acf827]
+- Updated dependencies [caeb8d9]
+- Updated dependencies [9b1bb5e]
+- Updated dependencies [3d30301]
+  - @desselbane/ts-helpers@5.0.4
+
+
+</details>
+
 ## 2.0.8
 
 ### Patch Changes
