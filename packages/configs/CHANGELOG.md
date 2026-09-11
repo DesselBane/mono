@@ -1,5 +1,48 @@
 # @desselbane/configs
 
+## 17.1.2
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 1736286: deps: [patch|dependencies] Update package @eslint/compat from 2.1.0 to 2.1.1
+- d17963f: deps: [patch|devDependencies] Update package @types/node from 24.13.3 to 24.13.4
+- 91abfe1: deps: [minor|devDependencies] Update package @vue/test-utils from 2.4.11 to 2.5.0
+- 5042748: deps: [minor|dependencies] Update package eslint from 10.8.1 to 10.9.0
+- 50c3fc4: deps: [patch|dependencies] Update package eslint from 10.9.0 to 10.9.1
+- 36f5839: deps: [minor|dependencies] Update package eslint from 10.9.1 to 10.10.0
+- 423449e: deps: [major|dependencies] Update package eslint-plugin-unicorn from 73.0.0 to 74.0.0
+- c5e673c: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.10.0 to 10.11.0
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 0da3dd1: deps: [minor|volta] Update package node from v24.20.0 to v24.21.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 8329acd: deps: [major|volta] Update package pnpm from 11.25.0 to 12.3.4
+- 16b10da: deps: [minor|volta] Update package pnpm from 12.3.4 to 12.4.1
+- 9256fa9: deps: [minor|devDependencies] Update package tsdown from 0.22.14 to 0.23.0
+- 50c3fc4: deps: [minor|dependencies] Update package typescript-eslint from 8.67.0 to 8.68.0
+- 5592429: deps: [minor|dependencies] Update package typescript-eslint from 8.68.0 to 8.69.0
+- cc6d4aa: deps: [minor|dependencies] Update package typescript-eslint from 8.69.0 to 8.70.0
+- 26252cd: deps: [patch|devDependencies] Update package vite from 8.2.1 to 8.2.2
+- 0ffd41f: deps: [minor|devDependencies] Update package vite from 8.2.2 to 8.3.0
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package vitest from 4.1.11 to 5.0.0
+- d0cf9d6: deps: [minor|dependencies] Update package zod from 4.4.3 to 4.5.1
+- af6e43a: deps: [patch|dependencies] Update package zod from 4.5.1 to 4.5.2
+- e0bf31c: deps: [patch|dependencies] Update package zod from 4.5.2 to 4.5.4
+- 90c9101: deps: [minor|dependencies] Update package zod from 4.5.4 to 4.6.1
+- 9acf827: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+
+
+</details>
+
 ## 17.1.1
 
 ### Patch Changes
