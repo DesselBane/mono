@@ -26,10 +26,6 @@
     "url": "https://github.com/DesselBane/mono",
     "directory": "packages/ts-helpers"
   },
-  "volta": {
-    "node": "24.21.0",
-    "pnpm": "12.4.1"
-  },
   "lint-staged": {
     "*": "eslint --fix --max-warnings 0"
   },
@@ -47,15 +43,5 @@
     "vitest": "5.0.0"
   },
   "types": "./dist/main.d.ts",
-  "author": "Dessel Bane",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.21.0"
-    },
-    "runtime": {
-      "name": "node",
-      "version": "24.19.0"
-    }
-  }
+  "author": "Dessel Bane"
 }
