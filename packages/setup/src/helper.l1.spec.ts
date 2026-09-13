@@ -4,6 +4,9 @@ import type { MockInstance } from 'vitest'
 import {
   execSync as execSyncHelper,
   cleanExit,
+  contentDiffers,
+  existsIncludingAppAliases,
+  findExistingPath,
   isAdmin,
   wingetInstall,
 } from './helper'
@@ -139,5 +142,73 @@ describe(wingetInstall, () => {
     expect(() => {
       wingetInstall('foo')
     }).not.toThrow()
+  })
+})
+
+function existsOnlyB(candidate: string) {
+  return candidate === 'b'
+}
+
+function existsNever() {
+  return false
+}
+
+describe(findExistingPath, () => {
+  it('should return the first candidate that exists', () => {
+    expect(findExistingPath(['a', 'b', 'c'], existsOnlyB)).toBe('b')
+  })
+
+  it('should return undefined when no candidate exists', () => {
+    expect(findExistingPath(['a', 'b'], existsNever)).toBeUndefined()
+  })
+})
+
+function lstatSucceeding() {
+  return {}
+}
+
+/**
+Simulates lstat on a Windows app-execution alias, where lstat succeeds but stat throws EACCES.
+*/
+function lstatOnAppAlias() {
+  return { isSymbolicLink: () => true }
+}
+
+function lstatThrowing(): unknown {
+  throw new Error('ENOENT')
+}
+
+describe(existsIncludingAppAliases, () => {
+  it('should report existing when lstat succeeds', () => {
+    expect(
+      existsIncludingAppAliases('C:/foo/op-ssh-sign.exe', lstatSucceeding),
+    ).toBe(true)
+  })
+
+  it('should report existing for an app-execution alias (stat-based existsSync would fail)', () => {
+    expect(
+      existsIncludingAppAliases(
+        'C:/Users/foo/AppData/Local/Microsoft/WindowsApps/op-ssh-sign.exe',
+        lstatOnAppAlias,
+      ),
+    ).toBe(true)
+  })
+
+  it('should report missing when lstat throws', () => {
+    expect(existsIncludingAppAliases('C:/missing', lstatThrowing)).toBe(false)
+  })
+})
+
+describe(contentDiffers, () => {
+  it('should report differing when the existing content is undefined', () => {
+    expect(contentDiffers(undefined, 'generated')).toBe(true)
+  })
+
+  it('should report differing when the contents do not match', () => {
+    expect(contentDiffers('current', 'generated')).toBe(true)
+  })
+
+  it('should report not differing when the contents match', () => {
+    expect(contentDiffers('same', 'same')).toBe(false)
   })
 })

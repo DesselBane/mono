@@ -47,3 +47,47 @@ export function execSync(command: string) {
     stdio: 'inherit',
   })
 }
+
+/**
+Runs {@link command} and returns its trimmed stdout instead of inheriting it.
+Use this when the caller needs the command's output (e.g. resolving a path).
+*/
+export function execSyncCapture(command: string) {
+  return execSyncNode(command).toString().trim()
+}
+
+/**
+Returns the first {@link candidates} entry that {@link exists} reports as present, or `undefined`
+if none exist. Used to probe machine-specific install locations that vary across hosts.
+*/
+export function findExistingPath(
+  candidates: string[],
+  exists: (candidate: string) => boolean,
+) {
+  return candidates.find((candidate) => exists(candidate))
+}
+
+/**
+Whether {@link candidate} exists on disk, including Windows app-execution aliases
+(e.g. the WindowsApps `op-ssh-sign.exe`), where `stat`-based checks like `existsSync`
+fail with EACCES because they follow the alias reparse point — {@link lstat} does not.
+*/
+export function existsIncludingAppAliases(
+  candidate: string,
+  lstat: (candidate: string) => unknown,
+) {
+  const [error] = safeTry(() => lstat(candidate))
+
+  return error == undefined
+}
+
+/**
+Whether {@link generated} content differs from the {@link existing} file content.
+`undefined` existing content (file absent) always counts as differing.
+*/
+export function contentDiffers(
+  existing: string | undefined,
+  generated: string,
+) {
+  return existing !== generated
+}
