@@ -1,18 +1,4 @@
 {
   "type": "module",
-  "author": "Dessel Bane",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.21.0"
-    },
-    "runtime": {
-      "name": "node",
-      "version": "24.19.0"
-    }
-  },
-  "volta": {
-    "node": "24.21.0",
-    "pnpm": "12.4.1"
-  }
+  "author": "Dessel Bane"
 }
