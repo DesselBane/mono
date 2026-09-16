@@ -114,7 +114,7 @@
     }
   },
   "devDependencies": {
-    "@types/node": "24.13.4",
+    "@types/node": "24.13.5",
     "@vue/test-utils": "2.5.0",
     "prettier": "3.9.6",
     "tsdown": "0.23.0",
