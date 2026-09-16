@@ -1,0 +1,5 @@
+---
+'@desselbane/setup': patch
+---
+
+deps: [patch|dependencies] Update package zod from 4.6.4 to 4.6.5
