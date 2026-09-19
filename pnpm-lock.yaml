@@ -176,8 +176,8 @@ importers:
         specifier: workspace:*
         version: link:packages/scripts
       '@turbo/gen':
-        specifier: 2.10.13
-        version: 2.10.13(@types/node@24.13.5)
+        specifier: 2.11.1
+        version: 2.11.1(@types/node@24.13.5)
       '@types/node':
         specifier: 24.13.5
         version: 24.13.5
@@ -1281,8 +1281,8 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
-  '@turbo/gen@2.10.13':
-    resolution: {integrity: sha512-QIetjn6DDadyi92lQf02DmzuskKuffUpJ69aTCxuIyrI0CC+Uh6MGh6NbXj2XpuqLHQYZB88MCjPyqHGs3C90A==}
+  '@turbo/gen@2.11.1':
+    resolution: {integrity: sha512-evjiqHbxqYPEaX8JSIXWa7vpjM0cYEng4/2+xz+56A4XS1J9uhdYBzK5t5896PBwq3svazb/bdCZZhHLzt+HdQ==}
     hasBin: true
 
   '@turbo/linux-64@2.10.13':
@@ -4169,7 +4169,7 @@ snapshots:
   '@turbo/darwin-arm64@2.10.13':
     optional: true
 
-  '@turbo/gen@2.10.13(@types/node@24.13.5)':
+  '@turbo/gen@2.11.1(@types/node@24.13.5)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@24.13.5)
       esbuild: 0.28.2
