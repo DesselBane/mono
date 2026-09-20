@@ -35,7 +35,7 @@
   "devDependencies": {
     "@desselbane/configs": "workspace:*",
     "@desselbane/vitest-helpers": "workspace:*",
-    "@types/node": "24.13.5",
+    "@types/node": "24.13.6",
     "@vitest/coverage-v8": "5.0.1",
     "tsdown": "0.23.0",
     "typescript": "6.0.3",
