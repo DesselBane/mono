@@ -293,6 +293,8 @@ function configureUnicornPlugin(options: SafeOptions): Config {
         'unicorn/max-nested-calls': 'off',
         'unicorn/consistent-boolean-name': 'off',
         'unicorn/no-barrel-files': 'off',
+        'unicorn/prefer-ternary': 'off',
+        'unicorn/no-immediate-mutation': 'off',
       },
     },
     {
