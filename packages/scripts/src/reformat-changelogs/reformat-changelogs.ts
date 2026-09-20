@@ -273,16 +273,14 @@ function formatChangelog(pathToChangelog: string) {
       formattedFile.push('', '### Patch Changes', '', ...version.patchChanges)
     }
 
-    if (version.dependencyUpdates.length > 0) {
-      formattedFile.push('', '### Dependency Changes')
-      formattedFile.push(
-        '',
-        '<details>',
-        '<summary> Click to expand </summary>',
-      )
-      formattedFile.push('', ...version.dependencyUpdates, '')
-      formattedFile.push('', '</details>')
+    if (version.dependencyUpdates.length === 0) {
+      continue
     }
+
+    formattedFile.push('', '### Dependency Changes')
+    formattedFile.push('', '<details>', '<summary> Click to expand </summary>')
+    formattedFile.push('', ...version.dependencyUpdates, '')
+    formattedFile.push('', '</details>')
   }
 
   writeFileSync(pathToChangelog, formattedFile.join('\n'))

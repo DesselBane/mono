@@ -57,11 +57,7 @@ assertNotNil(newVersion)
 assertNotNil(manager)
 
 function getPackageName(packageFile: string) {
-  if (manager === 'github-actions') {
-    return '@repo/changelog'
-  }
-
-  if (!packageFile.endsWith('json')) {
+  if (manager === 'github-actions' || !packageFile.endsWith('json')) {
     return '@repo/changelog'
   }
 
