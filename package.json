@@ -34,7 +34,7 @@
     "@desselbane/configs": "workspace:*",
     "@repo/scripts": "workspace:*",
     "@turbo/gen": "2.11.2",
-    "@types/node": "24.13.6",
+    "@types/node": "26.6.2",
     "eslint": "10.11.0",
     "husky": "9.1.7",
     "lint-staged": "17.5.1",
@@ -45,12 +45,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.4.1",
+      "version": "12.4.2",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "26.8.2",
+      "version": "26.9.0",
       "onFail": "download"
     }
   }
