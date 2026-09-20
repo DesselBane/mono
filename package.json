@@ -40,7 +40,7 @@
     "lint-staged": "17.5.1",
     "prettier": "3.9.8",
     "semver": "7.8.5",
-    "turbo": "2.10.13"
+    "turbo": "2.11.2"
   },
   "devEngines": {
     "packageManager": {
