@@ -1,5 +1,57 @@
 # @desselbane/setup
 
+## 1.0.7
+
+### Patch Changes
+
+- 0cc11fd: Drop Volta key, make devEngines root package only
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- b52d0c9: deps: [minor|dependencies] Update package @inquirer/prompts from 8.5.2 to 8.6.0
+- d40be3d: deps: [minor|dependencies] Update package @inquirer/prompts from 8.6.0 to 8.7.0
+- 2c8247e: deps: [patch|dependencies] Update package @inquirer/prompts from 8.7.0 to 8.7.1
+- df0e9b6: deps: [patch|dependencies] Update package @inquirer/prompts from 8.7.1 to 8.7.2
+- d17963f: deps: [patch|devDependencies] Update package @types/node from 24.13.3 to 24.13.4
+- 59cad05: deps: [patch|devDependencies] Update package @types/node from 24.13.4 to 24.13.5
+- 65d23ec: deps: [patch|devDependencies] Update package @types/node from 24.13.5 to 24.13.6
+- 452d41f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 4.1.11 to 5.0.0
+- ece382c: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 5.0.0 to 5.0.1
+- c7caf9f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 5.0.1 to 5.0.2
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 0da3dd1: deps: [minor|volta] Update package node from v24.20.0 to v24.21.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 8329acd: deps: [major|volta] Update package pnpm from 11.25.0 to 12.3.4
+- 16b10da: deps: [minor|volta] Update package pnpm from 12.3.4 to 12.4.1
+- 9256fa9: deps: [minor|devDependencies] Update package tsdown from 0.22.14 to 0.23.0
+- 635dae6: deps: [minor|devDependencies] Update package type-fest from 5.8.0 to 5.9.0
+- 93ee4e4: deps: [minor|devDependencies] Update package type-fest from 5.9.0 to 5.10.0
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package vitest from 4.1.11 to 5.0.0
+- ece382c: deps: [patch|devDependencies] Update package vitest from 5.0.0 to 5.0.1
+- c7caf9f: deps: [patch|devDependencies] Update package vitest from 5.0.1 to 5.0.2
+- d0cf9d6: deps: [minor|dependencies] Update package zod from 4.4.3 to 4.5.1
+- af6e43a: deps: [patch|dependencies] Update package zod from 4.5.1 to 4.5.2
+- e0bf31c: deps: [patch|dependencies] Update package zod from 4.5.2 to 4.5.4
+- 90c9101: deps: [minor|dependencies] Update package zod from 4.5.4 to 4.6.1
+- df0e9b6: deps: [patch|dependencies] Update package zod from 4.6.1 to 4.6.2
+- e3f8e06: deps: [patch|dependencies] Update package zod from 4.6.2 to 4.6.4
+- 6c2a6bc: deps: [patch|dependencies] Update package zod from 4.6.4 to 4.6.5
+- 9acf827: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+
+
+</details>
+
 ## 1.0.6
 
 ### Patch Changes

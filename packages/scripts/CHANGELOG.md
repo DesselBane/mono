@@ -1,5 +1,46 @@
 # @repo/scripts
 
+## 0.2.7
+
+### Patch Changes
+
+- 0cc11fd: Drop Volta key, make devEngines root package only
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- d17963f: deps: [patch|devDependencies] Update package @types/node from 24.13.3 to 24.13.4
+- 59cad05: deps: [patch|devDependencies] Update package @types/node from 24.13.4 to 24.13.5
+- 65d23ec: deps: [patch|devDependencies] Update package @types/node from 24.13.5 to 24.13.6
+- 452d41f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package @vitest/coverage-v8 from 4.1.11 to 5.0.0
+- ece382c: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 5.0.0 to 5.0.1
+- c7caf9f: deps: [patch|devDependencies] Update package @vitest/coverage-v8 from 5.0.1 to 5.0.2
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 0da3dd1: deps: [minor|volta] Update package node from v24.20.0 to v24.21.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 8329acd: deps: [major|volta] Update package pnpm from 11.25.0 to 12.3.4
+- 16b10da: deps: [minor|volta] Update package pnpm from 12.3.4 to 12.4.1
+- 87b2124: deps: [major|devDependencies] Update package simple-git from 3.36.0 to 4.0.1
+- 635dae6: deps: [minor|devDependencies] Update package type-fest from 5.8.0 to 5.9.0
+- 93ee4e4: deps: [minor|devDependencies] Update package type-fest from 5.9.0 to 5.10.0
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package vitest from 4.1.11 to 5.0.0
+- ece382c: deps: [patch|devDependencies] Update package vitest from 5.0.0 to 5.0.1
+- c7caf9f: deps: [patch|devDependencies] Update package vitest from 5.0.1 to 5.0.2
+- 9acf827: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+
+
+</details>
+
 ## 0.2.6
 
 ### Patch Changes

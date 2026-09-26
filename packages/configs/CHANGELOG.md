@@ -1,5 +1,69 @@
 # @desselbane/configs
 
+## 18.0.0
+
+### Patch Changes
+
+- 0cc11fd: Drop Volta key, make devEngines root package only
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 9256fa9: deps: [minor|peerDependencies] Update package tsdown from `^0.21.0 || ^0.22.0` to `^0.23.0`
+- 1736286: deps: [patch|dependencies] Update package @eslint/compat from 2.1.0 to 2.1.1
+- d17963f: deps: [patch|devDependencies] Update package @types/node from 24.13.3 to 24.13.4
+- 59cad05: deps: [patch|devDependencies] Update package @types/node from 24.13.4 to 24.13.5
+- 65d23ec: deps: [patch|devDependencies] Update package @types/node from 24.13.5 to 24.13.6
+- 91abfe1: deps: [minor|devDependencies] Update package @vue/test-utils from 2.4.11 to 2.5.0
+- dbc2ca2: deps: [patch|devDependencies] Update package @vue/test-utils from 2.5.0 to 2.5.1
+- 34b93e1: deps: [minor|dependencies] Update package eslint from 10.10.0 to 10.11.0
+- 5042748: deps: [minor|dependencies] Update package eslint from 10.8.1 to 10.9.0
+- 50c3fc4: deps: [patch|dependencies] Update package eslint from 10.9.0 to 10.9.1
+- 36f5839: deps: [minor|dependencies] Update package eslint from 10.9.1 to 10.10.0
+- 76d5531: deps: [minor|dependencies] Update package eslint-plugin-playwright from 2.11.0 to 2.12.0
+- 423449e: deps: [major|dependencies] Update package eslint-plugin-unicorn from 73.0.0 to 74.0.0
+- 5c686f8: deps: [major|dependencies] Update package eslint-plugin-unicorn from 74.0.0 to 75.0.0
+- c5e673c: deps: [minor|dependencies] Update package eslint-plugin-vue from 10.10.0 to 10.11.0
+- b85958f: deps: [patch|dependencies] Update package eslint-plugin-vue from 10.11.0 to 10.11.1
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 0da3dd1: deps: [minor|volta] Update package node from v24.20.0 to v24.21.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 8329acd: deps: [major|volta] Update package pnpm from 11.25.0 to 12.3.4
+- 16b10da: deps: [minor|volta] Update package pnpm from 12.3.4 to 12.4.1
+- f36c68e: deps: [patch|devDependencies] Update package prettier from 3.9.6 to 3.9.7
+- 3c3e590: deps: [patch|devDependencies] Update package prettier from 3.9.7 to 3.9.8
+- 097023a: deps: [patch|devDependencies] Update package prettier from 3.9.8 to 3.9.9
+- 50c3fc4: deps: [minor|dependencies] Update package typescript-eslint from 8.67.0 to 8.68.0
+- 5592429: deps: [minor|dependencies] Update package typescript-eslint from 8.68.0 to 8.69.0
+- cc6d4aa: deps: [minor|dependencies] Update package typescript-eslint from 8.69.0 to 8.70.0
+- 05efad6: deps: [patch|dependencies] Update package typescript-eslint from 8.70.0 to 8.70.1
+- 26252cd: deps: [patch|devDependencies] Update package vite from 8.2.1 to 8.2.2
+- 0ffd41f: deps: [minor|devDependencies] Update package vite from 8.2.2 to 8.3.0
+- d13b5ab: deps: [patch|devDependencies] Update package vite from 8.3.0 to 8.3.1
+- 452d41f: deps: [patch|devDependencies] Update package vitest from 4.1.10 to 4.1.11
+- 41cfeb6: deps: [major|devDependencies] Update package vitest from 4.1.11 to 5.0.0
+- ece382c: deps: [patch|devDependencies] Update package vitest from 5.0.0 to 5.0.1
+- c7caf9f: deps: [patch|devDependencies] Update package vitest from 5.0.1 to 5.0.2
+- d0cf9d6: deps: [minor|dependencies] Update package zod from 4.4.3 to 4.5.1
+- af6e43a: deps: [patch|dependencies] Update package zod from 4.5.1 to 4.5.2
+- e0bf31c: deps: [patch|dependencies] Update package zod from 4.5.2 to 4.5.4
+- 90c9101: deps: [minor|dependencies] Update package zod from 4.5.4 to 4.6.1
+- df0e9b6: deps: [patch|dependencies] Update package zod from 4.6.1 to 4.6.2
+- e3f8e06: deps: [patch|dependencies] Update package zod from 4.6.2 to 4.6.4
+- 6c2a6bc: deps: [patch|dependencies] Update package zod from 4.6.4 to 4.6.5
+- 9acf827: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+
+
+</details>
+
 ## 17.1.1
 
 ### Patch Changes
