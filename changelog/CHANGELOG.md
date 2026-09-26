@@ -1,5 +1,83 @@
 # @repo/changelog
 
+## 0.6.0
+
+### Minor Changes
+
+- 0cc11fd: Update node to 26.8.2
+- 761ddee: Update pnpm to 12.4.2 and node to 26.9.0
+
+### Patch Changes
+
+- 0cc11fd: Drop Volta key, make devEngines root package only
+
+### Dependency Changes
+
+<details>
+<summary> Click to expand </summary>
+
+- 73ba62c: deps: [patch|devDependencies] Update package @changesets/cli from 3.0.0 to 3.0.1
+- 2c8247e: deps: [patch|devDependencies] Update package @changesets/cli from 3.0.1 to 3.0.2
+- 6c2a6bc: deps: [patch|devDependencies] Update package @changesets/cli from 3.0.2 to 3.0.3
+- 1b88de9: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.10 to 2.10.11
+- af6e43a: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.11 to 2.10.12
+- 6c2a6bc: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.12 to 2.10.13
+- a9150ad: deps: [minor|devDependencies] Update package @turbo/gen from 2.10.13 to 2.11.1
+- fec6b39: deps: [patch|devDependencies] Update package @turbo/gen from 2.10.9 to 2.10.10
+- b1dd97f: deps: [patch|devDependencies] Update package @turbo/gen from 2.11.1 to 2.11.2
+- 097023a: deps: [patch|devDependencies] Update package @turbo/gen from 2.11.2 to 2.11.4
+- d17963f: deps: [patch|devDependencies] Update package @types/node from 24.13.3 to 24.13.4
+- 59cad05: deps: [patch|devDependencies] Update package @types/node from 24.13.4 to 24.13.5
+- 65d23ec: deps: [patch|devDependencies] Update package @types/node from 24.13.5 to 24.13.6
+- f4ba72a: deps: [minor|action] Update package changesets/action from v2.0.0 to v2.1.1
+- df0e9b6: deps: [patch|action] Update package changesets/action from v2.1.1 to v2.1.2
+- 34b93e1: deps: [minor|devDependencies] Update package eslint from 10.10.0 to 10.11.0
+- 5042748: deps: [minor|devDependencies] Update package eslint from 10.8.1 to 10.9.0
+- 50c3fc4: deps: [patch|devDependencies] Update package eslint from 10.9.0 to 10.9.1
+- 36f5839: deps: [minor|devDependencies] Update package eslint from 10.9.1 to 10.10.0
+- fbaf1bc: deps: [minor|devDependencies] Update package lint-staged from 17.3.0 to 17.4.1
+- e186ac5: deps: [minor|devDependencies] Update package lint-staged from 17.4.1 to 17.5.0
+- df0e9b6: deps: [patch|devDependencies] Update package lint-staged from 17.5.0 to 17.5.1
+- 197e7e8: deps: [minor|volta] Update package node from v24.19.0 to v24.20.0
+- 0da3dd1: deps: [minor|volta] Update package node from v24.20.0 to v24.21.0
+- 1735ac2: deps: [minor|volta] Update package pnpm from 11.21.0 to 11.22.0
+- 63e6223: deps: [minor|volta] Update package pnpm from 11.22.0 to 11.23.0
+- 2b7f697: deps: [minor|volta] Update package pnpm from 11.23.0 to 11.24.0
+- 66997a7: deps: [minor|volta] Update package pnpm from 11.24.0 to 11.25.0
+- 8329acd: deps: [major|volta] Update package pnpm from 11.25.0 to 12.3.4
+- 16b10da: deps: [minor|volta] Update package pnpm from 12.3.4 to 12.4.1
+- 65ffffe: deps: [major|action] Update package pnpm/setup from v2.1.0 to v3.0.0
+- f36c68e: deps: [patch|devDependencies] Update package prettier from 3.9.6 to 3.9.7
+- 3c3e590: deps: [patch|devDependencies] Update package prettier from 3.9.7 to 3.9.8
+- 097023a: deps: [patch|devDependencies] Update package prettier from 3.9.8 to 3.9.9
+- af6e43a: deps: [patch|action] Update package renovatebot/github-action from v46.2.2 to v46.2.4
+- 2c8247e: deps: [patch|action] Update package renovatebot/github-action from v46.2.4 to v46.2.5
+- df0e9b6: deps: [patch|action] Update package renovatebot/github-action from v46.2.5 to v46.2.6
+- 032108b: deps: [minor|action] Update package renovatebot/github-action from v46.2.5 to v46.3.0
+- 6c2a6bc: deps: [patch|action] Update package renovatebot/github-action from v46.3.0 to v46.3.1
+- 097023a: deps: [patch|action] Update package renovatebot/github-action from v46.3.1 to v46.3.4
+- 1b88de9: deps: [patch|devDependencies] Update package turbo from 2.10.10 to 2.10.11
+- af6e43a: deps: [patch|devDependencies] Update package turbo from 2.10.11 to 2.10.12
+- 6c2a6bc: deps: [patch|devDependencies] Update package turbo from 2.10.12 to 2.10.13
+- 25d8557: deps: [minor|devDependencies] Update package turbo from 2.10.13 to 2.11.2
+- fec6b39: deps: [patch|devDependencies] Update package turbo from 2.10.9 to 2.10.10
+- 097023a: deps: [patch|devDependencies] Update package turbo from 2.11.2 to 2.11.4
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- 9acf827: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- caeb8d9: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 9b1bb5e: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+- 3d30301: deps: Updated lockfile
+
+
+</details>
+
 ## 0.5.0
 
 ### Minor Changes
