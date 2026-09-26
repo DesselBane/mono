@@ -39,7 +39,7 @@
     "type-fest": "5.10.0",
     "typescript": "6.0.3",
     "unplugin-unused": "0.6.0",
-    "vitest": "5.0.1"
+    "vitest": "5.0.2"
   },
   "author": "Dessel Bane"
 }
