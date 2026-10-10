@@ -14,12 +14,15 @@
   {
     "Name": "Powershell 7",
     "WingetId": "Microsoft.PowerShell",
+    "AptId": "powershell",
+    "aptPrereq": "curl -sSL https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -o /tmp/packages-microsoft-prod.deb && sudo dpkg -i /tmp/packages-microsoft-prod.deb && sudo apt-get update",
     "installDefault": false,
     "group": "Core"
   },
   {
     "Name": "Starship",
     "WingetId": "Starship.Starship",
+    "linuxInstall": "curl -sS https://starship.rs/install.sh | sh -s -- -y",
     "installDefault": true,
     "group": "Core"
   },
@@ -30,8 +33,16 @@
     "group": "Programming"
   },
   {
+    "Name": "Git",
+    "WingetId": "Git.Git",
+    "AptId": "git",
+    "installDefault": true,
+    "group": "Core"
+  },
+  {
     "Name": "Volta",
     "WingetId": "Volta.Volta",
+    "linuxInstall": "curl https://get.volta.sh | bash",
     "installDefault": false,
     "group": "Programming"
   },
