@@ -128,7 +128,7 @@ export function usePagination(
 
   watch(
     page,
-    (nextPage, previousPage) => {
+    (nextPage, previousPage = 1) => {
       if (
         !Number.isSafeInteger(nextPage) ||
         Number.isNaN(nextPage) ||
@@ -148,7 +148,7 @@ export function usePagination(
             `Can not increase page above lastPage: ${unref(lastPage)}`,
           )
         }
-        page.value = previousPage ?? 1
+        page.value = previousPage
       }
     },
     {
