@@ -294,7 +294,8 @@ function configureUnicornPlugin(options: SafeOptions): Config {
         'unicorn/consistent-boolean-name': 'off',
         'unicorn/no-barrel-files': 'off',
         'unicorn/prefer-ternary': 'off',
-        'unicorn/no-immediate-mutation': 'off',
+        // Can be turned on once config files are split out
+        'unicorn/no-top-level-side-effects': 'off',
       },
     },
     {
