@@ -36,7 +36,7 @@
     "@desselbane/vitest-helpers": "workspace:*",
     "@types/node": "26.6.5",
     "@vitest/coverage-v8": "5.0.5",
-    "tsdown": "0.23.1",
+    "tsdown": "0.23.2",
     "type-fest": "5.10.0",
     "typescript": "6.0.3",
     "vitest": "5.0.5"
@@ -45,7 +45,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@inquirer/prompts": "8.7.3",
+    "@inquirer/prompts": "8.7.4",
     "zod": "4.6.7"
   },
   "author": "Dessel Bane"
