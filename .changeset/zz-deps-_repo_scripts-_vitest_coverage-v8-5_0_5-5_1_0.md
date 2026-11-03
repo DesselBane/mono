@@ -1,0 +1,5 @@
+---
+'@repo/scripts': patch
+---
+
+deps: [minor|devDependencies] Update package @vitest/coverage-v8 from 5.0.5 to 5.1.0
