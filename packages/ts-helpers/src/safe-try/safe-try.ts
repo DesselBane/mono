@@ -11,16 +11,6 @@ export type SafeTryReturnData<TValue> = readonly [undefined, TValue] & {
 export type SafeTryReturn<TValue> =
   SafeTryReturnData<TValue> | SafeTryReturnError
 
-type IntermediateSafeReturn<TValue> =
-  | (readonly [undefined, TValue] & {
-      data?: TValue
-      error?: undefined
-    })
-  | (readonly [Error, undefined] & {
-      data?: undefined
-      error?: Error
-    })
-
 function makeErrorSafe(error: unknown) {
   return Error.isError(error)
     ? error
@@ -31,6 +21,15 @@ function createSafeReturnValue<TValue>(
   error?: Error,
   value?: TValue,
 ): SafeTryReturn<TValue> {
+  type IntermediateSafeReturn<TValue> =
+    | (readonly [undefined, TValue] & {
+        data?: TValue
+        error?: undefined
+      })
+    | (readonly [Error, undefined] & {
+        data?: undefined
+        error?: Error
+      })
   if (error === undefined) {
     const returnValue = [undefined, value] as IntermediateSafeReturn<TValue>
     returnValue.error = undefined
