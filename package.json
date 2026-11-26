@@ -34,7 +34,7 @@
     "@desselbane/configs": "workspace:*",
     "@repo/scripts": "workspace:*",
     "@turbo/gen": "2.11.11",
-    "@types/node": "26.6.7",
+    "@types/node": "26.6.9",
     "eslint": "10.15.0",
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
