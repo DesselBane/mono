@@ -119,8 +119,8 @@
     "prettier": "3.10.1",
     "tsdown": "0.23.7",
     "typescript": "6.0.3",
-    "vite": "8.3.8",
-    "vitest": "5.1.1"
+    "vite": "8.4.0",
+    "vitest": "5.1.2"
   },
   "author": "Dessel Bane"
 }
